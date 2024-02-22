@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcy__stc__pdaltmode__status__t" kind="struct" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_status_t</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1a5ea8f165a1c5b45f73dc45cf5d98f4fd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_status_t::vdmTaskEn</definition>
+        <argsstring></argsstring>
+        <name>vdmTaskEn</name>
+        <briefdescription>
+<para>Flag to indicate if VDM task manager enabled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1424" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1ae29c4bd83d7ca6ee7e215d0fe5246d81" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_status_t::discCblPending</definition>
+        <argsstring></argsstring>
+        <name>discCblPending</name>
+        <briefdescription>
+<para>Flag to indicate if cable discovery is pending. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1425" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1a33738ba349713f9e7da4d2c928bef0ba" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_status_t::cblDiscIdFinished</definition>
+        <argsstring></argsstring>
+        <name>cblDiscIdFinished</name>
+        <briefdescription>
+<para>Flag to indicate that cable disc id finished. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1426" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1adc915564ec7ad79a181ecfc2274b2666" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_status_t::altModeTrigMask</definition>
+        <argsstring></argsstring>
+        <name>altModeTrigMask</name>
+        <briefdescription>
+<para>Mask to indicate which Alt Mode should be enabled by EC. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1427" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1a64aeaf18ac201c395d24fd9be3ed8df7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t cy_stc_pdaltmode_status_t::customHpiSvid</definition>
+        <argsstring></argsstring>
+        <name>customHpiSvid</name>
+        <briefdescription>
+<para>Holds custom Alternate Mode SVID received from HPI. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1428" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1a2dd2e4b11b83b9f2e8538ba5857f2b15" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_status_t::altModeEntered</definition>
+        <argsstring></argsstring>
+        <name>altModeEntered</name>
+        <briefdescription>
+<para>Flag to indicate if Alternate Modes currently entered. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1429" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1aa64a8201b153c51cc5099bfd8a02059b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_status_t::vdmPrcsFailed</definition>
+        <argsstring></argsstring>
+        <name>vdmPrcsFailed</name>
+        <briefdescription>
+<para>Flag to indicate if VDM process failed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1430" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1a4e0c66d4b15d62d6fcec367b2a459dfe" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_status_t::vdmRetryPending</definition>
+        <argsstring></argsstring>
+        <name>vdmRetryPending</name>
+        <briefdescription>
+<para>Whether VDM retry on timeout is pending. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1431" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1a381fef34f8f087cb28e2fe109ddb52b2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_status_t::customHpiHostCapControl</definition>
+        <argsstring></argsstring>
+        <name>customHpiHostCapControl</name>
+        <briefdescription>
+<para>Holds custom host capabilities register value received from HPI. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1432" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1ac11ac509c77e1c62758b13ca2de1e50d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_status_t::cblRstDone</definition>
+        <argsstring></argsstring>
+        <name>cblRstDone</name>
+        <briefdescription>
+<para>Flag to indicate that cable reset was provided. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1433" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1a20b1199471de10b3bdb57d381364cd42" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_status_t::trigCblRst</definition>
+        <argsstring></argsstring>
+        <name>trigCblRst</name>
+        <briefdescription>
+<para>Flag to trigger cable reset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1434" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1a752511e4e69be13d3d08a7e606090361" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_status_t::isMuxBusy</definition>
+        <argsstring></argsstring>
+        <name>isMuxBusy</name>
+        <briefdescription>
+<para>Flag to indicate that mux is switching. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1435" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1a208505b45fd2e99a8a5a1eee7270befb" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__data__structures_1gace96e9fc6fac208f7393f676d9ff629c" kindref="member">cy_pdaltmode_mux_poll_fnc_cbk_t</ref></type>
+        <definition>cy_pdaltmode_mux_poll_fnc_cbk_t cy_stc_pdaltmode_status_t::muxPollCbk</definition>
+        <argsstring></argsstring>
+        <name>muxPollCbk</name>
+        <briefdescription>
+<para>Holds pointer to MUX polling function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1436" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1a38677df86af7b9d951b92ceaf174ba92" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_status_t::usb4Supp</definition>
+        <argsstring></argsstring>
+        <name>usb4Supp</name>
+        <briefdescription>
+<para>Flag to indicate if USB4 is supported. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1437" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1a5b2942deed6c6a4382e9d669a62d68c5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_status_t::usb4Active</definition>
+        <argsstring></argsstring>
+        <name>usb4Active</name>
+        <briefdescription>
+<para>Indicates that USB4 mode was entered. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1438" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1a1dfe8d8774b3f0686d66869b964d3d77" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_status_t::usb4DataRstCnt</definition>
+        <argsstring></argsstring>
+        <name>usb4DataRstCnt</name>
+        <briefdescription>
+<para>Indicates number of Data Reset retries. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1439" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1ad946012cbdedf14424bd74444d8c76fc" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_status_t::usb2Supp</definition>
+        <argsstring></argsstring>
+        <name>usb2Supp</name>
+        <briefdescription>
+<para>USB2 supported flag for Ridge related applications. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1440" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1aba0a27412f398365deda9a4cfe9c7544" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_status_t::usb3Supp</definition>
+        <argsstring></argsstring>
+        <name>usb3Supp</name>
+        <briefdescription>
+<para>USB3 supported flag for Ridge related applications. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1441" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1ab9d270cdb5005b6e616233e44eb41665" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_status_t::skipMuxConfig</definition>
+        <argsstring></argsstring>
+        <name>skipMuxConfig</name>
+        <briefdescription>
+<para>Flag to indicate do not configure MUX. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1442" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1a0072068202d415dda15bee222f81a4e6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_status_t::trigTbtVdoDisc</definition>
+        <argsstring></argsstring>
+        <name>trigTbtVdoDisc</name>
+        <briefdescription>
+<para>Flag to indicate that TBT cable DISC MOde is in progress. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1443" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1a70b3ba1273c59660d7a0dfb8369d3aa0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_status_t::tbtCblEntered</definition>
+        <argsstring></argsstring>
+        <name>tbtCblEntered</name>
+        <briefdescription>
+<para>Flag to indicate that TBT cable was entered TBT mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1444" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1ae4fd2bb93c7050d3b51ba1d25a3afbd3" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__alt__mode__hw__enums_1ga76fe692191168bfcd3be6cee0c268493" kindref="member">cy_en_pdaltmode_app_mux_status_t</ref></type>
+        <definition>cy_en_pdaltmode_app_mux_status_t cy_stc_pdaltmode_status_t::muxStat</definition>
+        <argsstring></argsstring>
+        <name>muxStat</name>
+        <briefdescription>
+<para>Indicates current MUX status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1445" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1a0ac810708362696618c082ab1cb88128" prot="public" static="no" mutable="no">
+        <type>cy_pd_pd_do_t</type>
+        <definition>cy_pd_pd_do_t cy_stc_pdaltmode_status_t::tbtCblVdo</definition>
+        <argsstring></argsstring>
+        <name>tbtCblVdo</name>
+        <briefdescription>
+<para>Holds TBT cable VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1446" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1a5b8371416b56b234ee490a960c427f50" prot="public" static="no" mutable="no">
+        <type>cy_pd_pd_do_t</type>
+        <definition>cy_pd_pd_do_t cy_stc_pdaltmode_status_t::dpCblVdo</definition>
+        <argsstring></argsstring>
+        <name>dpCblVdo</name>
+        <briefdescription>
+<para>Holds DP cable VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1447" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1ad2c9e4c2e2824053073682a6ad08e593" prot="public" static="no" mutable="no">
+        <type>cy_pd_pd_do_t</type>
+        <definition>cy_pd_pd_do_t cy_stc_pdaltmode_status_t::tbtModeVdo</definition>
+        <argsstring></argsstring>
+        <name>tbtModeVdo</name>
+        <briefdescription>
+<para>Holds TBT mode VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1448" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1a4db20c8ba7530b30eaa66fb7593e4bb6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_status_t::amdDataResetUsb4Mode</definition>
+        <argsstring></argsstring>
+        <name>amdDataResetUsb4Mode</name>
+        <briefdescription>
+<para>Holds current APU mux state during AMD DataReset flow. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1449" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1449" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__status__t_1a939e4775a5e986d1d505703caa396a82" prot="public" static="no" mutable="no">
+        <type>cy_pd_pd_do_t</type>
+        <definition>cy_pd_pd_do_t cy_stc_pdaltmode_status_t::eudo</definition>
+        <argsstring></argsstring>
+        <name>eudo</name>
+        <briefdescription>
+<para>Holds EUDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1450" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1450" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure holds all necessary information Alt Mode handling. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cy_pdaltmode_defines.h" line="1423" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1422" bodyend="1451"/>
+    <listofallmembers>
+      <member refid="structcy__stc__pdaltmode__status__t_1a2dd2e4b11b83b9f2e8538ba5857f2b15" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>altModeEntered</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1adc915564ec7ad79a181ecfc2274b2666" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>altModeTrigMask</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1a4db20c8ba7530b30eaa66fb7593e4bb6" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>amdDataResetUsb4Mode</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1a33738ba349713f9e7da4d2c928bef0ba" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>cblDiscIdFinished</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1ac11ac509c77e1c62758b13ca2de1e50d" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>cblRstDone</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1a381fef34f8f087cb28e2fe109ddb52b2" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>customHpiHostCapControl</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1a64aeaf18ac201c395d24fd9be3ed8df7" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>customHpiSvid</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1ae29c4bd83d7ca6ee7e215d0fe5246d81" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>discCblPending</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1a5b8371416b56b234ee490a960c427f50" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>dpCblVdo</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1a939e4775a5e986d1d505703caa396a82" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>eudo</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1a752511e4e69be13d3d08a7e606090361" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>isMuxBusy</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1a208505b45fd2e99a8a5a1eee7270befb" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>muxPollCbk</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1ae4fd2bb93c7050d3b51ba1d25a3afbd3" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>muxStat</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1ab9d270cdb5005b6e616233e44eb41665" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>skipMuxConfig</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1a70b3ba1273c59660d7a0dfb8369d3aa0" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>tbtCblEntered</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1a0ac810708362696618c082ab1cb88128" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>tbtCblVdo</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1ad2c9e4c2e2824053073682a6ad08e593" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>tbtModeVdo</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1a20b1199471de10b3bdb57d381364cd42" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>trigCblRst</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1a0072068202d415dda15bee222f81a4e6" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>trigTbtVdoDisc</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1ad946012cbdedf14424bd74444d8c76fc" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>usb2Supp</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1aba0a27412f398365deda9a4cfe9c7544" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>usb3Supp</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1a5b2942deed6c6a4382e9d669a62d68c5" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>usb4Active</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1a1dfe8d8774b3f0686d66869b964d3d77" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>usb4DataRstCnt</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1a38677df86af7b9d951b92ceaf174ba92" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>usb4Supp</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1aa64a8201b153c51cc5099bfd8a02059b" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>vdmPrcsFailed</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1a4e0c66d4b15d62d6fcec367b2a459dfe" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>vdmRetryPending</name></member>
+      <member refid="structcy__stc__pdaltmode__status__t_1a5ea8f165a1c5b45f73dc45cf5d98f4fd" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_status_t</scope><name>vdmTaskEn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

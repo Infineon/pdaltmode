@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcy__stc__pdaltmode__billboard__conn__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_billboard_conn_info_t</compoundname>
+    <includes local="no">cy_pdaltmode_billboard.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__billboard__conn__info__t_1ac912ac2a34ecb576d5e1d11c0ca3d2f2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_billboard_conn_info_t::enable</definition>
+        <argsstring></argsstring>
+        <name>enable</name>
+        <briefdescription>
+<para>Whether Billboard interface is to be enabled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="256" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__billboard__conn__info__t_1ac962f07e2a937b3620332720e8fbafed" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_billboard_conn_info_t::nSvid</definition>
+        <argsstring></argsstring>
+        <name>nSvid</name>
+        <briefdescription>
+<para>Number of SVIDs supported. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="257" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__billboard__conn__info__t_1a0a65eddd2e5a6850deaebda7c21f6861" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_billboard_conn_info_t::prefMode</definition>
+        <argsstring></argsstring>
+        <name>prefMode</name>
+        <briefdescription>
+<para>Preferred Alternate Mode index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="258" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__billboard__conn__info__t_1a1389af456e1d1176a038ab5ac4a134ef" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_billboard_conn_info_t::reserved</definition>
+        <argsstring></argsstring>
+        <name>reserved</name>
+        <briefdescription>
+<para>Reserved field. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="259" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__billboard__conn__info__t_1ad384a5541ced14e6854f81ca82ed1570" prot="public" static="no" mutable="no">
+        <type><ref refid="structcy__stc__pdaltmode__billboard__am__info__t" kindref="compound">cy_stc_pdaltmode_billboard_am_info_t</ref></type>
+        <definition>cy_stc_pdaltmode_billboard_am_info_t cy_stc_pdaltmode_billboard_conn_info_t::modelist[CY_PDALTMODE_BILLBOARD_MAX_SVID]</definition>
+        <argsstring>[CY_PDALTMODE_BILLBOARD_MAX_SVID]</argsstring>
+        <name>modelist</name>
+        <briefdescription>
+<para>List of Alternate Mode information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="261" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Complete BOS descriptor information to be used by Billboard Device. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="29">
+        <label>cy_stc_pdaltmode_billboard_conn_info_t</label>
+        <link refid="structcy__stc__pdaltmode__billboard__conn__info__t"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>modelist</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>cy_stc_pdaltmode_billboard_am_info_t</label>
+        <link refid="structcy__stc__pdaltmode__billboard__am__info__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="cy_pdaltmode_billboard.h" line="255" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="254" bodyend="262"/>
+    <listofallmembers>
+      <member refid="structcy__stc__pdaltmode__billboard__conn__info__t_1ac912ac2a34ecb576d5e1d11c0ca3d2f2" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_billboard_conn_info_t</scope><name>enable</name></member>
+      <member refid="structcy__stc__pdaltmode__billboard__conn__info__t_1ad384a5541ced14e6854f81ca82ed1570" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_billboard_conn_info_t</scope><name>modelist</name></member>
+      <member refid="structcy__stc__pdaltmode__billboard__conn__info__t_1ac962f07e2a937b3620332720e8fbafed" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_billboard_conn_info_t</scope><name>nSvid</name></member>
+      <member refid="structcy__stc__pdaltmode__billboard__conn__info__t_1a0a65eddd2e5a6850deaebda7c21f6861" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_billboard_conn_info_t</scope><name>prefMode</name></member>
+      <member refid="structcy__stc__pdaltmode__billboard__conn__info__t_1a1389af456e1d1176a038ab5ac4a134ef" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_billboard_conn_info_t</scope><name>reserved</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

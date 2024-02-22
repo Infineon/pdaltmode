@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__vdm__alt__mode__manager__data__structures" kind="group">
+    <compoundname>group_pdaltmode_vdm_alt_mode_manager_data_structures</compoundname>
+    <title>Data Structures</title>
+    <innerclass refid="structcy__stc__pdaltmode__atch__tgt__info__t" prot="public">cy_stc_pdaltmode_atch_tgt_info_t</innerclass>
+    <innerclass refid="structcy__stc__pdaltmode__vdm__msg__info__t" prot="public">cy_stc_pdaltmode_vdm_msg_info_t</innerclass>
+    <innerclass refid="structcy__stc__pdaltmode__alt__mode__reg__info__t" prot="public">cy_stc_pdaltmode_alt_mode_reg_info_t</innerclass>
+    <innerclass refid="structcy__stc__pdaltmode__vdm__task__status__t" prot="public">cy_stc_pdaltmode_vdm_task_status_t</innerclass>
+    <innerclass refid="structcy__stc__pdaltmode__mngr__info__t" prot="public">cy_stc_pdaltmode_mngr_info_t</innerclass>
+    <innerclass refid="structcy__stc__pdaltmode__reg__am__t" prot="public">cy_stc_pdaltmode_reg_am_t</innerclass>
+    <innerclass refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t" prot="public">cy_stc_pdaltmode_alt_mode_mngr_status_t</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__group__pdaltmode__vdm__alt__mode__manager__data__structures_1ga7bc1698e87f8d844a2617dd5bad33aa7" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* cy_pdaltmode_bb_bos_decr_update_cbk_t) (void *context)</definition>
+        <argsstring>)(void *context)</argsstring>
+        <name>cy_pdaltmode_bb_bos_decr_update_cbk_t</name>
+        <briefdescription>
+<para>Billboard USB descriptor update function callback. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1362" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__group__pdaltmode__vdm__alt__mode__manager__data__structures_1ga05fe4c1e5050ead24faad63a56212a7a" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* cy_pdaltmode_alt_mode_cbk_t) (void *context)</definition>
+        <argsstring>)(void *context)</argsstring>
+        <name>cy_pdaltmode_alt_mode_cbk_t</name>
+        <briefdescription>
+<para>Function is used by Alt Modes manager to communicate with any of supported Alt Modes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1372" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__group__pdaltmode__vdm__alt__mode__manager__data__structures_1ga0b0ad83f1c572f23d1ccd3d4d971e07c" prot="public" static="no">
+        <type>bool(*</type>
+        <definition>typedef bool(* cy_pdaltmode_app_cbk_t) (void *context, cy_stc_pdaltmode_alt_mode_evt_t app_cmd)</definition>
+        <argsstring>)(void *context, cy_stc_pdaltmode_alt_mode_evt_t app_cmd)</argsstring>
+        <name>cy_pdaltmode_app_cbk_t</name>
+        <briefdescription>
+<para>Function is used by Alt Modes manager to run alternate mode analysis of received APP command. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>app_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Received APP command data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if APP command passed successful, false if APP command is invalid or contains unacceptable fields. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1384" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__group__pdaltmode__vdm__alt__mode__manager__data__structures_1gace96e9fc6fac208f7393f676d9ff629c" prot="public" static="no">
+        <type><ref refid="group__group__pdaltmode__alt__mode__hw__enums_1ga76fe692191168bfcd3be6cee0c268493" kindref="member">cy_en_pdaltmode_app_mux_status_t</ref>(*</type>
+        <definition>typedef cy_en_pdaltmode_app_mux_status_t(* cy_pdaltmode_mux_poll_fnc_cbk_t) (void *context)</definition>
+        <argsstring>)(void *context)</argsstring>
+        <name>cy_pdaltmode_mux_poll_fnc_cbk_t</name>
+        <briefdescription>
+<para>Function is used by app layer to call MUX polling function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>MUX polling status </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1395" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__group__pdaltmode__vdm__alt__mode__manager__data__structures_1gafbc3028d207f2ad7ee4b4e170204cecb" prot="public" static="no">
+        <type>bool(*</type>
+        <definition>cy_pdaltmode_mtl_sbu_mux_ctrl_cbk_t</definition>
+        <argsstring>)(void *context, cy_en_pdaltmode_mux_select_t cfg)</argsstring>
+        <name>cy_pdaltmode_mtl_sbu_mux_ctrl_cbk_t</name>
+        <briefdescription>
+<para>Callback used for MTL SBU MUX control based on the MUX configuration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1401" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__group__pdaltmode__vdm__alt__mode__manager__data__structures_1ga27fb6543aa4d7e4251d62242ac57a906" prot="public" static="no">
+        <type><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref> *(*</type>
+        <definition>cy_pdaltmode_reg_alt_modes_cbk_t</definition>
+        <argsstring>)(void *context, cy_stc_pdaltmode_alt_mode_reg_info_t *regInfo)</argsstring>
+        <name>cy_pdaltmode_reg_alt_modes_cbk_t</name>
+        <briefdescription>
+<para>Alternate Mode handler type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1501" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1502" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__group__pdaltmode__vdm__alt__mode__manager__data__structures_1gaf0f78ba2b33773b1ebd9801120c02d78" prot="public" static="no">
+        <type>void(*</type>
+        <definition>cy_pdaltmode_hw_cmd_cbk_t</definition>
+        <argsstring>)(void *context, uint32_t command)</argsstring>
+        <name>cy_pdaltmode_hw_cmd_cbk_t</name>
+        <briefdescription>
+<para>Callback type used for notifications about Alt Mode hardware Commands. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1510" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1510" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

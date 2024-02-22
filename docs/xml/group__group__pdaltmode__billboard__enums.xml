@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__billboard__enums" kind="group">
+    <compoundname>group_pdaltmode_billboard_enums</compoundname>
+    <title>Enumerated Types</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__group__pdaltmode__billboard__enums_1ga726a24fa891657729c89bee7a4a7e030" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_billboard_status_t</name>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga726a24fa891657729c89bee7a4a7e030a4d7fda7694b1c2e54b7bac1e553d6495" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_STAT_SUCCESS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Success status. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga726a24fa891657729c89bee7a4a7e030ab2399083a5fa650e2f51cb1051299d9f" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_STAT_FAILURE</name>
+          <briefdescription>
+<para>Failure status. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga726a24fa891657729c89bee7a4a7e030ae2b7ae38c1fb5e8b0ff90fb3a1caede8" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_STAT_BUSY</name>
+          <briefdescription>
+<para>Status code indicating Billboard is busy. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga726a24fa891657729c89bee7a4a7e030a0805ba54ef6a8f330b6678c7d3d25ac9" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_STAT_NOT_READY</name>
+          <briefdescription>
+<para>Billboard not ready. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga726a24fa891657729c89bee7a4a7e030a7617ad121ffb81d5889ee6188c88a8d9" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_STAT_INVALID_ARGUMENT</name>
+          <briefdescription>
+<para>Invalid parameter. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga726a24fa891657729c89bee7a4a7e030ad97fcae31185fcaf66b7413b43b13140" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_STAT_NOT_SUPPORTED</name>
+          <briefdescription>
+<para>Operation not supported. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>USB Billboard status enumeration. </para>        </briefdescription>
+        <detaileddescription>
+<para>Enumeration for the Billboard status codes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="166" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="165" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__billboard__enums_1gaa7aa411930bac49da8f731ab6c6f9dcb" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_billboard_cause_t</name>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1ggaa7aa411930bac49da8f731ab6c6f9dcba63861c9943fb38108dbc389ad0dee279" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_CAUSE_AME_TIMEOUT</name>
+          <briefdescription>
+<para>AME timeout event. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1ggaa7aa411930bac49da8f731ab6c6f9dcba1796dae58867f292b92d9fc9b62e2698" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_CAUSE_AME_SUCCESS</name>
+          <briefdescription>
+<para>Successful alternate mode entry. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1ggaa7aa411930bac49da8f731ab6c6f9dcba41f27c169651e6d149a051bae2ecc97c" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_CAUSE_AME_FAILURE</name>
+          <briefdescription>
+<para>Failed alternate mode entry. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1ggaa7aa411930bac49da8f731ab6c6f9dcbad8ca9133584c0cc33c65ae256b82c2ab" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_CAUSE_PWR_FAILURE</name>
+          <briefdescription>
+<para>Failed to get sufficient power. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Cause for USB Billboard enumeration. </para>        </briefdescription>
+        <detaileddescription>
+<para>Enumeration lists all the supported causes for Billboard enumeration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="182" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="181" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__billboard__enums_1ga987546b8821498ba4a7b616b49206ec0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_billboard_alt_mode_status_t</name>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga987546b8821498ba4a7b616b49206ec0a2b89426596d4e33634e22b7411c87af0" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE_STAT_ERROR</name>
+          <briefdescription>
+<para>Undefined error or Alternate Mode does not exist. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga987546b8821498ba4a7b616b49206ec0a83a8ea80d0d8c9d8db5706db2a252aa1" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE_STAT_NOT_ATTEMPTED</name>
+          <briefdescription>
+<para>Alternate Mode entry not attempted. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga987546b8821498ba4a7b616b49206ec0ab2c0aae7a75d041c6cbce466d4774ed9" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE_STAT_UNSUCCESSFUL</name>
+          <briefdescription>
+<para>Alternate Mode entry attempted but failed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga987546b8821498ba4a7b616b49206ec0a457c871b91128e88a2362784843e18b5" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE_STAT_SUCCESSFUL</name>
+          <briefdescription>
+<para>Alternate Mode entry succeeded. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>USB Billboard Alternate Mode status. </para>        </briefdescription>
+        <detaileddescription>
+<para>Enumeration lists the different status values as defined by the billboard class specification. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="196" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="195" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__billboard__enums_1ga883118f43f8e39a3e005b695cd99af8f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_billboard_usb_string_index_t</name>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8faeeb29b025b17de1139e79c16e8d68fa9" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_LANG_ID_STRING_INDEX</name>
+          <briefdescription>
+<para>Language ID index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fab8c66b8c9adad20c4e726c210aeb9721" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_MFG_STRING_INDEX</name>
+          <briefdescription>
+<para>Manufacturer string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa25567d786efa8b54c4707e95ff1c215b" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_PROD_STRING_INDEX</name>
+          <briefdescription>
+<para>Product string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa5c9dac9872a4c320d56617b7264e169b" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_SERIAL_STRING_INDEX</name>
+          <briefdescription>
+<para>Serial string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa16576fff29f9d5c8a8e8781eb30c1f63" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_CONFIG_STRING_INDEX</name>
+          <briefdescription>
+<para>Configuration string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8facf0d4de7cdda6fce9e5db7b2a8edaf09" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_BB_INF_STRING_INDEX</name>
+          <briefdescription>
+<para>Billboard interface string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa34c3a36b1878f6a65429bfd7b7c64365" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_HID_INF_STRING_INDEX</name>
+          <briefdescription>
+<para>HID interface string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa9adf52234b7615e84c65c426a839e3ad" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_URL_STRING_INDEX</name>
+          <briefdescription>
+<para>Additional info URL string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa4980bb05817cb6fa231a840135ce5351" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE1_STRING_INDEX</name>
+          <briefdescription>
+<para>Alternate Mode 1 string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa131b580e27addb85dd3cb02bd2a5e867" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE2_STRING_INDEX</name>
+          <briefdescription>
+<para>Alternate Mode 2 string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa0310d8bb0cd64e2f86dcc6cb50123235" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE3_STRING_INDEX</name>
+          <briefdescription>
+<para>Alternate Mode 3 string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa8ba07b30f473185fffabdf74b840188e" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE4_STRING_INDEX</name>
+          <briefdescription>
+<para>Alternate Mode 4 string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa2fd374cf9be11d5765dacc6430837bcc" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE5_STRING_INDEX</name>
+          <briefdescription>
+<para>Alternate Mode 5 string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa90ae4c4670c7539f2372fa1d738552aa" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE6_STRING_INDEX</name>
+          <briefdescription>
+<para>Alternate Mode 6 string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fabf2a1cf110aaa22b68d94fc3c554a0ab" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE7_STRING_INDEX</name>
+          <briefdescription>
+<para>Alternate Mode 7 string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa6287f65f7dbe174fbb14055879a8e9e8" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE8_STRING_INDEX</name>
+          <briefdescription>
+<para>Alternate Mode 8 string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>USB Billboard string descriptor indices. </para>        </briefdescription>
+        <detaileddescription>
+<para>Enumeration lists the different string indices used in the Billboard implementation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="210" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="209" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__billboard__enums_1ga59a327e5d04a376a9385c0ab738edd8e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_bb_type_t</name>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga59a327e5d04a376a9385c0ab738edd8eaea7da96fd9da7a42ca969c56c2391f3c" prot="public">
+          <name>CY_PDALTMODE_BB_TYPE_NONE</name>
+          <briefdescription>
+<para>No Billboard device. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga59a327e5d04a376a9385c0ab738edd8ea4a9a1a5173230c0a5dd36d0dc1930c38" prot="public">
+          <name>CY_PDALTMODE_BB_TYPE_EXTERNAL</name>
+          <briefdescription>
+<para>External Billboard device. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga59a327e5d04a376a9385c0ab738edd8ea7ab3100c6d470d828e9cbf85528699db" prot="public">
+          <name>CY_PDALTMODE_BB_TYPE_INTERNAL</name>
+          <briefdescription>
+<para>Device supports internal USB module to implement Billboard. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga59a327e5d04a376a9385c0ab738edd8ea5b25781da171f32151043fb15f9f2423" prot="public">
+          <name>CY_PDALTMODE_BB_TYPE_EXT_CONFIGURABLE</name>
+          <briefdescription>
+<para>External Billboard device which supports configuration through PD controller. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga59a327e5d04a376a9385c0ab738edd8ea753d8aea863383ef7772dff1f38d5d4f" prot="public">
+          <name>CY_PDALTMODE_BB_TYPE_EXT_CFG_HUB</name>
+          <briefdescription>
+<para>External Billboard device behind USB hub. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga59a327e5d04a376a9385c0ab738edd8eaa850602226184c01ad9aff4900886f44" prot="public">
+          <name>CY_PDALTMODE_BB_TYPE_EXT_HX3PD</name>
+          <briefdescription>
+<para>Billboard/DMC integrated in HX3PD hub. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Billboard implementation model. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1006" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1005" bodyend="1013"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__billboard__enums_1gade0b6655496f8115372096808f92ae93" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_bb_state_t</name>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1ggade0b6655496f8115372096808f92ae93a19e6f67812695bd9e828f043f055e8be" prot="public">
+          <name>CY_PDALTMODE_BB_STATE_DEINITED</name>
+          <briefdescription>
+<para>Module is not initialized. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1ggade0b6655496f8115372096808f92ae93a98ef5566f8fb27b1ce34c67e6545e571" prot="public">
+          <name>CY_PDALTMODE_BB_STATE_DISABLED</name>
+          <briefdescription>
+<para>Module is initialized but not enabled. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1ggade0b6655496f8115372096808f92ae93a7f18704bd9969f9f1fcec35d9392c8fb" prot="public">
+          <name>CY_PDALTMODE_BB_STATE_BILLBOARD</name>
+          <briefdescription>
+<para>Module is active with Billboard enumeration. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1ggade0b6655496f8115372096808f92ae93a90929c2b4a1af57224efe055683bccf6" prot="public">
+          <name>CY_PDALTMODE_BB_STATE_LOCKED</name>
+          <briefdescription>
+<para>Module is active with additional functionality. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1ggade0b6655496f8115372096808f92ae93a76aa1e618a8c0638209a2a25c56316ff" prot="public">
+          <name>CY_PDALTMODE_BB_STATE_FLASHING</name>
+          <briefdescription>
+<para>Module is active with flashing mode enumeration. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Billboard module states. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1020" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1019" bodyend="1027"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

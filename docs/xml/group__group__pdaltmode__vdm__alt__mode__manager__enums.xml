@@ -1,0 +1,779 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__vdm__alt__mode__manager__enums" kind="group">
+    <compoundname>group_pdaltmode_vdm_alt_mode_manager_enums</compoundname>
+    <title>Enumerated Types</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gaa31ccb72f7bd9114cb70754d774959b3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_vdm_vconn_rqt_state_t</name>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggaa31ccb72f7bd9114cb70754d774959b3a80d5724dcb75f4e86ddb2fe2c72b43b9" prot="public">
+          <name>CY_PDALTMODE_VCONN_RQT_INACTIVE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>No VConn request active. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggaa31ccb72f7bd9114cb70754d774959b3ae721466cb519275856f67c47ce698fc4" prot="public">
+          <name>CY_PDALTMODE_VCONN_RQT_PENDING</name>
+          <briefdescription>
+<para>VConn swap and cable discovery request is pending. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggaa31ccb72f7bd9114cb70754d774959b3a5074aa2a2f0d7b9f1ded34b918752d87" prot="public">
+          <name>CY_PDALTMODE_VCONN_RQT_ONGOING</name>
+          <briefdescription>
+<para>VDM state machine waiting for VConn Swap and cable discovery completion. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggaa31ccb72f7bd9114cb70754d774959b3a57e829a97291052df3c78d859b9cd38d" prot="public">
+          <name>CY_PDALTMODE_VCONN_RQT_FAILED</name>
+          <briefdescription>
+<para>VConn Swap request rejected by port partner. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration lists the VDM state with respect to VConn Swap and cable discovery. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="689" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="688" bodyend="694"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga7b7a03326c0c9a60ffefc96bf80746ed" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_mngr_state_t</name>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga7b7a03326c0c9a60ffefc96bf80746edafc56d58d0301e954ab5207eaa0ddf1cc" prot="public">
+          <name>CY_PDALTMODE_MNGR_STATE_DISC_MODE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Alt Modes manager discovery mode state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga7b7a03326c0c9a60ffefc96bf80746eda80fc1970e0efc0fb951acbc2e2b90ced" prot="public">
+          <name>CY_PDALTMODE_MNGR_STATE_PROCESS</name>
+          <briefdescription>
+<para>Alt Modes manager Alternate Modes processing state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration holds all possible Alt Modes manager states when DFP. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="701" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="700" bodyend="704"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gae2e313c6b3f82ed911cb6abd429b65a0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_state_t</name>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggae2e313c6b3f82ed911cb6abd429b65a0a3deb639b2460e8d71d3aec6aca39ae70" prot="public">
+          <name>CY_PDALTMODE_STATE_DISABLE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>State when Alternate Mode functionality is disabled. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggae2e313c6b3f82ed911cb6abd429b65a0af065a70e2b10edcf899dacf20fe5b384" prot="public">
+          <name>CY_PDALTMODE_STATE_IDLE</name>
+          <briefdescription>
+<para>State when Alternate Mode is idle. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggae2e313c6b3f82ed911cb6abd429b65a0a912b90444de583fa5134ac50f1bb576a" prot="public">
+          <name>CY_PDALTMODE_STATE_INIT</name>
+          <briefdescription>
+<para>State when Alternate Mode initiate its functionality. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggae2e313c6b3f82ed911cb6abd429b65a0aca260007e2b0407be9d067a96b429c46" prot="public">
+          <name>CY_PDALTMODE_STATE_SEND</name>
+          <briefdescription>
+<para>State when Alternate Mode needs to send VDM message. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggae2e313c6b3f82ed911cb6abd429b65a0a7292b9248bc2ed1975ece0a00d49daf0" prot="public">
+          <name>CY_PDALTMODE_STATE_WAIT_FOR_RESP</name>
+          <briefdescription>
+<para>State while Alternate Mode wait for VDM response. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggae2e313c6b3f82ed911cb6abd429b65a0a4cca413c0d1577b0f518087372ad34c0" prot="public">
+          <name>CY_PDALTMODE_STATE_PAUSE</name>
+          <briefdescription>
+<para>State while Alternate Mode is on pause and waiting for some trigger. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggae2e313c6b3f82ed911cb6abd429b65a0ad3dbf861525bec4d91091c652cab26e0" prot="public">
+          <name>CY_PDALTMODE_STATE_FAIL</name>
+          <briefdescription>
+<para>State when Alternate Mode VDM response fails. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggae2e313c6b3f82ed911cb6abd429b65a0a2abd94c16182cd2087085a69f5228efb" prot="public">
+          <name>CY_PDALTMODE_STATE_RUN</name>
+          <briefdescription>
+<para>State when Alternate Mode need to be running. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggae2e313c6b3f82ed911cb6abd429b65a0ac54dc858491c2f855d802d97d02df0ff" prot="public">
+          <name>CY_PDALTMODE_STATE_EXIT</name>
+          <briefdescription>
+<para>State when Alternate Mode exits and resets all related variables. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration holds all possible states of each Alt Mode which is handled by Alt Modes manager. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="711" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="710" bodyend="721"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga9a0d2881cd562cf3f08968d5d5c0e4e3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_app_evt_t</name>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga9a0d2881cd562cf3f08968d5d5c0e4e3a550735c59b306452b7c8f1f271739c4c" prot="public">
+          <name>CY_PDALTMODE_NO_EVT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Empty event. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga9a0d2881cd562cf3f08968d5d5c0e4e3aededd975c73f11e5aa46087b47516442" prot="public">
+          <name>CY_PDALTMODE_EVT_SVID_NOT_FOUND</name>
+          <briefdescription>
+<para>Sends to EC if UFP does not support any SVID. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga9a0d2881cd562cf3f08968d5d5c0e4e3a903ab8c353212f028575271383ba9b0b" prot="public">
+          <name>CY_PDALTMODE_EVT_ALT_MODE_ENTERED</name>
+          <briefdescription>
+<para>Alternate Mode entered. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga9a0d2881cd562cf3f08968d5d5c0e4e3a58fad3f70e242be2da3b28adc081e61a" prot="public">
+          <name>CY_PDALTMODE_EVT_ALT_MODE_EXITED</name>
+          <briefdescription>
+<para>Alternate Mode exited. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga9a0d2881cd562cf3f08968d5d5c0e4e3a441c026f0d554e75e16e9bf9e439e399" prot="public">
+          <name>CY_PDALTMODE_EVT_DISC_FINISHED</name>
+          <briefdescription>
+<para>Discovery process was finished. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga9a0d2881cd562cf3f08968d5d5c0e4e3a326231a58815f6e9bfeb1ec01f35c986" prot="public">
+          <name>CY_PDALTMODE_EVT_SVID_NOT_SUPP</name>
+          <briefdescription>
+<para>CCGx does not support received SVID. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga9a0d2881cd562cf3f08968d5d5c0e4e3a1ae5019047960374c545aecc47e0b29d" prot="public">
+          <name>CY_PDALTMODE_EVT_SVID_SUPP</name>
+          <briefdescription>
+<para>CCGx supports received SVID. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga9a0d2881cd562cf3f08968d5d5c0e4e3ad3df826570f3d2764f9622447d130773" prot="public">
+          <name>CY_PDALTMODE_EVT_ALT_MODE_SUPP</name>
+          <briefdescription>
+<para>CCGx supports Alternate Mode. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga9a0d2881cd562cf3f08968d5d5c0e4e3a76375ed3e76c020ace5aa5fb54dd6e1f" prot="public">
+          <name>CY_PDALTMODE_EVT_SOP_RESP_FAILED</name>
+          <briefdescription>
+<para>UFP VDM response failed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga9a0d2881cd562cf3f08968d5d5c0e4e3a9556c267a80e97c70e066ee0a85b3065" prot="public">
+          <name>CY_PDALTMODE_EVT_CBL_RESP_FAILED</name>
+          <briefdescription>
+<para>Cable response failed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga9a0d2881cd562cf3f08968d5d5c0e4e3ae588be08ea4f81bed02a6623466c08f1" prot="public">
+          <name>CY_PDALTMODE_EVT_CBL_NOT_SUPP_ALT_MODE</name>
+          <briefdescription>
+<para>Cable capabilities could not provide Alternate Mode handling. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga9a0d2881cd562cf3f08968d5d5c0e4e3ae657e5feb4b9197f0a03dfdd238dc782" prot="public">
+          <name>CY_PDALTMODE_EVT_NOT_SUPP_PARTNER_CAP</name>
+          <briefdescription>
+<para>CCGx and UFP capabilities not consistent. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga9a0d2881cd562cf3f08968d5d5c0e4e3a7fb4f3cad87d8c2ffe6c39fd95a93727" prot="public">
+          <name>CY_PDALTMODE_EVT_DATA_EVT</name>
+          <briefdescription>
+<para>Specific Alternate Mode event with data. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga9a0d2881cd562cf3f08968d5d5c0e4e3acb3808a25d185c818f49437df85914fe" prot="public">
+          <name>CY_PDALTMODE_EVT_SUPP_ALT_MODE_CHNG</name>
+          <briefdescription>
+<para>Same functionality as ALT_MODE_SUPP; new one for UCSI. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration holds all possible application events related to Alt Modes handling. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="728" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="727" bodyend="743"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_vdm_task_t</name>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga399c1777f494368601cad31a40afca9cafdaff6d78ac13c01c80024f4d1c0d1f1" prot="public">
+          <name>CY_PDALTMODE_VDM_TASK_WAIT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>DFP manager wait task while waiting for VDM response. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga399c1777f494368601cad31a40afca9cad89c7954e0be8fdb08211347ba261925" prot="public">
+          <name>CY_PDALTMODE_VDM_TASK_INIT</name>
+          <briefdescription>
+<para>Task responsible for initializing of VDM manager. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga399c1777f494368601cad31a40afca9ca03c528225df3dee5ac1e98b1e77a1ec9" prot="public">
+          <name>CY_PDALTMODE_VDM_TASK_DISC_ID</name>
+          <briefdescription>
+<para>Task responsible for VDM Discovery ID flow. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga399c1777f494368601cad31a40afca9ca72edaaa68587cf25316c845237d32cef" prot="public">
+          <name>CY_PDALTMODE_VDM_TASK_DISC_SVID</name>
+          <briefdescription>
+<para>Task responsible for VDM Discovery SVID flow. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga399c1777f494368601cad31a40afca9ca26cf41d32bf19ca82712858c4e3b2038" prot="public">
+          <name>CY_PDALTMODE_VDM_TASK_REG_ATCH_TGT_INFO</name>
+          <briefdescription>
+<para>Task responsible for registering of Discovery result information in Alt Mode manager. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga399c1777f494368601cad31a40afca9ca519562b24f860ad1d56c945d74f4a792" prot="public">
+          <name>CY_PDALTMODE_VDM_TASK_USB4_TBT</name>
+          <briefdescription>
+<para>Task handles the USB4 data discovery and entry. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga399c1777f494368601cad31a40afca9ca7eff1b48be7cbe38e7135ce320e01759" prot="public">
+          <name>CY_PDALTMODE_VDM_TASK_EXIT</name>
+          <briefdescription>
+<para>Task deinits VDM task manager. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga399c1777f494368601cad31a40afca9ca975ad4fb2e6c7feb0cb1127be8325e3c" prot="public">
+          <name>CY_PDALTMODE_VDM_TASK_SEND_MSG</name>
+          <briefdescription>
+<para>Task responsible for forming and sending VDM message. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga399c1777f494368601cad31a40afca9cadc894f9194c516d6ce6410f754bf1d8c" prot="public">
+          <name>CY_PDALTMODE_VDM_TASK_ALT_MODE</name>
+          <briefdescription>
+<para>Task responsible for running of Alt Mode manager. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration lists the various VDM manager tasks to handle VDMs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="750" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="749" bodyend="761"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga53976be265d41463919b3ea93da4cf30" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_vdm_evt_t</name>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga53976be265d41463919b3ea93da4cf30abd914a67376582616bd3cd1949b105ca" prot="public">
+          <name>CY_PDALTMODE_VDM_EVT_RUN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Event responsible for running any of DFP VDM manager task. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga53976be265d41463919b3ea93da4cf30a981de98f344b91aee860d9ae494d0444" prot="public">
+          <name>CY_PDALTMODE_VDM_EVT_EVAL</name>
+          <briefdescription>
+<para>Event responsible for evaluating VDM response. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga53976be265d41463919b3ea93da4cf30a4b471a5f9cc7707f702e5d2bf6848af1" prot="public">
+          <name>CY_PDALTMODE_VDM_EVT_FAIL</name>
+          <briefdescription>
+<para>Event notifies task manager task if VDM response fails. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga53976be265d41463919b3ea93da4cf30a80a5ba7f033ccc4def5f66ddb7e79398" prot="public">
+          <name>CY_PDALTMODE_VDM_EVT_EXIT</name>
+          <briefdescription>
+<para>Event runs exiting from VDM task manager task. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration lists the various VDM manager events to handle VDMs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="768" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="767" bodyend="773"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gaa7da3e23558bed3d229bdad5c90401a1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_cable_dp_reset_state_t</name>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggaa7da3e23558bed3d229bdad5c90401a1a7c86f482fd163d4cd731179fd325725f" prot="public">
+          <name>CY_PDALTMODE_CABLE_DP_RESET_IDLE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>No Cable (SOP&apos;&apos;) reset state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggaa7da3e23558bed3d229bdad5c90401a1a17ac0ad683cafdf10364fef4a64f4a67" prot="public">
+          <name>CY_PDALTMODE_CABLE_DP_RESET_WAIT</name>
+          <briefdescription>
+<para>Waiting for response from cable (SOP&apos;&apos;) soft reset. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggaa7da3e23558bed3d229bdad5c90401a1ab7dc624daffc9a03c4d9cb9995716fe4" prot="public">
+          <name>CY_PDALTMODE_CABLE_DP_RESET_RETRY</name>
+          <briefdescription>
+<para>Cable soft reset (SOP&apos;&apos;) to be attempted. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggaa7da3e23558bed3d229bdad5c90401a1aad77bde21fa638472cf2590eead3d21b" prot="public">
+          <name>CY_PDALTMODE_CABLE_DP_RESET_DONE</name>
+          <briefdescription>
+<para>Cable soft reset (SOP&apos;&apos;) has been completed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggaa7da3e23558bed3d229bdad5c90401a1ac7731bfe31a9ba5c237e27d08782678a" prot="public">
+          <name>CY_PDALTMODE_CABLE_DP_RESET_SEND_SPRIME</name>
+          <briefdescription>
+<para>Cable soft reset (SOP&apos;&apos;) has been completed and send SOP Prime msg again. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration for tracking current cable (SOP&apos;&apos;) soft reset state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="779" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="779" bodyend="785"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gaf7ff78e32e7f6d250f3bf336031ae6f3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_app_cmd_t</name>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggaf7ff78e32e7f6d250f3bf336031ae6f3a8a762b6b71a04773fde9d3b99919cf29" prot="public">
+          <name>CY_PDALTMODE_NO_CMD</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Empty command. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggaf7ff78e32e7f6d250f3bf336031ae6f3a75b98a7d8d104caab40fadc576fa052f" prot="public">
+          <name>CY_PDALTMODE_SET_TRIGGER_MASK</name>
+          <briefdescription>
+<para>Sets trigger mask to prevent auto-entering of the selected Alternate Modes. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggaf7ff78e32e7f6d250f3bf336031ae6f3ac617efc1cac961195bdc7517bbd40a17" prot="public">
+          <name>CY_PDALTMODE_CMD_ENTER</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Enter to selected Alternate Mode. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggaf7ff78e32e7f6d250f3bf336031ae6f3a70d47fbf2ac753ff90a6c456ff570ce0" prot="public">
+          <name>CY_PDALTMODE_CMD_EXIT</name>
+          <briefdescription>
+<para>Exit from selected Alternate Mode. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggaf7ff78e32e7f6d250f3bf336031ae6f3a4aa465abd5b0ca8b303400bae067ae4a" prot="public">
+          <name>CY_PDALTMODE_CMD_SPEC</name>
+          <briefdescription>
+<para>Specific alternate EC mode command with data. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration holds all possible APP command related to Alt modes handling. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="792" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="791" bodyend="802"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga8ad0f571a865b8fb10fcdc4ea756a05b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_fail_status_t</name>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ad0f571a865b8fb10fcdc4ea756a05ba5f1734ba137be9f87ebcaa93e570982b" prot="public">
+          <name>CY_PDALTMODE_VDM_BUSY</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Target is BUSY. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ad0f571a865b8fb10fcdc4ea756a05ba917267ce872e3c1ad328ca5cfac4f00c" prot="public">
+          <name>CY_PDALTMODE_VDM_GOOD_CRC_NOT_RSVD</name>
+          <briefdescription>
+<para>Good CRC wasn&apos;t received. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ad0f571a865b8fb10fcdc4ea756a05ba7d3269025cf66fefd05cb3a94885b18c" prot="public">
+          <name>CY_PDALTMODE_VDM_TIMEOUT</name>
+          <briefdescription>
+<para>No response or corrupted packet. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ad0f571a865b8fb10fcdc4ea756a05ba54bc70e0bf6670280ae4e432cfb90090" prot="public">
+          <name>CY_PDALTMODE_VDM_NACK</name>
+          <briefdescription>
+<para>Sent VDM NACKed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum of the VDM failure response status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="809" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="808" bodyend="814"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga8ce268202ee29df67f500d14a1273881" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_timer_id_t</name>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881ab74dc787f73391a7e33cc491d267440b" prot="public">
+          <name>CY_PDALTMODE_PORT0_TIMERS_START_ID</name>
+          <initializer>= CY_PDUTILS_TIMER_ALT_MODE_PORT0_START_ID</initializer>
+          <briefdescription>
+<para>0x500: Starts the index for USB PD Alt Mode timers </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881acd21826a5df3e521f158ce4b8d818c5d" prot="public">
+          <name>CY_PDALTMODE_RIDGE_INIT_HPD_DEQUEUE_TIMER_ID</name>
+          <briefdescription>
+<para>0x501: Timer for initiating virtual HPD dequeue </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881acfd5bbda9072ccd9b9d860d5348de91e" prot="public">
+          <name>CY_PDALTMODE_INITIATE_SEND_IRQ_CLEAR_ACK</name>
+          <briefdescription>
+<para>0x502: Timer used to initiate Virtual HPD IRQ CLEAR ACK to the Thunderbolt controller </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a6c06cb3e1192e00517e4d22733e57d41" prot="public">
+          <name>CY_PDALTMODE_SEND_HARD_RESET_UPON_USB3_HOST_CONNECTION_TIMER</name>
+          <briefdescription>
+<para>0x503: Timer used to send Hard Reset upon USB3 Host connected </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881acd3605ac4829a9cec6ddc062d96ee81e" prot="public">
+          <name>CY_PDALTMODE_RESTART_DS_PORT_USB3_HOST_CONNECTION_TIMER</name>
+          <briefdescription>
+<para>0x504: Timer used to restart DS port </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a8c491f39b49b0969e5bd1735e153e526" prot="public">
+          <name>CY_PDALTMODE_DELAY_US_PORT_USB_CONNECTION_BYAMETIMOUT_TIMER</name>
+          <briefdescription>
+<para>0x505: Timer used to delay US port SUB connection by AME timer </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881af2e9c446b60d97dfcd759cbbe98c82c5" prot="public">
+          <name>CY_PDALTMODE_TIMER_UPDATE_RIDGE_STATUS_AFTER_HARD_RESET</name>
+          <briefdescription>
+<para>0x506: Timer used to update Ridge status after Hard Reset </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a3217b9fd0535e8f695223030b6f5ef9f" prot="public">
+          <name>CY_PDALTMODE_GR_MUX_DELAY_TIMER</name>
+          <briefdescription>
+<para>0x507: Goshen Ridge MUX delay timer </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881aa679f992930fb796fc9fb4ea4a198ef6" prot="public">
+          <name>CY_PDALTMODE_SEND_DATA_RESET_FROM_RIDGE_TIMER</name>
+          <briefdescription>
+<para>0x508: Send Data Reset from Ridge controller timer </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a8ad98a5cea80de0090943cb765f098cf" prot="public">
+          <name>CY_PDALTMODE_ALT_MODE_CBK_TIMER</name>
+          <briefdescription>
+<para>0x509: Alt Mode callback timer </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a325b864e6d06d7a6088f14d52f325608" prot="public">
+          <name>CY_PDALTMODE_ALT_MODE_ATT_CBK_TIMER</name>
+          <briefdescription>
+<para>0x50A: Alt Mode Attention callback timer </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a2dd03a68a937c2d853502ab0b8dee6c2" prot="public">
+          <name>CY_PDALTMODE_TBT_MODE_EXIT_CHECK_TIMER</name>
+          <briefdescription>
+<para>0x50B: Timer to exit TBT Alt Mode after receiving exit Attention </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a7b8c94a1a704958397eace05c9325b0c" prot="public">
+          <name>CY_PDALTMODE_ICL_SOC_TIMEOUT_TIMER</name>
+          <briefdescription>
+<para>0x50C: SoC communication ACK timeout timer </para>          </briefdescription>
+          <detaileddescription>
+<para>0x50D: Timer used to delay retry of VDMs due to BUSY responses or errors </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a49535375901fa7e1420cd491a8cf4b3e" prot="public">
+          <name>CY_PDALTMODE_VDM_BUSY_TIMER</name>
+          <briefdescription>
+<para>0x50E: Timer used to implement AME timeout </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881af1f0c557389360e6b940a29ba6b69a9a" prot="public">
+          <name>CY_PDALTMODE_AME_TIMEOUT_TIMER</name>
+          <briefdescription>
+<para>0x50F: Timer used to delay HPD events </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a4355bc9b2fd99f14d5cde8e06c277aad" prot="public">
+          <name>CY_PDALTMODE_HPD_DELAY_TIMER</name>
+          <briefdescription>
+<para>0x510: Timer used to delay VDM response </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881ae4011f04142b5a9b9cfcec80dcf0a93c" prot="public">
+          <name>CY_PDALTMODE_MUX_DELAY_TIMER</name>
+          <briefdescription>
+<para>0x511: Timer used for MUX status </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881ae4f50104a124c127d3903f7973685b00" prot="public">
+          <name>CY_PDALTMODE_MUX_POLL_TIMER</name>
+          <briefdescription>
+<para>0x512: Timer to postpone Hard Reset in case MUX update is in progress </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a62c555b171401cd7ab3e26eae1054368" prot="public">
+          <name>CY_PDALTMODE_ICL_HARD_RST_TIMER</name>
+          <briefdescription>
+<para>0x513: Timer used for HPD DP2.1 handling </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a04f431326ab93f32f3dd6556a3f1b2e3" prot="public">
+          <name>CY_PDALTMODE_HPD_WAIT_TIMER</name>
+          <briefdescription>
+<para>0x514: Timer used to implement USB4 timeout </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881ac2076f721b53b390f8a9d366da821476" prot="public">
+          <name>CY_PDALTMODE_USB4_TIMEOUT_TIMER</name>
+          <briefdescription>
+<para>0x515: Timer is used for periodic read of AMD APU status </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a2a295d24ec72291afdf85a91020d65fb" prot="public">
+          <name>CY_PDALTMODE_AMD_BUSY_TIMER</name>
+          <briefdescription>
+<para>0x516: Timer is used for periodic read of AMD Retimer status </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a3ac9acd7b1bfc162d321fe00625df002" prot="public">
+          <name>CY_PDALTMODE_AMD_RETIMER_BUSY_TIMER</name>
+          <briefdescription>
+<para>0x517: Timer is used to unblock Type-C state machine in case APU did not respond for some time </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a02ba9f19bab6970b2a9ec37469843d58" prot="public">
+          <name>CY_PDALTMODE_AMD_INT_BUSY_TIMER</name>
+          <briefdescription>
+<para>0x518: Timer is used during AMD Retimer Hard Reset </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a5af729442a185be8992384bbadf17c9d" prot="public">
+          <name>CY_PDALTMODE_AMD_RETIMER_WAIT_TIMER</name>
+          <briefdescription>
+<para>0x519: Timer is used to retry reading the Debug register from the Retimer </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881aa9eafbf8e12b1a9009d48ce0f56c249a" prot="public">
+          <name>CY_PDALTMODE_BB_DBR_DEBUG_POLL_TIMER</name>
+          <briefdescription>
+<para>0x51A: Timer is used to delay the Retimer to start accepting the state change requests </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a1a5fc77ac7c201067a4e22124d65f6d5" prot="public">
+          <name>CY_PDALTMODE_BB_DBR_WAIT_TIMER</name>
+          <briefdescription>
+<para>0x51B: Timer is used to delay Retimer debug mode register write </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a9ba4fe3079877033ccfff86716bc7044" prot="public">
+          <name>CY_PDALTMODE_BB_DBR_DEBUG_WRITE_TIMER</name>
+          <briefdescription>
+<para>0x51C: Timer used for Retimer handling </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881ad6b5c74a1b667dce3b2f533e51cfc22c" prot="public">
+          <name>CY_PDALTMODE_RETIMER_BUSY_TIMER</name>
+          <briefdescription>
+<para>0x51D: Timer is used during Retimer Hard reset </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881add77737d5b51e096869a5f45441c2360" prot="public">
+          <name>CY_PDALTMODE_RETIMER_WAIT_TIMER</name>
+          <briefdescription>
+<para>0x51E: Timer to let VSYS turn on change to stabilize </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a4fd25fb5ba48739bde4db79556372d26" prot="public">
+          <name>CY_PDALTMODE_ICL_VSYS_STABLE_TIMER</name>
+          <briefdescription>
+<para>0x51F: Timer is used to check ICL mux state changes </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a7d7fa17795fc8418f2479aee31d5d22a" prot="public">
+          <name>CY_PDALTMODE_ICL_MUX_STATE_CHANGE_TIMER</name>
+          <briefdescription>
+<para>0x520: Timer is used to check Retimer FW Exit state changes </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881ae5206439261453bc3a07c9d4686d0162" prot="public">
+          <name>CY_PDALTMODE_ICL_RFU_EXIT_TIMER</name>
+          <briefdescription>
+<para>0x521: Timer is used for comm delay in the RFU entry sequence </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a7d64912cd7042f654c187c2d69d81304" prot="public">
+          <name>CY_PDALTMODE_ICL_ALT_MODE_EXIT_TIMER</name>
+          <briefdescription>
+<para>0x522: Timer is used debounce barrel state change </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881aebbc1696503532d945618a8c4ede5f66" prot="public">
+          <name>CY_PDALTMODE_ICL_ADP_DETECT_DEB_TIMER</name>
+          <briefdescription>
+<para>0x600: Starts the index for USB PD Alt Mode timers </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a1467a96d82f52da35c0ebb7c1a209653" prot="public">
+          <name>CY_PDALTMODE_PORT1_TIMERS_START_ID</name>
+          <initializer>= CY_PDUTILS_TIMER_ALT_MODE_PORT1_START_ID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List of soft timer IDs defined for PD Alt Mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_timer_id.h" line="52" column="1" bodyfile="cy_pdaltmode_timer_id.h" bodystart="52" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

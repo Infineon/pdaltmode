@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcy__stc__pdaltmode__mux__cfg__t_1_1_m_u_x___c_o_n_f_i_g" kind="struct" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_mux_cfg_t::MUX_CONFIG</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__mux__cfg__t_1_1_m_u_x___c_o_n_f_i_g_1ae857b29edf4dd23832db81893af22279" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_mux_cfg_t::MUX_CONFIG::polarity</definition>
+        <argsstring></argsstring>
+        <name>polarity</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>MUX polarity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1246" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__mux__cfg__t_1_1_m_u_x___c_o_n_f_i_g_1a20793b9bb31a554f6d335d1ab8a18347" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_mux_cfg_t::MUX_CONFIG::cfg</definition>
+        <argsstring></argsstring>
+        <name>cfg</name>
+        <bitfield> 7</bitfield>
+        <briefdescription>
+<para>MUX configuration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1247" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1247" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct containing AMD APU related MUX configuration. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cy_pdaltmode_defines.h" line="1245" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1244" bodyend="1248"/>
+    <listofallmembers>
+      <member refid="structcy__stc__pdaltmode__mux__cfg__t_1_1_m_u_x___c_o_n_f_i_g_1a20793b9bb31a554f6d335d1ab8a18347" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_mux_cfg_t::MUX_CONFIG</scope><name>cfg</name></member>
+      <member refid="structcy__stc__pdaltmode__mux__cfg__t_1_1_m_u_x___c_o_n_f_i_g_1ae857b29edf4dd23832db81893af22279" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_mux_cfg_t::MUX_CONFIG</scope><name>polarity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

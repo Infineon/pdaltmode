@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcy__stc__pdaltmode__vdm__task__status__t" kind="struct" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_vdm_task_status_t</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1acb352c125c763362864a110417fee400" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t cy_stc_pdaltmode_vdm_task_status_t::vdmTask</definition>
+        <argsstring></argsstring>
+        <name>vdmTask</name>
+        <briefdescription>
+<para>Current VDM manager state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1315" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1a7e69c43b3b2dd3eed1c6932869deb63d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga53976be265d41463919b3ea93da4cf30" kindref="member">cy_en_pdaltmode_vdm_evt_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_evt_t cy_stc_pdaltmode_vdm_task_status_t::vdmEvt</definition>
+        <argsstring></argsstring>
+        <name>vdmEvt</name>
+        <briefdescription>
+<para>Current VDM manager event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1317" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1a9ed652c4200ff02aee0fe7d2038a7f53" prot="public" static="no" mutable="no">
+        <type><ref refid="structcy__stc__pdaltmode__atch__tgt__info__t" kindref="compound">cy_stc_pdaltmode_atch_tgt_info_t</ref></type>
+        <definition>cy_stc_pdaltmode_atch_tgt_info_t cy_stc_pdaltmode_vdm_task_status_t::atchTgt</definition>
+        <argsstring></argsstring>
+        <name>atchTgt</name>
+        <briefdescription>
+<para>Info about cable, device/AMA. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1319" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1ae35514d1f3ab5b9c3e9a3b467934ed08" prot="public" static="no" mutable="no">
+        <type><ref refid="structcy__stc__pdaltmode__vdm__msg__info__t" kindref="compound">cy_stc_pdaltmode_vdm_msg_info_t</ref></type>
+        <definition>cy_stc_pdaltmode_vdm_msg_info_t cy_stc_pdaltmode_vdm_task_status_t::vdmMsg</definition>
+        <argsstring></argsstring>
+        <name>vdmMsg</name>
+        <briefdescription>
+<para>Struct with received/sent VDM info. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1321" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1a4b36298faf799e5e6e8af46058c05ab8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_vdm_task_status_t::recRetryCnt</definition>
+        <argsstring></argsstring>
+        <name>recRetryCnt</name>
+        <briefdescription>
+<para>Sent/received VDM retry counters. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1323" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1a3c5c7944d78609a176c55f7a3f93a7de" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_vdm_task_status_t::svidIdx</definition>
+        <argsstring></argsstring>
+        <name>svidIdx</name>
+        <briefdescription>
+<para>Holds svid index if we have more than one Disc SVID response. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1325" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1a5bb8c89879c7b42d425dd78d681095cf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_vdm_task_status_t::dSvidCnt</definition>
+        <argsstring></argsstring>
+        <name>dSvidCnt</name>
+        <briefdescription>
+<para>Holds count of D_SVID requests sent. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1327" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1a51bd6a028f126c36e5b2cfac890f52a7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_vdm_task_status_t::vdmEmcaRstCount</definition>
+        <argsstring></argsstring>
+        <name>vdmEmcaRstCount</name>
+        <briefdescription>
+<para>VDM EMCA Resets count. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1329" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1a3df87d55e5b872a87e857e8dfddf8f1a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gaa7da3e23558bed3d229bdad5c90401a1" kindref="member">cy_en_pdaltmode_cable_dp_reset_state_t</ref></type>
+        <definition>cy_en_pdaltmode_cable_dp_reset_state_t cy_stc_pdaltmode_vdm_task_status_t::vdmEmcaRstState</definition>
+        <argsstring></argsstring>
+        <name>vdmEmcaRstState</name>
+        <briefdescription>
+<para>VDM EMCA Reset state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1331" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1ab8c2f329d9d1b6d732b553eb0072f601" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gaa31ccb72f7bd9114cb70754d774959b3" kindref="member">cy_en_pdaltmode_vdm_vconn_rqt_state_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_vconn_rqt_state_t cy_stc_pdaltmode_vdm_task_status_t::vdmVcsRqtState</definition>
+        <argsstring></argsstring>
+        <name>vdmVcsRqtState</name>
+        <briefdescription>
+<para>VDM VCONN SWAP Request state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1333" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1a72e22b01318f07884cf6d4aad92b8490" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_vdm_task_status_t::vdmVcsRqtCount</definition>
+        <argsstring></argsstring>
+        <name>vdmVcsRqtCount</name>
+        <briefdescription>
+<para>VDM VCONN SWAP Request count. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1335" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1a789c5bea31bbce4da60511291047cdac" prot="public" static="no" mutable="no">
+        <type>cy_stc_pdstack_dpm_pd_cmd_buf_t</type>
+        <definition>cy_stc_pdstack_dpm_pd_cmd_buf_t cy_stc_pdaltmode_vdm_task_status_t::eudoBuf</definition>
+        <argsstring></argsstring>
+        <name>eudoBuf</name>
+        <briefdescription>
+<para>Enter USB data object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1337" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1a1189fb5cced531d9b3d9436abe7d1e25" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__usb4__enums_1gaed6a0bdb5fa1306874c9f9dc6703ecd7" kindref="member">cy_en_pdaltmode_usb4_flag_t</ref></type>
+        <definition>cy_en_pdaltmode_usb4_flag_t cy_stc_pdaltmode_vdm_task_status_t::usb4Flag</definition>
+        <argsstring></argsstring>
+        <name>usb4Flag</name>
+        <briefdescription>
+<para>Flag indicating USB4 status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1339" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1a9691ecac8b26767485b91bd4e75996f7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_vdm_task_status_t::altModesNotSupp</definition>
+        <argsstring></argsstring>
+        <name>altModesNotSupp</name>
+        <briefdescription>
+<para>Alt modes supported flag. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1341" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1a058a7eddfaa145f9f7353c752a4354e8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_vdm_task_status_t::usb4UpdatePending</definition>
+        <argsstring></argsstring>
+        <name>usb4UpdatePending</name>
+        <briefdescription>
+<para>USB4 pending flag. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1343" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1afa8bd4e691dc7692651dc3e4ab6a5274" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_vdm_task_status_t::usb4EnterRetryCount</definition>
+        <argsstring></argsstring>
+        <name>usb4EnterRetryCount</name>
+        <briefdescription>
+<para>USB4 Enter mode retry count for wait response. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1345" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1a2083b9e4f1976568c605c50a24a67d18" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t cy_stc_pdaltmode_vdm_task_status_t::appCblStartDelay</definition>
+        <argsstring></argsstring>
+        <name>appCblStartDelay</name>
+        <briefdescription>
+<para>Cable start-up delay period. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1347" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1a6ab9d4ea625b7c20255fedd3ba37317b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t cy_stc_pdaltmode_vdm_task_status_t::vdmBusyDelay</definition>
+        <argsstring></argsstring>
+        <name>vdmBusyDelay</name>
+        <briefdescription>
+<para>VDM busy delay period. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1349" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1a09f9b4814cb04b0ebb51c7e81168b930" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t cy_stc_pdaltmode_vdm_task_status_t::enterUsb4WaitDelay</definition>
+        <argsstring></argsstring>
+        <name>enterUsb4WaitDelay</name>
+        <briefdescription>
+<para>Enter USB4 wait period. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1351" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__task__status__t_1aee85e2f409d8f441497cf3a5d5a49947" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t cy_stc_pdaltmode_vdm_task_status_t::vdmFailRetryDelay</definition>
+        <argsstring></argsstring>
+        <name>vdmFailRetryDelay</name>
+        <briefdescription>
+<para>VDM fail retry period. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1353" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1353" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct to hold VDM manager status. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="90">
+        <label>cy_stc_pdaltmode_vdm_task_status_t</label>
+        <link refid="structcy__stc__pdaltmode__vdm__task__status__t"/>
+        <childnode refid="91" relation="usage">
+          <edgelabel>atchTgt</edgelabel>
+        </childnode>
+        <childnode refid="92" relation="usage">
+          <edgelabel>vdmMsg</edgelabel>
+        </childnode>
+      </node>
+      <node id="91">
+        <label>cy_stc_pdaltmode_atch_tgt_info_t</label>
+        <link refid="structcy__stc__pdaltmode__atch__tgt__info__t"/>
+      </node>
+      <node id="92">
+        <label>cy_stc_pdaltmode_vdm_msg_info_t</label>
+        <link refid="structcy__stc__pdaltmode__vdm__msg__info__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="cy_pdaltmode_defines.h" line="1313" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1312" bodyend="1354"/>
+    <listofallmembers>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1a9691ecac8b26767485b91bd4e75996f7" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>altModesNotSupp</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1a2083b9e4f1976568c605c50a24a67d18" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>appCblStartDelay</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1a9ed652c4200ff02aee0fe7d2038a7f53" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>atchTgt</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1a5bb8c89879c7b42d425dd78d681095cf" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>dSvidCnt</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1a09f9b4814cb04b0ebb51c7e81168b930" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>enterUsb4WaitDelay</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1a789c5bea31bbce4da60511291047cdac" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>eudoBuf</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1a4b36298faf799e5e6e8af46058c05ab8" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>recRetryCnt</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1a3c5c7944d78609a176c55f7a3f93a7de" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>svidIdx</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1afa8bd4e691dc7692651dc3e4ab6a5274" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>usb4EnterRetryCount</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1a1189fb5cced531d9b3d9436abe7d1e25" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>usb4Flag</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1a058a7eddfaa145f9f7353c752a4354e8" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>usb4UpdatePending</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1a6ab9d4ea625b7c20255fedd3ba37317b" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>vdmBusyDelay</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1a51bd6a028f126c36e5b2cfac890f52a7" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>vdmEmcaRstCount</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1a3df87d55e5b872a87e857e8dfddf8f1a" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>vdmEmcaRstState</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1a7e69c43b3b2dd3eed1c6932869deb63d" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>vdmEvt</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1aee85e2f409d8f441497cf3a5d5a49947" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>vdmFailRetryDelay</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1ae35514d1f3ab5b9c3e9a3b467934ed08" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>vdmMsg</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1acb352c125c763362864a110417fee400" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>vdmTask</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1a72e22b01318f07884cf6d4aad92b8490" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>vdmVcsRqtCount</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__task__status__t_1ab8c2f329d9d1b6d732b553eb0072f601" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_task_status_t</scope><name>vdmVcsRqtState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__alt__mode__hw" kind="group">
+    <compoundname>group_pdaltmode_alt_mode_hw</compoundname>
+    <title>Alternate Mode Hardware</title>
+    <innergroup refid="group__group__pdaltmode__alt__mode__hw__enums">Enumerated types</innergroup>
+    <innergroup refid="group__group__pdaltmode__alt__mode__hw__data__structures">Data structures</innergroup>
+    <innergroup refid="group__group__pdaltmode__alt__mode__hw__functions">Functions</innergroup>
+    <briefdescription>
+<para>Alternate Mode Hardware driver provides APIs and data structures to control/configure Alternate Modes related HW like external MUXes (for datapath update), HPD (Hot Plug Detect for DisplayPort), internal MUXes, and so on. </para>    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

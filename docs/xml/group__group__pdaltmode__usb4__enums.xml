@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__usb4__enums" kind="group">
+    <compoundname>group_pdaltmode_usb4_enums</compoundname>
+    <title>Enumerated Types</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__group__pdaltmode__usb4__enums_1gaed6a0bdb5fa1306874c9f9dc6703ecd7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_usb4_flag_t</name>
+        <enumvalue id="group__group__pdaltmode__usb4__enums_1ggaed6a0bdb5fa1306874c9f9dc6703ecd7a709bfd59b76b4df69bfebcf15d2c3c08" prot="public">
+          <name>CY_PDALTMODE_USB4_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Empty flag. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__usb4__enums_1ggaed6a0bdb5fa1306874c9f9dc6703ecd7a0cb36f4e7471795aa91f2d2e83516297" prot="public">
+          <name>CY_PDALTMODE_USB4_FAILED</name>
+          <briefdescription>
+<para>Flag indicates of USB4 discovery procedure failure. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__usb4__enums_1ggaed6a0bdb5fa1306874c9f9dc6703ecd7a3319073158545ddbeda653a3b2e90744" prot="public">
+          <name>CY_PDALTMODE_USB4_PENDING</name>
+          <briefdescription>
+<para>Flag indicates that USB4 entry handling should be processed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__usb4__enums_1ggaed6a0bdb5fa1306874c9f9dc6703ecd7a64a496858d5eb535490c9581ae541a5d" prot="public">
+          <name>CY_PDALTMODE_USB4_TBT_CBL_FIND</name>
+          <briefdescription>
+<para>Flag is responsible for initiating of finding TBT VID in cable Disc SVID response. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__usb4__enums_1ggaed6a0bdb5fa1306874c9f9dc6703ecd7a1d37d1fb7a64f1fc73ef46cd6c39cfbc" prot="public">
+          <name>CY_PDALTMODE_USB4_TBT_CBL_DISC_RUN</name>
+          <briefdescription>
+<para>Flag is responsible for initiating of TBT cable Disc mode. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__usb4__enums_1ggaed6a0bdb5fa1306874c9f9dc6703ecd7a411a01d174afe3ce708cff021ed918fc" prot="public">
+          <name>CY_PDALTMODE_USB4_TBT_CBL_ENTER_SOP_P</name>
+          <briefdescription>
+<para>Flag is responsible for initiating of TBT cable SOP&apos; Enter mode. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__usb4__enums_1ggaed6a0bdb5fa1306874c9f9dc6703ecd7ab684f73a375020b887465a8375616c75" prot="public">
+          <name>CY_PDALTMODE_USB4_TBT_CBL_ENTER_SOP_DP</name>
+          <briefdescription>
+<para>Flag is responsible for initiating of TBT cable SOP" Disc mode. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__usb4__enums_1ggaed6a0bdb5fa1306874c9f9dc6703ecd7acbf82862fab255faa7be4e1f04ab1dfa" prot="public">
+          <name>CY_PDALTMODE_USB4_SEND_USB4</name>
+          <briefdescription>
+<para>Flag is responsible for sending of EnterUSB command. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration lists the various vdm manager flags due to USB4 related handling. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="880" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="879" bodyend="890"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

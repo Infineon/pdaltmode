@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcy__stc__pdaltmode__vdm__msg__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_vdm_msg_info_t</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__msg__info__t_1a450b366ec51f4b9bb3dc3c9ea22997c9" prot="public" static="no" mutable="no">
+        <type>cy_pd_pd_do_t</type>
+        <definition>cy_pd_pd_do_t cy_stc_pdaltmode_vdm_msg_info_t::vdmHeader</definition>
+        <argsstring></argsstring>
+        <name>vdmHeader</name>
+        <briefdescription>
+<para>Holds VDM buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1285" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__msg__info__t_1a6d0df2c229bd3ab17d8b8332b3da6d37" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_vdm_msg_info_t::sopType</definition>
+        <argsstring></argsstring>
+        <name>sopType</name>
+        <briefdescription>
+<para>VDM SOP type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1286" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__msg__info__t_1ae865fc2b1c65b511f72dc31f4d1e77fa" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_vdm_msg_info_t::vdoNumb</definition>
+        <argsstring></argsstring>
+        <name>vdoNumb</name>
+        <briefdescription>
+<para>Number of received VDOs in VDM. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1287" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__vdm__msg__info__t_1a96568aa7466ed90908c4fc903678f203" prot="public" static="no" mutable="no">
+        <type>cy_pd_pd_do_t</type>
+        <definition>cy_pd_pd_do_t cy_stc_pdaltmode_vdm_msg_info_t::vdo[7u]</definition>
+        <argsstring>[7u]</argsstring>
+        <name>vdo</name>
+        <briefdescription>
+<para>VDO objects buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1288" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1288" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct holds received/sent VDM information which is used by VDM Alternate Mode managers. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cy_pdaltmode_defines.h" line="1284" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1283" bodyend="1289"/>
+    <listofallmembers>
+      <member refid="structcy__stc__pdaltmode__vdm__msg__info__t_1a6d0df2c229bd3ab17d8b8332b3da6d37" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_msg_info_t</scope><name>sopType</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__msg__info__t_1a450b366ec51f4b9bb3dc3c9ea22997c9" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_msg_info_t</scope><name>vdmHeader</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__msg__info__t_1a96568aa7466ed90908c4fc903678f203" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_msg_info_t</scope><name>vdo</name></member>
+      <member refid="structcy__stc__pdaltmode__vdm__msg__info__t_1ae865fc2b1c65b511f72dc31f4d1e77fa" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_vdm_msg_info_t</scope><name>vdoNumb</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

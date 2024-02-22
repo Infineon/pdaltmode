@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcy__stc__pdaltmode__bb__handle__t" kind="struct" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_bb_handle_t</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__bb__handle__t_1a76a38c4273d10ca82c97dc854ab27990" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__billboard__enums_1ga59a327e5d04a376a9385c0ab738edd8e" kindref="member">cy_en_pdaltmode_bb_type_t</ref></type>
+        <definition>cy_en_pdaltmode_bb_type_t cy_stc_pdaltmode_bb_handle_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Billboard implementation type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1683" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1683" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__bb__handle__t_1a0c05fdb9cb14e3f3d6a04493cef21b44" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__billboard__enums_1gade0b6655496f8115372096808f92ae93" kindref="member">cy_en_pdaltmode_bb_state_t</ref></type>
+        <definition>cy_en_pdaltmode_bb_state_t cy_stc_pdaltmode_bb_handle_t::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>Billboard current state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1684" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__bb__handle__t_1a60853d1de67faa5a373aa5b759d6f818" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_bb_handle_t::numAltModes</definition>
+        <argsstring></argsstring>
+        <name>numAltModes</name>
+        <briefdescription>
+<para>Number of valid Alternate Modes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1685" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1685" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__bb__handle__t_1a55f6d9e87a1c1312a2c3f8819184187d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_bb_handle_t::bbAddInfo</definition>
+        <argsstring></argsstring>
+        <name>bbAddInfo</name>
+        <briefdescription>
+<para>AdditionalFailureInfo field in Billboard capability descriptor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1686" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1686" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__bb__handle__t_1aaff84c0709cb382e9e4711a3e11fcef2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_bb_handle_t::altStatus</definition>
+        <argsstring></argsstring>
+        <name>altStatus</name>
+        <briefdescription>
+<para>Current Alternate Mode status - The status can hold a maximum of 16 Alternate Modes (2 bits each). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1688" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1688" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__bb__handle__t_1afff7e7a24122b44d8263eee0976f6a07" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_bb_handle_t::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+<para>Pending timeout count in ms for Billboard interface disable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1691" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__bb__handle__t_1aead2dff6cdbe3c245b8b1b3f179cf61a" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* cy_stc_pdaltmode_bb_handle_t::ep0Buffer</definition>
+        <argsstring></argsstring>
+        <name>ep0Buffer</name>
+        <briefdescription>
+<para>EP0 data buffer pointer in case of internal Billboard implementation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1695" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1695" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__bb__handle__t_1addda04a24d2a2742754d07095a6e39e2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_bb_handle_t::usbConfigured</definition>
+        <argsstring></argsstring>
+        <name>usbConfigured</name>
+        <briefdescription>
+<para>Internal flag indicating whether the configuration is enabled or not. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is valid only for internal Billboard implementation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1697" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1697" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__bb__handle__t_1a7e258dfc7619bd37c38d7bd3c9535f0a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_bb_handle_t::usbPort</definition>
+        <argsstring></argsstring>
+        <name>usbPort</name>
+        <briefdescription>
+<para>USB port index used in case the device has multiple USB ports. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1700" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1700" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__bb__handle__t_1af6e03835b3bcf7f3bfba4002d5aaf3c8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_bb_handle_t::flashingMode</definition>
+        <argsstring></argsstring>
+        <name>flashingMode</name>
+        <briefdescription>
+<para>USB flashing mode state. </para>        </briefdescription>
+        <detaileddescription>
+<para>Valid only for internal Billboard implementation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1702" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1702" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__bb__handle__t_1a1f34c13e97ce251a6d61c10526c0e879" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_bb_handle_t::usbI2cmMode</definition>
+        <argsstring></argsstring>
+        <name>usbI2cmMode</name>
+        <briefdescription>
+<para>USB I2C Master bridge mode state. </para>        </briefdescription>
+        <detaileddescription>
+<para>Valid only for internal Billboard implementation supporting I2C Master bridge interface. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1704" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1704" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__bb__handle__t_1a595c2f3b94916c33e2764162cf96dfc3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_bb_handle_t::queueEnable</definition>
+        <argsstring></argsstring>
+        <name>queueEnable</name>
+        <briefdescription>
+<para>Billboard interface enable request queued. </para>        </briefdescription>
+        <detaileddescription>
+<para>Valid only for internal Billboard implementation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1707" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1707" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__bb__handle__t_1a8e0fb1ae0ecc5af30a3e866f27f1a2bb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_bb_handle_t::queueDisable</definition>
+        <argsstring></argsstring>
+        <name>queueDisable</name>
+        <briefdescription>
+<para>Billboard interface disable request queued. </para>        </briefdescription>
+        <detaileddescription>
+<para>Valid only for internal Billboard implementation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1710" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1710" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__bb__handle__t_1a836ce240651df08de1b6836a2355413e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_bb_handle_t::queueI2cmEnable</definition>
+        <argsstring></argsstring>
+        <name>queueI2cmEnable</name>
+        <briefdescription>
+<para>USB-I2C Master mode enable request. </para>        </briefdescription>
+        <detaileddescription>
+<para>Valid only for internal Billboard implementation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1713" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1713" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__bb__handle__t_1a795799735c3e399710157278d09dfaf2" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__data__structures_1ga7bc1698e87f8d844a2617dd5bad33aa7" kindref="member">cy_pdaltmode_bb_bos_decr_update_cbk_t</ref></type>
+        <definition>cy_pdaltmode_bb_bos_decr_update_cbk_t cy_stc_pdaltmode_bb_handle_t::updateBosDescrCbk</definition>
+        <argsstring></argsstring>
+        <name>updateBosDescrCbk</name>
+        <briefdescription>
+<para>Callback for updating BOS descriptor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1717" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1717" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Internal Billboard module handle structure. </para>    </briefdescription>
+    <detaileddescription>
+<para>No explicit structure for the handle is expected to be created outside of the Billboard module implementation. </para>    </detaileddescription>
+    <location file="cy_pdaltmode_defines.h" line="1681" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1680" bodyend="1719"/>
+    <listofallmembers>
+      <member refid="structcy__stc__pdaltmode__bb__handle__t_1aaff84c0709cb382e9e4711a3e11fcef2" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_bb_handle_t</scope><name>altStatus</name></member>
+      <member refid="structcy__stc__pdaltmode__bb__handle__t_1a55f6d9e87a1c1312a2c3f8819184187d" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_bb_handle_t</scope><name>bbAddInfo</name></member>
+      <member refid="structcy__stc__pdaltmode__bb__handle__t_1aead2dff6cdbe3c245b8b1b3f179cf61a" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_bb_handle_t</scope><name>ep0Buffer</name></member>
+      <member refid="structcy__stc__pdaltmode__bb__handle__t_1af6e03835b3bcf7f3bfba4002d5aaf3c8" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_bb_handle_t</scope><name>flashingMode</name></member>
+      <member refid="structcy__stc__pdaltmode__bb__handle__t_1a60853d1de67faa5a373aa5b759d6f818" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_bb_handle_t</scope><name>numAltModes</name></member>
+      <member refid="structcy__stc__pdaltmode__bb__handle__t_1a8e0fb1ae0ecc5af30a3e866f27f1a2bb" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_bb_handle_t</scope><name>queueDisable</name></member>
+      <member refid="structcy__stc__pdaltmode__bb__handle__t_1a595c2f3b94916c33e2764162cf96dfc3" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_bb_handle_t</scope><name>queueEnable</name></member>
+      <member refid="structcy__stc__pdaltmode__bb__handle__t_1a836ce240651df08de1b6836a2355413e" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_bb_handle_t</scope><name>queueI2cmEnable</name></member>
+      <member refid="structcy__stc__pdaltmode__bb__handle__t_1a0c05fdb9cb14e3f3d6a04493cef21b44" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_bb_handle_t</scope><name>state</name></member>
+      <member refid="structcy__stc__pdaltmode__bb__handle__t_1afff7e7a24122b44d8263eee0976f6a07" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_bb_handle_t</scope><name>timeout</name></member>
+      <member refid="structcy__stc__pdaltmode__bb__handle__t_1a76a38c4273d10ca82c97dc854ab27990" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_bb_handle_t</scope><name>type</name></member>
+      <member refid="structcy__stc__pdaltmode__bb__handle__t_1a795799735c3e399710157278d09dfaf2" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_bb_handle_t</scope><name>updateBosDescrCbk</name></member>
+      <member refid="structcy__stc__pdaltmode__bb__handle__t_1addda04a24d2a2742754d07095a6e39e2" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_bb_handle_t</scope><name>usbConfigured</name></member>
+      <member refid="structcy__stc__pdaltmode__bb__handle__t_1a1f34c13e97ce251a6d61c10526c0e879" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_bb_handle_t</scope><name>usbI2cmMode</name></member>
+      <member refid="structcy__stc__pdaltmode__bb__handle__t_1a7e258dfc7619bd37c38d7bd3c9535f0a" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_bb_handle_t</scope><name>usbPort</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

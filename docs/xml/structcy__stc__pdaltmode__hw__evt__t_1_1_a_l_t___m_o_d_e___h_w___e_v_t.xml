@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcy__stc__pdaltmode__hw__evt__t_1_1_a_l_t___m_o_d_e___h_w___e_v_t" kind="struct" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_hw_evt_t::ALT_MODE_HW_EVT</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__hw__evt__t_1_1_a_l_t___m_o_d_e___h_w___e_v_t_1a72a16f4ef9d7e0a03061b9c8edf8ad9d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_hw_evt_t::ALT_MODE_HW_EVT::evtData</definition>
+        <argsstring></argsstring>
+        <name>evtData</name>
+        <bitfield> 16</bitfield>
+        <briefdescription>
+<para>Current event/command data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1147" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__hw__evt__t_1_1_a_l_t___m_o_d_e___h_w___e_v_t_1a5bbcfb13ebece1234818230d182252a4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_hw_evt_t::ALT_MODE_HW_EVT::hwType</definition>
+        <argsstring></argsstring>
+        <name>hwType</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+<para>HW type event/command related to. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1148" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__hw__evt__t_1_1_a_l_t___m_o_d_e___h_w___e_v_t_1a93f4269b4eb5dfb46b489fbacd225882" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_hw_evt_t::ALT_MODE_HW_EVT::dataRole</definition>
+        <argsstring></argsstring>
+        <name>dataRole</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+<para>Current data role. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1149" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1149" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure containing Alternate Modes HW event/command. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cy_pdaltmode_defines.h" line="1146" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1145" bodyend="1150"/>
+    <listofallmembers>
+      <member refid="structcy__stc__pdaltmode__hw__evt__t_1_1_a_l_t___m_o_d_e___h_w___e_v_t_1a93f4269b4eb5dfb46b489fbacd225882" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_hw_evt_t::ALT_MODE_HW_EVT</scope><name>dataRole</name></member>
+      <member refid="structcy__stc__pdaltmode__hw__evt__t_1_1_a_l_t___m_o_d_e___h_w___e_v_t_1a72a16f4ef9d7e0a03061b9c8edf8ad9d" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_hw_evt_t::ALT_MODE_HW_EVT</scope><name>evtData</name></member>
+      <member refid="structcy__stc__pdaltmode__hw__evt__t_1_1_a_l_t___m_o_d_e___h_w___e_v_t_1a5bbcfb13ebece1234818230d182252a4" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_hw_evt_t::ALT_MODE_HW_EVT</scope><name>hwType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

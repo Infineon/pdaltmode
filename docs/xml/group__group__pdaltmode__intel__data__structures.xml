@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__intel__data__structures" kind="group">
+    <compoundname>group_pdaltmode_intel_data_structures</compoundname>
+    <title>Data Structures</title>
+    <innerclass refid="structcy__stc__pdaltmode__ridge__hw__config__t" prot="public">cy_stc_pdaltmode_ridge_hw_config_t</innerclass>
+    <innerclass refid="structcy__stc__pdaltmode__host__details__t" prot="public">cy_stc_pdaltmode_host_details_t</innerclass>
+    <innerclass refid="structcy__stc__pdaltmode__tbt__status__t" prot="public">cy_stc_pdaltmode_tbt_status_t</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__intel__macros" kind="group">
+    <compoundname>group_pdaltmode_intel_macros</compoundname>
+    <title>Macros</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga0cf2835d3f5e931a8b9afbb1b693ef76" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGE_STATUS_OCP_MASK</name>
+        <initializer>(0x08u)</initializer>
+        <briefdescription>
+<para>Over-Current status bit in the status register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="47" column="9" bodyfile="cy_pdaltmode_intel_ridge_common.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gaa5e19bc7b7e6c1f795c54bf6b0bb93a1" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGE_GR_MUX_VDM_DELAY_TIMER_PERIOD</name>
+        <initializer>(10u)</initializer>
+        <briefdescription>
+<para>Goshen Ridge MUX Delay Timer Period. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="50" column="9" bodyfile="cy_pdaltmode_intel_ridge_common.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gaaa2b465c5b583b9c176baf33fcb11db0" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_INTEL_VID</name>
+        <initializer>(0x8087u)</initializer>
+        <briefdescription>
+<para>Intel (Thunderbolt 3) SVID. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="49" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga835fc7953c034574959890ffa44fb189" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_ALT_MODE_ID</name>
+        <initializer>(1u)</initializer>
+        <briefdescription>
+<para>Unique ID assigned to Thunderbolt mode in the CCGx SDK. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="52" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga4dc8073ad3083749c08c3c0e1b8c4b5d" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_VPRO_ALT_MODE_ID</name>
+        <initializer>(2u)</initializer>
+        <briefdescription>
+<para>Unique ID assigned to Vpro mode in the CCGx SDK. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="55" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga8bdc2f17340cfd34e1445f89998c360e" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_VDO_IDX</name>
+        <initializer>(0u)</initializer>
+        <briefdescription>
+<para>&lt; Maximum number of VDOs Thunderbolt-3 uses for the alt mode flow </para>        </briefdescription>
+        <detaileddescription>
+<para>Index of VDO used for Thunderbolt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="61" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gac794e171d78cef920537cbdade6c80df" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_MODE_VPRO_AVAIL</name>
+        <initializer>(0x04000000u)</initializer>
+        <briefdescription>
+<para>VPro available bit in TBT Mode VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="64" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga5674e8c7ddc0d754c21e77dc5edfc66e" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_MODE_VPRO_DOCK_HOST</name>
+        <initializer>(0x04000000u)</initializer>
+        <briefdescription>
+<para>Vpro_Dock_and_Host bit in TBT Enter Mode VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="67" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga437eb786f8a301812d38d071b78de51b" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_GET_VPRO_AVAILABLE_STAT</name>
+        <param><defname>status</defname></param>
+        <initializer>((status &amp; <ref refid="group__group__pdaltmode__intel__macros_1gac794e171d78cef920537cbdade6c80df" kindref="member">CY_PDALTMODE_TBT_MODE_VPRO_AVAIL</ref>) != 0U)</initializer>
+        <briefdescription>
+<para>Macro to get VPro Available bit from Discover Mode response VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="70" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga90f79b2a87bbdd37ceeeb7d96afe26ec" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_GET_LEGACY_TBT_ADAPTER</name>
+        <param><defname>status</defname></param>
+        <initializer>((status &gt;&gt; 16U) &amp; 0x1U)</initializer>
+        <briefdescription>
+<para>Macro to get legacy adapter status from Discovery Mode response VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="73" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gab1ff7cf5113a579162a8b278963665a4" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_EXIT</name>
+        <param><defname>status</defname></param>
+        <initializer>((status &gt;&gt; 4U) &amp; 0x1U)</initializer>
+        <briefdescription>
+<para>Macro to get Exit status from Attention VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="76" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga5a4ffdb5c0bf719b747111be5e95eb94" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_BB_STATUS</name>
+        <param><defname>status</defname></param>
+        <initializer>((status &gt;&gt; 3U) &amp; 0x1U)</initializer>
+        <briefdescription>
+<para>Macro to get BB status from Attention VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="79" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga81c54dd41551e21b2ecc84bed5d0bc53" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_USB2_ENABLE</name>
+        <param><defname>status</defname></param>
+        <initializer>((status &gt;&gt; 2U) &amp; 0x1U)</initializer>
+        <briefdescription>
+<para>Macro to get USB enable status from Attention VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="82" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga769fdee9379d0d7b7c7ce826af3c5032" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_SCB_INDEX</name>
+        <initializer>(0x01u)</initializer>
+        <briefdescription>
+<para>Default SCB index used for the Ridge/SoC Slave interface. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="50" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga38d841457e11474b6e0486e5eadcc3a8" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_SCB_CLOCK_FREQ</name>
+        <initializer>(I2C_SCB_CLOCK_FREQ_1_MHZ)</initializer>
+        <briefdescription>
+<para>Maximum I2C clock frequency used on the Ridge/SoC slave interface. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="53" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gaaff144f81dce2d94cc89ee31d940562c" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_MIN_WRITE_SIZE</name>
+        <initializer>(2u)</initializer>
+        <briefdescription>
+<para>Minimum slave write size: Corresponds to slave address + register address. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="56" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga28e97166c89391ac670cc7e42fe0ef51" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_MAX_WRITE_SIZE</name>
+        <initializer>(16u)</initializer>
+        <briefdescription>
+<para>Maximum slave write size: We should never get writes longer than 16 bytes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="59" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gaa293f52b6b5ef9a5b7d25c4a0f485af2" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_MAX_READ_SIZE</name>
+        <initializer>(20u)</initializer>
+        <briefdescription>
+<para>Maximum slave read size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="62" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gacbf0bd5f774b6e6284220f65a9b35227" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_READ_BUFFER_SIZE</name>
+        <initializer>(4u)</initializer>
+        <briefdescription>
+<para>Ridge slave buffer read size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="65" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga83c4a14260b64d2eef4c1fd4abbf2e62" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_ADDR_P0</name>
+        <initializer>(0x38u)</initializer>
+        <briefdescription>
+<para>Slave address associated with USB PD port number 0. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is defined by Intel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="84" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga261b3ef6134adb24dd0fa4a19d66f9b9" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_ADDR_P1</name>
+        <initializer>(0x3Fu)</initializer>
+        <briefdescription>
+<para>Slave address associated with USB PD port number 1. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is defined by Intel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="87" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gaa87ba8bf4314b379242be1cbe558329e" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_ADDR_MASK</name>
+        <initializer>(0xF0u)</initializer>
+        <briefdescription>
+<para>I2C slave address mask to be applied on the incoming slave address. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="90" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gaeb2cef6d7790332c186ba272de7a5af5" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_RIDGE_CMD_CCG_RESET</name>
+        <initializer>(0x02u)</initializer>
+        <briefdescription>
+<para>Alpine/Titan Ridge command value that requests a CCG device reset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="95" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gad6dfadefd0086e4de5ea93853222b276" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_RIDGE_CMD_INT_CLEAR</name>
+        <initializer>(0x04u)</initializer>
+        <briefdescription>
+<para>Alpine/Titan Ridge command value to clear the interrupt from CCG. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="98" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga579db95d54ca8067c140b1f11b16b331" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_RIDGE_IRQ_ACK</name>
+        <initializer>(0x2000u)</initializer>
+        <briefdescription>
+<para>Alpine/Titan Ridge command IRQ ACK PD Controller to Titan Ridge. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="101" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

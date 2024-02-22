@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__billboard__data__structures" kind="group">
+    <compoundname>group_pdaltmode_billboard_data_structures</compoundname>
+    <title>Data Structures</title>
+    <innerclass refid="structcy__stc__pdaltmode__billboard__am__info__t" prot="public">cy_stc_pdaltmode_billboard_am_info_t</innerclass>
+    <innerclass refid="structcy__stc__pdaltmode__billboard__conn__info__t" prot="public">cy_stc_pdaltmode_billboard_conn_info_t</innerclass>
+    <innerclass refid="structcy__stc__pdaltmode__bb__handle__t" prot="public">cy_stc_pdaltmode_bb_handle_t</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

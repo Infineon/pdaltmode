@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcy__stc__pdaltmode__atch__tgt__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_atch_tgt_info_t</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__atch__tgt__info__t_1add0a05c6a1e65f0b14c448cb717bd021" prot="public" static="no" mutable="no">
+        <type>cy_pd_pd_do_t</type>
+        <definition>cy_pd_pd_do_t cy_stc_pdaltmode_atch_tgt_info_t::tgtIdHeader</definition>
+        <argsstring></argsstring>
+        <name>tgtIdHeader</name>
+        <briefdescription>
+<para>Holds device/AMA discovery ID header. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1272" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__atch__tgt__info__t_1ae1caaaaabcaa141d62abd29140e1f845" prot="public" static="no" mutable="no">
+        <type>cy_pd_pd_do_t</type>
+        <definition>cy_pd_pd_do_t cy_stc_pdaltmode_atch_tgt_info_t::amaVdo</definition>
+        <argsstring></argsstring>
+        <name>amaVdo</name>
+        <briefdescription>
+<para>Holds AMA discovery ID response VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1273" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__atch__tgt__info__t_1a8f281e3f3e2462ee8dc336e634361fb4" prot="public" static="no" mutable="no">
+        <type>const cy_pd_pd_do_t *</type>
+        <definition>const cy_pd_pd_do_t* cy_stc_pdaltmode_atch_tgt_info_t::cblVdo</definition>
+        <argsstring></argsstring>
+        <name>cblVdo</name>
+        <briefdescription>
+<para>Pointer to cable VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1274" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__atch__tgt__info__t_1a384eb0f65e624d38b18c9b4916251333" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t cy_stc_pdaltmode_atch_tgt_info_t::tgtSvid[CY_PDALTMODE_MAX_SVID_VDO_SUPP]</definition>
+        <argsstring>[CY_PDALTMODE_MAX_SVID_VDO_SUPP]</argsstring>
+        <name>tgtSvid</name>
+        <briefdescription>
+<para>Holds received SVID for device/AMA. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1275" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__atch__tgt__info__t_1aea3aced4010a45030cb5bc8f319887c8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t cy_stc_pdaltmode_atch_tgt_info_t::cblSvid[CY_PDALTMODE_MAX_SVID_VDO_SUPP]</definition>
+        <argsstring>[CY_PDALTMODE_MAX_SVID_VDO_SUPP]</argsstring>
+        <name>cblSvid</name>
+        <briefdescription>
+<para>Holds received SVID for cable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1276" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1276" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct holds Alternate Mode discovery information which is used by Alt Mode manager. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cy_pdaltmode_defines.h" line="1271" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1270" bodyend="1277"/>
+    <listofallmembers>
+      <member refid="structcy__stc__pdaltmode__atch__tgt__info__t_1ae1caaaaabcaa141d62abd29140e1f845" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_atch_tgt_info_t</scope><name>amaVdo</name></member>
+      <member refid="structcy__stc__pdaltmode__atch__tgt__info__t_1aea3aced4010a45030cb5bc8f319887c8" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_atch_tgt_info_t</scope><name>cblSvid</name></member>
+      <member refid="structcy__stc__pdaltmode__atch__tgt__info__t_1a8f281e3f3e2462ee8dc336e634361fb4" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_atch_tgt_info_t</scope><name>cblVdo</name></member>
+      <member refid="structcy__stc__pdaltmode__atch__tgt__info__t_1add0a05c6a1e65f0b14c448cb717bd021" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_atch_tgt_info_t</scope><name>tgtIdHeader</name></member>
+      <member refid="structcy__stc__pdaltmode__atch__tgt__info__t_1a384eb0f65e624d38b18c9b4916251333" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_atch_tgt_info_t</scope><name>tgtSvid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

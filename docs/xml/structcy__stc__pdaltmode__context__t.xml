@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcy__stc__pdaltmode__context__t" kind="struct" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_context_t</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1a34f18ac1a604068a73e013c483d55104" prot="public" static="no" mutable="no">
+        <type>cy_stc_pdstack_context_t *</type>
+        <definition>cy_stc_pdstack_context_t* cy_stc_pdaltmode_context_t::pdStackContext</definition>
+        <argsstring></argsstring>
+        <name>pdStackContext</name>
+        <briefdescription>
+<para>PD Stack Library context Pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1741" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1741" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1a0032d80be91c77ede3050a07d3867390" prot="public" static="no" mutable="no">
+        <type><ref refid="structcy__stc__pdaltmode__status__t" kindref="compound">cy_stc_pdaltmode_status_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_status_t* cy_stc_pdaltmode_context_t::altModeAppStatus</definition>
+        <argsstring></argsstring>
+        <name>altModeAppStatus</name>
+        <briefdescription>
+<para>Alt mode Layer status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1742" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1742" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1aba3f2832d6acbf0f5c866d67f8e0090b" prot="public" static="no" mutable="no">
+        <type>cy_stc_pdstack_app_status_t *</type>
+        <definition>cy_stc_pdstack_app_status_t* cy_stc_pdaltmode_context_t::appStatusContext</definition>
+        <argsstring></argsstring>
+        <name>appStatusContext</name>
+        <briefdescription>
+<para>Application status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1743" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1743" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1a64b83390d1e5bb109789b5f261897199" prot="public" static="no" mutable="no">
+        <type><ref refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t" kindref="compound">cy_stc_pdaltmode_alt_mode_mngr_status_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_alt_mode_mngr_status_t* cy_stc_pdaltmode_context_t::altModeMngrStatus</definition>
+        <argsstring></argsstring>
+        <name>altModeMngrStatus</name>
+        <briefdescription>
+<para>Alt Mode Manager Status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1744" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1744" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1a33d69fea0c550c5b43833b24040699f2" prot="public" static="no" mutable="no">
+        <type><ref refid="structcy__stc__pdaltmode__vdm__task__status__t" kindref="compound">cy_stc_pdaltmode_vdm_task_status_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_vdm_task_status_t* cy_stc_pdaltmode_context_t::vdmStat</definition>
+        <argsstring></argsstring>
+        <name>vdmStat</name>
+        <briefdescription>
+<para>VDM Task Manager Status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1745" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1745" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1a5790555497ca6a84993a77fced6c6379" prot="public" static="no" mutable="no">
+        <type><ref refid="structcy__stc__pdaltmode__hw__details__t" kindref="compound">cy_stc_pdaltmode_hw_details_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_hw_details_t* cy_stc_pdaltmode_context_t::hwDetails</definition>
+        <argsstring></argsstring>
+        <name>hwDetails</name>
+        <briefdescription>
+<para>Alt Mode HW details. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1746" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1746" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1aff9afd3792552eeaeaf18cb022953653" prot="public" static="no" mutable="no">
+        <type><ref refid="structcy__stc__pdaltmode__dp__status__t" kindref="compound">cy_stc_pdaltmode_dp_status_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_dp_status_t* cy_stc_pdaltmode_context_t::dpStatus</definition>
+        <argsstring></argsstring>
+        <name>dpStatus</name>
+        <briefdescription>
+<para>DP Status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1747" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1747" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1a2c44432dce2d2c8128d7338825b18526" prot="public" static="no" mutable="no">
+        <type><ref refid="structcy__stc__pdaltmode__host__details__t" kindref="compound">cy_stc_pdaltmode_host_details_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_host_details_t* cy_stc_pdaltmode_context_t::hostDetails</definition>
+        <argsstring></argsstring>
+        <name>hostDetails</name>
+        <briefdescription>
+<para>Host Details. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1748" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1748" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1ac28d3a89044e5f8e426c0f584cfb466f" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__data__structures_1gafbc3028d207f2ad7ee4b4e170204cecb" kindref="member">cy_pdaltmode_mtl_sbu_mux_ctrl_cbk_t</ref></type>
+        <definition>cy_pdaltmode_mtl_sbu_mux_ctrl_cbk_t cy_stc_pdaltmode_context_t::mtlMuxCtrlCbk</definition>
+        <argsstring></argsstring>
+        <name>mtlMuxCtrlCbk</name>
+        <briefdescription>
+<para>MTL SBU MUX control. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1749" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1749" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1a16c65977ee9cdb23988d2a9fb7333a91" prot="public" static="no" mutable="no">
+        <type><ref refid="structcy__stc__pdaltmode__bb__handle__t" kindref="compound">cy_stc_pdaltmode_bb_handle_t</ref></type>
+        <definition>volatile cy_stc_pdaltmode_bb_handle_t cy_stc_pdaltmode_context_t::billboard</definition>
+        <argsstring></argsstring>
+        <name>billboard</name>
+        <briefdescription>
+<para>Billboard interface internal handle structure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1750" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1750" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1ac51b717d9cdeb53a55abd0046410c383" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t cy_stc_pdaltmode_context_t::altModeCfgLen</definition>
+        <argsstring></argsstring>
+        <name>altModeCfgLen</name>
+        <briefdescription>
+<para>Length of the Alt Mode Config table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1751" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1751" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1abb3033c7cfbac50edcc457c089e90351" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_context_t::dfpAltModeMask</definition>
+        <argsstring></argsstring>
+        <name>dfpAltModeMask</name>
+        <briefdescription>
+<para>Mask to enable DFP Alternate Modes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1752" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1752" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1ac8bd2d39701da2859f080f1d5a35ec8e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_context_t::ufpAltModeMask</definition>
+        <argsstring></argsstring>
+        <name>ufpAltModeMask</name>
+        <briefdescription>
+<para>Mask to enable UFP Alternate Modes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1753" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1753" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1ac6a7d3e244512d0e6163cd165fcee153" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t cy_stc_pdaltmode_context_t::baseAmInfo[CY_PD_MAX_NO_OF_DO *2]</definition>
+        <argsstring>[CY_PD_MAX_NO_OF_DO *2]</argsstring>
+        <name>baseAmInfo</name>
+        <briefdescription>
+<para>Stores base AM configuration info. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1754" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1754" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1af22f79436ac72845753147a1dd976224" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_context_t::vdmDiscIdResp[CY_PDALTMODE_MAX_DISC_ID_RESP_LEN]</definition>
+        <argsstring>[CY_PDALTMODE_MAX_DISC_ID_RESP_LEN]</argsstring>
+        <name>vdmDiscIdResp</name>
+        <briefdescription>
+<para>Array to store the D_ID response received from the port partner. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1755" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1755" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1a1652190ae69a5c1962e2177a8a649a5e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_context_t::vdmDiscIdRespLen</definition>
+        <argsstring></argsstring>
+        <name>vdmDiscIdRespLen</name>
+        <briefdescription>
+<para>D_ID response length. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1757" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1757" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1a1f056c297695b7e3e729311aba3fa5bb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_context_t::vdmDiscSvidResp[CY_PDALTMODE_MAX_DISC_SVID_RESP_LEN]</definition>
+        <argsstring>[CY_PDALTMODE_MAX_DISC_SVID_RESP_LEN]</argsstring>
+        <name>vdmDiscSvidResp</name>
+        <briefdescription>
+<para>Array to store the D_SVID response received from the port partner. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1758" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1758" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1afb2bc35e49841dc30669c91ff27ad5c7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_context_t::vdmDiscSvidRespLen</definition>
+        <argsstring></argsstring>
+        <name>vdmDiscSvidRespLen</name>
+        <briefdescription>
+<para>D_SVID response length. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1760" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1760" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1aceb31ed4d6db842a86597557af80d116" prot="public" static="no" mutable="no">
+        <type>const cy_stc_pdaltmode_cfg_settings_t *</type>
+        <definition>const cy_stc_pdaltmode_cfg_settings_t* cy_stc_pdaltmode_context_t::altModeCfg</definition>
+        <argsstring></argsstring>
+        <name>altModeCfg</name>
+        <briefdescription>
+<para>Alt Mode config table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1761" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1761" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1a131367b757651b0d754200fc3be76591" prot="public" static="no" mutable="no">
+        <type>const cy_stc_pdaltmode_custom_alt_cfg_settings_t *</type>
+        <definition>const cy_stc_pdaltmode_custom_alt_cfg_settings_t* cy_stc_pdaltmode_context_t::custAltModeCfg</definition>
+        <argsstring></argsstring>
+        <name>custAltModeCfg</name>
+        <briefdescription>
+<para>Custom Alt Mode config table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1762" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1762" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1a5294cf1776a4145b418b06b2e785c474" prot="public" static="no" mutable="no">
+        <type>const tbthost_cfg_settings_t *</type>
+        <definition>const tbthost_cfg_settings_t* cy_stc_pdaltmode_context_t::tbtCfg</definition>
+        <argsstring></argsstring>
+        <name>tbtCfg</name>
+        <briefdescription>
+<para>TBT config table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1763" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1763" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1a51a744b85e46a2852636ef9bc375be2b" prot="public" static="no" mutable="no">
+        <type>const cy_stc_pdaltmode_dp_cfg_settings_t *</type>
+        <definition>const cy_stc_pdaltmode_dp_cfg_settings_t* cy_stc_pdaltmode_context_t::dpCfg</definition>
+        <argsstring></argsstring>
+        <name>dpCfg</name>
+        <briefdescription>
+<para>DP config table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1764" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1764" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1a114d59eee5374c695d29a049257e17b2" prot="public" static="no" mutable="no">
+        <type>const intel_soc_cfg_settings_t *</type>
+        <definition>const intel_soc_cfg_settings_t* cy_stc_pdaltmode_context_t::iclCfg</definition>
+        <argsstring></argsstring>
+        <name>iclCfg</name>
+        <briefdescription>
+<para>ICL config table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1765" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1765" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1a6228fd5f5823f828cdd7f1b33ed74fa0" prot="public" static="no" mutable="no">
+        <type>const amd_cfg_settings_t *</type>
+        <definition>const amd_cfg_settings_t* cy_stc_pdaltmode_context_t::amdCfg</definition>
+        <argsstring></argsstring>
+        <name>amdCfg</name>
+        <briefdescription>
+<para>AMD config table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1766" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1766" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1a9608cdc1f0bd33db7008b58cb62a377f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structcy__stc__pdaltmode__ridge__hw__config__t" kindref="compound">cy_stc_pdaltmode_ridge_hw_config_t</ref> *</type>
+        <definition>const cy_stc_pdaltmode_ridge_hw_config_t* cy_stc_pdaltmode_context_t::ridgeHwConfig</definition>
+        <argsstring></argsstring>
+        <name>ridgeHwConfig</name>
+        <briefdescription>
+<para>Ridge communication configurations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1767" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1767" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1ac963c033cb47909cf986377cd328fc63" prot="public" static="no" mutable="no">
+        <type>struct cy_stc_pdaltmode_context *</type>
+        <definition>struct cy_stc_pdaltmode_context* cy_stc_pdaltmode_context_t::ptrAltPortAltmodeCtx</definition>
+        <argsstring></argsstring>
+        <name>ptrAltPortAltmodeCtx</name>
+        <briefdescription>
+<para>Alternate Port PD Alternate Mode context. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1768" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1768" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__context__t_1a35f7d32a2f42b36992cf929c7cb62629" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_context_t::noOfTypeCPorts</definition>
+        <argsstring></argsstring>
+        <name>noOfTypeCPorts</name>
+        <briefdescription>
+<para>No of Type-C ports available in the controller. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1769" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1769" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure to PDStack Alt Mode Middleware context information. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="39">
+        <label>cy_stc_pdaltmode_alt_mode_evt_t</label>
+        <link refid="unioncy__stc__pdaltmode__alt__mode__evt__t"/>
+        <childnode refid="40" relation="usage">
+          <edgelabel>alt_mode_event</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>alt_mode_event_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="44">
+        <label>cy_stc_pdaltmode_host_details_t</label>
+        <link refid="structcy__stc__pdaltmode__host__details__t"/>
+      </node>
+      <node id="33">
+        <label>cy_stc_pdaltmode_bb_handle_t</label>
+        <link refid="structcy__stc__pdaltmode__bb__handle__t"/>
+      </node>
+      <node id="32">
+        <label>cy_stc_pdaltmode_context_t</label>
+        <link refid="structcy__stc__pdaltmode__context__t"/>
+        <childnode refid="33" relation="usage">
+          <edgelabel>billboard</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>altModeMngrStatus</edgelabel>
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>dpStatus</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>vdmStat</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>hostDetails</edgelabel>
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>altModeAppStatus</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>hwDetails</edgelabel>
+        </childnode>
+        <childnode refid="47" relation="usage">
+          <edgelabel>ridgeHwConfig</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>cy_stc_pdaltmode_alt_mode_reg_info_t</label>
+        <link refid="structcy__stc__pdaltmode__alt__mode__reg__info__t"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>atchTgtInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>cy_stc_pdaltmode_alt_mode_mngr_status_t</label>
+        <link refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t"/>
+        <childnode refid="35" relation="usage">
+          <edgelabel>regInfo</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>vdmInfo</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>altModeInfo</edgelabel>
+          <edgelabel>attAltMode</edgelabel>
+        </childnode>
+      </node>
+      <node id="43">
+        <label>cy_stc_pdaltmode_vdm_task_status_t</label>
+        <link refid="structcy__stc__pdaltmode__vdm__task__status__t"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>atchTgt</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>vdmMsg</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT</label>
+        <link refid="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t"/>
+      </node>
+      <node id="42">
+        <label>cy_stc_pdaltmode_dp_status_t</label>
+        <link refid="structcy__stc__pdaltmode__dp__status__t"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>tgtInfoPtr</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>info</edgelabel>
+        </childnode>
+      </node>
+      <node id="47">
+        <label>cy_stc_pdaltmode_ridge_hw_config_t</label>
+        <link refid="structcy__stc__pdaltmode__ridge__hw__config__t"/>
+      </node>
+      <node id="45">
+        <label>cy_stc_pdaltmode_status_t</label>
+        <link refid="structcy__stc__pdaltmode__status__t"/>
+      </node>
+      <node id="46">
+        <label>cy_stc_pdaltmode_hw_details_t</label>
+        <link refid="structcy__stc__pdaltmode__hw__details__t"/>
+      </node>
+      <node id="36">
+        <label>cy_stc_pdaltmode_atch_tgt_info_t</label>
+        <link refid="structcy__stc__pdaltmode__atch__tgt__info__t"/>
+      </node>
+      <node id="41">
+        <label>cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT_DATA</label>
+        <link refid="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t___d_a_t_a"/>
+      </node>
+      <node id="37">
+        <label>cy_stc_pdaltmode_vdm_msg_info_t</label>
+        <link refid="structcy__stc__pdaltmode__vdm__msg__info__t"/>
+      </node>
+      <node id="38">
+        <label>cy_stc_pdaltmode_mngr_info_t</label>
+        <link refid="structcy__stc__pdaltmode__mngr__info__t"/>
+        <childnode refid="39" relation="usage">
+          <edgelabel>evalAppCmd</edgelabel>
+          <edgelabel>appEvtData</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="cy_pdaltmode_defines.h" line="1740" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1739" bodyend="1770"/>
+    <listofallmembers>
+      <member refid="structcy__stc__pdaltmode__context__t_1a0032d80be91c77ede3050a07d3867390" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>altModeAppStatus</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1aceb31ed4d6db842a86597557af80d116" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>altModeCfg</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1ac51b717d9cdeb53a55abd0046410c383" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>altModeCfgLen</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1a64b83390d1e5bb109789b5f261897199" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>altModeMngrStatus</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1a6228fd5f5823f828cdd7f1b33ed74fa0" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>amdCfg</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1aba3f2832d6acbf0f5c866d67f8e0090b" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>appStatusContext</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1ac6a7d3e244512d0e6163cd165fcee153" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>baseAmInfo</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1a16c65977ee9cdb23988d2a9fb7333a91" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>billboard</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1a131367b757651b0d754200fc3be76591" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>custAltModeCfg</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1abb3033c7cfbac50edcc457c089e90351" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>dfpAltModeMask</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1a51a744b85e46a2852636ef9bc375be2b" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>dpCfg</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1aff9afd3792552eeaeaf18cb022953653" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>dpStatus</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1a2c44432dce2d2c8128d7338825b18526" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>hostDetails</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1a5790555497ca6a84993a77fced6c6379" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>hwDetails</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1a114d59eee5374c695d29a049257e17b2" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>iclCfg</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1ac28d3a89044e5f8e426c0f584cfb466f" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>mtlMuxCtrlCbk</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1a35f7d32a2f42b36992cf929c7cb62629" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>noOfTypeCPorts</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1a34f18ac1a604068a73e013c483d55104" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>pdStackContext</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1ac963c033cb47909cf986377cd328fc63" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>ptrAltPortAltmodeCtx</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1a9608cdc1f0bd33db7008b58cb62a377f" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>ridgeHwConfig</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1a5294cf1776a4145b418b06b2e785c474" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>tbtCfg</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1ac8bd2d39701da2859f080f1d5a35ec8e" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>ufpAltModeMask</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1af22f79436ac72845753147a1dd976224" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>vdmDiscIdResp</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1a1652190ae69a5c1962e2177a8a649a5e" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>vdmDiscIdRespLen</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1a1f056c297695b7e3e729311aba3fa5bb" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>vdmDiscSvidResp</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1afb2bc35e49841dc30669c91ff27ad5c7" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>vdmDiscSvidRespLen</name></member>
+      <member refid="structcy__stc__pdaltmode__context__t_1a33d69fea0c550c5b43833b24040699f2" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_context_t</scope><name>vdmStat</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

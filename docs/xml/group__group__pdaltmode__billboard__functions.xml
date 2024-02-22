@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__billboard__functions" kind="group">
+    <compoundname>group_pdaltmode_billboard_functions</compoundname>
+    <title>Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__group__pdaltmode__billboard__functions_1ga9d8a38ee749012cf83d74acfdcafedf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__billboard__enums_1ga726a24fa891657729c89bee7a4a7e030" kindref="member">cy_en_pdaltmode_billboard_status_t</ref></type>
+        <definition>cy_en_pdaltmode_billboard_status_t Cy_PdAltMode_Billboard_Enable</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_pdaltmode_billboard_cause_t cause)</argsstring>
+        <name>Cy_PdAltMode_Billboard_Enable</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__billboard__enums_1gaa7aa411930bac49da8f731ab6c6f9dcb" kindref="member">cy_en_pdaltmode_billboard_cause_t</ref></type>
+          <declname>cause</declname>
+        </param>
+        <briefdescription>
+<para>The function queues a Billboard enumeration or re-enumeration. </para>        </briefdescription>
+        <detaileddescription>
+<para>The API queues the Billboard enumeration as per the configuration information provided. Enumeration details are retrieved from the configuration table.</para><para>The function can be called multiple times applications to trigger a re-enumeration without explicit disable call.</para><para>For internal implementation of Billboard, the USB module is controlled from the Cy_App_Usb_BbTask() and this function only queues the request. It should be noted that only one pending request is honored. If more than one request is queued, only the latest is handled. This request is failed if the flashing mode is in progress.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cause</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cause for Billboard enumeration</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of the call. <ref refid="group__group__pdaltmode__billboard__enums_1ga726a24fa891657729c89bee7a4a7e030" kindref="member">cy_en_pdaltmode_billboard_status_t</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="304" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__billboard__functions_1ga78c45dab0666fc87993099d95d1aed22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__billboard__enums_1ga726a24fa891657729c89bee7a4a7e030" kindref="member">cy_en_pdaltmode_billboard_status_t</ref></type>
+        <definition>cy_en_pdaltmode_billboard_status_t Cy_PdAltMode_Billboard_AltStatusUpdate</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint8_t modeIndex, cy_en_pdaltmode_billboard_alt_mode_status_t altStatus)</argsstring>
+        <name>Cy_PdAltMode_Billboard_AltStatusUpdate</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>modeIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__billboard__enums_1ga987546b8821498ba4a7b616b49206ec0" kindref="member">cy_en_pdaltmode_billboard_alt_mode_status_t</ref></type>
+          <declname>altStatus</declname>
+        </param>
+        <briefdescription>
+<para>Updates the Alternate Mode status. </para>        </briefdescription>
+        <detaileddescription>
+<para>The function updates the Alternate Mode status information for the specified Alternate Mode index. The Alternate Mode index should match the DISCOVER_SVID and DISCOVER_MODES response for the device.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>modeIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the mode as defined by the Alternate Mode manager</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>altStatus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current Alternate Mode status</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of the call </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="325" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__billboard__functions_1ga1152a7ec9c38cb794ec5ae1a402e240f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_Billboard_IsPresent</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Billboard_IsPresent</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether a Billboard interface is present. </para>        </briefdescription>
+        <detaileddescription>
+<para>The function checks the configuration information and identifies if a Billboard device exists.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if Billboard is present and false if absent </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="345" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__billboard__functions_1gac4c037fe6494f2378da7609fa1c5d90a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__billboard__enums_1ga726a24fa891657729c89bee7a4a7e030" kindref="member">cy_en_pdaltmode_billboard_status_t</ref></type>
+        <definition>cy_en_pdaltmode_billboard_status_t Cy_PdAltMode_Billboard_Disable</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, bool force)</argsstring>
+        <name>Cy_PdAltMode_Billboard_Disable</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+<para>Queues a Billboard interface disable. </para>        </briefdescription>
+        <detaileddescription>
+<para>The API disables the Billboard Device and disconnects the terminations. For internal implementation of Billboard, the USB module is controlled from the Cy_App_Usb_BbTask() and this function only queues the request. It should be noted that only one pending request is honored. If more than one request is queued, only the latest is handled. A disable call clears any pending enable.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to force a disable; false = Interface not disabled when in flashing mode, true = Interface disabled regardless of the operation mode.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of the call </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="365" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__billboard__functions_1ga73c9f90dae9c0407e60008babc08b24c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__billboard__enums_1ga726a24fa891657729c89bee7a4a7e030" kindref="member">cy_en_pdaltmode_billboard_status_t</ref></type>
+        <definition>cy_en_pdaltmode_billboard_status_t Cy_PdAltMode_Billboard_UpdateAllStatus</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint32_t status)</argsstring>
+        <name>Cy_PdAltMode_Billboard_UpdateAllStatus</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Updates the Alternate Mode status for all modes. </para>        </briefdescription>
+        <detaileddescription>
+<para>The current Billboard implementation supports a maximum of eight Alternate Modes, and each mode as defined in the order of BOS descriptor has two bit status. Bit 1:0 indicates status of Alt Mode 0 and Bit 3:2 indicates status of Alt Mode 1, and so on. This function should be only used when the Billboard status needs to be reinitialized to a specific value. In individual entry/exit cases, <ref refid="group__group__pdaltmode__billboard__functions_1ga78c45dab0666fc87993099d95d1aed22" kindref="member">Cy_PdAltMode_Billboard_AltStatusUpdate()</ref> should be used.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status data for all Alternate Modes</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of the call </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="383" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

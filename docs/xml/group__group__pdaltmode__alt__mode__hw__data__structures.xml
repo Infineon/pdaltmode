@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__alt__mode__hw__data__structures" kind="group">
+    <compoundname>group_pdaltmode_alt_mode_hw_data_structures</compoundname>
+    <title>Data structures</title>
+    <innerclass refid="unioncy__stc__pdaltmode__hw__evt__t" prot="public">cy_stc_pdaltmode_hw_evt_t</innerclass>
+    <innerclass refid="structcy__stc__pdaltmode__hw__evt__t_1_1_a_l_t___m_o_d_e___h_w___e_v_t" prot="public">cy_stc_pdaltmode_hw_evt_t::ALT_MODE_HW_EVT</innerclass>
+    <innerclass refid="unioncy__stc__pdaltmode__alt__mode__evt__t" prot="public">cy_stc_pdaltmode_alt_mode_evt_t</innerclass>
+    <innerclass refid="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t___d_a_t_a" prot="public">cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT_DATA</innerclass>
+    <innerclass refid="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t" prot="public">cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT</innerclass>
+    <innerclass refid="unioncy__stc__pdaltmode__mux__cfg__t" prot="public">cy_stc_pdaltmode_mux_cfg_t</innerclass>
+    <innerclass refid="structcy__stc__pdaltmode__mux__cfg__t_1_1_m_u_x___c_o_n_f_i_g" prot="public">cy_stc_pdaltmode_mux_cfg_t::MUX_CONFIG</innerclass>
+    <innerclass refid="structcy__stc__pdaltmode__hw__details__t" prot="public">cy_stc_pdaltmode_hw_details_t</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

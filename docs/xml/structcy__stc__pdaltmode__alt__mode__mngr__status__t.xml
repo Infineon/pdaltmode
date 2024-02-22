@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcy__stc__pdaltmode__alt__mode__mngr__status__t" kind="struct" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_alt_mode_mngr_status_t</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a7e84a3863656cb08f23d8b67a54866e2" prot="public" static="no" mutable="no">
+        <type><ref refid="structcy__stc__pdaltmode__alt__mode__reg__info__t" kindref="compound">cy_stc_pdaltmode_alt_mode_reg_info_t</ref></type>
+        <definition>cy_stc_pdaltmode_alt_mode_reg_info_t cy_stc_pdaltmode_alt_mode_mngr_status_t::regInfo</definition>
+        <argsstring></argsstring>
+        <name>regInfo</name>
+        <briefdescription>
+<para>Holds info when register Alt Mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1529" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a094cea9703721bcd058fa33977bf3822" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_alt_mode_mngr_status_t::amSupportedModes</definition>
+        <argsstring></argsstring>
+        <name>amSupportedModes</name>
+        <briefdescription>
+<para>Supported Alternate Modes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1531" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a1e34b4c24e7bc3b0e866898c7c04af48" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_alt_mode_mngr_status_t::amExitedModes</definition>
+        <argsstring></argsstring>
+        <name>amExitedModes</name>
+        <briefdescription>
+<para>Exited Alternate Modes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1533" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1533" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1aeb462915fc5d1ede28ab6a0be07f50a6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_alt_mode_mngr_status_t::amActiveModes</definition>
+        <argsstring></argsstring>
+        <name>amActiveModes</name>
+        <briefdescription>
+<para>Active Alternate Modes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1535" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a48170696e81dc23815c47690427390a1" prot="public" static="no" mutable="no">
+        <type><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_mngr_info_t* cy_stc_pdaltmode_alt_mode_mngr_status_t::altModeInfo[CY_PDALTMODE_MAX_SUPP_ALT_MODES]</definition>
+        <argsstring>[CY_PDALTMODE_MAX_SUPP_ALT_MODES]</argsstring>
+        <name>altModeInfo</name>
+        <briefdescription>
+<para>Pointers to each Alt Mode info structure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1537" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1537" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a29618a5dbd36e4908b7eb68d2ed655ee" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_alt_mode_mngr_status_t::altModesNumb</definition>
+        <argsstring></argsstring>
+        <name>altModesNumb</name>
+        <briefdescription>
+<para>Number of existed Alt Modes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1539" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1539" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a380ad5e3a08567c4b6ca68ad50cfab91" prot="public" static="no" mutable="no">
+        <type>cy_stc_pdstack_dpm_pd_cmd_buf_t</type>
+        <definition>cy_stc_pdstack_dpm_pd_cmd_buf_t cy_stc_pdaltmode_alt_mode_mngr_status_t::vdmBuf</definition>
+        <argsstring></argsstring>
+        <name>vdmBuf</name>
+        <briefdescription>
+<para>Buffer to hold VDM. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1541" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1541" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1ac2e2948cd80771c355e3e4196a2da57a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_alt_mode_mngr_status_t::appEvtData[CY_PDALTMODE_EVT_SIZE]</definition>
+        <argsstring>[CY_PDALTMODE_EVT_SIZE]</argsstring>
+        <name>appEvtData</name>
+        <briefdescription>
+<para>Holds application event data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1543" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1543" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1af5f52d6d4dbe2bdc0fe1bda64fb53ce0" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga7b7a03326c0c9a60ffefc96bf80746ed" kindref="member">cy_en_pdaltmode_mngr_state_t</ref></type>
+        <definition>cy_en_pdaltmode_mngr_state_t cy_stc_pdaltmode_alt_mode_mngr_status_t::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>Current Alt Modes manager status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1545" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1545" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1af6c9161c8238c7dad99b72ae960f5afd" prot="public" static="no" mutable="no">
+        <type><ref refid="structcy__stc__pdaltmode__vdm__msg__info__t" kindref="compound">cy_stc_pdaltmode_vdm_msg_info_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_vdm_msg_info_t* cy_stc_pdaltmode_alt_mode_mngr_status_t::vdmInfo</definition>
+        <argsstring></argsstring>
+        <name>vdmInfo</name>
+        <briefdescription>
+<para>Pointer to vdm_msg_info_t struct in vdm task manager. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1547" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1547" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1aa87e9f12df069465d34529ee7342fbc0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_alt_mode_mngr_status_t::svidIdx</definition>
+        <argsstring></argsstring>
+        <name>svidIdx</name>
+        <briefdescription>
+<para>Hold current SVID index for Discovery mode command. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1549" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a52714a4e5fba5738b11b4214dabf51f3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_alt_mode_mngr_status_t::pd3Ufp</definition>
+        <argsstring></argsstring>
+        <name>pd3Ufp</name>
+        <briefdescription>
+<para>Check whether the device is a PD 3.0 supporting UFP. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1551" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a6e26418fcdf8a5ce40e7789ac3d53f3b" prot="public" static="no" mutable="no">
+        <type>cy_pdstack_pd_cbk_t</type>
+        <definition>cy_pdstack_pd_cbk_t cy_stc_pdaltmode_alt_mode_mngr_status_t::exitAllCbk</definition>
+        <argsstring></argsstring>
+        <name>exitAllCbk</name>
+        <briefdescription>
+<para>Exit all Alt Modes procedure callback. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1553" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1553" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1afbfb89cc1132a3bcc0297447d7a57772" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_alt_mode_mngr_status_t::exitAllFlag</definition>
+        <argsstring></argsstring>
+        <name>exitAllFlag</name>
+        <briefdescription>
+<para>Flag to indicate that exit all Alt Modes is required. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1555" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1ab680c12340f5cf4466f6693741015d18" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_alt_mode_mngr_status_t::amDatapathChangeModes</definition>
+        <argsstring></argsstring>
+        <name>amDatapathChangeModes</name>
+        <briefdescription>
+<para>Modes which requires datapath update. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1557" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a4b55651a89b14197e50baa4b55c6cfc7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_alt_mode_mngr_status_t::resetCustomMode</definition>
+        <argsstring></argsstring>
+        <name>resetCustomMode</name>
+        <briefdescription>
+<para>Flag to indicate is=f custom Alt Mode reset is required. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1559" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1559" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1aa2a2643e1021de37a7dd7fa4ec06b29c" prot="public" static="no" mutable="no">
+        <type>cy_pd_pd_do_t</type>
+        <definition>cy_pd_pd_do_t cy_stc_pdaltmode_alt_mode_mngr_status_t::attHeader</definition>
+        <argsstring></argsstring>
+        <name>attHeader</name>
+        <briefdescription>
+<para>Holds unprocessed attention VDM header. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1561" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1561" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1ac355ee627bf89ad352e97a6621da5f2a" prot="public" static="no" mutable="no">
+        <type>cy_pd_pd_do_t</type>
+        <definition>cy_pd_pd_do_t cy_stc_pdaltmode_alt_mode_mngr_status_t::attVdo</definition>
+        <argsstring></argsstring>
+        <name>attVdo</name>
+        <briefdescription>
+<para>Holds unprocessed attention VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1563" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1563" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a63367672c11c25abf812505da0dbf840" prot="public" static="no" mutable="no">
+        <type><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_mngr_info_t* cy_stc_pdaltmode_alt_mode_mngr_status_t::attAltMode</definition>
+        <argsstring></argsstring>
+        <name>attAltMode</name>
+        <briefdescription>
+<para>Holds pointer to Alt Mode which saved attention is related to. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1565" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1565" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1ad75e1c2c6726232a297649d991fe772a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_alt_mode_mngr_status_t::runAttFlag</definition>
+        <argsstring></argsstring>
+        <name>runAttFlag</name>
+        <briefdescription>
+<para>Flag which indicates that saved attention have to be run. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1567" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1567" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct to hold Alt Modes manager status. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="16">
+        <label>cy_stc_pdaltmode_alt_mode_evt_t</label>
+        <link refid="unioncy__stc__pdaltmode__alt__mode__evt__t"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>alt_mode_event</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>alt_mode_event_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>cy_stc_pdaltmode_alt_mode_reg_info_t</label>
+        <link refid="structcy__stc__pdaltmode__alt__mode__reg__info__t"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>atchTgtInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>cy_stc_pdaltmode_alt_mode_mngr_status_t</label>
+        <link refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>regInfo</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>vdmInfo</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>altModeInfo</edgelabel>
+          <edgelabel>attAltMode</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT</label>
+        <link refid="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t"/>
+      </node>
+      <node id="13">
+        <label>cy_stc_pdaltmode_atch_tgt_info_t</label>
+        <link refid="structcy__stc__pdaltmode__atch__tgt__info__t"/>
+      </node>
+      <node id="18">
+        <label>cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT_DATA</label>
+        <link refid="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t___d_a_t_a"/>
+      </node>
+      <node id="14">
+        <label>cy_stc_pdaltmode_vdm_msg_info_t</label>
+        <link refid="structcy__stc__pdaltmode__vdm__msg__info__t"/>
+      </node>
+      <node id="15">
+        <label>cy_stc_pdaltmode_mngr_info_t</label>
+        <link refid="structcy__stc__pdaltmode__mngr__info__t"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>evalAppCmd</edgelabel>
+          <edgelabel>appEvtData</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="cy_pdaltmode_defines.h" line="1527" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1526" bodyend="1569"/>
+    <listofallmembers>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a48170696e81dc23815c47690427390a1" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>altModeInfo</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a29618a5dbd36e4908b7eb68d2ed655ee" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>altModesNumb</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1aeb462915fc5d1ede28ab6a0be07f50a6" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>amActiveModes</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1ab680c12340f5cf4466f6693741015d18" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>amDatapathChangeModes</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a1e34b4c24e7bc3b0e866898c7c04af48" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>amExitedModes</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a094cea9703721bcd058fa33977bf3822" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>amSupportedModes</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1ac2e2948cd80771c355e3e4196a2da57a" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>appEvtData</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a63367672c11c25abf812505da0dbf840" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>attAltMode</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1aa2a2643e1021de37a7dd7fa4ec06b29c" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>attHeader</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1ac355ee627bf89ad352e97a6621da5f2a" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>attVdo</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a6e26418fcdf8a5ce40e7789ac3d53f3b" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>exitAllCbk</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1afbfb89cc1132a3bcc0297447d7a57772" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>exitAllFlag</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a52714a4e5fba5738b11b4214dabf51f3" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>pd3Ufp</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a7e84a3863656cb08f23d8b67a54866e2" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>regInfo</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a4b55651a89b14197e50baa4b55c6cfc7" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>resetCustomMode</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1ad75e1c2c6726232a297649d991fe772a" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>runAttFlag</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1af5f52d6d4dbe2bdc0fe1bda64fb53ce0" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>state</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1aa87e9f12df069465d34529ee7342fbc0" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>svidIdx</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1a380ad5e3a08567c4b6ca68ad50cfab91" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>vdmBuf</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t_1af6c9161c8238c7dad99b72ae960f5afd" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_mngr_status_t</scope><name>vdmInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

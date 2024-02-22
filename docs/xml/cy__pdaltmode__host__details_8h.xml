@@ -1,0 +1,443 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="cy__pdaltmode__host__details_8h" kind="file" language="C++">
+    <compoundname>cy_pdaltmode_host_details.h</compoundname>
+    <includes refid="cy__pdaltmode__defines_8h" local="yes">cy_pdaltmode_defines.h</includes>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gabf41fa4db2428a8db444cc5741c18786" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HostDetails_Task</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_Task</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Host Details Task. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga1b0a9713f238ee39b2589bd3fa2320c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_HostDetails_CheckIfRidgeNeedsToBeUpdated</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint32_t regConfig)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_CheckIfRidgeNeedsToBeUpdated</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>regConfig</declname>
+        </param>
+        <briefdescription>
+<para>Check if Ridge needs to be updated. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PDAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ridge Register</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Flag that indicates if Ridge needs update. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga5ad51df428d2bc52bc7f791a8a5a71da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HostDetails_StatusUpdateAfterHostConnection</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_StatusUpdateAfterHostConnection</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Status update after host connection. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PDAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gaac2d5e5e35780b45319aff28f60109c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HostDetails_ChangeDsPortBehaviorBasedOnHostCapability</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_ChangeDsPortBehaviorBasedOnHostCapability</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Change Ds port behavior based on host capability. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gac6c8d567cd4f8cb3f0bd68ff5f54e4e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HostDetails_ControlModeBasedOnHostType</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint8_t modeMask)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_ControlModeBasedOnHostType</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>modeMask</declname>
+        </param>
+        <briefdescription>
+<para>Control mode based on host type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>modeMask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host Details Control Mode mask</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gae34cf28ae703f2f935055108b8a412bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HostDetails_Init</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *hostAltModeContext, cy_stc_pdaltmode_context_t *deviceAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_Init</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>hostAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>deviceAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Initiate Host Details structure. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hostAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deviceAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga6dd5f0564229b371a811aef301c1cc8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HostDetails_SendHardResetCbk</definition>
+        <argsstring>(cy_timer_id_t id, void *ptrContext)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_SendHardResetCbk</name>
+        <param>
+          <type>cy_timer_id_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptrContext</declname>
+        </param>
+        <briefdescription>
+<para>Timer Callback to send Hard Reset. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer index</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptrContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga014cec35892ccf2dfd35978e38ab6318" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HostDetails_RestartDpmState</definition>
+        <argsstring>(cy_timer_id_t id, void *ptrContext)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_RestartDpmState</name>
+        <param>
+          <type>cy_timer_id_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptrContext</declname>
+        </param>
+        <briefdescription>
+<para>DPM callback to Reset DPM. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer index</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptrContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gacfdcf05cc7ed0d5e66a516e43406ff1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcy__stc__pdaltmode__host__details__t" kindref="compound">cy_stc_pdaltmode_host_details_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_host_details_t* Cy_PdAltMode_HostDetails_GetStatus</definition>
+        <argsstring>(uint8_t port)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_GetStatus</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Returns Host Details status pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selected port</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns pointer to host context status structure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="214" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga3f0c3e6b3d9b3db6ef70179585dd3d76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HostDetails_ClearRidgeRdyBitOnDisconnect</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_ClearRidgeRdyBitOnDisconnect</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Clears RidgeRdy bit on disconnect. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to PD Alternate Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="229" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga8d3778c04e8e2f3a5d0d406b89fe5c26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_HostDetails_IsUsb4Connected</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_IsUsb4Connected</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Returns USB4 connection status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to PD Alternate Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if USB4 is connected, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="244" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file defines the data structures and function prototypes associated with the Host Details feature. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="copyright"><para>Copyright 2024, Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation. All rights reserved. You may use this file only in accordance with the license, terms, conditions, disclaimers, and limitations in the end user license agreement accompanying the software package with which this file was provided. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor">#ifndef<sp/>_CY_PDALTMODE_HOST_DETAILS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CY_PDALTMODE_HOST_DETAILS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>Header<sp/>file<sp/>addition</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cy_pdaltmode_defines.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>MACRO<sp/>definition</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>******************************************************************************/</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor">#if<sp/>STORE_DETAILS_OF_HOST</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor">#define<sp/>DO_NOT_UPDATE_US_IF_T_AME_TIMER_IS_RUNNING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>STORE_DETAILS_OF_HOST<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*<sp/>Global<sp/>function<sp/>declaration</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="63"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HostDetails_Task</highlight></codeline>
+<codeline lineno="64"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="75"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1gabf41fa4db2428a8db444cc5741c18786" kindref="member">Cy_PdAltMode_HostDetails_Task</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="78"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HostDetails_CheckIfRidgeNeedsToBeUpdated</highlight></codeline>
+<codeline lineno="79"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="93"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1ga1b0a9713f238ee39b2589bd3fa2320c7" kindref="member">Cy_PdAltMode_HostDetails_CheckIfRidgeNeedsToBeUpdated</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/>uint32_t<sp/>regConfig);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="97"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HostDetails_StatusUpdateAfterHostConnection</highlight></codeline>
+<codeline lineno="98"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="109"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1ga5ad51df428d2bc52bc7f791a8a5a71da" kindref="member">Cy_PdAltMode_HostDetails_StatusUpdateAfterHostConnection</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="113"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HostDetails_ChangeDsPortBehaviorBasedOnHostCapability</highlight></codeline>
+<codeline lineno="114"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="125"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1gaac2d5e5e35780b45319aff28f60109c3" kindref="member">Cy_PdAltMode_HostDetails_ChangeDsPortBehaviorBasedOnHostCapability</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="129"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HostDetails_ControlModeBasedOnHostType</highlight></codeline>
+<codeline lineno="130"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="144"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1gac6c8d567cd4f8cb3f0bd68ff5f54e4e5" kindref="member">Cy_PdAltMode_HostDetails_ControlModeBasedOnHostType</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/>uint8_t<sp/>modeMask);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="148"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HostDetails_Init</highlight></codeline>
+<codeline lineno="149"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="163"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1gae34cf28ae703f2f935055108b8a412bd" kindref="member">Cy_PdAltMode_HostDetails_Init</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*hostAltModeContext,<sp/><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*deviceAltModeContext<sp/>);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="166"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HostDetails_SendHardResetCbk</highlight></codeline>
+<codeline lineno="167"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="181"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1ga6dd5f0564229b371a811aef301c1cc8c" kindref="member">Cy_PdAltMode_HostDetails_SendHardResetCbk</ref>(cy_timer_id_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>ptrContext);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="184"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HostDetails_RestartDpmState</highlight></codeline>
+<codeline lineno="185"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="199"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1ga014cec35892ccf2dfd35978e38ab6318" kindref="member">Cy_PdAltMode_HostDetails_RestartDpmState</ref>(cy_timer_id_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>ptrContext);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="202"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HostDetails_GetStatus</highlight></codeline>
+<codeline lineno="203"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><ref refid="structcy__stc__pdaltmode__host__details__t" kindref="compound">cy_stc_pdaltmode_host_details_t</ref>*<sp/><ref refid="group__group__pdaltmode__intel__functions_1gacfdcf05cc7ed0d5e66a516e43406ff1c" kindref="member">Cy_PdAltMode_HostDetails_GetStatus</ref>(uint8_t<sp/>port);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="217"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HostDetails_ClearRidgeRdyBitOnDisconnect</highlight></codeline>
+<codeline lineno="218"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="229"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1ga3f0c3e6b3d9b3db6ef70179585dd3d76" kindref="member">Cy_PdAltMode_HostDetails_ClearRidgeRdyBitOnDisconnect</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="232"><highlight class="comment">*<sp/>Function<sp/>Name:<sp/>Cy_PdAltMode_HostDetails_IsUsb4Connected</highlight></codeline>
+<codeline lineno="233"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="244"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1ga8d3778c04e8e2f3a5d0d406b89fe5c26" kindref="member">Cy_PdAltMode_HostDetails_IsUsb4Connected</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_CY_PDALTMODE_HOST_DETAILS_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>[]<sp/>END<sp/>OF<sp/>FILE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="cy_pdaltmode_host_details.h"/>
+  </compounddef>
+</doxygen>

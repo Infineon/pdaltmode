@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="cy__pdaltmode__intel__vid_8h" kind="file" language="C++">
+    <compoundname>cy_pdaltmode_intel_vid.h</compoundname>
+    <includes refid="cy__pdaltmode__defines_8h" local="yes">cy_pdaltmode_defines.h</includes>
+    <includes refid="cy__pdaltmode__mngr_8h" local="yes">cy_pdaltmode_mngr.h</includes>
+    <innerclass refid="structcy__stc__pdaltmode__tbt__status__t" prot="public">cy_stc_pdaltmode_tbt_status_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gaaa2b465c5b583b9c176baf33fcb11db0" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_INTEL_VID</name>
+        <initializer>(0x8087u)</initializer>
+        <briefdescription>
+<para>Intel (Thunderbolt 3) SVID. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="49" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga835fc7953c034574959890ffa44fb189" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_ALT_MODE_ID</name>
+        <initializer>(1u)</initializer>
+        <briefdescription>
+<para>Unique ID assigned to Thunderbolt mode in the CCGx SDK. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="52" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga4dc8073ad3083749c08c3c0e1b8c4b5d" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_VPRO_ALT_MODE_ID</name>
+        <initializer>(2u)</initializer>
+        <briefdescription>
+<para>Unique ID assigned to Vpro mode in the CCGx SDK. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="55" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga8bdc2f17340cfd34e1445f89998c360e" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_VDO_IDX</name>
+        <initializer>(0u)</initializer>
+        <briefdescription>
+<para>&lt; Maximum number of VDOs Thunderbolt-3 uses for the alt mode flow </para>        </briefdescription>
+        <detaileddescription>
+<para>Index of VDO used for Thunderbolt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="61" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gac794e171d78cef920537cbdade6c80df" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_MODE_VPRO_AVAIL</name>
+        <initializer>(0x04000000u)</initializer>
+        <briefdescription>
+<para>VPro available bit in TBT Mode VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="64" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga5674e8c7ddc0d754c21e77dc5edfc66e" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_MODE_VPRO_DOCK_HOST</name>
+        <initializer>(0x04000000u)</initializer>
+        <briefdescription>
+<para>Vpro_Dock_and_Host bit in TBT Enter Mode VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="67" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga437eb786f8a301812d38d071b78de51b" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_GET_VPRO_AVAILABLE_STAT</name>
+        <param><defname>status</defname></param>
+        <initializer>((status &amp; <ref refid="group__group__pdaltmode__intel__macros_1gac794e171d78cef920537cbdade6c80df" kindref="member">CY_PDALTMODE_TBT_MODE_VPRO_AVAIL</ref>) != 0U)</initializer>
+        <briefdescription>
+<para>Macro to get VPro Available bit from Discover Mode response VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="70" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga90f79b2a87bbdd37ceeeb7d96afe26ec" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_GET_LEGACY_TBT_ADAPTER</name>
+        <param><defname>status</defname></param>
+        <initializer>((status &gt;&gt; 16U) &amp; 0x1U)</initializer>
+        <briefdescription>
+<para>Macro to get legacy adapter status from Discovery Mode response VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="73" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gab1ff7cf5113a579162a8b278963665a4" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_EXIT</name>
+        <param><defname>status</defname></param>
+        <initializer>((status &gt;&gt; 4U) &amp; 0x1U)</initializer>
+        <briefdescription>
+<para>Macro to get Exit status from Attention VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="76" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga5a4ffdb5c0bf719b747111be5e95eb94" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_BB_STATUS</name>
+        <param><defname>status</defname></param>
+        <initializer>((status &gt;&gt; 3U) &amp; 0x1U)</initializer>
+        <briefdescription>
+<para>Macro to get BB status from Attention VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="79" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga81c54dd41551e21b2ecc84bed5d0bc53" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_USB2_ENABLE</name>
+        <param><defname>status</defname></param>
+        <initializer>((status &gt;&gt; 2U) &amp; 0x1U)</initializer>
+        <briefdescription>
+<para>Macro to get USB enable status from Attention VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="82" column="9" bodyfile="cy_pdaltmode_intel_vid.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gad193877586c5f72b1c8cac67ffbb5c9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_mngr_info_t* Cy_PdAltMode_TBT_RegIntelModes</definition>
+        <argsstring>(void *context, cy_stc_pdaltmode_alt_mode_reg_info_t *regInfo)</argsstring>
+        <name>Cy_PdAltMode_TBT_RegIntelModes</name>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__alt__mode__reg__info__t" kindref="compound">cy_stc_pdaltmode_alt_mode_reg_info_t</ref> *</type>
+          <declname>regInfo</declname>
+        </param>
+        <briefdescription>
+<para>Analyzes Discovery information to find out if further TBT Alternate Mode processing is allowed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to structure which holds Alt Mode register info</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to TBT Alternate Mode command structure if analysis passed is successful. In case of failure, function returns NULL pointer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga707dc65c4ab28211d4646217f0afe4d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_TBT_SendExitModeCmd</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_TBT_SendExitModeCmd</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Initiate TBT mode exit command. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="172" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file defines the data structures and function prototypes associated with the Thunderbolt (Intel VID) alternate mode handler. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="copyright"><para>Copyright 2024, Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation. All rights reserved. You may use this file only in accordance with the license, terms, conditions, disclaimers, and limitations in the end user license agreement accompanying the software package with which this file was provided. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor">#ifndef<sp/>_CY_PDALTMODE_INTEL_VID_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CY_PDALTMODE_INTEL_VID_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>Header<sp/>file<sp/>addition</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cy_pdaltmode_defines.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cy_pdaltmode_mngr.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>MACRO<sp/>definition</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_TBT_INTEL_VID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x8087u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_TBT_ALT_MODE_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_TBT_VPRO_ALT_MODE_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(2u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="comment">//#define<sp/>CY_PDALTMODE_MAX_TBT_VDO_NUMB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1u)</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_TBT_VDO_IDX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_TBT_MODE_VPRO_AVAIL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x04000000u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_TBT_MODE_VPRO_DOCK_HOST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x04000000u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_TBT_GET_VPRO_AVAILABLE_STAT(status)<sp/>((status<sp/>&amp;<sp/>CY_PDALTMODE_TBT_MODE_VPRO_AVAIL)<sp/>!=<sp/>0U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_TBT_GET_LEGACY_TBT_ADAPTER(status)<sp/><sp/>((status<sp/>&gt;&gt;<sp/>16U)<sp/>&amp;<sp/>0x1U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_TBT_EXIT(status)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((status<sp/>&gt;&gt;<sp/>4U)<sp/>&amp;<sp/>0x1U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_TBT_BB_STATUS(status)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((status<sp/>&gt;&gt;<sp/>3U)<sp/>&amp;<sp/>0x1U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_TBT_USB2_ENABLE(status)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((status<sp/>&gt;&gt;<sp/>2U)<sp/>&amp;<sp/>0x1U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor">#if<sp/>ICL_ENABLE<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_TBT_BB_STS_USB2_ENABLE(status)<sp/><sp/><sp/><sp/><sp/><sp/>((status<sp/>&gt;&gt;<sp/>2u)<sp/>&amp;<sp/>0x3u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_TBT_BB_PRESENT_EXIT_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x03u)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ICL_ENABLE<sp/>*/</highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/>*<sp/>Data<sp/>structure<sp/>definition</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/>****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>info;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__intel__enums_1ga965fa53777cbf12887a767ef4a277903" kindref="member">cy_en_pdaltmode_tbt_state_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>cy_pd_pd_do_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vdo[<ref refid="group__group__pdaltmode__common__macros_1gafdc00bbb1292fa24194c5437064c4006" kindref="member">CY_PDALTMODE_MAX_TBT_VDO_NUMB</ref>];<sp/><sp/></highlight></codeline>
+<codeline lineno="114" refid="structcy__stc__pdaltmode__tbt__status__t" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/>cy_pd_pd_do_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>enterModeVdo;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxSopSupp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vproSupp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor">#if<sp/>TBT_DFP_SUPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>cy_pd_pd_do_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>devVdo;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structcy__stc__pdaltmode__atch__tgt__info__t" kindref="compound">cy_stc_pdaltmode_atch_tgt_info_t</ref>*<sp/>tgtInfoPtr;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TBT_DFP_SUPP<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}<ref refid="structcy__stc__pdaltmode__tbt__status__t" kindref="compound">cy_stc_pdaltmode_tbt_status_t</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/>*<sp/>Global<sp/>function<sp/>declaration</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="135"><highlight class="comment">*<sp/>Function<sp/>Name:<sp/>Cy_PdAltMode_TBT_RegIntelModes</highlight></codeline>
+<codeline lineno="136"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref>*<sp/><ref refid="group__group__pdaltmode__intel__functions_1gad193877586c5f72b1c8cac67ffbb5c9c" kindref="member">Cy_PdAltMode_TBT_RegIntelModes</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context,<sp/><ref refid="structcy__stc__pdaltmode__alt__mode__reg__info__t" kindref="compound">cy_stc_pdaltmode_alt_mode_reg_info_t</ref>*<sp/>regInfo);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="155"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_TBT_SendExitModeCmd</highlight></codeline>
+<codeline lineno="156"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="167"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1ga707dc65c4ab28211d4646217f0afe4d5" kindref="member">Cy_PdAltMode_TBT_SendExitModeCmd</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_CY_PDALTMODE_INTEL_VID_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>[]<sp/>END<sp/>OF<sp/>FILE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="cy_pdaltmode_intel_vid.h"/>
+  </compounddef>
+</doxygen>

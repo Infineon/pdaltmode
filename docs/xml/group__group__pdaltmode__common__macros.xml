@@ -1,0 +1,508 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__common__macros" kind="group">
+    <compoundname>group_pdaltmode_common_macros</compoundname>
+    <title>Macros</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga8df43c59d3190546353c14df75d7663b" prot="public" static="no">
+        <name>CY_PDALTMODE_TOTAL_NO_OF_PORTS_SUP</name>
+        <initializer>(2u)</initializer>
+        <briefdescription>
+<para>Total number of Type C ports supported. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="516" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1gaa3e43b09e207e71363ed64a0e4d34e4e" prot="public" static="no">
+        <name>CY_PDALTMODE_APP_POLL_PERIOD</name>
+        <initializer>(5u)</initializer>
+        <briefdescription>
+<para>Periodicity of checking if Alt Mode which is on pause could be run. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="519" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="519" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1gaa693d620e58d694d4d5c0d18d8fd27b5" prot="public" static="no">
+        <name>CY_PDALTMODE_APP_MUX_VDM_DELAY_TIMER_PERIOD</name>
+        <initializer>(10u)</initializer>
+        <briefdescription>
+<para>App MUX VDM delay timer period in ms. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="522" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="522" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga3d0d0f1edfbc7cd309f3390098d9eeb5" prot="public" static="no">
+        <name>CY_PDALTMODE_APP_HPD_DEQUE_POLL_PERIOD</name>
+        <initializer>(3u)</initializer>
+        <briefdescription>
+<para>Periodicity of checking if paused HPD Dequeuing could be run. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="525" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga431e5c040c00b409fc13b1b764e83c04" prot="public" static="no">
+        <name>CY_PDALTMODE_APP_HPI_VPRO_SUPP_MASK</name>
+        <initializer>(0x10u)</initializer>
+        <briefdescription>
+<para>Mask to identify is vPro mode supported in HPI host capabilities register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="528" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga084cd8c4c3430831ae2bbd5c3820bdb7" prot="public" static="no">
+        <name>CY_PDALTMODE_APP_ALT_MODE_STAT_MASK</name>
+        <initializer>(0x3Fu)</initializer>
+        <briefdescription>
+<para>Mask to identify active Alternate Modes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="531" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga8ee6efca40cdc6f912f3efccca7c110c" prot="public" static="no">
+        <name>CY_PDALTMODE_APP_DISC_COMPLETE_MASK</name>
+        <initializer>(0x80u)</initializer>
+        <briefdescription>
+<para>Mask to identify that Discovery process completed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="534" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga69f22562043637fad76c73d1960d915f" prot="public" static="no">
+        <name>CY_PDALTMODE_APP_USB4_ACTIVE_MASK</name>
+        <initializer>(0x40u)</initializer>
+        <briefdescription>
+<para>Mask to identify is USB4 mode entered. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="537" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="537" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga02c9a577d272d7e7e2833ff85effe3f7" prot="public" static="no">
+        <name>CY_PDALTMODE_USB4_EN_HOST_PARAM_MASK</name>
+        <initializer>(0x20u)</initializer>
+        <briefdescription>
+<para>Mask to identify that USB4 functionality is enabled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="540" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="540" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga5c2f1d8f3a1c64b6df296c8337efc6ad" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_EN_HOST_PARAM_MASK</name>
+        <initializer>(0x40u)</initializer>
+        <briefdescription>
+<para>Mask to identify that TBT functionality is enabled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="543" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="543" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga9dcd4c63f56ad8ce5e171be28013be48" prot="public" static="no">
+        <name>CY_PDALTMODE_DP21_EN_HOST_PARAM_MASK</name>
+        <initializer>(0x80u)</initializer>
+        <briefdescription>
+<para>Mask to identify that DP 2.1 functionality is enabled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="546" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="546" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga3f17f04b341d50b719ec06bc855e33bb" prot="public" static="no">
+        <name>CY_PDALTMODE_APP_VDM_BUSY_TIMER_PERIOD</name>
+        <initializer>(50u)</initializer>
+        <briefdescription>
+<para>VDM busy timer period (in ms) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="549" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1gada4f48ba65aa8aa6284dc9656b496d6c" prot="public" static="no">
+        <name>CY_PDALTMODE_APP_USB4_ENTRY_RETRY_PERIOD</name>
+        <initializer>(5u)</initializer>
+        <briefdescription>
+<para>Enter USB4 retry (on failure) timer period in ms. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="552" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="552" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga18934feeaa75ee78b8131fba091b5725" prot="public" static="no">
+        <name>CY_PDALTMODE_APP_ENTER_USB4_WAIT_PERIOD</name>
+        <initializer>(150u)</initializer>
+        <briefdescription>
+<para>Enter USB4 wait timer period in ms. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="555" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1gae68e9aef6914f6ede19bfb83929ddf04" prot="public" static="no">
+        <name>CY_PDALTMODE_ENTER_USB_RETRY_MAX_LIMIT</name>
+        <initializer>(1u)</initializer>
+        <briefdescription>
+<para>Maximum number of Enter USB command retries in case of WAIT response. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="558" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1gaf189e677943c62dc1819172d2c1da7d4" prot="public" static="no">
+        <name>CY_PDALTMODE_APP_VDM_FAIL_RETRY_PERIOD</name>
+        <initializer>(100u)</initializer>
+        <briefdescription>
+<para>VDM retry (on failure) timer period in ms. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="561" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="561" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga37d01b806b44c8ab84c037c0edd64a57" prot="public" static="no">
+        <name>CY_PDALTMODE_APP_CABLE_POWER_UP_DELAY</name>
+        <initializer>(55u)</initializer>
+        <briefdescription>
+<para>Time allowed for cable power up to be complete. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="564" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1gabd31469febefc8dd88f849428ec8e169" prot="public" static="no">
+        <name>CY_PDALTMODE_APP_CABLE_VDM_START_DELAY</name>
+        <initializer>(5u)</initializer>
+        <briefdescription>
+<para>Cable query delay period in ms. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="567" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="567" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga0fb9f3422f53fb001e65a89ccc48e6f7" prot="public" static="no">
+        <name>CY_PDALTMODE_APP_AME_TIMEOUT_TIMER_PERIOD</name>
+        <initializer>(1000u)</initializer>
+        <briefdescription>
+<para>tAME timer period (in ms) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="570" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="570" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga308343ff0f2e7dad9170124b21539cdb" prot="public" static="no">
+        <name>CY_PDALTMODE_APP_USB4_TIMEOUT_TIMER_PERIOD</name>
+        <initializer>(1000u)</initializer>
+        <briefdescription>
+<para>USB4 Timeout timer period (in ms) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="573" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="573" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga93372ca384efe520662772196aa6c385" prot="public" static="no">
+        <name>CY_PDALTMODE_APP_UFP_RECOV_VCONN_SWAP_TIMER_PERIOD</name>
+        <initializer>(1000u)</initializer>
+        <briefdescription>
+<para>Timer period in milliseconds used to run Vconn swap after V5V was lost and recovered while UFP. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="576" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="576" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1gab1f9717142949c939b302cc89f90f3b7" prot="public" static="no">
+        <name>CY_PDALTMODE_APP_HPD_WAIT_TIMER_PERIOD</name>
+        <initializer>(100u)</initializer>
+        <briefdescription>
+<para>DP2.1 HPD Wait timer period. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="579" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1gae568eb6ecfa5b9bea12a6ba82e02ab46" prot="public" static="no">
+        <name>CY_PDALTMODE_MAX_SUPP_ALT_MODES</name>
+        <initializer>(4u)</initializer>
+        <briefdescription>
+<para>Maximum number of Alternate Modes which Alt Modes manager could operate in the same time. </para>        </briefdescription>
+        <detaileddescription>
+<para>Setting this to larger values will increase RAM requirement for the projects. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="583" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="583" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1gad8212f19aa785ee9a8a02634357883b5" prot="public" static="no">
+        <name>CY_PDALTMODE_MAX_SVID_VDO_SUPP</name>
+        <initializer>(8u)</initializer>
+        <briefdescription>
+<para>Maximum number of attached target SVIDs VDM task manager can hold in the memory. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="586" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga6a642fe19bc9c7c8db518c9878519d68" prot="public" static="no">
+        <name>CY_PDALTMODE_EVT_SIZE</name>
+        <initializer>(2u)</initializer>
+        <briefdescription>
+<para>Size of Alt Mode APP event data in 4 byte words. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="589" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="589" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1gad5a8ba3a413e6879b2cb9a28a740b6bf" prot="public" static="no">
+        <name>CY_PDALTMODE_MAX_DP_VDO_NUMB</name>
+        <initializer>(1u)</initializer>
+        <briefdescription>
+<para>Maximum number of VDOs DP uses for the Alt Mode flow. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="592" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="592" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1gafdc00bbb1292fa24194c5437064c4006" prot="public" static="no">
+        <name>CY_PDALTMODE_MAX_TBT_VDO_NUMB</name>
+        <initializer>(1u)</initializer>
+        <briefdescription>
+<para>Maximum number of VDOs Thunderbolt-3 uses for the Alt Mode flow. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="595" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="595" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga2cb7840adbf420357dfbb997f0f2b3a3" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_NO_DATA</name>
+        <initializer>(0u)</initializer>
+        <briefdescription>
+<para>Zero data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="597" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="597" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga373274ff41465dbae5868dcaeacee829" prot="public" static="no">
+        <name>CY_PDALTMODE_HPD_ENABLE_CMD</name>
+        <initializer>(0u)</initializer>
+        <briefdescription>
+<para>Enable HPD application command value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="601" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="601" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1gaae7db566d15dc30c7816e7576ee8a8bc" prot="public" static="no">
+        <name>CY_PDALTMODE_HPD_DISABLE_CMD</name>
+        <initializer>(5u)</initializer>
+        <briefdescription>
+<para>Disable HPD application command value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="604" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="604" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga6c67c4ca16f4e4daaf04f811c944601e" prot="public" static="no">
+        <name>CY_PDATMODE_STD_SVID</name>
+        <initializer>(0xFF00u)</initializer>
+        <briefdescription>
+<para>Standard SVID. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="607" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="607" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1gaf33d8c03f64a191110fddd9f98657092" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_SVID</name>
+        <initializer>(0xFF01u)</initializer>
+        <briefdescription>
+<para>Display port SVID defined by VESA specification. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="610" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="610" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga73240a1c8f3d99e29393c3ead7a4bbce" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_SVID</name>
+        <initializer>(0x8087u)</initializer>
+        <briefdescription>
+<para>Thunderbolt SVID defined by Intel specification. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="613" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="613" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga375cd7240912036c0da6d50e5867bc19" prot="public" static="no">
+        <name>CY_PDALTMODE_USB_MODE_USB4</name>
+        <initializer>(2u)</initializer>
+        <briefdescription>
+<para>USB4 Mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="616" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1gaee7f2a6d6cb94b4729a9ddfb53f2aa72" prot="public" static="no">
+        <name>CY_PDALTMODE_FAULT_APP_PORT_VCONN_FAULT_ACTIVE</name>
+        <initializer>(0x01U)</initializer>
+        <briefdescription>
+<para>Status bit that indicates VConn fault is active. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="618" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga14a87fe1f7f76857cf2dda9e15e05a23" prot="public" static="no">
+        <name>CY_PDALTMODE_FAULT_APP_PORT_V5V_SUPPLY_LOST</name>
+        <initializer>(0x10U)</initializer>
+        <briefdescription>
+<para>Status bit that indicates that V5V supply (for VConn) has been lost. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="621" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="621" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga5ab0ce90891df383749dd53355677426" prot="public" static="no">
+        <name>CY_PDALTMODE_UFP_ALT_MODE_SUPP_MASK</name>
+        <initializer>(0x38u)</initializer>
+        <briefdescription>
+<para>Alternate Modes Support UFP VDO1 mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="625" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="625" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga437fa3db89b6ba21b340ccdf69aa67be" prot="public" static="no">
+        <name>CY_PDALTMODE_UFP_TBT_ALT_MODE_SUPP_MASK</name>
+        <initializer>(0x8u)</initializer>
+        <briefdescription>
+<para>TBT Alternate Modes Support UFP VDO1 mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="628" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="628" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1gaa65ca51298182897e0f1c10282f08ed3" prot="public" static="no">
+        <name>CY_PDALTMODE_TBT_DATA_EXIT_MASK</name>
+        <initializer>(0xCu)</initializer>
+        <briefdescription>
+<para>Mask to indicate that TBT data path should be disabled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="631" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga75749e7f96bd43e93dc739d0047e2b60" prot="public" static="no">
+        <name>CY_PDALTMODE_MAX_DISC_ID_RESP_LEN</name>
+        <initializer>(CY_PD_MAX_NO_OF_DO)</initializer>
+        <briefdescription>
+<para>Maximum length of Discover ID response. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="634" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="634" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga0828b64a6529f5b237cf417395253510" prot="public" static="no">
+        <name>CY_PDALTMODE_MAX_DISC_SVID_RESP_LEN</name>
+        <initializer>(18u)</initializer>
+        <briefdescription>
+<para>Maximum length of Discover SVID response. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="637" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="637" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1gaba27ba40960977f95b8000610a5804d4" prot="public" static="no">
+        <name>CY_PDALTMODE_HPI_AM_SVID</name>
+        <initializer>(0x0000u)</initializer>
+        <briefdescription>
+<para>SVID value assigned to HPI based Alternate Mode. </para>        </briefdescription>
+        <detaileddescription>
+<para>0 indicates that actual SVID value is taken from the configuration table or HPI register. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="641" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="641" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1ga4e34760d193d2faba890d45bc3ebbdba" prot="public" static="no">
+        <name>CY_PDALTMODE_MAX_HPI_AM_VDO_NUMB</name>
+        <initializer>(1u)</initializer>
+        <briefdescription>
+<para>Number of Data Objects used in VDMs associated with HPI based Alternate Mode implementation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="644" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="644" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1gac359f7dc8dc47a8806839296f078873c" prot="public" static="no">
+        <name>CY_PDALTMODE_VDM_DID_MIN_SIZE</name>
+        <initializer>(20)</initializer>
+        <briefdescription>
+<para>Discover ID response minimum size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="647" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="647" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__common__macros_1gaa85f3cbb41e380c21f5b7cc7bd3c9f75" prot="public" static="no">
+        <name>CY_PDALTMODE_VDM_RESP_ID_HEADER_OFFSET</name>
+        <initializer>(8)</initializer>
+        <briefdescription>
+<para>Discover ID response ID header VDO offset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="650" column="9" bodyfile="cy_pdaltmode_defines.h" bodystart="650" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

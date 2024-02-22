@@ -1,0 +1,1050 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__intel__functions" kind="group">
+    <compoundname>group_pdaltmode_intel_functions</compoundname>
+    <title>Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gabf41fa4db2428a8db444cc5741c18786" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HostDetails_Task</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_Task</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Host Details Task. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga1b0a9713f238ee39b2589bd3fa2320c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_HostDetails_CheckIfRidgeNeedsToBeUpdated</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint32_t regConfig)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_CheckIfRidgeNeedsToBeUpdated</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>regConfig</declname>
+        </param>
+        <briefdescription>
+<para>Check if Ridge needs to be updated. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PDAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ridge Register</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Flag that indicates if Ridge needs update. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga5ad51df428d2bc52bc7f791a8a5a71da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HostDetails_StatusUpdateAfterHostConnection</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_StatusUpdateAfterHostConnection</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Status update after host connection. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PDAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gaac2d5e5e35780b45319aff28f60109c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HostDetails_ChangeDsPortBehaviorBasedOnHostCapability</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_ChangeDsPortBehaviorBasedOnHostCapability</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Change Ds port behavior based on host capability. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gac6c8d567cd4f8cb3f0bd68ff5f54e4e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HostDetails_ControlModeBasedOnHostType</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint8_t modeMask)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_ControlModeBasedOnHostType</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>modeMask</declname>
+        </param>
+        <briefdescription>
+<para>Control mode based on host type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>modeMask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host Details Control Mode mask</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gae34cf28ae703f2f935055108b8a412bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HostDetails_Init</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *hostAltModeContext, cy_stc_pdaltmode_context_t *deviceAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_Init</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>hostAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>deviceAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Initiate Host Details structure. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hostAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deviceAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga6dd5f0564229b371a811aef301c1cc8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HostDetails_SendHardResetCbk</definition>
+        <argsstring>(cy_timer_id_t id, void *ptrContext)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_SendHardResetCbk</name>
+        <param>
+          <type>cy_timer_id_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptrContext</declname>
+        </param>
+        <briefdescription>
+<para>Timer Callback to send Hard Reset. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer index</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptrContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga014cec35892ccf2dfd35978e38ab6318" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HostDetails_RestartDpmState</definition>
+        <argsstring>(cy_timer_id_t id, void *ptrContext)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_RestartDpmState</name>
+        <param>
+          <type>cy_timer_id_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptrContext</declname>
+        </param>
+        <briefdescription>
+<para>DPM callback to Reset DPM. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer index</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptrContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gacfdcf05cc7ed0d5e66a516e43406ff1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcy__stc__pdaltmode__host__details__t" kindref="compound">cy_stc_pdaltmode_host_details_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_host_details_t* Cy_PdAltMode_HostDetails_GetStatus</definition>
+        <argsstring>(uint8_t port)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_GetStatus</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Returns Host Details status pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selected port</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns pointer to host context status structure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="214" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga3f0c3e6b3d9b3db6ef70179585dd3d76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HostDetails_ClearRidgeRdyBitOnDisconnect</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_ClearRidgeRdyBitOnDisconnect</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Clears RidgeRdy bit on disconnect. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to PD Alternate Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="229" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga8d3778c04e8e2f3a5d0d406b89fe5c26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_HostDetails_IsUsb4Connected</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HostDetails_IsUsb4Connected</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Returns USB4 connection status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to PD Alternate Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if USB4 is connected, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_host_details.h" line="244" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gac392648cb03dc92742d844550fdc2013" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Ridge_SetDisconnect</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Ridge_SetDisconnect</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Set disconnect. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga7d3fb6813b92e16c658d05dfa2cd183e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_Ridge_SetMux</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_pdaltmode_mux_select_t muxCfg, uint32_t modeVdo, uint32_t customData)</argsstring>
+        <name>Cy_PdAltMode_Ridge_SetMux</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__alt__mode__hw__enums_1ga6e2d96963afcf43ec5dfe3d5a18d6bc6" kindref="member">cy_en_pdaltmode_mux_select_t</ref></type>
+          <declname>muxCfg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>modeVdo</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>customData</declname>
+        </param>
+        <briefdescription>
+<para>Set AR/TR registers in accordance to input parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>muxCfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MUX configuration</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>modeVdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MUX configuration related DP/TBT/USB4 VDO</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>customData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Additional custom data related to MUX configuration</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if AR/TR was set successful, otherwise false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gac038aa9ccf2f7c37101ebcfcc1b3cfcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Ridge_Task</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Ridge_Task</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Handles pending Ridge tasks. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga386c4053897bae0aa6856fdbcd56bd86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>cy_en_pdstack_status_t</type>
+        <definition>cy_en_pdstack_status_t Cy_PdAltMode_Ridge_HpdInit</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_cb_usbpd_hpd_events_t cbk)</argsstring>
+        <name>Cy_PdAltMode_Ridge_HpdInit</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>cy_cb_usbpd_hpd_events_t</type>
+          <declname>cbk</declname>
+        </param>
+        <briefdescription>
+<para>Enables Titan Ridge the HPD functionality for the specified PD port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cbk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback to be used for command completion event</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns CY_PDSTACK_STAT_SUCCESS in case of success, error code otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gaeff7c8076b6c8fda68bddd3248775461" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Ridge_HpdDeInit</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Ridge_HpdDeInit</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Disables Titan Ridge the HPD functionality for the specified PD port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="194" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga726af0fb2c58fc1dfbd0f0c36af579dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>cy_en_pdstack_status_t</type>
+        <definition>cy_en_pdstack_status_t Cy_PdAltMode_Ridge_HpdSendEvt</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_usbpd_hpd_events_t evtype)</argsstring>
+        <name>Cy_PdAltMode_Ridge_HpdSendEvt</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>cy_en_usbpd_hpd_events_t</type>
+          <declname>evtype</declname>
+        </param>
+        <briefdescription>
+<para>Send the desired HPD event out through the Titan Ridge HPD GPIO. </para>        </briefdescription>
+        <detaileddescription>
+<para>Only the HPD_EVENT_UNPLUG, HPD_EVENT_UNPLUG and HPD_EVENT_IRQ events should be requested.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evtype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of HPD event to be sent</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns CY_PDSTACK_STAT_SUCCESS in case of success, error code otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="214" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga49e0eb76dc29592efe083aabfad53196" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_Ridge_GetHpdState</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Ridge_GetHpdState</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Returns TR HPD state. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TR HPD state </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="229" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gad193877586c5f72b1c8cac67ffbb5c9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_mngr_info_t* Cy_PdAltMode_TBT_RegIntelModes</definition>
+        <argsstring>(void *context, cy_stc_pdaltmode_alt_mode_reg_info_t *regInfo)</argsstring>
+        <name>Cy_PdAltMode_TBT_RegIntelModes</name>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__alt__mode__reg__info__t" kindref="compound">cy_stc_pdaltmode_alt_mode_reg_info_t</ref> *</type>
+          <declname>regInfo</declname>
+        </param>
+        <briefdescription>
+<para>Analyzes Discovery information to find out if further TBT Alternate Mode processing is allowed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to structure which holds Alt Mode register info</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to TBT Alternate Mode command structure if analysis passed is successful. In case of failure, function returns NULL pointer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga707dc65c4ab28211d4646217f0afe4d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_TBT_SendExitModeCmd</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_TBT_SendExitModeCmd</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Initiate TBT mode exit command. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_vid.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gab43f28b57d639d16242a004700f33e23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_RidgeSlave_I2cCmdCbk</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint32_t count, uint8_t *writeBuf, uint8_t *readBuf)</argsstring>
+        <name>Cy_PdAltMode_RidgeSlave_I2cCmdCbk</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>writeBuf</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>readBuf</declname>
+        </param>
+        <briefdescription>
+<para>I2C command callback function that implements the actual Alpine/Titan Ridge interface logic. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is called from SCB interrupt handler. Since the work to be done is limited, it is completely handled from the callback.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Count of bytes written to I2C buffer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>writeBuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to I2C Write buffer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>readBuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to I2C Read buffer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gafdfa393ed4a115a22d39bfa12bfe2551" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_RidgeSlave_StatusUpdate</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint32_t status, bool rewrite)</argsstring>
+        <name>Cy_PdAltMode_RidgeSlave_StatusUpdate</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>rewrite</declname>
+        </param>
+        <briefdescription>
+<para>Update the AR/TR status register and send an event to the Alpine/Titan Ridge. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used by the application layer to update the content of the Alpine/Titan Ridge status register. If the content of the register is changing, CCG asserts the corresponding interrupt to notify Alpine/Titan Ridge about the status change.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be written into the status register</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rewrite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flag to enable updating of the status register even if it remains the same</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga85fef8bd30b85f4a052d23c5e1b361a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_RidgeSlave_DataReset</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_RidgeSlave_DataReset</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Clean the AR/TR status register the Alpine/Titan Ridge. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gaff8707b5202ac3bc4db24e4244161b87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_RidgeSlave_Task</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint8_t *writeBuf)</argsstring>
+        <name>Cy_PdAltMode_RidgeSlave_Task</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>writeBuf</declname>
+        </param>
+        <briefdescription>
+<para>Handler for pending Ridge Slave interface tasks. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>writeBuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the write buffer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="217" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga6c2c2c2ab6ccef6db71bf73e30e0a2db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_RidgeSlave_IsHostConnected</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_RidgeSlave_IsHostConnected</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Check whether a host is connected to the specified PD port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if a host is connected, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="247" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gaf8be940b88560fbcaf99249e0ef8ccb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_RidgeSlave_SetOcpStatus</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_RidgeSlave_SetOcpStatus</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Update the data status register to indicate over current fault condition. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="262" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga33deb4f208eba8c556451a715630f97f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_RidgeSlave_ResetVirtualHpd</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_RidgeSlave_ResetVirtualHpd</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Resets virtual HPD related variables. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="296" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gafdccec5a89be95642d672652dd9483b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_SocDock_Init</definition>
+        <argsstring>(cy_stc_pdaltmode_ridge_hw_config_t *ridgeHwConfig, cy_stc_pdaltmode_context_t *ptrAltModeContext0, cy_stc_pdaltmode_context_t *ptrAltModeContext1)</argsstring>
+        <name>Cy_PdAltMode_SocDock_Init</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__ridge__hw__config__t" kindref="compound">cy_stc_pdaltmode_ridge_hw_config_t</ref> *</type>
+          <declname>ridgeHwConfig</declname>
+        </param>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext0</declname>
+        </param>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext1</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the Alpine/Titan Ridge slave interface module. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function initializes the Alpine/Titan Ridge slave interface module and configures it to use the specified SCB block. The SCB will be configured as an I2C slave block, and the interrupt output will also be initialized to a de-asserted state.</para><para>Since only two registers are to be implemented, and the commands to be implemented are simple, the complete module is implemented using the I2C command callbacks.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ridgeHwConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ridge HW Config pointer.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to PD Alt mode context for port 0</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to PD Alt mode context for port 1</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_soc_dock.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga3e745b290dcfd9f95d9cfbd3f8ed7f86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_SocDock_DeInit</definition>
+        <argsstring>(CySCB_Type *scbNum, cy_stc_pdaltmode_context_t *ptrAltModeContext0, cy_stc_pdaltmode_context_t *ptrAltModeContext1)</argsstring>
+        <name>Cy_PdAltMode_SocDock_DeInit</name>
+        <param>
+          <type>CySCB_Type *</type>
+          <declname>scbNum</declname>
+        </param>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext0</declname>
+        </param>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext1</declname>
+        </param>
+        <briefdescription>
+<para>De-initialize the Alpine/Titan Ridge slave interface module. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function de-initializes the SCB block used to implement the I2C slave interface between CCGx and Alpine/Titan Ridge.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scbNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SCB number</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to PD Alt Mode context for port 0</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to PD Alt Mode context for port 1</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_soc_dock.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga597d0cc892562f890d69251fc3af6a59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_SocDock_Task</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_SocDock_Task</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>AltMode Soc state machine tasks handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to PD Alt Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_soc_dock.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gafbbf7f61004f2047cf28bdb2cf909bac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* Cy_PdAltMode_SocDock_GetUUID</definition>
+        <argsstring>(uint8_t port)</argsstring>
+        <name>Cy_PdAltMode_SocDock_GetUUID</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Returns the pointer to the UUID buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selected port.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the UUID buffer </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_soc_dock.h" line="143" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

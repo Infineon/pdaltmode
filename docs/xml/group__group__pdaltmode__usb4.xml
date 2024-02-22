@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__usb4" kind="group">
+    <compoundname>group_pdaltmode_usb4</compoundname>
+    <title>USB4</title>
+    <innergroup refid="group__group__pdaltmode__usb4__enums">Enumerated Types</innergroup>
+    <innergroup refid="group__group__pdaltmode__usb4__functions">Functions</innergroup>
+    <briefdescription>
+<para>Provides APIs and data structures to support USB4 functionality. </para>    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

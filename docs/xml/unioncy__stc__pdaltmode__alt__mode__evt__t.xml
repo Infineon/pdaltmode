@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="unioncy__stc__pdaltmode__alt__mode__evt__t" kind="union" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_alt_mode_evt_t</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+    <innerclass refid="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t" prot="public">cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT</innerclass>
+    <innerclass refid="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t___d_a_t_a" prot="public">cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT_DATA</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unioncy__stc__pdaltmode__alt__mode__evt__t_1a71555e3a392cb8e18455514ebd44f222" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_alt_mode_evt_t::val</definition>
+        <argsstring></argsstring>
+        <name>val</name>
+        <briefdescription>
+<para>Integer field used for direct manipulation of reason code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1160" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncy__stc__pdaltmode__alt__mode__evt__t_1ab9b282e7c4a611baf036ee1f004a150e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t" kindref="compound">cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT</ref></type>
+        <definition>struct cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT cy_stc_pdaltmode_alt_mode_evt_t::alt_mode_event</definition>
+        <argsstring></argsstring>
+        <name>alt_mode_event</name>
+        <briefdescription>
+<para>Union containing the Alt Mode event value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1169" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncy__stc__pdaltmode__alt__mode__evt__t_1a201fd5a2b022ffb90a9341b575d285b6" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t___d_a_t_a" kindref="compound">cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT_DATA</ref></type>
+        <definition>struct cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT_DATA cy_stc_pdaltmode_alt_mode_evt_t::alt_mode_event_data</definition>
+        <argsstring></argsstring>
+        <name>alt_mode_event_data</name>
+        <briefdescription>
+<para>Union containing the Alt Mode event&apos;s data value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1176" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Alt Modes manager application event/command structure. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>cy_stc_pdaltmode_alt_mode_evt_t</label>
+        <link refid="unioncy__stc__pdaltmode__alt__mode__evt__t"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>alt_mode_event</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>alt_mode_event_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT</label>
+        <link refid="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t"/>
+      </node>
+      <node id="9">
+        <label>cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT_DATA</label>
+        <link refid="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t___d_a_t_a"/>
+      </node>
+    </collaborationgraph>
+    <location file="cy_pdaltmode_defines.h" line="1159" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1158" bodyend="1178"/>
+    <listofallmembers>
+      <member refid="unioncy__stc__pdaltmode__alt__mode__evt__t_1ab9b282e7c4a611baf036ee1f004a150e" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_evt_t</scope><name>alt_mode_event</name></member>
+      <member refid="unioncy__stc__pdaltmode__alt__mode__evt__t_1a201fd5a2b022ffb90a9341b575d285b6" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_evt_t</scope><name>alt_mode_event_data</name></member>
+      <member refid="unioncy__stc__pdaltmode__alt__mode__evt__t_1a71555e3a392cb8e18455514ebd44f222" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_evt_t</scope><name>val</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

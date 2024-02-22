@@ -1,0 +1,2722 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__vdm__alt__mode__manager__functions" kind="group">
+    <compoundname>group_pdaltmode_vdm_alt_mode_manager_functions</compoundname>
+    <title>Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gab017e754a9ed9a0a9629fc692d0a4ad2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_Mngr_RegSvidHdlr</definition>
+        <argsstring>(uint16_t svid, cy_pdaltmode_reg_alt_modes_cbk_t regSvidFn)</argsstring>
+        <name>Cy_PdAltMode_Mngr_RegSvidHdlr</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>svid</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__data__structures_1ga27fb6543aa4d7e4251d62242ac57a906" kindref="member">cy_pdaltmode_reg_alt_modes_cbk_t</ref></type>
+          <declname>regSvidFn</declname>
+        </param>
+        <briefdescription>
+<para>Store SVID related registration function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>svid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stored SVID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regSvidFn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function pointer which is used to register selected SVID</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if function was stored in Alt Modes manager, false if there&apos;s no space for new SVID handlers. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="158" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="122" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga73731ef5080475c3e99ca3595bd08725" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Mngr_Task</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Mngr_Task</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Handler for PD Alt Mode level asynchronous task. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="173" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="141" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gadcf28e55c515d940ed725d86e8ca65d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_Mngr_RegAltModeMngr</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_stc_pdaltmode_atch_tgt_info_t *atchTgtInfo, cy_stc_pdaltmode_vdm_msg_info_t *vdmMsgInfo)</argsstring>
+        <name>Cy_PdAltMode_Mngr_RegAltModeMngr</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__atch__tgt__info__t" kindref="compound">cy_stc_pdaltmode_atch_tgt_info_t</ref> *</type>
+          <declname>atchTgtInfo</declname>
+        </param>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__vdm__msg__info__t" kindref="compound">cy_stc_pdaltmode_vdm_msg_info_t</ref> *</type>
+          <declname>vdmMsgInfo</declname>
+        </param>
+        <briefdescription>
+<para>Register pointers to attached dev/ama/cable info and run Alt Modes manager if success. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>atchTgtInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to struct which holds discovery info about attached targets</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vdmMsgInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to struct which holds info of received/sent VDM</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns VDM manager task <linebreak/>
+ CY_PDALTMODE_VDM_TASK_ALT_MODE if CCG supports any Alternate Mode. <linebreak/>
+ If CCG does not support Alternate Modes, function returns CY_PDALTMODE_VDM_TASK_EXIT. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="198" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="152" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga3bf3d903b17da9773d466736097918ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_Mngr_AltModeProcess</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_pdaltmode_vdm_evt_t vdmEvt)</argsstring>
+        <name>Cy_PdAltMode_Mngr_AltModeProcess</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga53976be265d41463919b3ea93da4cf30" kindref="member">cy_en_pdaltmode_vdm_evt_t</ref></type>
+          <declname>vdmEvt</declname>
+        </param>
+        <briefdescription>
+<para>Used by DFP VDM manager to run Alt Modes manager processing. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vdmEvt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current DFP VDM manager event</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>DFP VDM manager task based on Alt Modes manager processing results </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="217" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="255" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gaf62de0233d07b708ade606d92097eb44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>cy_en_pdstack_std_vdm_cmd_type_t</type>
+        <definition>cy_en_pdstack_std_vdm_cmd_type_t Cy_PdAltMode_Mngr_EvalRecVdm</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, const cy_stc_pdstack_pd_packet_t *vdm)</argsstring>
+        <name>Cy_PdAltMode_Mngr_EvalRecVdm</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>const cy_stc_pdstack_pd_packet_t *</type>
+          <declname>vdm</declname>
+        </param>
+        <briefdescription>
+<para>Run received VDM analysis if CCG is UFP. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vdm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to pd packet which contains received VDM</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if received VDM could handle successfully and VDM response need to be sent with ACK. If received VDM should be NACKed, then returns false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="237" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="2165" bodyend="2399"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga1fbf0e1152b2664f42d7a74afaccc48e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const uint32_t *</type>
+        <definition>const uint32_t* Cy_PdAltMode_Mngr_FormAltModeEvent</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint16_t svid, uint8_t amIdx, cy_en_pdaltmode_app_evt_t evt, uint32_t data)</argsstring>
+        <name>Cy_PdAltMode_Mngr_FormAltModeEvent</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>svid</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>amIdx</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga9a0d2881cd562cf3f08968d5d5c0e4e3" kindref="member">cy_en_pdaltmode_app_evt_t</ref></type>
+          <declname>evt</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Fill Alt Mode APP event fields with appropriate values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>svid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SVID of Alternate Mode which event refers to</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amIdx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of Alternate Mode in compatibility table which event refers to</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alternate Mode APP event</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alternate Mode APP event data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the event related data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="265" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1826" bodyend="1843"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga3d25c80027d29b651d5fdfbaa8bac169" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_Mngr_IsAltModeMngrIdle</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Mngr_IsAltModeMngrIdle</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Check whether the VDM manager for the selected port is idle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if manager is busy, false if idle </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="307" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="214" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gadfe2545c2c006fbe9aa5fad404715ec9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Mngr_ResetAltModeInfo</definition>
+        <argsstring>(cy_stc_pdaltmode_mngr_info_t *info)</argsstring>
+        <name>Cy_PdAltMode_Mngr_ResetAltModeInfo</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Resets Alternate Mode command info structure. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alternate Mode info structure</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="355" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1596" bodyend="1599"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga89173b9669b86122b339d18c17f1944b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Cy_PdAltMode_Mngr_IsSvidSupported</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint16_t svid)</argsstring>
+        <name>Cy_PdAltMode_Mngr_IsSvidSupported</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>svid</declname>
+        </param>
+        <briefdescription>
+<para>Check for presence of alt modes for given svid in alt modes compatibility table. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>svid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Received SVID</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Index of supported SVID by CCG </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="373" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1300" bodyend="1314"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga478535f1c2c1e90be5a746b91b3650c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t Cy_PdAltMode_Mngr_GetStatus</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Mngr_GetStatus</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve the current Alternate Mode status for a PD port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Alternate Mode status </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="388" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="2401" bodyend="2437"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gafbc0b0277e703d4a4eaedc8a22ae4008" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Mngr_LayerReset</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Mngr_LayerReset</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Reset Alt Modes layer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="403" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1652" bodyend="1660"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga555c8882136ad6a28ee79351f687f4b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Mngr_ResetInfo</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Mngr_ResetInfo</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Reset the Alternate Mode manager state. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="418" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1601" bodyend="1604"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gad99145923f4f4d9e381b5af445ccb002" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Mngr_ExitAll</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, bool sendVdmExit, cy_pdstack_pd_cbk_t exitAllCbk)</argsstring>
+        <name>Cy_PdAltMode_Mngr_ExitAll</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendVdmExit</declname>
+        </param>
+        <param>
+          <type>cy_pdstack_pd_cbk_t</type>
+          <declname>exitAllCbk</declname>
+        </param>
+        <briefdescription>
+<para>Exit all active Alternate Modes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sendVdmExit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flag which indicates if sending Exit VDM is required during exit all modes procedure</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exitAllCbk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback which will call after exit all Alt Modes procedure will be finished</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="439" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1609" bodyend="1649"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga1d6649eff94658f66fd19b181b79c9ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Cy_PdAltMode_Mngr_GetAltModeNumb</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Mngr_GetAltModeNumb</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Get number of Alternate Modes for chosen port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of Alternate Modes for chosen port and current data role </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="454" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1569" bodyend="1594"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga752e755627029c3e7d0fc4976a293501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Cy_PdAltMode_Mngr_GetAltModesConfigSvidIdx</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_pd_port_type_t type, uint16_t svid)</argsstring>
+        <name>Cy_PdAltMode_Mngr_GetAltModesConfigSvidIdx</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>cy_en_pd_port_type_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>svid</declname>
+        </param>
+        <briefdescription>
+<para>Get index of selected SVID from config table. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the port i.e., cy_en_pd_port_type_t</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>svid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SVID</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SVID index </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="475" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1494" bodyend="1523"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gacc768c61253c00bae9f27d1ecee3a09e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Mngr_SetAltModeMask</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint16_t mask)</argsstring>
+        <name>Cy_PdAltMode_Mngr_SetAltModeMask</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Set mask for Alternate Modes which should be enabled. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mask</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="493" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1428" bodyend="1443"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gaa8d1042d8a8efb02e51c9ef4084b58f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_Mngr_SetCustomSvid</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint16_t svid)</argsstring>
+        <name>Cy_PdAltMode_Mngr_SetCustomSvid</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>svid</declname>
+        </param>
+        <briefdescription>
+<para>Set Alternate Modes custom SVID. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>svid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SVID</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the SVID is set, otherwise false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="511" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1316" bodyend="1401"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga21f419b2e94ce46c2f54cd9b7486d3ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t Cy_PdAltMode_Mngr_GetCustomSvid</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Mngr_GetCustomSvid</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Returns alternate modes custom SVID. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SVID value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="526" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1403" bodyend="1426"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga39ccb7635082b6d195255b5b5e1ad8e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t Cy_PdAltMode_Mngr_GetSvidFromIdx</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint8_t idx)</argsstring>
+        <name>Cy_PdAltMode_Mngr_GetSvidFromIdx</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+<para>Returns SVID which is at index position in configuration table if such SVID is available. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the SVID</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SVID value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="544" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1445" bodyend="1470"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga680eb7d056342686f4fac71757186e10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_mngr_info_t* Cy_PdAltMode_Mngr_GetModeInfo</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint8_t altModeIdx)</argsstring>
+        <name>Cy_PdAltMode_Mngr_GetModeInfo</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>altModeIdx</declname>
+        </param>
+        <briefdescription>
+<para>Get Alt Mode info. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>altModeIdx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alt Mode index</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the Alternate Mode info </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="562" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1845" bodyend="1848"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga8af23f8a041d2feaaa19b2dc2fade6db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>cy_en_pdstack_usb_data_sig_t</type>
+        <definition>cy_en_pdstack_usb_data_sig_t Cy_PdAltMode_Mngr_GetCableUsbCap</definition>
+        <argsstring>(cy_stc_pdstack_context_t *ptrPdStackContext)</argsstring>
+        <name>Cy_PdAltMode_Mngr_GetCableUsbCap</name>
+        <param>
+          <type>cy_stc_pdstack_context_t *</type>
+          <declname>ptrPdStackContext</declname>
+        </param>
+        <briefdescription>
+<para>Function returns Cable USB capabilities. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrPdStackContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Stack Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return Cable USB capabilities </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="577" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="2440" bodyend="2465"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gab296e4407c3ed159b2fde025b9faa531" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_Mngr_GetModesVdoInfo</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint16_t svid, cy_pd_pd_do_t **tempP, uint8_t *no_of_vdo)</argsstring>
+        <name>Cy_PdAltMode_Mngr_GetModesVdoInfo</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>svid</declname>
+        </param>
+        <param>
+          <type>cy_pd_pd_do_t **</type>
+          <declname>tempP</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>no_of_vdo</declname>
+        </param>
+        <briefdescription>
+<para>Get modes info for the SVID. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>svid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SVID number</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tempP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to VDO info</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>no_of_vdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to number of VDOs</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if SIVD mode info is found </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="601" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1957" bodyend="1992"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga3f3adc38c3ebf530b8b7eb15daaf4761" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcy__stc__pdaltmode__alt__mode__mngr__status__t" kindref="compound">cy_stc_pdaltmode_alt_mode_mngr_status_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_alt_mode_mngr_status_t* Cy_PdAltMode_Mngr_GetMngrStatus</definition>
+        <argsstring>(uint8_t port)</argsstring>
+        <name>Cy_PdAltMode_Mngr_GetMngrStatus</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Returns Alt Mode manager status pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selected port</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns pointer to Alt Mode manager status structure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="701" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gaa07ffabf22d61e39aef956f9beed3b8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcy__stc__pdaltmode__status__t" kindref="compound">cy_stc_pdaltmode_status_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_status_t* Cy_PdAltMode_Mngr_GetAmStatus</definition>
+        <argsstring>(uint8_t port)</argsstring>
+        <name>Cy_PdAltMode_Mngr_GetAmStatus</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Returns Alt Modes layer status pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selected port</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns pointer to Alt Modes status structure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="716" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga4fd209e2c23814174cefa167df1e9c50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Mngr_SetDiscModeParams</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_pd_sop_t sop)</argsstring>
+        <name>Cy_PdAltMode_Mngr_SetDiscModeParams</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>cy_en_pd_sop_t</type>
+          <declname>sop</declname>
+        </param>
+        <briefdescription>
+<para>Set Discovery ID/SVID/Mode mode parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alt Mode context </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SOP/SOP&apos;/SOP" packet type</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="730" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="261" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga107416049c590008678b7b0f5a8ace6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Mngr_SendSlnEventNoData</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint16_t svid, uint8_t am_id, cy_en_pdaltmode_app_evt_t evtype)</argsstring>
+        <name>Cy_PdAltMode_Mngr_SendSlnEventNoData</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>svid</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>am_id</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga9a0d2881cd562cf3f08968d5d5c0e4e3" kindref="member">cy_en_pdaltmode_app_evt_t</ref></type>
+          <declname>evtype</declname>
+        </param>
+        <briefdescription>
+<para>Sends solution event without additional data info. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alt Mode context </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>svid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SVID for which event is related </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>am_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alternate Mode ID for which event is related </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evtype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Application event type</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="746" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="283" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gadc5dd798d3f553eddf7f60abaa75aa08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Mngr_SendSlnAppEvt</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint32_t data)</argsstring>
+        <name>Cy_PdAltMode_Mngr_SendSlnAppEvt</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Sends solution event with additional data info. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alt Mode context </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data related to the solution event</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="760" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="289" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga65c74a03705ecd33a967adcbb5fcb61e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Mngr_SendAppEvtWrapper</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_stc_pdaltmode_alt_mode_reg_info_t *reg)</argsstring>
+        <name>Cy_PdAltMode_Mngr_SendAppEvtWrapper</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__alt__mode__reg__info__t" kindref="compound">cy_stc_pdaltmode_alt_mode_reg_info_t</ref> *</type>
+          <declname>reg</declname>
+        </param>
+        <briefdescription>
+<para>Wrapper to send solution event. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alt Mode context </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alternate Mode register structure pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="774" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="297" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga1e38a373e28bc66aa5e9dcc274f19d55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_Mngr_RunDiscModeWrapper</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Mngr_RunDiscModeWrapper</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Wrapper to prepare and send Discovery Mode command. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alt Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Next VMD manager task </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="787" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="312" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gad1f1e58da823cecd52a9f0ed9388dc06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Mngr_HandleCblDiscMode</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, bool failed)</argsstring>
+        <name>Cy_PdAltMode_Mngr_HandleCblDiscMode</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>failed</declname>
+        </param>
+        <briefdescription>
+<para>Handler for processing cable Discovery Mode response. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alt Mode context </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>failed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicator if cable Discovery command failed or not</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="801" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="378" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga1fef2055e19555f7ce0bb6da1892c733" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_Mngr_EvalDiscModeWrapper</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Mngr_EvalDiscModeWrapper</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Wrapper to evaluate Discovery Mode command. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alt Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Next VMD manager task </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="814" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="466" bodyend="563"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga281673cbbdaf3d448b27be79c35a9595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_Mngr_DiscModeFailWrapper</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Mngr_DiscModeFailWrapper</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Wrapper to evaluate failed Discovery Mode command. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alt Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Next VMD manager task </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="827" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="570" bodyend="589"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gad11ad9e491c8b81156d790d464b958a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>cy_en_pd_sop_t</type>
+        <definition>cy_en_pd_sop_t Cy_PdAltMode_Mngr_MonitorGetSopState</definition>
+        <argsstring>(cy_stc_pdaltmode_mngr_info_t *amInfoP, uint8_t faultStatus)</argsstring>
+        <name>Cy_PdAltMode_Mngr_MonitorGetSopState</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref> *</type>
+          <declname>amInfoP</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>faultStatus</declname>
+        </param>
+        <briefdescription>
+<para>Returns selected Alternate Mode SOP/SOP&apos;/SOP&apos;&apos; pending messages after receiving first response. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amInfoP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alternate Mode info structure </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>faultStatus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status of previous command which was sent by Alt Mode manager</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SOP type of next message to be sent </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="841" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="592" bodyend="641"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gaed213a3d17ac1f957ac1f5f7ba371a03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_Mngr_FailAltModesWrapper</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Mngr_FailAltModesWrapper</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Wrapper to evaluate failed Alternate Mode commands. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alt Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Next VMD manager task </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="854" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1057" bodyend="1106"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gac571fd05006db56ee995d711833aa04b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Cy_PdAltMode_Mngr_GetNextAltMode</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Mngr_GetNextAltMode</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Finds next available Alt Mode for further processing. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alt Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Index of next available Alternate Mode, otherwise returns 0xFF </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="867" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1109" bodyend="1169"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gab24c1b92f8c9c6fbecb26287f65348ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Cy_PdAltMode_Mngr_MoveToVdmInfo</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_stc_pdaltmode_mngr_info_t *info, cy_en_pd_sop_t sopType)</argsstring>
+        <name>Cy_PdAltMode_Mngr_MoveToVdmInfo</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>cy_en_pd_sop_t</type>
+          <declname>sopType</declname>
+        </param>
+        <briefdescription>
+<para>Composes Alt Mode info to vdm_msg_info_t struct before sending. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alt Mode context </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the selected Alternate Mode info structure </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sopType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SOP/SOP&apos;/SOP" message type to send</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Non-zero if function proceed is successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="882" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1173" bodyend="1207"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga5fbf0d21a0966dc7c9baf05f92392485" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Mngr_GetVdmInfoVdo</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_stc_pdaltmode_mngr_info_t *info, cy_en_pd_sop_t sopType)</argsstring>
+        <name>Cy_PdAltMode_Mngr_GetVdmInfoVdo</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>cy_en_pd_sop_t</type>
+          <declname>sopType</declname>
+        </param>
+        <briefdescription>
+<para>Parses received VDM info and moves it to Alt Mode info struct. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alt Mode context </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the selected Alternate Mode info structure </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sopType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SOP/SOP&apos;/SOP" message type to send</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="897" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1209" bodyend="1231"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga04b02b1783c3a43c7200a90c9b7589da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t *</type>
+        <definition>uint16_t* Cy_PdAltMode_Mngr_GetAltModesVdoInfo</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_pd_port_type_t type, uint8_t idx)</argsstring>
+        <name>Cy_PdAltMode_Mngr_GetAltModesVdoInfo</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>cy_en_pd_port_type_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+<para>Returns Alternate Mode info from config table. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alt Mode context </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Port data role </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selected Alternate Mode index</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to selected Alternate Mode configuration if present, otherwise NULL pointer is returned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="912" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1472" bodyend="1492"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gad4eaadff8abc137288a29f9d7dd0e5ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Cy_PdAltMode_Mngr_GetBaseAltModeSvidIdx</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint16_t svid)</argsstring>
+        <name>Cy_PdAltMode_Mngr_GetBaseAltModeSvidIdx</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>svid</declname>
+        </param>
+        <briefdescription>
+<para>Returns Alt Mode index for given SVID. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alt Mode context </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>svid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SVID 2-bytes value that the selected Alt Mode is related to</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SVID related Alternate Mode index, otherwise returns 0xFF. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="926" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1526" bodyend="1550"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gaa03b5dccaf9a97b23fd3ed92af8425b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Mngr_AttentionCbk</definition>
+        <argsstring>(cy_timer_id_t id, void *context)</argsstring>
+        <name>Cy_PdAltMode_Mngr_AttentionCbk</name>
+        <param>
+          <type>cy_timer_id_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Callback to process saved Attention VDM. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer ID used to postpone received Attention VDM </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer callback context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="940" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="1893" bodyend="1905"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga5e15088a735339c3625bbd6c0871f766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcy__stc__pdaltmode__reg__am__t" kindref="compound">cy_stc_pdaltmode_reg_am_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_reg_am_t* Cy_PdAltMode_Mngr_GetRegAmInfo</definition>
+        <argsstring>(uint8_t idx)</argsstring>
+        <name>Cy_PdAltMode_Mngr_GetRegAmInfo</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+<para>Returns pointer to the registry structure related to the selected Alt Mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selected alternate mode index</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the registry structure related to the selected Alt Mode, otherwise returns NULL pointer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="954" column="1" bodyfile="cy_pdaltmode_mngr.c" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga2ef6ffe7eff6a19712066f4c3d9bbddc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_VdmTask_Enable</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_Enable</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Enables VDM task manager functionality. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="97" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="45" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gab6c935c30c71fd0e04c90c3298f787fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_VdmTask_Manager</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_Manager</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Main VDM task manager function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="112" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="133" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gaa3cffcb7d5f8a8f64259274abcd58b92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_VdmTask_MngrDeInit</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_MngrDeInit</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>De-init VDM task manager and resets all related variables. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="127" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1367" bodyend="1405"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga5e19654e4d8fe00e8b929ed8cc563462" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_VdmTask_MngrExitModes</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_MngrExitModes</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Get the Alternate Mode state machine to exit any active modes. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is called in response to a VConn related fault condition.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="143" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1407" bodyend="1419"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga5be3659995fa9a8bba055bd160b2ec41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_VdmTask_IsIdle</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_IsIdle</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Check whether the VDM task for the port is idle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True is VDM Task Idle </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="159" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="117" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gaec4bc9a6a0607ac64da5ebef65588794" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_VdmTask_IsUfpDiscStarted</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_IsUfpDiscStarted</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Starts Discover process when CCG is UFP due to PD 3.0 spec. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if Discover process has started, false if VDM manager is busy. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="174" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1796" bodyend="1807"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga69fc3be1bd9fb44f5b3a7da0028b19a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* Cy_PdAltMode_VdmTask_GetDiscIdResp</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint8_t *respLenP)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_GetDiscIdResp</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>respLenP</declname>
+        </param>
+        <briefdescription>
+<para>Obtain the last DISC_ID response received by the CCG device from a port partner. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode Context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>respLenP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of response in PD data objects</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the actual response data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="192" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1854" bodyend="1857"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga540b498397f1c9469b495940f2ac91a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* Cy_PdAltMode_VdmTask_GetDiscSvidResp</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint8_t *respLenP)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_GetDiscSvidResp</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>respLenP</declname>
+        </param>
+        <briefdescription>
+<para>Obtain the last DISC_SVID response received by the CCG device from a port partner. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode Context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>respLenP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of response in PD data objects</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the actual response data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="210" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1859" bodyend="1862"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga0779fd0bc9432201c398f1a27ac5b270" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_VdmTask_SetDiscParam</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint8_t sop, cy_en_pdstack_std_vdm_cmd_t cmd)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_SetDiscParam</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>sop</declname>
+        </param>
+        <param>
+          <type>cy_en_pdstack_std_vdm_cmd_t</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+<para>Prepare VDM Discovery message VDO. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SOP/SOP_PRIME parameter to define UFP/Cable will receive Discovery VDM</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Disc ID/ Disc SVID command</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="231" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="798" bodyend="809"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gad52bc510f0fb304eaed0ed9cd6177173" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_VdmTask_InitiateVcsCblDiscovery</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_InitiateVcsCblDiscovery</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Initiate VConn Swap and cable discovery before going ahead with the next SOP&apos;/SOP&apos;&apos; message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True - VDM sequence needs to be delayed because there is need to do a VConn Swap. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="262" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1540" bodyend="1624"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gac349e23243b9520256eb7a92028c786e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_VdmTask_UpdateVcsStatus</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_UpdateVcsStatus</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Resume Alternate Mode discovery state machine after cable discovery tasks are complete. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="277" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1626" bodyend="1632"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gaa44f036b49866624543971b758bea3e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_VdmTask_ClearDiscResp</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_ClearDiscResp</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Clear D_ID and D_SVID response buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="292" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1816" bodyend="1822"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gaa71916055124aa60a49960cea3054b0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_VdmTask_ResetDiscInfo</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_ResetDiscInfo</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Clear DP and TBT discovery info. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="307" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1809" bodyend="1814"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga8da1801387db0bfc422d88ab713ee765" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcy__stc__pdaltmode__vdm__task__status__t" kindref="compound">cy_stc_pdaltmode_vdm_task_status_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_vdm_task_status_t* Cy_PdAltMode_VdmTask_GetMngrStatus</definition>
+        <argsstring>(uint8_t port)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_GetMngrStatus</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Return VDM manager status pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selected port</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns pointer to VDM manager status structure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="322" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga29e2ba099601d20e583cc7e4d070e5f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_VdmTask_IsVconnPresent</definition>
+        <argsstring>(cy_stc_pdstack_context_t *ptrPdStackContext, uint8_t channel)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_IsVconnPresent</name>
+        <param>
+          <type>cy_stc_pdstack_context_t *</type>
+          <declname>ptrPdStackContext</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Check status of VConn. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrPdStackContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the PD context structure</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel index, where CC1 = 0, CC2 = 1</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool Returns true if Vconn is turned on, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="340" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1058" bodyend="1061"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gae1f7226db52a7cdbb4f60ab893353b01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_VdmTask_Init</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_Init</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Initialize VDM task manager handling. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Next VDM manager task </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="355" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="82" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga8051f3f664de29ce2bec592dff75345f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_VdmTask_RetryCheck</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_pdaltmode_fail_status_t failStat)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_RetryCheck</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga8ad0f571a865b8fb10fcdc4ea756a05b" kindref="member">cy_en_pdaltmode_fail_status_t</ref></type>
+          <declname>failStat</declname>
+        </param>
+        <briefdescription>
+<para>Check if failed VDM has to be re-sent. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>failStat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failure root cause status</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if VDM re-send is needed, otherwise returns false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="373" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="240" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga1f966ab56ff73f1d69b8752c1a9d9330" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_VdmTask_SetVdmFailed</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_pdaltmode_fail_status_t failStat)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_SetVdmFailed</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga8ad0f571a865b8fb10fcdc4ea756a05b" kindref="member">cy_en_pdaltmode_fail_status_t</ref></type>
+          <declname>failStat</declname>
+        </param>
+        <briefdescription>
+<para>Set received VDM response command as failed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>failStat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failure root cause status</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if VDM re-send is needed, otherwise returns false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="391" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="272" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gac108e5ca6df85b23a5b00a02b54c3dca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_VdmTask_IsUSB4Supp</definition>
+        <argsstring>(cy_pd_pd_do_t *vdo_do_p, uint8_t len)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_IsUSB4Supp</name>
+        <param>
+          <type>cy_pd_pd_do_t *</type>
+          <declname>vdo_do_p</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Check if USB4 functionality is supported in DiscID VDO response for CCG and connected device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vdo_do_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DiscID VDO pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of VDOs in the DiscID response</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if USB4 supported, otherwise returns false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="410" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga1b3ceac5352c0095ac1ade77f841cd59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>cy_en_pdstack_usb_sig_supp_t</type>
+        <definition>cy_en_pdstack_usb_sig_supp_t Cy_PdAltMode_VdmTask_GetEudoCblSpeed</definition>
+        <argsstring>(cy_stc_pdstack_context_t *ptrPdStackContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_GetEudoCblSpeed</name>
+        <param>
+          <type>cy_stc_pdstack_context_t *</type>
+          <declname>ptrPdStackContext</declname>
+        </param>
+        <briefdescription>
+<para>Return cable speed used for EUDO. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrPdStackContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Stack Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Proper cable speed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="425" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gafc5e5ca6f19ce4cfa4bd0772aa33979e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_VdmTask_SetEudoParams</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_SetEudoParams</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Fill EUDO buffer with corresponding parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Next VDM task </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="440" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga534c98c7c73b6f6feaa0f71e9b73a32d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_VdmTask_IsUsb4Cap</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_IsUsb4Cap</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Check if USB4 discovery process can be run. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if USB4 discovery process can be run, otherwise return false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="455" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga6bb54a98c312c6eec354cc7356903f16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_VdmTask_HostCapCheck</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_HostCapCheck</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Check if Host supports USB4 functionality. </para>        </briefdescription>
+        <detaileddescription>
+<para>Applicable for Dock projects.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="470" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga7290b6708379548ab1896067d82b4e34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_VdmTask_GotoDiscSvid</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_GotoDiscSvid</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Initiate Discovery SVID process. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if Discovery SVID process can be initiated, otherwise returns false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="485" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="746" bodyend="796"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gaff4fa0d53781f814413f9311b43fe1da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_VdmTask_MngDiscId</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_pdaltmode_vdm_evt_t vdmEvt)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_MngDiscId</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga53976be265d41463919b3ea93da4cf30" kindref="member">cy_en_pdaltmode_vdm_evt_t</ref></type>
+          <declname>vdmEvt</declname>
+        </param>
+        <briefdescription>
+<para>Discover ID command processing handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vdmEvt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VDM event related to the Discover ID command processing</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Next VDM manager task </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="503" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="862" bodyend="947"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga58aebe4014458b4d6e100c404a397e21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_VdmTask_IsSvidStored</definition>
+        <argsstring>(uint16_t *svid_arr, uint16_t svid)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_IsSvidStored</name>
+        <param>
+          <type>uint16_t *</type>
+          <declname>svid_arr</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>svid</declname>
+        </param>
+        <briefdescription>
+<para>Check if selected SVID is already saved. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>svid_arr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Received SVID response VDO buffer pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>svid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selected SVID</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if selected SVID already saved for the further processing, otherwise return false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="521" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="950" bodyend="965"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gab5e1a09da0d6f788003b7c90f4d534f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_VdmTask_SaveSvids</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint16_t *svid_arr, uint8_t max_svid)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_SaveSvids</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>svid_arr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>max_svid</declname>
+        </param>
+        <briefdescription>
+<para>Save supported SVIDs for further processing. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>svid_arr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Received SVIDs buffer pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_svid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of SVIDs that can be supported</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>False if all supported SVIDs can be saved, otherwise returns true. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="542" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="971" bodyend="1056"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gaa45ecb672ca0bf35e1de98e7057e448b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_VdmTask_IsCblSvidReq</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_IsCblSvidReq</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Checks if cable Discovery SVID has to run. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if cable Discovery SVID has to run, otherwise returns false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="557" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1063" bodyend="1100"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga4120453105a897857a01d614104b4705" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_VdmTask_HandleSopSvidResp</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_HandleSopSvidResp</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates valid UFP Discovery SVID response. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Next VDM manager task to perform </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="572" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1102" bodyend="1163"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gac65862533e26aef7fd32491f9bdd9a40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_VdmTask_HandleCblSvidResp</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_HandleCblSvidResp</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates valid cable Discovery SVID response. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Next VDM manager task to perform </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="587" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1165" bodyend="1219"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga7b0abbf4250ef5d595d674e0507a1229" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_VdmTask_HandleFailSvidResp</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_HandleFailSvidResp</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates failed Discovery SVID responses. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Next VDM manager task to perform </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="602" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1221" bodyend="1257"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gaade89d4c99b2b98a132b32dc3cb87377" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_VdmTask_MngDiscSvid</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_pdaltmode_vdm_evt_t vdmEvt)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_MngDiscSvid</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga53976be265d41463919b3ea93da4cf30" kindref="member">cy_en_pdaltmode_vdm_evt_t</ref></type>
+          <declname>vdmEvt</declname>
+        </param>
+        <briefdescription>
+<para>Discovery SVID command handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vdmEvt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VDM event related to the Discover SVID command processing</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Next VDM manager task to perform </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="621" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1259" bodyend="1323"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga8333ffa89cf422c2c4bf1ac1514c0541" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_VdmTask_ResetMngr</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_ResetMngr</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Reset VDM manager flags and handlers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="636" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1325" bodyend="1350"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gae9131b85b5acc6edad37ef4a67969536" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_VdmTask_SendSopDpSoftReset</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_SendSopDpSoftReset</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Sends cable SOP" Soft Reset. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="651" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1453" bodyend="1483"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga26476af05a71c4ba1a24b398df0c10cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_VdmTask_VconnSwapCb</definition>
+        <argsstring>(cy_stc_pdstack_context_t *ptrPdStackContext, cy_en_pdstack_resp_status_t resp, const cy_stc_pdstack_pd_packet_t *pktPtr)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_VconnSwapCb</name>
+        <param>
+          <type>cy_stc_pdstack_context_t *</type>
+          <declname>ptrPdStackContext</declname>
+        </param>
+        <param>
+          <type>cy_en_pdstack_resp_status_t</type>
+          <declname>resp</declname>
+        </param>
+        <param>
+          <type>const cy_stc_pdstack_pd_packet_t *</type>
+          <declname>pktPtr</declname>
+        </param>
+        <briefdescription>
+<para>Callback to handle Vconn Swap response. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrPdStackContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Stack Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vconn Swap response status</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pktPtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vconn Swap response pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="672" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1485" bodyend="1537"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga09c839b7b5f0abd38fca51951d82d766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Cy_PdAltMode_VdmTask_ComposeVdm</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_ComposeVdm</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Fills VDM buffer with corresponding data before send the VDM. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if all VDM-related data to fill is valid </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="687" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1635" bodyend="1706"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga3aafda05df05c9c09fb60dc5380451b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Cy_PdAltMode_VdmTask_ParseVdm</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, const cy_stc_pdstack_pd_packet_t *recVdm)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_ParseVdm</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>const cy_stc_pdstack_pd_packet_t *</type>
+          <declname>recVdm</declname>
+        </param>
+        <briefdescription>
+<para>Saves necessary data from received VDM for further analysis. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>recVdm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Received VDM buffer pointer. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if all VDM data to save is valid </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="704" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1709" bodyend="1728"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga99f1080aeb4ec6773b79c1bc94b504bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_VdmTask_SopDpSoftResetCb</definition>
+        <argsstring>(cy_stc_pdstack_context_t *ptrPdStackContext, cy_en_pdstack_resp_status_t resp, const cy_stc_pdstack_pd_packet_t *pktPtr)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_SopDpSoftResetCb</name>
+        <param>
+          <type>cy_stc_pdstack_context_t *</type>
+          <declname>ptrPdStackContext</declname>
+        </param>
+        <param>
+          <type>cy_en_pdstack_resp_status_t</type>
+          <declname>resp</declname>
+        </param>
+        <param>
+          <type>const cy_stc_pdstack_pd_packet_t *</type>
+          <declname>pktPtr</declname>
+        </param>
+        <briefdescription>
+<para>Callback to handle cable SOP" Soft Reset response. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrPdStackContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Stack Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Soft Reset response status</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pktPtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Soft Reset response pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="725" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1421" bodyend="1451"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga5861bb3fd3515f0c1accdfa8b1ef054d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* Cy_PdAltMode_VdmTask_GetStoredDiscResp</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, bool is_disc_id, uint8_t *respLenP)</argsstring>
+        <name>Cy_PdAltMode_VdmTask_GetStoredDiscResp</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_disc_id</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>respLenP</declname>
+        </param>
+        <briefdescription>
+<para>Returns Discovery ID/SVID configuration table response pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_disc_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True for Discovery ID response, false for Discovery SVID response</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>respLenP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Discovery ID/SVID response length pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Discovery ID/SVID configuration table response pointer, otherwise returns NULL. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="746" column="1" bodyfile="cy_pdaltmode_vdm_task.c" bodystart="1824" bodyend="1852"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

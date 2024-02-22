@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcy__stc__pdaltmode__billboard__am__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_billboard_am_info_t</compoundname>
+    <includes local="no">cy_pdaltmode_billboard.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__billboard__am__info__t_1acbf31bff2965c700759d990219b19b7f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t cy_stc_pdaltmode_billboard_am_info_t::wSvid</definition>
+        <argsstring></argsstring>
+        <name>wSvid</name>
+        <briefdescription>
+<para>SVID for the Alternate Mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="245" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__billboard__am__info__t_1a23e89c156945077bda1e3147ff30309d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_billboard_am_info_t::bAltMode</definition>
+        <argsstring></argsstring>
+        <name>bAltMode</name>
+        <briefdescription>
+<para>Index of the Alternate Mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="246" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__billboard__am__info__t_1a40dae1a2fd474e4aba12cd64c651dd22" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_billboard_am_info_t::iAltModeString</definition>
+        <argsstring></argsstring>
+        <name>iAltModeString</name>
+        <briefdescription>
+<para>String index for the Alternate Mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="247" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__billboard__am__info__t_1a37bcc4822ac6ea4fd580a1b8a595e84c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_billboard_am_info_t::dwAltModeVDO</definition>
+        <argsstring></argsstring>
+        <name>dwAltModeVDO</name>
+        <briefdescription>
+<para>Contents of Mode VDO for the Alternate Mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="248" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Alternate Mode information to be used in BOS descriptor. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cy_pdaltmode_billboard.h" line="244" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="243" bodyend="249"/>
+    <listofallmembers>
+      <member refid="structcy__stc__pdaltmode__billboard__am__info__t_1a23e89c156945077bda1e3147ff30309d" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_billboard_am_info_t</scope><name>bAltMode</name></member>
+      <member refid="structcy__stc__pdaltmode__billboard__am__info__t_1a37bcc4822ac6ea4fd580a1b8a595e84c" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_billboard_am_info_t</scope><name>dwAltModeVDO</name></member>
+      <member refid="structcy__stc__pdaltmode__billboard__am__info__t_1a40dae1a2fd474e4aba12cd64c651dd22" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_billboard_am_info_t</scope><name>iAltModeString</name></member>
+      <member refid="structcy__stc__pdaltmode__billboard__am__info__t_1acbf31bff2965c700759d990219b19b7f" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_billboard_am_info_t</scope><name>wSvid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

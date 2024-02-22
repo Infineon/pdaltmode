@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcy__stc__pdaltmode__dp__status__t" kind="struct" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_dp_status_t</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1ace7335a7957d82b0ad0b088c6957d910" prot="public" static="no" mutable="no">
+        <type><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref></type>
+        <definition>cy_stc_pdaltmode_mngr_info_t cy_stc_pdaltmode_dp_status_t::info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <briefdescription>
+<para>Alt Mode manager info. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1591" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1591" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1aa6481d5042d2a7ef93d4272274d38193" prot="public" static="no" mutable="no">
+        <type>cy_pd_pd_do_t</type>
+        <definition>cy_pd_pd_do_t cy_stc_pdaltmode_dp_status_t::vdo[CY_PDALTMODE_MAX_DP_VDO_NUMB]</definition>
+        <argsstring>[CY_PDALTMODE_MAX_DP_VDO_NUMB]</argsstring>
+        <name>vdo</name>
+        <briefdescription>
+<para>VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1592" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1592" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1a461ed2d4780eefe40a2af781c0e61564" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__display__port__enums_1gad6f1f79915cc9c1b675a6e9e6e4879a5" kindref="member">cy_en_pdaltmode_dp_state_t</ref></type>
+        <definition>cy_en_pdaltmode_dp_state_t cy_stc_pdaltmode_dp_status_t::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>DP state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1593" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1593" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1a83fae71cd0b9536cc96149e26ac43584" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__alt__mode__hw__enums_1ga6e2d96963afcf43ec5dfe3d5a18d6bc6" kindref="member">cy_en_pdaltmode_mux_select_t</ref></type>
+        <definition>cy_en_pdaltmode_mux_select_t cy_stc_pdaltmode_dp_status_t::dpMuxCfg</definition>
+        <argsstring></argsstring>
+        <name>dpMuxCfg</name>
+        <briefdescription>
+<para>DP MUX configuration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1594" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1594" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1a99f19a1924620cbb028c9cd3f77c711d" prot="public" static="no" mutable="no">
+        <type>cy_pd_pd_do_t</type>
+        <definition>cy_pd_pd_do_t cy_stc_pdaltmode_dp_status_t::configVdo</definition>
+        <argsstring></argsstring>
+        <name>configVdo</name>
+        <briefdescription>
+<para>Config VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1595" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1595" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1ab70cdcd350d8bad35c635061f405fe66" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_dp_status_t::dpActiveFlag</definition>
+        <argsstring></argsstring>
+        <name>dpActiveFlag</name>
+        <briefdescription>
+<para>DP active flag. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1596" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1596" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1a8bc5ea4917a92366aae12a691b43e5a1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_dp_status_t::ccgDpPinsSupp</definition>
+        <argsstring></argsstring>
+        <name>ccgDpPinsSupp</name>
+        <briefdescription>
+<para>CCG&apos;s DP pin supported mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1597" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1597" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1ac0f36eb33b6499e072bc78bfe2bbd954" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_dp_status_t::partnerDpPinsSupp</definition>
+        <argsstring></argsstring>
+        <name>partnerDpPinsSupp</name>
+        <briefdescription>
+<para>Port partner&apos;s DP pin supported mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1598" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1598" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1adff2592811994d32fac6bc815fcfed77" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_dp_status_t::dp2LaneActive</definition>
+        <argsstring></argsstring>
+        <name>dp2LaneActive</name>
+        <briefdescription>
+<para>DP2 lane active flag. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1599" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1599" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1a1aebef049c84db2351b40ae3d55e90bd" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t cy_stc_pdaltmode_dp_status_t::hpdState</definition>
+        <argsstring></argsstring>
+        <name>hpdState</name>
+        <briefdescription>
+<para>HPD State. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1600" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1600" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1ab0b3c545058d97b615017738ac38a835" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_dp_status_t::queueReadIndex</definition>
+        <argsstring></argsstring>
+        <name>queueReadIndex</name>
+        <briefdescription>
+<para>HPD queue read index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1601" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1601" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1afdc9b7d48e359e42994ae7c7a1389e54" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_dp_status_t::dp21Supp</definition>
+        <argsstring></argsstring>
+        <name>dp21Supp</name>
+        <briefdescription>
+<para>DP2.1 support indication flag. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1602" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1602" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1ab84fb4d7079e62f60d56b260edcba223" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_dp_status_t::curHpdState</definition>
+        <argsstring></argsstring>
+        <name>curHpdState</name>
+        <briefdescription>
+<para>Current HPD state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1603" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1603" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1ab5660d36862cb4d10c773d139e193cf5" prot="public" static="no" mutable="no">
+        <type>cy_pd_pd_do_t</type>
+        <definition>cy_pd_pd_do_t cy_stc_pdaltmode_dp_status_t::statusVdo</definition>
+        <argsstring></argsstring>
+        <name>statusVdo</name>
+        <briefdescription>
+<para>Status VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1604" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1604" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1a44ff9722fda13a17fe968951d02605bf" prot="public" static="no" mutable="no">
+        <type>cy_pd_pd_do_t</type>
+        <definition>cy_pd_pd_do_t cy_stc_pdaltmode_dp_status_t::sinkVdo</definition>
+        <argsstring></argsstring>
+        <name>sinkVdo</name>
+        <briefdescription>
+<para>Disc Mode VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1605" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1605" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1abbc8fcb04aa279bbab4589da94187904" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_dp_status_t::vconnSwapReq</definition>
+        <argsstring></argsstring>
+        <name>vconnSwapReq</name>
+        <briefdescription>
+<para>VCONN Swap request. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1607" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1607" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1a9776455f5133141b93c752b915772f78" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_dp_status_t::vconnInitRetryCnt</definition>
+        <argsstring></argsstring>
+        <name>vconnInitRetryCnt</name>
+        <briefdescription>
+<para>VCONN init retry count. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1608" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1608" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1a25e6e8303f82edfc6188024ebd503787" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_dp_status_t::vconnCbkRetryCnt</definition>
+        <argsstring></argsstring>
+        <name>vconnCbkRetryCnt</name>
+        <briefdescription>
+<para>VCONN retry count callback. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1609" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1609" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1ad0d80245b7ca12147dfe1def607feadf" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_dp_status_t::dpExit</definition>
+        <argsstring></argsstring>
+        <name>dpExit</name>
+        <briefdescription>
+<para>DP exit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1612" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1612" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1aff51f611f154742f24edb376599718d5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_dp_status_t::dp4Lane</definition>
+        <argsstring></argsstring>
+        <name>dp4Lane</name>
+        <briefdescription>
+<para>DP4 lane. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1613" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1613" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1a0fba88ae38cf14047bc426ceee4e78e8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_dp_status_t::dp2Lane</definition>
+        <argsstring></argsstring>
+        <name>dp2Lane</name>
+        <briefdescription>
+<para>DP2 lane. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1614" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1614" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1a586105d58ba9a42ee8f5561efe365cb1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_dp_status_t::dpCfgCtrl</definition>
+        <argsstring></argsstring>
+        <name>dpCfgCtrl</name>
+        <briefdescription>
+<para>DP configuration control. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1615" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1615" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1aa62ec86401253d2d666aa03a4fc0e863" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_dp_status_t::maxSopSupp</definition>
+        <argsstring></argsstring>
+        <name>maxSopSupp</name>
+        <briefdescription>
+<para>Max SOP supported. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1616" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1a364a338b18ec888a6242260f44a7af7d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_dp_status_t::cableConfigSupp</definition>
+        <argsstring></argsstring>
+        <name>cableConfigSupp</name>
+        <briefdescription>
+<para>Cable configuration support. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1617" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1a9d526568eb979dda594e8e40409dfab6" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structcy__stc__pdaltmode__atch__tgt__info__t" kindref="compound">cy_stc_pdaltmode_atch_tgt_info_t</ref> *</type>
+        <definition>const cy_stc_pdaltmode_atch_tgt_info_t* cy_stc_pdaltmode_dp_status_t::tgtInfoPtr</definition>
+        <argsstring></argsstring>
+        <name>tgtInfoPtr</name>
+        <briefdescription>
+<para>Attached target info pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1618" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1add230632f077b5e0c350a45788fe75b0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_dp_status_t::dpActCblSupp</definition>
+        <argsstring></argsstring>
+        <name>dpActCblSupp</name>
+        <briefdescription>
+<para>DP active cable support. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1619" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__dp__status__t_1ab1a08e29ff419cccac4d6fdf0b2ca837" prot="public" static="no" mutable="no">
+        <type>cy_pd_pd_do_t</type>
+        <definition>cy_pd_pd_do_t cy_stc_pdaltmode_dp_status_t::cableVdo[CY_PDALTMODE_MAX_DP_VDO_NUMB]</definition>
+        <argsstring>[CY_PDALTMODE_MAX_DP_VDO_NUMB]</argsstring>
+        <name>cableVdo</name>
+        <briefdescription>
+<para>Cable VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1620" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1620" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DP Status. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="52">
+        <label>cy_stc_pdaltmode_alt_mode_evt_t</label>
+        <link refid="unioncy__stc__pdaltmode__alt__mode__evt__t"/>
+        <childnode refid="53" relation="usage">
+          <edgelabel>alt_mode_event</edgelabel>
+        </childnode>
+        <childnode refid="54" relation="usage">
+          <edgelabel>alt_mode_event_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="53">
+        <label>cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT</label>
+        <link refid="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t"/>
+      </node>
+      <node id="49">
+        <label>cy_stc_pdaltmode_dp_status_t</label>
+        <link refid="structcy__stc__pdaltmode__dp__status__t"/>
+        <childnode refid="50" relation="usage">
+          <edgelabel>tgtInfoPtr</edgelabel>
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>info</edgelabel>
+        </childnode>
+      </node>
+      <node id="50">
+        <label>cy_stc_pdaltmode_atch_tgt_info_t</label>
+        <link refid="structcy__stc__pdaltmode__atch__tgt__info__t"/>
+      </node>
+      <node id="54">
+        <label>cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT_DATA</label>
+        <link refid="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t___d_a_t_a"/>
+      </node>
+      <node id="51">
+        <label>cy_stc_pdaltmode_mngr_info_t</label>
+        <link refid="structcy__stc__pdaltmode__mngr__info__t"/>
+        <childnode refid="52" relation="usage">
+          <edgelabel>evalAppCmd</edgelabel>
+          <edgelabel>appEvtData</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="cy_pdaltmode_defines.h" line="1590" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1589" bodyend="1626"/>
+    <listofallmembers>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1a364a338b18ec888a6242260f44a7af7d" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>cableConfigSupp</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1ab1a08e29ff419cccac4d6fdf0b2ca837" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>cableVdo</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1a8bc5ea4917a92366aae12a691b43e5a1" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>ccgDpPinsSupp</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1a99f19a1924620cbb028c9cd3f77c711d" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>configVdo</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1ab84fb4d7079e62f60d56b260edcba223" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>curHpdState</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1afdc9b7d48e359e42994ae7c7a1389e54" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>dp21Supp</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1a0fba88ae38cf14047bc426ceee4e78e8" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>dp2Lane</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1adff2592811994d32fac6bc815fcfed77" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>dp2LaneActive</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1aff51f611f154742f24edb376599718d5" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>dp4Lane</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1add230632f077b5e0c350a45788fe75b0" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>dpActCblSupp</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1ab70cdcd350d8bad35c635061f405fe66" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>dpActiveFlag</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1a586105d58ba9a42ee8f5561efe365cb1" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>dpCfgCtrl</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1ad0d80245b7ca12147dfe1def607feadf" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>dpExit</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1a83fae71cd0b9536cc96149e26ac43584" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>dpMuxCfg</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1a1aebef049c84db2351b40ae3d55e90bd" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>hpdState</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1ace7335a7957d82b0ad0b088c6957d910" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>info</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1aa62ec86401253d2d666aa03a4fc0e863" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>maxSopSupp</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1ac0f36eb33b6499e072bc78bfe2bbd954" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>partnerDpPinsSupp</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1ab0b3c545058d97b615017738ac38a835" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>queueReadIndex</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1a44ff9722fda13a17fe968951d02605bf" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>sinkVdo</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1a461ed2d4780eefe40a2af781c0e61564" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>state</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1ab5660d36862cb4d10c773d139e193cf5" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>statusVdo</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1a9d526568eb979dda594e8e40409dfab6" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>tgtInfoPtr</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1a25e6e8303f82edfc6188024ebd503787" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>vconnCbkRetryCnt</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1a9776455f5133141b93c752b915772f78" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>vconnInitRetryCnt</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1abbc8fcb04aa279bbab4589da94187904" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>vconnSwapReq</name></member>
+      <member refid="structcy__stc__pdaltmode__dp__status__t_1aa6481d5042d2a7ef93d4272274d38193" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_dp_status_t</scope><name>vdo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

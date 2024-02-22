@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__display__port__enums" kind="group">
+    <compoundname>group_pdaltmode_display_port_enums</compoundname>
+    <title>Enumerated Types</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__group__pdaltmode__display__port__enums_1gad6f1f79915cc9c1b675a6e9e6e4879a5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_dp_state_t</name>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggad6f1f79915cc9c1b675a6e9e6e4879a5a4e9b49ee3e1b6923b1c123b1d2a3fb64" prot="public">
+          <name>CY_PDALTMODE_DP_STATE_IDLE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Idle state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggad6f1f79915cc9c1b675a6e9e6e4879a5aafbba10e7d19d4fe6c5e8172ebbbf2d0" prot="public">
+          <name>CY_PDALTMODE_DP_STATE_ENTER</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Enter mode state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggad6f1f79915cc9c1b675a6e9e6e4879a5a2ffaaf71bb924322fa01762aa199f818" prot="public">
+          <name>CY_PDALTMODE_DP_STATE_EXIT</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Exit mode state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggad6f1f79915cc9c1b675a6e9e6e4879a5abc8fd13d31b799dbcf6c8d731850ed2d" prot="public">
+          <name>CY_PDALTMODE_DP_STATE_ATT</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+<para>DP Attention state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggad6f1f79915cc9c1b675a6e9e6e4879a5a9b9ed9ac91c547b5d5c9a2b120a22a5a" prot="public">
+          <name>CY_PDALTMODE_DP_STATE_STATUS_UPDATE</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+<para>DP Status Update state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggad6f1f79915cc9c1b675a6e9e6e4879a5a70e7050d18b3b5a7492c35e2868d1257" prot="public">
+          <name>CY_PDALTMODE_DP_STATE_CONFIG</name>
+          <initializer>= 17</initializer>
+          <briefdescription>
+<para>DP Configure state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration holds all possible DP states. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="835" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="834" bodyend="842"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__display__port__enums_1gac0329806db727d768fdc25a545a2170a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_dp_stat_bm_t</name>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggac0329806db727d768fdc25a545a2170aa3f1b1bf36782fbbfa2d19c32afd12bc2" prot="public">
+          <name>CY_PDALTMODE_DP_STAT_DFP_CONN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>DFP_D is connected field bit position. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggac0329806db727d768fdc25a545a2170aa2cabe28cf662de64ce2253d6814b4d30" prot="public">
+          <name>CY_PDALTMODE_DP_STAT_UFP_CONN</name>
+          <briefdescription>
+<para>UFP_D is connected field bit position. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggac0329806db727d768fdc25a545a2170aa378bcfcf3149aaf4bf0dbbd6f0c6c3b6" prot="public">
+          <name>CY_PDALTMODE_DP_STAT_PWR_LOW</name>
+          <briefdescription>
+<para>Power Low field bit position. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggac0329806db727d768fdc25a545a2170aa2b689699f9971068eb99789f82c26f9b" prot="public">
+          <name>CY_PDALTMODE_DP_STAT_EN</name>
+          <briefdescription>
+<para>Enabled field bit position. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggac0329806db727d768fdc25a545a2170aaf64c8c4a7b6838119c7e89b16ee2ebe9" prot="public">
+          <name>CY_PDALTMODE_DP_STAT_MF</name>
+          <briefdescription>
+<para>Multi-function Preferred field bit position. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggac0329806db727d768fdc25a545a2170aa52c89458b34549cd5e6ef08f0d70f3b8" prot="public">
+          <name>CY_PDALTMODE_DP_STAT_USB_CNFG</name>
+          <briefdescription>
+<para>USB Configuration Request field bit position. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggac0329806db727d768fdc25a545a2170aa39fbc7d6758d3db6aab48b8cbe33238b" prot="public">
+          <name>CY_PDALTMODE_DP_STAT_EXIT</name>
+          <briefdescription>
+<para>Exit DP Request field bit position. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggac0329806db727d768fdc25a545a2170aa2d7b4904ed3cb3b95c50e51527861ee2" prot="public">
+          <name>CY_PDALTMODE_DP_STAT_HPD</name>
+          <briefdescription>
+<para>HPD state field bit position. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggac0329806db727d768fdc25a545a2170aab8dc9b479835991d233f985547ccf721" prot="public">
+          <name>CY_PDALTMODE_DP_STAT_IRQ</name>
+          <briefdescription>
+<para>HPD IRQ field bit position. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration holds corresponding bit positions of Status Update VDM fields. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="849" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="848" bodyend="859"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__display__port__enums_1ga5f8002ab0797efa9c5a3867282e51962" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_dp_port_cap_t</name>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1gga5f8002ab0797efa9c5a3867282e51962aa78337d6e3b30d8959727199767cbaff" prot="public">
+          <name>CY_PDALTMODE_DP_PORT_CAP_RSVD</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Reserved capability. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1gga5f8002ab0797efa9c5a3867282e51962af385b304bf83c456339136c4b2167fbd" prot="public">
+          <name>CY_PDALTMODE_DP_PORT_CAP_UFP_D</name>
+          <briefdescription>
+<para>UFP is UFP_D-capable. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1gga5f8002ab0797efa9c5a3867282e51962aff8bed90ed54237616fb61060ff1ea40" prot="public">
+          <name>CY_PDALTMODE_DP_PORT_CAP_DFP_D</name>
+          <briefdescription>
+<para>UFP is DFP_D-capable. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1gga5f8002ab0797efa9c5a3867282e51962a7ca61961daa45b528083f7318ae6cc59" prot="public">
+          <name>CY_PDALTMODE_DP_PORT_CAP_BOTH</name>
+          <briefdescription>
+<para>UFP is DFP_D and UFP-D capable. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Holds possible DP capabilities. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="214" column="1" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="213" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__display__port__enums_1gaf4086284e38a0fbae4294e33f34942ad" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_dp_conn_t</name>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggaf4086284e38a0fbae4294e33f34942ada65a569f07aabba5460ba477efe429f10" prot="public">
+          <name>CY_PDALTMODE_DP_CONN_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Neither DFP_D nor UFP_D is connected. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggaf4086284e38a0fbae4294e33f34942ada258101a3dd55f0a76c118d1c75542373" prot="public">
+          <name>CY_PDALTMODE_DP_CONN_DFP_D</name>
+          <briefdescription>
+<para>DFP_D is connected. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggaf4086284e38a0fbae4294e33f34942ada6c577db70cb1492e9de43ac65ba3967e" prot="public">
+          <name>CY_PDALTMODE_DP_CONN_UFP_D</name>
+          <briefdescription>
+<para>UFP_D is connected. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__display__port__enums_1ggaf4086284e38a0fbae4294e33f34942adac29f09a22b9d3685c6ca26104d97a2d9" prot="public">
+          <name>CY_PDALTMODE_DP_CONN_BOTH</name>
+          <briefdescription>
+<para>Both DFP_D and UFP_D are connected. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Holds possible DFP_D/UFP_D Connected status (Status Update message) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="226" column="1" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="225" bodyend="231"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

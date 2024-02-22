@@ -1,0 +1,872 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="cy__pdaltmode__billboard_8h" kind="file" language="C++">
+    <compoundname>cy_pdaltmode_billboard.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes refid="cy__pdaltmode__defines_8h" local="yes">cy_pdaltmode_defines.h</includes>
+    <includes refid="cy__pdaltmode__mngr_8h" local="yes">cy_pdaltmode_mngr.h</includes>
+    <includedby refid="cy__pdaltmode__billboard_8c" local="yes">cy_pdaltmode_billboard.c</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="3">
+        <label>cy_pdaltmode_billboard.h</label>
+        <link refid="cy__pdaltmode__billboard_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structcy__stc__pdaltmode__billboard__am__info__t" prot="public">cy_stc_pdaltmode_billboard_am_info_t</innerclass>
+    <innerclass refid="structcy__stc__pdaltmode__billboard__conn__info__t" prot="public">cy_stc_pdaltmode_billboard_conn_info_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga88ac900d28256aa2d223b0503c448bbe" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_MAX_ALT_MODES</name>
+        <initializer>(8u)</initializer>
+        <briefdescription>
+<para>Maximum number of alternate modes supported by the Billboard module. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="54" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga77ed23fe4ec7fb1e29d71d5607828241" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_ALT_MODE_STATUS_INIT_VAL</name>
+        <initializer>(0x5555u)</initializer>
+        <briefdescription>
+<para>Initialization value for mode status register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="59" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga75c1b4fd5b6e4420af8bde93fd38d227" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_ALT_MODE_STATUS_MASK</name>
+        <initializer>(0x03u)</initializer>
+        <briefdescription>
+<para>Alternate Mode status mask for each mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="64" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga5ce8e5578ee6f7f717b44a857b7e4096" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_OFF_TIMER_MAX_INTERVAL</name>
+        <initializer>(1000u)</initializer>
+        <briefdescription>
+<para>Billboard OFF timer&apos;s maximum interval. </para>        </briefdescription>
+        <detaileddescription>
+<para>One second is used to ensure that, timer module goes through only one interrupt per request. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="70" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga9309d17eeb5fe77d88230cb633f1c7be" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_OFF_TIMER_NO_DISABLE</name>
+        <initializer>(0xFFFFu)</initializer>
+        <briefdescription>
+<para>Timeout special value for not disabling the Billboard interface. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="75" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga91b701d3c13967435640af94e752ef58" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_OFF_TIMER_MIN_VALUE</name>
+        <initializer>(60u)</initializer>
+        <briefdescription>
+<para>Minimum timeout value in allowed in seconds = 60 s. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="80" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga2f680a9e3bc8383eb7a8a2505ea0e605" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_MAX_EP0_XFER_SIZE</name>
+        <initializer>(256u)</initializer>
+        <briefdescription>
+<para>Maximum buffering for EP0 transactions inside the Billboard module. </para>        </briefdescription>
+        <detaileddescription>
+<para>This definition is valid only for internal Billboard implementation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="87" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga5f4951f0da3b165831a11cc3e89a3fe8" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_CAP_ADD_FAILURE_INFO_PWR</name>
+        <initializer>(0x01u)</initializer>
+        <briefdescription>
+<para>Additional failure information due to lack of power as per the Billboard capability descriptor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="93" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1gac497a282d9953ac6aa9b131c4c2ba73d" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_CAP_ADD_FAILURE_INFO_PD</name>
+        <initializer>(0x02u)</initializer>
+        <briefdescription>
+<para>Additional failure information due to USBPD communication failure as per billboard capability descriptor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="99" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga02eba0a3f01a41d8aeb3dd7884df1030" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_DISCONNECT_STAT</name>
+        <initializer>(0xFFu)</initializer>
+        <briefdescription>
+<para>Disconnect BB Status for BB connect event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="104" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1gaee7e08a90b18260d9c26343cb076eeff" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_CONNECT_STAT</name>
+        <initializer>(0x01u)</initializer>
+        <briefdescription>
+<para>Connect BB Status for BB connect event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="109" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga5b35a3dbc4a587b36147e5211ceff679" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_MAX_SVID</name>
+        <initializer>(2u)</initializer>
+        <briefdescription>
+<para>Maximum number of Alternate Modes supported. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="114" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga3bed4345a71d7888fb3abbc63678866f" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_OPTION_VENDOR_ENABLE</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+<para>Bit field in bb_option from configuration table which indicates that the device needs to enable Vendor interface along with Billboard. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="119" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga08d065743dde3a4be793bfdf2ac8a07a" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_OPTION_BILLBOARD_ENABLE</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+<para>Bit field in bb_option from configuration table which indicates that the device needs to enable Vendor interface along with Billboard. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="124" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1gaa8342f477c56fcfc88b67ac6895f692e" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_OPTION_HID_ENABLE</name>
+        <initializer>(0x01)</initializer>
+        <briefdescription>
+<para>Bit field in bb_option from configuration table which indicates that the device needs to enable HID interface along with Billboard. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="129" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga8985e1e21e8c9b4081fcc9c90e7fdd18" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_USB_BOS_DSCR_NUM_ALT_MODE_OFFSET</name>
+        <initializer>(36)</initializer>
+        <briefdescription>
+<para>Number of Alternate Mode field offset in the BOS descriptor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="132" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1gad7c8bc66477061c56c5ea3131736a9e4" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_USB_BOS_DSCR_ALT_STATUS_OFFSET</name>
+        <initializer>(40)</initializer>
+        <briefdescription>
+<para>Offset for Alternate Mode status field offset in the BOS descriptor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="135" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga57116e2350f9e6844b5ba2dc4e81d137" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_USB_BOS_DSCR_ADD_INFO_OFFSET</name>
+        <initializer>(74)</initializer>
+        <briefdescription>
+<para>Offset for Alternate Mode bAdditionalFailureInfo field in the BOS descriptor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="138" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga87f7c3ce76db5854ad0132ff1df70f1c" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_USB_BOS_DSCR_MODE0_INFO_OFFSET</name>
+        <initializer>(76)</initializer>
+        <briefdescription>
+<para>Offset for Alternate Mode 0 information offset in the BOS descriptor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="141" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1gae57054ab3d4ff5aa3a3d7b1e39fb11ef" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_USB_BOS_DSCR_MODE_INFO_SIZE</name>
+        <initializer>(4)</initializer>
+        <briefdescription>
+<para>Size of each Alternate Mode information in bytes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="144" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga3488d5c671462fdfb512caec12c5658b" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_USB_AUM_CAP_DSCR_ALT_MODE_VDO_OFFSET</name>
+        <initializer>(4)</initializer>
+        <briefdescription>
+<para>Offset of dwAlternateModeVdo in AUM Capability descriptor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="147" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__group__pdaltmode__billboard__enums_1ga726a24fa891657729c89bee7a4a7e030" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_billboard_status_t</name>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga726a24fa891657729c89bee7a4a7e030a4d7fda7694b1c2e54b7bac1e553d6495" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_STAT_SUCCESS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Success status. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga726a24fa891657729c89bee7a4a7e030ab2399083a5fa650e2f51cb1051299d9f" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_STAT_FAILURE</name>
+          <briefdescription>
+<para>Failure status. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga726a24fa891657729c89bee7a4a7e030ae2b7ae38c1fb5e8b0ff90fb3a1caede8" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_STAT_BUSY</name>
+          <briefdescription>
+<para>Status code indicating Billboard is busy. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga726a24fa891657729c89bee7a4a7e030a0805ba54ef6a8f330b6678c7d3d25ac9" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_STAT_NOT_READY</name>
+          <briefdescription>
+<para>Billboard not ready. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga726a24fa891657729c89bee7a4a7e030a7617ad121ffb81d5889ee6188c88a8d9" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_STAT_INVALID_ARGUMENT</name>
+          <briefdescription>
+<para>Invalid parameter. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga726a24fa891657729c89bee7a4a7e030ad97fcae31185fcaf66b7413b43b13140" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_STAT_NOT_SUPPORTED</name>
+          <briefdescription>
+<para>Operation not supported. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>USB Billboard status enumeration. </para>        </briefdescription>
+        <detaileddescription>
+<para>Enumeration for the Billboard status codes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="166" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="165" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__billboard__enums_1gaa7aa411930bac49da8f731ab6c6f9dcb" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_billboard_cause_t</name>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1ggaa7aa411930bac49da8f731ab6c6f9dcba63861c9943fb38108dbc389ad0dee279" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_CAUSE_AME_TIMEOUT</name>
+          <briefdescription>
+<para>AME timeout event. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1ggaa7aa411930bac49da8f731ab6c6f9dcba1796dae58867f292b92d9fc9b62e2698" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_CAUSE_AME_SUCCESS</name>
+          <briefdescription>
+<para>Successful alternate mode entry. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1ggaa7aa411930bac49da8f731ab6c6f9dcba41f27c169651e6d149a051bae2ecc97c" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_CAUSE_AME_FAILURE</name>
+          <briefdescription>
+<para>Failed alternate mode entry. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1ggaa7aa411930bac49da8f731ab6c6f9dcbad8ca9133584c0cc33c65ae256b82c2ab" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_CAUSE_PWR_FAILURE</name>
+          <briefdescription>
+<para>Failed to get sufficient power. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Cause for USB Billboard enumeration. </para>        </briefdescription>
+        <detaileddescription>
+<para>Enumeration lists all the supported causes for Billboard enumeration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="182" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="181" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__billboard__enums_1ga987546b8821498ba4a7b616b49206ec0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_billboard_alt_mode_status_t</name>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga987546b8821498ba4a7b616b49206ec0a2b89426596d4e33634e22b7411c87af0" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE_STAT_ERROR</name>
+          <briefdescription>
+<para>Undefined error or Alternate Mode does not exist. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga987546b8821498ba4a7b616b49206ec0a83a8ea80d0d8c9d8db5706db2a252aa1" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE_STAT_NOT_ATTEMPTED</name>
+          <briefdescription>
+<para>Alternate Mode entry not attempted. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga987546b8821498ba4a7b616b49206ec0ab2c0aae7a75d041c6cbce466d4774ed9" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE_STAT_UNSUCCESSFUL</name>
+          <briefdescription>
+<para>Alternate Mode entry attempted but failed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga987546b8821498ba4a7b616b49206ec0a457c871b91128e88a2362784843e18b5" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE_STAT_SUCCESSFUL</name>
+          <briefdescription>
+<para>Alternate Mode entry succeeded. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>USB Billboard Alternate Mode status. </para>        </briefdescription>
+        <detaileddescription>
+<para>Enumeration lists the different status values as defined by the billboard class specification. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="196" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="195" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__billboard__enums_1ga883118f43f8e39a3e005b695cd99af8f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_billboard_usb_string_index_t</name>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8faeeb29b025b17de1139e79c16e8d68fa9" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_LANG_ID_STRING_INDEX</name>
+          <briefdescription>
+<para>Language ID index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fab8c66b8c9adad20c4e726c210aeb9721" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_MFG_STRING_INDEX</name>
+          <briefdescription>
+<para>Manufacturer string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa25567d786efa8b54c4707e95ff1c215b" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_PROD_STRING_INDEX</name>
+          <briefdescription>
+<para>Product string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa5c9dac9872a4c320d56617b7264e169b" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_SERIAL_STRING_INDEX</name>
+          <briefdescription>
+<para>Serial string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa16576fff29f9d5c8a8e8781eb30c1f63" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_CONFIG_STRING_INDEX</name>
+          <briefdescription>
+<para>Configuration string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8facf0d4de7cdda6fce9e5db7b2a8edaf09" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_BB_INF_STRING_INDEX</name>
+          <briefdescription>
+<para>Billboard interface string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa34c3a36b1878f6a65429bfd7b7c64365" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_HID_INF_STRING_INDEX</name>
+          <briefdescription>
+<para>HID interface string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa9adf52234b7615e84c65c426a839e3ad" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_URL_STRING_INDEX</name>
+          <briefdescription>
+<para>Additional info URL string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa4980bb05817cb6fa231a840135ce5351" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE1_STRING_INDEX</name>
+          <briefdescription>
+<para>Alternate Mode 1 string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa131b580e27addb85dd3cb02bd2a5e867" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE2_STRING_INDEX</name>
+          <briefdescription>
+<para>Alternate Mode 2 string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa0310d8bb0cd64e2f86dcc6cb50123235" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE3_STRING_INDEX</name>
+          <briefdescription>
+<para>Alternate Mode 3 string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa8ba07b30f473185fffabdf74b840188e" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE4_STRING_INDEX</name>
+          <briefdescription>
+<para>Alternate Mode 4 string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa2fd374cf9be11d5765dacc6430837bcc" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE5_STRING_INDEX</name>
+          <briefdescription>
+<para>Alternate Mode 5 string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa90ae4c4670c7539f2372fa1d738552aa" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE6_STRING_INDEX</name>
+          <briefdescription>
+<para>Alternate Mode 6 string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fabf2a1cf110aaa22b68d94fc3c554a0ab" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE7_STRING_INDEX</name>
+          <briefdescription>
+<para>Alternate Mode 7 string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa6287f65f7dbe174fbb14055879a8e9e8" prot="public">
+          <name>CY_PDALTMODE_BILLBOARD_ALT_MODE8_STRING_INDEX</name>
+          <briefdescription>
+<para>Alternate Mode 8 string index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>USB Billboard string descriptor indices. </para>        </briefdescription>
+        <detaileddescription>
+<para>Enumeration lists the different string indices used in the Billboard implementation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="210" column="1" bodyfile="cy_pdaltmode_billboard.h" bodystart="209" bodyend="227"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__group__pdaltmode__billboard__functions_1ga9d8a38ee749012cf83d74acfdcafedf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__billboard__enums_1ga726a24fa891657729c89bee7a4a7e030" kindref="member">cy_en_pdaltmode_billboard_status_t</ref></type>
+        <definition>cy_en_pdaltmode_billboard_status_t Cy_PdAltMode_Billboard_Enable</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_pdaltmode_billboard_cause_t cause)</argsstring>
+        <name>Cy_PdAltMode_Billboard_Enable</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__billboard__enums_1gaa7aa411930bac49da8f731ab6c6f9dcb" kindref="member">cy_en_pdaltmode_billboard_cause_t</ref></type>
+          <declname>cause</declname>
+        </param>
+        <briefdescription>
+<para>The function queues a Billboard enumeration or re-enumeration. </para>        </briefdescription>
+        <detaileddescription>
+<para>The API queues the Billboard enumeration as per the configuration information provided. Enumeration details are retrieved from the configuration table.</para><para>The function can be called multiple times applications to trigger a re-enumeration without explicit disable call.</para><para>For internal implementation of Billboard, the USB module is controlled from the Cy_App_Usb_BbTask() and this function only queues the request. It should be noted that only one pending request is honored. If more than one request is queued, only the latest is handled. This request is failed if the flashing mode is in progress.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cause</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cause for Billboard enumeration</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of the call. <ref refid="group__group__pdaltmode__billboard__enums_1ga726a24fa891657729c89bee7a4a7e030" kindref="member">cy_en_pdaltmode_billboard_status_t</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="304" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__billboard__functions_1ga78c45dab0666fc87993099d95d1aed22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__billboard__enums_1ga726a24fa891657729c89bee7a4a7e030" kindref="member">cy_en_pdaltmode_billboard_status_t</ref></type>
+        <definition>cy_en_pdaltmode_billboard_status_t Cy_PdAltMode_Billboard_AltStatusUpdate</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint8_t modeIndex, cy_en_pdaltmode_billboard_alt_mode_status_t altStatus)</argsstring>
+        <name>Cy_PdAltMode_Billboard_AltStatusUpdate</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>modeIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__billboard__enums_1ga987546b8821498ba4a7b616b49206ec0" kindref="member">cy_en_pdaltmode_billboard_alt_mode_status_t</ref></type>
+          <declname>altStatus</declname>
+        </param>
+        <briefdescription>
+<para>Updates the Alternate Mode status. </para>        </briefdescription>
+        <detaileddescription>
+<para>The function updates the Alternate Mode status information for the specified Alternate Mode index. The Alternate Mode index should match the DISCOVER_SVID and DISCOVER_MODES response for the device.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>modeIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the mode as defined by the Alternate Mode manager</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>altStatus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current Alternate Mode status</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of the call </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="325" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__billboard__functions_1ga1152a7ec9c38cb794ec5ae1a402e240f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_Billboard_IsPresent</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Billboard_IsPresent</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether a Billboard interface is present. </para>        </briefdescription>
+        <detaileddescription>
+<para>The function checks the configuration information and identifies if a Billboard device exists.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if Billboard is present and false if absent </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="345" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__billboard__functions_1gac4c037fe6494f2378da7609fa1c5d90a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__billboard__enums_1ga726a24fa891657729c89bee7a4a7e030" kindref="member">cy_en_pdaltmode_billboard_status_t</ref></type>
+        <definition>cy_en_pdaltmode_billboard_status_t Cy_PdAltMode_Billboard_Disable</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, bool force)</argsstring>
+        <name>Cy_PdAltMode_Billboard_Disable</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+<para>Queues a Billboard interface disable. </para>        </briefdescription>
+        <detaileddescription>
+<para>The API disables the Billboard Device and disconnects the terminations. For internal implementation of Billboard, the USB module is controlled from the Cy_App_Usb_BbTask() and this function only queues the request. It should be noted that only one pending request is honored. If more than one request is queued, only the latest is handled. A disable call clears any pending enable.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to force a disable; false = Interface not disabled when in flashing mode, true = Interface disabled regardless of the operation mode.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of the call </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="365" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__billboard__functions_1ga73c9f90dae9c0407e60008babc08b24c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__billboard__enums_1ga726a24fa891657729c89bee7a4a7e030" kindref="member">cy_en_pdaltmode_billboard_status_t</ref></type>
+        <definition>cy_en_pdaltmode_billboard_status_t Cy_PdAltMode_Billboard_UpdateAllStatus</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint32_t status)</argsstring>
+        <name>Cy_PdAltMode_Billboard_UpdateAllStatus</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Updates the Alternate Mode status for all modes. </para>        </briefdescription>
+        <detaileddescription>
+<para>The current Billboard implementation supports a maximum of eight Alternate Modes, and each mode as defined in the order of BOS descriptor has two bit status. Bit 1:0 indicates status of Alt Mode 0 and Bit 3:2 indicates status of Alt Mode 1, and so on. This function should be only used when the Billboard status needs to be reinitialized to a specific value. In individual entry/exit cases, <ref refid="group__group__pdaltmode__billboard__functions_1ga78c45dab0666fc87993099d95d1aed22" kindref="member">Cy_PdAltMode_Billboard_AltStatusUpdate()</ref> should be used.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status data for all Alternate Modes</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of the call </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="383" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0</para></simplesect>
+This header file defines the data structures and function prototypes associated with the USB Billboard.</para><para><simplesect kind="copyright"><para>Copyright 2024, Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation. All rights reserved. You may use this file only in accordance with the license, terms, conditions, disclaimers, and limitations in the end user license agreement accompanying the software package with which this file was provided. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor">#ifndef<sp/>_CY_PDALTMODE_BILLBOARD_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CY_PDALTMODE_BILLBOARD_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>Header<sp/>file<sp/>addition</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cy_pdaltmode_defines.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cy_pdaltmode_mngr.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/>Macro<sp/>definition</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_MAX_ALT_MODES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(8u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_ALT_MODE_STATUS_INIT_VAL<sp/><sp/><sp/><sp/><sp/>(0x5555u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_ALT_MODE_STATUS_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x03u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_OFF_TIMER_MAX_INTERVAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1000u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_OFF_TIMER_NO_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFFFFu)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_OFF_TIMER_MIN_VALUE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(60u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_MAX_EP0_XFER_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(256u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_CAP_ADD_FAILURE_INFO_PWR<sp/><sp/><sp/><sp/><sp/>(0x01u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_CAP_ADD_FAILURE_INFO_PD<sp/><sp/><sp/><sp/><sp/><sp/>(0x02u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_DISCONNECT_STAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFFu)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_CONNECT_STAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_MAX_SVID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(2u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_OPTION_VENDOR_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_OPTION_BILLBOARD_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_OPTION_HID_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_USB_BOS_DSCR_NUM_ALT_MODE_OFFSET<sp/>(36)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_USB_BOS_DSCR_ALT_STATUS_OFFSET<sp/><sp/>(40)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_USB_BOS_DSCR_ADD_INFO_OFFSET<sp/><sp/><sp/><sp/>(74)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_USB_BOS_DSCR_MODE0_INFO_OFFSET<sp/><sp/>(76)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_USB_BOS_DSCR_MODE_INFO_SIZE<sp/><sp/><sp/><sp/><sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_BILLBOARD_USB_AUM_CAP_DSCR_ALT_MODE_VDO_OFFSET<sp/><sp/><sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"><sp/>*<sp/>Enumerated<sp/>data<sp/>definition</highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga726a24fa891657729c89bee7a4a7e030a4d7fda7694b1c2e54b7bac1e553d6495" kindref="member">CY_PDALTMODE_BILLBOARD_STAT_SUCCESS</ref><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga726a24fa891657729c89bee7a4a7e030ab2399083a5fa650e2f51cb1051299d9f" kindref="member">CY_PDALTMODE_BILLBOARD_STAT_FAILURE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga726a24fa891657729c89bee7a4a7e030ae2b7ae38c1fb5e8b0ff90fb3a1caede8" kindref="member">CY_PDALTMODE_BILLBOARD_STAT_BUSY</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga726a24fa891657729c89bee7a4a7e030a0805ba54ef6a8f330b6678c7d3d25ac9" kindref="member">CY_PDALTMODE_BILLBOARD_STAT_NOT_READY</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga726a24fa891657729c89bee7a4a7e030a7617ad121ffb81d5889ee6188c88a8d9" kindref="member">CY_PDALTMODE_BILLBOARD_STAT_INVALID_ARGUMENT</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga726a24fa891657729c89bee7a4a7e030ad97fcae31185fcaf66b7413b43b13140" kindref="member">CY_PDALTMODE_BILLBOARD_STAT_NOT_SUPPORTED</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}<sp/><ref refid="group__group__pdaltmode__billboard__enums_1ga726a24fa891657729c89bee7a4a7e030" kindref="member">cy_en_pdaltmode_billboard_status_t</ref>;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1ggaa7aa411930bac49da8f731ab6c6f9dcba63861c9943fb38108dbc389ad0dee279" kindref="member">CY_PDALTMODE_BILLBOARD_CAUSE_AME_TIMEOUT</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1ggaa7aa411930bac49da8f731ab6c6f9dcba1796dae58867f292b92d9fc9b62e2698" kindref="member">CY_PDALTMODE_BILLBOARD_CAUSE_AME_SUCCESS</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1ggaa7aa411930bac49da8f731ab6c6f9dcba41f27c169651e6d149a051bae2ecc97c" kindref="member">CY_PDALTMODE_BILLBOARD_CAUSE_AME_FAILURE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1ggaa7aa411930bac49da8f731ab6c6f9dcbad8ca9133584c0cc33c65ae256b82c2ab" kindref="member">CY_PDALTMODE_BILLBOARD_CAUSE_PWR_FAILURE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}<sp/><ref refid="group__group__pdaltmode__billboard__enums_1gaa7aa411930bac49da8f731ab6c6f9dcb" kindref="member">cy_en_pdaltmode_billboard_cause_t</ref>;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga987546b8821498ba4a7b616b49206ec0a2b89426596d4e33634e22b7411c87af0" kindref="member">CY_PDALTMODE_BILLBOARD_ALT_MODE_STAT_ERROR</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga987546b8821498ba4a7b616b49206ec0a83a8ea80d0d8c9d8db5706db2a252aa1" kindref="member">CY_PDALTMODE_BILLBOARD_ALT_MODE_STAT_NOT_ATTEMPTED</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga987546b8821498ba4a7b616b49206ec0ab2c0aae7a75d041c6cbce466d4774ed9" kindref="member">CY_PDALTMODE_BILLBOARD_ALT_MODE_STAT_UNSUCCESSFUL</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga987546b8821498ba4a7b616b49206ec0a457c871b91128e88a2362784843e18b5" kindref="member">CY_PDALTMODE_BILLBOARD_ALT_MODE_STAT_SUCCESSFUL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}<sp/><ref refid="group__group__pdaltmode__billboard__enums_1ga987546b8821498ba4a7b616b49206ec0" kindref="member">cy_en_pdaltmode_billboard_alt_mode_status_t</ref>;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8faeeb29b025b17de1139e79c16e8d68fa9" kindref="member">CY_PDALTMODE_BILLBOARD_LANG_ID_STRING_INDEX</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fab8c66b8c9adad20c4e726c210aeb9721" kindref="member">CY_PDALTMODE_BILLBOARD_MFG_STRING_INDEX</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa25567d786efa8b54c4707e95ff1c215b" kindref="member">CY_PDALTMODE_BILLBOARD_PROD_STRING_INDEX</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa5c9dac9872a4c320d56617b7264e169b" kindref="member">CY_PDALTMODE_BILLBOARD_SERIAL_STRING_INDEX</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa16576fff29f9d5c8a8e8781eb30c1f63" kindref="member">CY_PDALTMODE_BILLBOARD_CONFIG_STRING_INDEX</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8facf0d4de7cdda6fce9e5db7b2a8edaf09" kindref="member">CY_PDALTMODE_BILLBOARD_BB_INF_STRING_INDEX</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa34c3a36b1878f6a65429bfd7b7c64365" kindref="member">CY_PDALTMODE_BILLBOARD_HID_INF_STRING_INDEX</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa9adf52234b7615e84c65c426a839e3ad" kindref="member">CY_PDALTMODE_BILLBOARD_URL_STRING_INDEX</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa4980bb05817cb6fa231a840135ce5351" kindref="member">CY_PDALTMODE_BILLBOARD_ALT_MODE1_STRING_INDEX</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa131b580e27addb85dd3cb02bd2a5e867" kindref="member">CY_PDALTMODE_BILLBOARD_ALT_MODE2_STRING_INDEX</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa0310d8bb0cd64e2f86dcc6cb50123235" kindref="member">CY_PDALTMODE_BILLBOARD_ALT_MODE3_STRING_INDEX</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa8ba07b30f473185fffabdf74b840188e" kindref="member">CY_PDALTMODE_BILLBOARD_ALT_MODE4_STRING_INDEX</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa2fd374cf9be11d5765dacc6430837bcc" kindref="member">CY_PDALTMODE_BILLBOARD_ALT_MODE5_STRING_INDEX</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa90ae4c4670c7539f2372fa1d738552aa" kindref="member">CY_PDALTMODE_BILLBOARD_ALT_MODE6_STRING_INDEX</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fabf2a1cf110aaa22b68d94fc3c554a0ab" kindref="member">CY_PDALTMODE_BILLBOARD_ALT_MODE7_STRING_INDEX</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1gga883118f43f8e39a3e005b695cd99af8fa6287f65f7dbe174fbb14055879a8e9e8" kindref="member">CY_PDALTMODE_BILLBOARD_ALT_MODE8_STRING_INDEX</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}<sp/><ref refid="group__group__pdaltmode__billboard__enums_1ga883118f43f8e39a3e005b695cd99af8f" kindref="member">cy_en_pdaltmode_billboard_usb_string_index_t</ref>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="232"><highlight class="comment"><sp/>*<sp/>Data<sp/>structure<sp/>definition</highlight></codeline>
+<codeline lineno="233"><highlight class="comment"><sp/>****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243" refid="structcy__stc__pdaltmode__billboard__am__info__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>wSvid;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>bAltMode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>iAltModeString;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>dwAltModeVDO;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="249"><highlight class="normal">}<sp/><ref refid="structcy__stc__pdaltmode__billboard__am__info__t" kindref="compound">cy_stc_pdaltmode_billboard_am_info_t</ref>;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="structcy__stc__pdaltmode__billboard__conn__info__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>enable;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>nSvid;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>prefMode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>reserved;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcy__stc__pdaltmode__billboard__am__info__t" kindref="compound">cy_stc_pdaltmode_billboard_am_info_t</ref><sp/>modelist[<ref refid="group__group__pdaltmode__billboard__macros_1ga5b35a3dbc4a587b36147e5211ceff679" kindref="member">CY_PDALTMODE_BILLBOARD_MAX_SVID</ref>];<sp/></highlight></codeline>
+<codeline lineno="262"><highlight class="normal">}<sp/><ref refid="structcy__stc__pdaltmode__billboard__conn__info__t" kindref="compound">cy_stc_pdaltmode_billboard_conn_info_t</ref>;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="267"><highlight class="comment"><sp/>*<sp/>Global<sp/>function<sp/>declaration</highlight></codeline>
+<codeline lineno="268"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="276"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_Billboard_Enable</highlight></codeline>
+<codeline lineno="277"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><ref refid="group__group__pdaltmode__billboard__enums_1ga726a24fa891657729c89bee7a4a7e030" kindref="member">cy_en_pdaltmode_billboard_status_t</ref><sp/><ref refid="group__group__pdaltmode__billboard__functions_1ga9d8a38ee749012cf83d74acfdcafedf0" kindref="member">Cy_PdAltMode_Billboard_Enable</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/><ref refid="group__group__pdaltmode__billboard__enums_1gaa7aa411930bac49da8f731ab6c6f9dcb" kindref="member">cy_en_pdaltmode_billboard_cause_t</ref><sp/>cause);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><ref refid="group__group__pdaltmode__billboard__enums_1ga726a24fa891657729c89bee7a4a7e030" kindref="member">cy_en_pdaltmode_billboard_status_t</ref><sp/><ref refid="group__group__pdaltmode__billboard__functions_1ga78c45dab0666fc87993099d95d1aed22" kindref="member">Cy_PdAltMode_Billboard_AltStatusUpdate</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/>uint8_t<sp/>modeIndex,</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__billboard__enums_1ga987546b8821498ba4a7b616b49206ec0" kindref="member">cy_en_pdaltmode_billboard_alt_mode_status_t</ref><sp/>altStatus);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="330"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_Billboard_IsPresent</highlight></codeline>
+<codeline lineno="331"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="345"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__billboard__functions_1ga1152a7ec9c38cb794ec5ae1a402e240f" kindref="member">Cy_PdAltMode_Billboard_IsPresent</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><ref refid="group__group__pdaltmode__billboard__enums_1ga726a24fa891657729c89bee7a4a7e030" kindref="member">cy_en_pdaltmode_billboard_status_t</ref><sp/><ref refid="group__group__pdaltmode__billboard__functions_1gac4c037fe6494f2378da7609fa1c5d90a" kindref="member">Cy_PdAltMode_Billboard_Disable</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>force);</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><ref refid="group__group__pdaltmode__billboard__enums_1ga726a24fa891657729c89bee7a4a7e030" kindref="member">cy_en_pdaltmode_billboard_status_t</ref><sp/><ref refid="group__group__pdaltmode__billboard__functions_1ga73c9f90dae9c0407e60008babc08b24c" kindref="member">Cy_PdAltMode_Billboard_UpdateAllStatus</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/>uint32_t<sp/>status);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_CY_PDALTMODE_BILLBOARD_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>[]<sp/>END<sp/>OF<sp/>FILE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="cy_pdaltmode_billboard.h"/>
+  </compounddef>
+</doxygen>

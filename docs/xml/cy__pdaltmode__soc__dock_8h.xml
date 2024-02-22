@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="cy__pdaltmode__soc__dock_8h" kind="file" language="C++">
+    <compoundname>cy_pdaltmode_soc_dock.h</compoundname>
+    <includes refid="cy__pdaltmode__defines_8h" local="yes">cy_pdaltmode_defines.h</includes>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gafdccec5a89be95642d672652dd9483b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_SocDock_Init</definition>
+        <argsstring>(cy_stc_pdaltmode_ridge_hw_config_t *ridgeHwConfig, cy_stc_pdaltmode_context_t *ptrAltModeContext0, cy_stc_pdaltmode_context_t *ptrAltModeContext1)</argsstring>
+        <name>Cy_PdAltMode_SocDock_Init</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__ridge__hw__config__t" kindref="compound">cy_stc_pdaltmode_ridge_hw_config_t</ref> *</type>
+          <declname>ridgeHwConfig</declname>
+        </param>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext0</declname>
+        </param>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext1</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the Alpine/Titan Ridge slave interface module. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function initializes the Alpine/Titan Ridge slave interface module and configures it to use the specified SCB block. The SCB will be configured as an I2C slave block, and the interrupt output will also be initialized to a de-asserted state.</para><para>Since only two registers are to be implemented, and the commands to be implemented are simple, the complete module is implemented using the I2C command callbacks.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ridgeHwConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ridge HW Config pointer.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to PD Alt mode context for port 0</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to PD Alt mode context for port 1</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_soc_dock.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga3e745b290dcfd9f95d9cfbd3f8ed7f86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_SocDock_DeInit</definition>
+        <argsstring>(CySCB_Type *scbNum, cy_stc_pdaltmode_context_t *ptrAltModeContext0, cy_stc_pdaltmode_context_t *ptrAltModeContext1)</argsstring>
+        <name>Cy_PdAltMode_SocDock_DeInit</name>
+        <param>
+          <type>CySCB_Type *</type>
+          <declname>scbNum</declname>
+        </param>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext0</declname>
+        </param>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext1</declname>
+        </param>
+        <briefdescription>
+<para>De-initialize the Alpine/Titan Ridge slave interface module. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function de-initializes the SCB block used to implement the I2C slave interface between CCGx and Alpine/Titan Ridge.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scbNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SCB number</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to PD Alt Mode context for port 0</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to PD Alt Mode context for port 1</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_soc_dock.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga597d0cc892562f890d69251fc3af6a59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_SocDock_Task</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_SocDock_Task</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>AltMode Soc state machine tasks handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to PD Alt Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_soc_dock.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gafbbf7f61004f2047cf28bdb2cf909bac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* Cy_PdAltMode_SocDock_GetUUID</definition>
+        <argsstring>(uint8_t port)</argsstring>
+        <name>Cy_PdAltMode_SocDock_GetUUID</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Returns the pointer to the UUID buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selected port.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the UUID buffer </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_soc_dock.h" line="143" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file defines SCB operations handlers for Intel SOC. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="copyright"><para>Copyright 2024, Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation. All rights reserved. You may use this file only in accordance with the license, terms, conditions, disclaimers, and limitations in the end user license agreement accompanying the software package with which this file was provided. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor">#ifndef<sp/>_CY_PDALTMODE_SOC_DOCK_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CY_PDALTMODE_SOC_DOCK_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(TBT_HOST_APP<sp/>==<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cy_pdaltmode_defines.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/>Global<sp/>function<sp/>declaration</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_SocDock_Init</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>****************************************************************************/</highlight></codeline>
+<codeline lineno="70"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1gafdccec5a89be95642d672652dd9483b0" kindref="member">Cy_PdAltMode_SocDock_Init</ref>(<ref refid="structcy__stc__pdaltmode__ridge__hw__config__t" kindref="compound">cy_stc_pdaltmode_ridge_hw_config_t</ref>*<sp/>ridgeHwConfig,<sp/><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref>*<sp/>ptrAltModeContext0,<sp/><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref>*<sp/>ptrAltModeContext1);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_SocDock_DeInit</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>****************************************************************************/</highlight></codeline>
+<codeline lineno="93"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1ga3e745b290dcfd9f95d9cfbd3f8ed7f86" kindref="member">Cy_PdAltMode_SocDock_DeInit</ref>(CySCB_Type*<sp/>scbNum,<sp/><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref>*<sp/>ptrAltModeContext0,<sp/><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref>*<sp/>ptrAltModeContext1);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/>*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_SocDock_Task</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/>****************************************************************************/</highlight></codeline>
+<codeline lineno="108"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1ga597d0cc892562f890d69251fc3af6a59" kindref="member">Cy_PdAltMode_SocDock_Task</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref>*<sp/>ptrAltModeContext);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>SYS_DEEPSLEEP_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/>*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_SocDock_Sleep</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/>****************************************************************************/</highlight></codeline>
+<codeline lineno="126"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Cy_PdAltMode_SocDock_Sleep(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SYS_DEEPSLEEP_ENABLE<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/>*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_SocDock_GetUUID</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/>****************************************************************************/</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">uint8_t<sp/>*<sp/><ref refid="group__group__pdaltmode__intel__functions_1gafbbf7f61004f2047cf28bdb2cf909bac" kindref="member">Cy_PdAltMode_SocDock_GetUUID</ref>(uint8_t<sp/>port);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>(TBT_HOST_APP<sp/>==<sp/>0)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_CY_PDALTMODE_SOC_DOCK_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>[]<sp/>END<sp/>OF<sp/>FILE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="cy_pdaltmode_soc_dock.h"/>
+  </compounddef>
+</doxygen>

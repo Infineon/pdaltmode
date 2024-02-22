@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>PDAltMode Middleware Library Documentation</title>
+    <briefdescription>
+<para>The PDAltMode middleware implements state machines defined in: </para>    </briefdescription>
+    <detaileddescription>
+<para>The PDAltMode middleware implements state machines defined in:<itemizedlist>
+<listitem><para><bold>Universal Serial Bus Power Delivery Specification Rev 3.1 Ver 1.8</bold></para></listitem><listitem><para><bold>Universal Serial Bus Type-C Cable and Connector Specification Ver 2.2</bold></para></listitem><listitem><para><bold>VESA DisplayPort Alt Mode on USB Type-C Standard. Ver 1.3/1.4</bold></para></listitem></itemizedlist>
+</para><para>The PDAltMode middleware operates on top of PdStack Middleware and USBPD driver included in the MTB PDL CAT2 (mtb-pdl-cat2) Peripheral Driver Library. The middleware provides a set of Alt Mode APIs through which the application can initialize, monitor and configure the following PD Alt Modes:<itemizedlist>
+<listitem><para>Display Port.</para></listitem><listitem><para>TBT.</para></listitem><listitem><para>vPro.</para></listitem><listitem><para>USB4.</para></listitem></itemizedlist>
+</para><para>The PDAltMode Middleware is released as a combination of source files and a pre-compiled library (pdaltmode_dock_tbt). The pre-compiled library implements support for TBT and vPro alternate modes. All of the remaining state machines are implemented in the form of source files.</para><para><bold>Features:</bold><orderedlist>
+<listitem><para>Support PD Alternate Modes Discovery, entry and simultaneously handling up to 4 alternate modes.</para></listitem><listitem><para>Support Intel Ridge Slave Interface.</para></listitem><listitem><para>Support the following AltModes (in DFP and UFP roles) by default:<itemizedlist>
+<listitem><para>DP</para></listitem><listitem><para>TBT</para></listitem><listitem><para>vPro</para></listitem><listitem><para>USB4</para></listitem></itemizedlist>
+</para></listitem><listitem><para>Support mechanisms to add user custom alternate mode.</para></listitem></orderedlist>
+</para><sect1 id="index_1section_pdaltmode_quick_start">
+<title>Quick Start Guide</title>
+<para>PDAltMode Middleware can be used in various development environments such as ModusToolbox(TM), MBED, and so on. Refer to the <ref refid="index_1section_pdaltmode_toolchain" kindref="member">Supported Software and Tools</ref> section.</para><para>The following steps describe the simplest way of enabling the PDAltMode Middleware in the application.</para><para><orderedlist>
+<listitem><para>Open/Create an application where PdAltMode functionality is needed.</para></listitem><listitem><para>Add the PDAltMode Middleware to your project. This quick start guide assumes that the environment is configured to use the MTB CAT2 Peripheral Driver Library(PDL) for development and the PDL is included in the project. If you are using the ModusToolbox(TM) development environment, select the application in the Project Explorer window and select the PDAltMode Middleware in the Library Manager.</para></listitem><listitem><para>Include cy_pdaltmode_defines.h, cy_pdaltmode_vdm_task.h, cy_pdaltmode_mngr.h and cy_pdaltmode_hw.h header files to get access to common Alternate Modes functionality as Discovery process and Alternate Modes handling. <programlisting filename="pdaltmode/main.c"><codeline><highlight class="preprocessor">#include<sp/>&quot;cy_pdaltmode_defines.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cy_pdaltmode_vdm_task.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cy_pdaltmode_mngr.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cy_pdaltmode_hw.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+</programlisting></para></listitem><listitem><para>Include desired Alternate Mode header/source files to get access to selected Alternate Mode. For example, for DisplayPort Alternate Mode, include next header file: <programlisting filename="pdaltmode/main.c"><codeline><highlight class="preprocessor">#include<sp/>&quot;cy_pdaltmode_dp_sid.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+</programlisting></para></listitem><listitem><para>Define the following data structures, pointers (or) configuration required by the PDAltMode Middleware: <programlisting filename="pdaltmode/main.c"><codeline><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline><highlight class="comment">*<sp/>Alternate<sp/>mode<sp/>Port<sp/>Configuration<sp/>Structure<sp/>Initialization</highlight></codeline>
+<codeline><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cy_PdAltMode_Mngr_ContextInit(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/>cy_stc_pdstack_context_t<sp/>*ptrPdStackContext)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cy_stc_usbpd_context_t<sp/>*ptrUsbPdContext<sp/>=<sp/>ptrPdStackContext-&gt;ptrUsbPdContext;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ptrAltModeContext-&gt;<ref refid="structcy__stc__pdaltmode__context__t_1aba3f2832d6acbf0f5c866d67f8e0090b" kindref="member">appStatusContext</ref><sp/>=<sp/>app_pd_get_status(ptrUsbPdContext-&gt;port);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ptrAltModeContext-&gt;<ref refid="structcy__stc__pdaltmode__context__t_1a0032d80be91c77ede3050a07d3867390" kindref="member">altModeAppStatus</ref><sp/>=<sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gaa07ffabf22d61e39aef956f9beed3b8b" kindref="member">Cy_PdAltMode_Mngr_GetAmStatus</ref>(ptrUsbPdContext-&gt;port);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ptrAltModeContext-&gt;<ref refid="structcy__stc__pdaltmode__context__t_1a5790555497ca6a84993a77fced6c6379" kindref="member">hwDetails</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="group__group__pdaltmode__alt__mode__hw__functions_1gae85a95014094eb8548fd5c251fc62347" kindref="member">Cy_PdAltMode_HW_GetStatus</ref>(ptrUsbPdContext-&gt;port);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Init<sp/>AM<sp/>asset<sp/>structures<sp/>pointers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(DFP_ALT_MODE_SUPP<sp/>||<sp/>UFP_ALT_MODE_SUPP)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ptrAltModeContext-&gt;<ref refid="structcy__stc__pdaltmode__context__t_1a64b83390d1e5bb109789b5f261897199" kindref="member">altModeMngrStatus</ref><sp/>=<sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga3f3adc38c3ebf530b8b7eb15daaf4761" kindref="member">Cy_PdAltMode_Mngr_GetMngrStatus</ref>(ptrUsbPdContext-&gt;port);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ptrAltModeContext-&gt;<ref refid="structcy__stc__pdaltmode__context__t_1a33d69fea0c550c5b43833b24040699f2" kindref="member">vdmStat</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga8da1801387db0bfc422d88ab713ee765" kindref="member">Cy_PdAltMode_VdmTask_GetMngrStatus</ref>(ptrUsbPdContext-&gt;port);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>((DP_DFP_SUPP)<sp/>||<sp/>(DP_UFP_SUPP))</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Init<sp/>DisplayPort<sp/>structure<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ptrAltModeContext-&gt;<ref refid="structcy__stc__pdaltmode__context__t_1aff9afd3792552eeaeaf18cb022953653" kindref="member">dpStatus</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="group__group__pdaltmode__display__port__functions_1ga8660302a2d70c94169d7ded455621301" kindref="member">Cy_PdAltMode_DP_GetStatus</ref>(ptrUsbPdContext-&gt;port);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DP_DFP_SUPP<sp/>||<sp/>DP_UFP_SUPP<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>STORE_DETAILS_OF_HOST</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cptrAltModeContext-&gt;hostDetails<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="group__group__pdaltmode__intel__functions_1gacfdcf05cc7ed0d5e66a516e43406ff1c" kindref="member">Cy_PdAltMode_HostDetails_GetStatus</ref>(ptrUsbPdContext-&gt;port)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>STORE_DETAILS_OF_HOST<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DFP_ALT_MODE_SUPP<sp/>||<sp/>UFP_ALT_MODE_SUPP<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ptrAltModeContext-&gt;<ref refid="structcy__stc__pdaltmode__context__t_1a34f18ac1a604068a73e013c483d55104" kindref="member">pdStackContext</ref><sp/><sp/><sp/>=<sp/>ptrPdStackContext;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ptrAltModeContext-&gt;<ref refid="structcy__stc__pdaltmode__context__t_1a35f7d32a2f42b36992cf929c7cb62629" kindref="member">noOfTypeCPorts</ref><sp/><sp/><sp/>=<sp/>NO_OF_TYPEC_PORTS();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>pointers<sp/>to<sp/>configuration<sp/>structures<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ptrAltModeContext-&gt;<ref refid="structcy__stc__pdaltmode__context__t_1aceb31ed4d6db842a86597557af80d116" kindref="member">altModeCfg</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>pd_get_ptr_base_alt_tbl(ptrUsbPdContext);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ptrAltModeContext-&gt;<ref refid="structcy__stc__pdaltmode__context__t_1ac51b717d9cdeb53a55abd0046410c383" kindref="member">altModeCfgLen</ref><sp/><sp/><sp/><sp/>=<sp/>get_pd_port_config(ptrUsbPdContext)-&gt;port_n_base_alt_mode_table_len;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ptrAltModeContext-&gt;<ref refid="structcy__stc__pdaltmode__context__t_1a5294cf1776a4145b418b06b2e785c474" kindref="member">tbtCfg</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>pd_get_ptr_tbt_host_tbl(ptrUsbPdContext);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ptrAltModeContext-&gt;<ref refid="structcy__stc__pdaltmode__context__t_1a51a744b85e46a2852636ef9bc375be2b" kindref="member">dpCfg</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>pd_get_ptr_dp_config_tbl(ptrUsbPdContext);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>alternate<sp/>mode<sp/>Context<sp/>if<sp/>the<sp/>system<sp/>is<sp/>dual<sp/>port.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(TYPEC_PORT_1_IDX<sp/>==<sp/>ptrUsbPdContext-&gt;port)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gl_AltModePort0Ctx.ptrAltPortAltmodeCtx<sp/>=<sp/>&amp;gl_AltModePort1Ctx;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gl_AltModePort1Ctx.ptrAltPortAltmodeCtx<sp/>=<sp/>&amp;gl_AltModePort0Ctx;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ptrAltModeContext-&gt;<ref refid="structcy__stc__pdaltmode__context__t_1ac963c033cb47909cf986377cd328fc63" kindref="member">ptrAltPortAltmodeCtx</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+</programlisting></para></listitem><listitem><para>Enable next macros:<itemizedlist>
+<listitem><para><bold>DFP_ALT_MODE_SUPP UFP_ALT_MODE_SUPP</bold> to enable DFP/UFP Alternate Modes functionality</para></listitem><listitem><para><bold>DP_DFP_SUPP DP_UFP_SUPP</bold> to enable DisplayPort DFP/UFP Alternate Modes functionality</para></listitem><listitem><para><bold>CY_PD_USB4_SUPPORT_ENABLE</bold> to enable USB4 functionality</para></listitem><listitem><para><bold>STORE_DETAILS_OF_HOST</bold> to enable Dock exchange capabilities functionality</para></listitem></itemizedlist>
+</para></listitem><listitem><para>Configure supported Alternate Modes using next sections in <ulink url=" https://www.infineon.com/cms/en/design-support/tools/configuration/usb-ez-pd-configuration-utility/"><bold>EZ-PD Configuration Utility:</bold> </ulink><itemizedlist>
+<listitem><para><bold>Base Alternate Modes</bold> - Configures supported Alternate Modes SVIDs, data role supported for selected SVID, and modes entry priority.</para></listitem><listitem><para><bold>DP Mode Parameters</bold> - DisplayPort related configurations.</para></listitem></itemizedlist>
+</para></listitem><listitem><para>Register desired Alternate Mode callback function (for ex. Display port): <programlisting filename="pdaltmode/main.c"><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcy__stc__pdaltmode__alt__mode__reg__info__t" kindref="compound">cy_stc_pdaltmode_alt_mode_reg_info_t</ref><sp/>regInfo;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)<sp/><ref refid="group__group__pdaltmode__display__port__functions_1gaeba07b7dee629cbad9c6d4c6cfdb12a1" kindref="member">Cy_PdAltMode_DP_RegModes</ref>(&amp;pdStackContext,<sp/>&amp;regInfo);</highlight></codeline>
+</programlisting> The PDAltMode library uses these set of configuration for running internal state machine that implement different PD Alternate Modes.</para></listitem><listitem><para>Initialize the PDAltMode Middleware once at the start. <programlisting filename="pdaltmode/main.c"><codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Cy_PdStack_Dpm_AltModeInitContext(&amp;gl_AltModePort0Ctx,<sp/>&amp;gl_PdStackPort0Ctx);</highlight></codeline>
+</programlisting></para></listitem><listitem><para>Start the VDM and Alt Mode Managers operations and start state machines that control external mux. <programlisting filename="pdaltmode/main.c"><codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)<ref refid="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga2ef6ffe7eff6a19712066f4c3d9bbddc" kindref="member">Cy_PdAltMode_VdmTask_Enable</ref>(&amp;gl_AltModePort0Ctx);</highlight></codeline>
+</programlisting></para></listitem><listitem><para>Invoke Cy_PdAltMode_Manager_Task and Cy_PdAltMode_VdmTask_Manager functions from the main processing loop of the application to handle the Vdm and Alt Mode Managers tasks for each PD port. <programlisting filename="pdaltmode/main.c"><codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)<ref refid="group__group__pdaltmode__vdm__alt__mode__manager__functions_1ga73731ef5080475c3e99ca3595bd08725" kindref="member">Cy_PdAltMode_Mngr_Task</ref>(&amp;gl_AltModePort0Ctx);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)<ref refid="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gab6c935c30c71fd0e04c90c3298f787fa" kindref="member">Cy_PdAltMode_VdmTask_Manager</ref>(&amp;gl_AltModePort0Ctx);</highlight></codeline>
+</programlisting></para></listitem></orderedlist>
+</para></sect1>
+<sect1 id="index_1section_pdaltmode_toolchain">
+<title>Supported Software and Tools</title>
+<para>This version of the PDAltMode Middleware was validated for the compatibility with the following software and tools:</para><para><table rows="7" cols="2"><row>
+<entry thead="yes"><para>Software and Tools </para></entry><entry thead="yes"><para>Version  </para></entry></row>
+<row>
+<entry thead="no"><para>ModusToolbox(TM) software environment </para></entry><entry thead="no"><para>3.1  </para></entry></row>
+<row>
+<entry thead="no"><para>mtb-pdl-cat2 </para></entry><entry thead="no"><para>2.4.0  </para></entry></row>
+<row>
+<entry thead="no"><para>pdstack </para></entry><entry thead="no"><para>3.1.0  </para></entry></row>
+<row>
+<entry thead="no"><para>GCC Compiler </para></entry><entry thead="no"><para>10.3.1  </para></entry></row>
+<row>
+<entry thead="no"><para>IAR Compiler </para></entry><entry thead="no"><para>8.42.2  </para></entry></row>
+<row>
+<entry thead="no"><para>Arm(R) Compiler 6 </para></entry><entry thead="no"><para>6.13  </para></entry></row>
+</table>
+</para></sect1>
+<sect1 id="index_1section_pdaltmode_changelog">
+<title>Changelog</title>
+<para><table rows="2" cols="3"><row>
+<entry thead="yes"><para>Version</para></entry><entry thead="yes"><para>Changes</para></entry><entry thead="yes"><para>Reason for change </para></entry></row>
+<row>
+<entry thead="no"><para>1.0 </para></entry><entry thead="no"><para>Initial version </para></entry><entry thead="no"><para></para></entry></row>
+</table>
+</para></sect1>
+<sect1 id="index_1section_pdaltmode_more_information">
+<title>More Information</title>
+<para>For more information, see the following resources:</para><para><itemizedlist>
+<listitem><para><ulink url=" https://www.infineon.com/modustoolbox"><bold>ModusToolbox(TM) software, quick start guide, documentation, and videos</bold> </ulink></para></listitem><listitem><para><ulink url="https://infineon.github.io/mtb-pdl-cat2/pdl_api_reference_manual/html/index.html"><bold>PDL API Reference Manual</bold></ulink> </para></listitem><listitem><para><ulink url="https://infineon.github.io/pdstack/pdstack_api_reference_manual/html/index.html"><bold>PDStack API Reference Manual</bold></ulink></para></listitem></itemizedlist>
+</para><para><simplesect kind="note"><para>The links to the other software component&apos;s documentation (middleware and PDL) point to GitHub for the latest available version of the software. To get documentation of the specified version, download from GitHub, and unzip the component archive. The documentation is available in the <emphasis>docs</emphasis> folder. </para></simplesect>
+</para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

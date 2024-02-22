@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcy__stc__pdaltmode__alt__mode__reg__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_alt_mode_reg_info_t</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__reg__info__t_1acc83f7dc5eda070944e8b2e24e0feca7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_alt_mode_reg_info_t::atchType</definition>
+        <argsstring></argsstring>
+        <name>atchType</name>
+        <briefdescription>
+<para>Target of disc SVID (cable or device/AMA) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1298" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__reg__info__t_1a1c8b10701daa577e29ec61baf0b3378d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_alt_mode_reg_info_t::dataRole</definition>
+        <argsstring></argsstring>
+        <name>dataRole</name>
+        <briefdescription>
+<para>Current data role. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1299" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__reg__info__t_1aeed1aa6c5a31dd9c4905ce3419474c34" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_alt_mode_reg_info_t::altModeId</definition>
+        <argsstring></argsstring>
+        <name>altModeId</name>
+        <briefdescription>
+<para>Alt Mode ID. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1300" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__reg__info__t_1a0d16a261b633103684e21636e8b2d957" prot="public" static="no" mutable="no">
+        <type>cy_en_pd_sop_t</type>
+        <definition>cy_en_pd_sop_t cy_stc_pdaltmode_alt_mode_reg_info_t::cblSopFlag</definition>
+        <argsstring></argsstring>
+        <name>cblSopFlag</name>
+        <briefdescription>
+<para>Sop indication flag. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1301" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__reg__info__t_1a824adae0353c8223d1926157ca9c7716" prot="public" static="no" mutable="no">
+        <type>cy_pd_pd_do_t</type>
+        <definition>cy_pd_pd_do_t cy_stc_pdaltmode_alt_mode_reg_info_t::svidEmcaVdo</definition>
+        <argsstring></argsstring>
+        <name>svidEmcaVdo</name>
+        <briefdescription>
+<para>SVID VDO from cable Discovery mode response. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1302" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__reg__info__t_1af3ae8804c65c858dbca2bed51e4704a8" prot="public" static="no" mutable="no">
+        <type>cy_pd_pd_do_t</type>
+        <definition>cy_pd_pd_do_t cy_stc_pdaltmode_alt_mode_reg_info_t::svidVdo</definition>
+        <argsstring></argsstring>
+        <name>svidVdo</name>
+        <briefdescription>
+<para>SVID VDO from Discovery mode SOP response. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1303" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__reg__info__t_1a773c922d1bc99265b03bbea07b45bd05" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structcy__stc__pdaltmode__atch__tgt__info__t" kindref="compound">cy_stc_pdaltmode_atch_tgt_info_t</ref> *</type>
+        <definition>const cy_stc_pdaltmode_atch_tgt_info_t* cy_stc_pdaltmode_alt_mode_reg_info_t::atchTgtInfo</definition>
+        <argsstring></argsstring>
+        <name>atchTgtInfo</name>
+        <briefdescription>
+<para>Attached targets info (dev/ama/cbl) from Discovery ID response. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1304" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__reg__info__t_1a2b907a5fce1fa1642f21af9388571263" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga9a0d2881cd562cf3f08968d5d5c0e4e3" kindref="member">cy_en_pdaltmode_app_evt_t</ref></type>
+        <definition>cy_en_pdaltmode_app_evt_t cy_stc_pdaltmode_alt_mode_reg_info_t::appEvt</definition>
+        <argsstring></argsstring>
+        <name>appEvt</name>
+        <briefdescription>
+<para>APP event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1305" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1305" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure holds all necessary information on Discovery Mode stage for supported Alternate Mode when Alt Modes manager registers new Alt Mode. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="20">
+        <label>cy_stc_pdaltmode_alt_mode_reg_info_t</label>
+        <link refid="structcy__stc__pdaltmode__alt__mode__reg__info__t"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>atchTgtInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>cy_stc_pdaltmode_atch_tgt_info_t</label>
+        <link refid="structcy__stc__pdaltmode__atch__tgt__info__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="cy_pdaltmode_defines.h" line="1297" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1296" bodyend="1306"/>
+    <listofallmembers>
+      <member refid="structcy__stc__pdaltmode__alt__mode__reg__info__t_1aeed1aa6c5a31dd9c4905ce3419474c34" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_reg_info_t</scope><name>altModeId</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__reg__info__t_1a2b907a5fce1fa1642f21af9388571263" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_reg_info_t</scope><name>appEvt</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__reg__info__t_1a773c922d1bc99265b03bbea07b45bd05" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_reg_info_t</scope><name>atchTgtInfo</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__reg__info__t_1acc83f7dc5eda070944e8b2e24e0feca7" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_reg_info_t</scope><name>atchType</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__reg__info__t_1a0d16a261b633103684e21636e8b2d957" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_reg_info_t</scope><name>cblSopFlag</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__reg__info__t_1a1c8b10701daa577e29ec61baf0b3378d" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_reg_info_t</scope><name>dataRole</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__reg__info__t_1a824adae0353c8223d1926157ca9c7716" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_reg_info_t</scope><name>svidEmcaVdo</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__reg__info__t_1af3ae8804c65c858dbca2bed51e4704a8" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_reg_info_t</scope><name>svidVdo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

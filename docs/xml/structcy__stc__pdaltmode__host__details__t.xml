@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcy__stc__pdaltmode__host__details__t" kind="struct" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_host_details_t</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__host__details__t_1a08f03053bd1816c6e2ae4af0f38fd873" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* cy_stc_pdaltmode_host_details_t::dsAltModeContext</definition>
+        <argsstring></argsstring>
+        <name>dsAltModeContext</name>
+        <briefdescription>
+<para>PD Alt Mode context pointer for DS port. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1207" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__host__details__t_1aba2258e1dac9875caf32c8444493d7e9" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* cy_stc_pdaltmode_host_details_t::usAltModeContext</definition>
+        <argsstring></argsstring>
+        <name>usAltModeContext</name>
+        <briefdescription>
+<para>PD Alt Mode context pointer for US port. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1208" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__host__details__t_1af66161cc236dd715e20605500b4b144f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_host_details_t::backUpRidgeStatus</definition>
+        <argsstring></argsstring>
+        <name>backUpRidgeStatus</name>
+        <briefdescription>
+<para>Back up Ridge status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1209" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__host__details__t_1a9a755bdac94b96a73c64c725439cdfa3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_host_details_t::hostModeMask</definition>
+        <argsstring></argsstring>
+        <name>hostModeMask</name>
+        <briefdescription>
+<para>Host mode mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1210" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__host__details__t_1abf0875256fb25e10e06e958f9db548f8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_host_details_t::dsModeMask</definition>
+        <argsstring></argsstring>
+        <name>dsModeMask</name>
+        <briefdescription>
+<para>DS mode mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1211" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__host__details__t_1a62297ac673e38d63a1822d726c6c4510" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_host_details_t::hostDp2LaneModeCtrl</definition>
+        <argsstring></argsstring>
+        <name>hostDp2LaneModeCtrl</name>
+        <briefdescription>
+<para>Host DP 2-lane mode control. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1212" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__host__details__t_1ab29988e0f20fe2ed915b7c97c879f232" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_host_details_t::dsDp2LaneModeCtrl</definition>
+        <argsstring></argsstring>
+        <name>dsDp2LaneModeCtrl</name>
+        <briefdescription>
+<para>DS DP 2-lane mode control. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1213" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__host__details__t_1a551be087783d2ce7eb7c8febec3c298c" prot="public" static="no" mutable="no">
+        <type>cy_pd_pd_do_t</type>
+        <definition>cy_pd_pd_do_t cy_stc_pdaltmode_host_details_t::hostEudo</definition>
+        <argsstring></argsstring>
+        <name>hostEudo</name>
+        <briefdescription>
+<para>Host USB4 data object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1214" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__host__details__t_1abee21c56678b72d931a482447a669ecd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_host_details_t::hostDetails</definition>
+        <argsstring></argsstring>
+        <name>hostDetails</name>
+        <briefdescription>
+<para>Host details. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1215" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__host__details__t_1a6af33113e11ab54cd3615d89a770b320" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_host_details_t::grRdyBit</definition>
+        <argsstring></argsstring>
+        <name>grRdyBit</name>
+        <briefdescription>
+<para>Ridge gr_rdy bit value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1216" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__host__details__t_1a987f55afad2140d61145b467a5549e61" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_host_details_t::isHostDetailsAvailable</definition>
+        <argsstring></argsstring>
+        <name>isHostDetailsAvailable</name>
+        <briefdescription>
+<para>Is Host details available. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1217" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__host__details__t_1a7055d4e34e1e57e2d5f089ed91ff39b6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_host_details_t::dsSendEuWithHostPresentSet</definition>
+        <argsstring></argsstring>
+        <name>dsSendEuWithHostPresentSet</name>
+        <briefdescription>
+<para>Send USB4 EUDO with host present bit set. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1218" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1218" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Host Details Status. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cy_pdaltmode_defines.h" line="1199" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1198" bodyend="1219"/>
+    <listofallmembers>
+      <member refid="structcy__stc__pdaltmode__host__details__t_1af66161cc236dd715e20605500b4b144f" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_host_details_t</scope><name>backUpRidgeStatus</name></member>
+      <member refid="structcy__stc__pdaltmode__host__details__t_1a08f03053bd1816c6e2ae4af0f38fd873" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_host_details_t</scope><name>dsAltModeContext</name></member>
+      <member refid="structcy__stc__pdaltmode__host__details__t_1ab29988e0f20fe2ed915b7c97c879f232" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_host_details_t</scope><name>dsDp2LaneModeCtrl</name></member>
+      <member refid="structcy__stc__pdaltmode__host__details__t_1abf0875256fb25e10e06e958f9db548f8" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_host_details_t</scope><name>dsModeMask</name></member>
+      <member refid="structcy__stc__pdaltmode__host__details__t_1a7055d4e34e1e57e2d5f089ed91ff39b6" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_host_details_t</scope><name>dsSendEuWithHostPresentSet</name></member>
+      <member refid="structcy__stc__pdaltmode__host__details__t_1a6af33113e11ab54cd3615d89a770b320" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_host_details_t</scope><name>grRdyBit</name></member>
+      <member refid="structcy__stc__pdaltmode__host__details__t_1abee21c56678b72d931a482447a669ecd" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_host_details_t</scope><name>hostDetails</name></member>
+      <member refid="structcy__stc__pdaltmode__host__details__t_1a62297ac673e38d63a1822d726c6c4510" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_host_details_t</scope><name>hostDp2LaneModeCtrl</name></member>
+      <member refid="structcy__stc__pdaltmode__host__details__t_1a551be087783d2ce7eb7c8febec3c298c" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_host_details_t</scope><name>hostEudo</name></member>
+      <member refid="structcy__stc__pdaltmode__host__details__t_1a9a755bdac94b96a73c64c725439cdfa3" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_host_details_t</scope><name>hostModeMask</name></member>
+      <member refid="structcy__stc__pdaltmode__host__details__t_1a987f55afad2140d61145b467a5549e61" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_host_details_t</scope><name>isHostDetailsAvailable</name></member>
+      <member refid="structcy__stc__pdaltmode__host__details__t_1aba2258e1dac9875caf32c8444493d7e9" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_host_details_t</scope><name>usAltModeContext</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

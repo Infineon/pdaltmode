@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcy__stc__pdaltmode__ridge__hw__config__t" kind="struct" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_ridge_hw_config_t</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__ridge__hw__config__t_1a40051077b6720e8efef6ae9e54ba769c" prot="public" static="no" mutable="no">
+        <type>CySCB_Type *</type>
+        <definition>CySCB_Type* cy_stc_pdaltmode_ridge_hw_config_t::ridgeScbNum</definition>
+        <argsstring></argsstring>
+        <name>ridgeScbNum</name>
+        <briefdescription>
+<para>Ridge SCB number. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1111" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__ridge__hw__config__t_1a621bb1966ad706475443d3fa0c2f9f37" prot="public" static="no" mutable="no">
+        <type>const cy_stc_scb_i2c_config_t *</type>
+        <definition>const cy_stc_scb_i2c_config_t* cy_stc_pdaltmode_ridge_hw_config_t::ridgeI2cConfig</definition>
+        <argsstring></argsstring>
+        <name>ridgeI2cConfig</name>
+        <briefdescription>
+<para>I2C Configuration pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1112" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__ridge__hw__config__t_1aae637d86bf7a5fb00dfae4a6138a4796" prot="public" static="no" mutable="no">
+        <type>const cy_stc_sysint_t *</type>
+        <definition>const cy_stc_sysint_t* cy_stc_pdaltmode_ridge_hw_config_t::ridgeScbIrqConfig</definition>
+        <argsstring></argsstring>
+        <name>ridgeScbIrqConfig</name>
+        <briefdescription>
+<para>SCB Irq configuration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1113" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__ridge__hw__config__t_1a828b2217b943c5b9af416919d69fd189" prot="public" static="no" mutable="no">
+        <type>GPIO_PRT_Type *</type>
+        <definition>GPIO_PRT_Type* cy_stc_pdaltmode_ridge_hw_config_t::intrPortA_port</definition>
+        <argsstring></argsstring>
+        <name>intrPortA_port</name>
+        <briefdescription>
+<para>PortA interrupt port. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1114" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__ridge__hw__config__t_1a6db5d296795e6d8e5eda2756d581a5cf" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_ridge_hw_config_t::intrPortA_pin</definition>
+        <argsstring></argsstring>
+        <name>intrPortA_pin</name>
+        <briefdescription>
+<para>PortA interrupt pin. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1115" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__ridge__hw__config__t_1a9835e44d3c23dda233525089935ceba9" prot="public" static="no" mutable="no">
+        <type>GPIO_PRT_Type *</type>
+        <definition>GPIO_PRT_Type* cy_stc_pdaltmode_ridge_hw_config_t::intrPortB_port</definition>
+        <argsstring></argsstring>
+        <name>intrPortB_port</name>
+        <briefdescription>
+<para>PortB interrupt port. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1116" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__ridge__hw__config__t_1a9dfd9c4a87f75c90d6ee51dfc4c0b953" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_ridge_hw_config_t::intrPortB_pin</definition>
+        <argsstring></argsstring>
+        <name>intrPortB_pin</name>
+        <briefdescription>
+<para>PortB interrupt pin. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1117" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This structure holds all HW related info due to Ridge/SoC interface such as I2C SCB block, interrupt GPIO, and interrupt configuration. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cy_pdaltmode_defines.h" line="1110" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1109" bodyend="1118"/>
+    <listofallmembers>
+      <member refid="structcy__stc__pdaltmode__ridge__hw__config__t_1a6db5d296795e6d8e5eda2756d581a5cf" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_ridge_hw_config_t</scope><name>intrPortA_pin</name></member>
+      <member refid="structcy__stc__pdaltmode__ridge__hw__config__t_1a828b2217b943c5b9af416919d69fd189" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_ridge_hw_config_t</scope><name>intrPortA_port</name></member>
+      <member refid="structcy__stc__pdaltmode__ridge__hw__config__t_1a9dfd9c4a87f75c90d6ee51dfc4c0b953" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_ridge_hw_config_t</scope><name>intrPortB_pin</name></member>
+      <member refid="structcy__stc__pdaltmode__ridge__hw__config__t_1a9835e44d3c23dda233525089935ceba9" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_ridge_hw_config_t</scope><name>intrPortB_port</name></member>
+      <member refid="structcy__stc__pdaltmode__ridge__hw__config__t_1a621bb1966ad706475443d3fa0c2f9f37" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_ridge_hw_config_t</scope><name>ridgeI2cConfig</name></member>
+      <member refid="structcy__stc__pdaltmode__ridge__hw__config__t_1aae637d86bf7a5fb00dfae4a6138a4796" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_ridge_hw_config_t</scope><name>ridgeScbIrqConfig</name></member>
+      <member refid="structcy__stc__pdaltmode__ridge__hw__config__t_1a40051077b6720e8efef6ae9e54ba769c" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_ridge_hw_config_t</scope><name>ridgeScbNum</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="unioncy__stc__pdaltmode__hw__evt__t" kind="union" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_hw_evt_t</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+    <innerclass refid="structcy__stc__pdaltmode__hw__evt__t_1_1_a_l_t___m_o_d_e___h_w___e_v_t" prot="public">cy_stc_pdaltmode_hw_evt_t::ALT_MODE_HW_EVT</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unioncy__stc__pdaltmode__hw__evt__t_1aa2dc9c519e9beb81f29661240bec963d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_hw_evt_t::val</definition>
+        <argsstring></argsstring>
+        <name>val</name>
+        <briefdescription>
+<para>Integer field used for direct manipulation of reason code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1142" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncy__stc__pdaltmode__hw__evt__t_1ab5b58c33de0608ca301ee6a0c5ecc71c" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcy__stc__pdaltmode__hw__evt__t_1_1_a_l_t___m_o_d_e___h_w___e_v_t" kindref="compound">cy_stc_pdaltmode_hw_evt_t::ALT_MODE_HW_EVT</ref></type>
+        <definition>struct cy_stc_pdaltmode_hw_evt_t::ALT_MODE_HW_EVT cy_stc_pdaltmode_hw_evt_t::hw_evt</definition>
+        <argsstring></argsstring>
+        <name>hw_evt</name>
+        <briefdescription>
+<para>Union containing the application HW event/command value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1150" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Alt Mode HW application event/command structure. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="60">
+        <label>cy_stc_pdaltmode_hw_evt_t</label>
+        <link refid="unioncy__stc__pdaltmode__hw__evt__t"/>
+        <childnode refid="61" relation="usage">
+          <edgelabel>hw_evt</edgelabel>
+        </childnode>
+      </node>
+      <node id="61">
+        <label>cy_stc_pdaltmode_hw_evt_t::ALT_MODE_HW_EVT</label>
+        <link refid="structcy__stc__pdaltmode__hw__evt__t_1_1_a_l_t___m_o_d_e___h_w___e_v_t"/>
+      </node>
+    </collaborationgraph>
+    <location file="cy_pdaltmode_defines.h" line="1140" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1139" bodyend="1152"/>
+    <listofallmembers>
+      <member refid="unioncy__stc__pdaltmode__hw__evt__t_1ab5b58c33de0608ca301ee6a0c5ecc71c" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_hw_evt_t</scope><name>hw_evt</name></member>
+      <member refid="unioncy__stc__pdaltmode__hw__evt__t_1aa2dc9c519e9beb81f29661240bec963d" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_hw_evt_t</scope><name>val</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

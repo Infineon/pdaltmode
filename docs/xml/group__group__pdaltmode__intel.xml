@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__intel" kind="group">
+    <compoundname>group_pdaltmode_intel</compoundname>
+    <title>Intel</title>
+    <innergroup refid="group__group__pdaltmode__intel__macros">Macros</innergroup>
+    <innergroup refid="group__group__pdaltmode__intel__enums">Enumerated Types</innergroup>
+    <innergroup refid="group__group__pdaltmode__intel__data__structures">Data Structures</innergroup>
+    <innergroup refid="group__group__pdaltmode__intel__functions">Functions</innergroup>
+    <briefdescription>
+<para>Intel provides APIs and data structures to support Intel and Intel-related retimers functionality for Host and Dock projects. </para>    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

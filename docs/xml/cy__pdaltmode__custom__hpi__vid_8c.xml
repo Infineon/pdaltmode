@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="cy__pdaltmode__custom__hpi__vid_8c" kind="file" language="C++">
+    <compoundname>cy_pdaltmode_custom_hpi_vid.c</compoundname>
+    <includes refid="cy__pdaltmode__defines_8h" local="yes">cy_pdaltmode_defines.h</includes>
+    <includes refid="cy__pdaltmode__mngr_8h" local="yes">cy_pdaltmode_mngr.h</includes>
+    <includes local="yes">cy_pdaltmode_custom_hpi_vid.h</includes>
+    <incdepgraph>
+      <node id="8">
+        <label>cy_pdaltmode_custom_hpi_vid.h</label>
+      </node>
+      <node id="7">
+        <label>cy_pdaltmode_custom_hpi_vid.c</label>
+        <link refid="cy__pdaltmode__custom__hpi__vid_8c"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0</para></simplesect>
+Custom HPI alternate mode handler source file.</para><para><simplesect kind="copyright"><para>Copyright 2024, Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation. All rights reserved. You may use this file only in accordance with the license, terms, conditions, disclaimers, and limitations in the end user license agreement accompanying the software package with which this file was provided. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor">#include<sp/>&quot;cy_pdaltmode_defines.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cy_pdaltmode_mngr.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cy_pdaltmode_custom_hpi_vid.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>((HPI_AM_SUPP)<sp/>&amp;&amp;<sp/>(DFP_ALT_MODE_SUPP))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Composes<sp/>VDM<sp/>for<sp/>sending<sp/>by<sp/>Alt<sp/>Mode<sp/>manager<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cy_PdAltMode_HpiAM_SendCmd(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initializes<sp/>custom<sp/>HPI<sp/>Alt<sp/>Mode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cy_PdAltMode_HpiAM_Init(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exits<sp/>custom<sp/>HPI<sp/>Alt<sp/>Mode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cy_PdAltMode_HpiAM_Exit(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Main<sp/>custom<sp/>HPI<sp/>Alt<sp/>Mode<sp/>source<sp/>handling<sp/>functions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cy_PdAltMode_HpiAM_DfpRun(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Evaluates<sp/>command<sp/>received<sp/>from<sp/>application<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Cy_PdAltMode_HpiAM_EvalAppCmd(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context,<sp/><ref refid="unioncy__stc__pdaltmode__alt__mode__evt__t" kindref="compound">cy_stc_pdaltmode_alt_mode_evt_t</ref><sp/>cmdData);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Returns<sp/>pointer<sp/>to<sp/>Alt<sp/>Mode<sp/>info<sp/>structure<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref>*<sp/>Cy_PdAltMode_HpiAM_Info(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Returns<sp/>custom<sp/>HPI<sp/>Alt<sp/>Mode<sp/>status<sp/>structure<sp/>pointer*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>cy_stc_pdaltmode_hpi_am_status_t*<sp/>Cy_PdAltMode_HpiAM_Status(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Custom<sp/>HPI<sp/>Alt<sp/>Mode<sp/>status<sp/>structure<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>cy_stc_pdaltmode_hpi_am_status_t<sp/><sp/>hpiAmStatus[NO_OF_TYPEC_PORTS];</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/**************************<sp/>Function<sp/>definitions<sp/>*****************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref>*<sp/>Cy_PdAltMode_HpiAM_RegModes(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context,<sp/><ref refid="structcy__stc__pdaltmode__alt__mode__reg__info__t" kindref="compound">cy_stc_pdaltmode_alt_mode_reg_info_t</ref>*<sp/>regInfo)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext<sp/>=<sp/>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*)context;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>current<sp/>HPI<sp/>Alt<sp/>Mode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>Cy_PdAltMode_HpiAM_Status(ptrAltModeContext)-&gt;customHpiSvid<sp/>=<sp/>ptrAltModeContext-&gt;<ref refid="structcy__stc__pdaltmode__context__t_1a0032d80be91c77ede3050a07d3867390" kindref="member">altModeAppStatus</ref>-&gt;<ref refid="structcy__stc__pdaltmode__status__t_1a64aeaf18ac201c395d24fd9be3ed8df7" kindref="member">customHpiSvid</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(Cy_PdAltMode_HpiAM_Status(ptrAltModeContext)-&gt;customHpiSvid<sp/>!=<sp/><ref refid="group__group__pdaltmode__common__macros_1ga2cb7840adbf420357dfbb997f0f2b3a3" kindref="member">CY_PDALTMODE_MNGR_NO_DATA</ref>)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(regInfo-&gt;<ref refid="structcy__stc__pdaltmode__alt__mode__reg__info__t_1a1c8b10701daa577e29ec61baf0b3378d" kindref="member">dataRole</ref><sp/>==<sp/>(uint8_t)CY_PD_PRT_TYPE_DFP)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>Alt<sp/>Mode<sp/>info<sp/>struct<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ALT_MODE_CALL_MAP(<ref refid="group__group__pdaltmode__vdm__alt__mode__manager__functions_1gadfe2545c2c006fbe9aa5fad404715ec9" kindref="member">Cy_PdAltMode_Mngr_ResetAltModeInfo</ref>)(Cy_PdAltMode_HpiAM_Info(ptrAltModeContext));</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Copy<sp/>cable,<sp/>device/AMA<sp/>info<sp/>pointer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Cy_PdAltMode_HpiAM_Status(ptrAltModeContext)-&gt;tgtInfoPtr<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>regInfo-&gt;<ref refid="structcy__stc__pdaltmode__alt__mode__reg__info__t_1a773c922d1bc99265b03bbea07b45bd05" kindref="member">atchTgtInfo</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Cy_PdAltMode_HpiAM_Info(ptrAltModeContext)-&gt;vdoMaxNumb<sp/><sp/>=<sp/><ref refid="group__group__pdaltmode__common__macros_1ga4e34760d193d2faba890d45bc3ebbdba" kindref="member">CY_PDALTMODE_MAX_HPI_AM_VDO_NUMB</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Init<sp/>HPI<sp/>Alt<sp/>Mode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Cy_PdAltMode_HpiAM_Info(ptrAltModeContext)-&gt;modeState<sp/><sp/><sp/>=<sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggae2e313c6b3f82ed911cb6abd429b65a0a912b90444de583fa5134ac50f1bb576a" kindref="member">CY_PDALTMODE_STATE_INIT</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Cy_PdAltMode_HpiAM_DfpRun(ptrAltModeContext);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Cy_PdAltMode_HpiAM_Info(ptrAltModeContext);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cy_PdAltMode_HpiAM_DfpRun(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext<sp/>=<sp/>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*)context;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref><sp/>*info<sp/>=<sp/>Cy_PdAltMode_HpiAM_Info(ptrAltModeContext);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(info-&gt;<ref refid="structcy__stc__pdaltmode__mngr__info__t_1af6f4124dc3a22407c6a62da3c449c57a" kindref="member">modeState</ref>)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggae2e313c6b3f82ed911cb6abd429b65a0a912b90444de583fa5134ac50f1bb576a" kindref="member">CY_PDALTMODE_STATE_INIT</ref>:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Cy_PdAltMode_HpiAM_Init(ptrAltModeContext);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Cy_PdAltMode_HpiAM_SendCmd(ptrAltModeContext);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggae2e313c6b3f82ed911cb6abd429b65a0a7292b9248bc2ed1975ece0a00d49daf0" kindref="member">CY_PDALTMODE_STATE_WAIT_FOR_RESP</ref>:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Cy_PdAltMode_HpiAM_Status(ptrAltModeContext)-&gt;state<sp/>=<sp/>(cy_en_pdaltmode_hpi_am_state_t)info-&gt;<ref refid="structcy__stc__pdaltmode__mngr__info__t_1a04a950f17ed35dfcd29fc6f58137a6e4" kindref="member">vdmHeader</ref>.std_vdm_hdr.cmd;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>info-&gt;<ref refid="structcy__stc__pdaltmode__mngr__info__t_1af6f4124dc3a22407c6a62da3c449c57a" kindref="member">modeState</ref><sp/>=<sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggae2e313c6b3f82ed911cb6abd429b65a0af065a70e2b10edcf899dacf20fe5b384" kindref="member">CY_PDALTMODE_STATE_IDLE</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>switch<sp/>(Cy_PdAltMode_HpiAM_Status(ptrAltModeContext)-&gt;state)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CY_PDALTMODE_HPI_AM_STATE_ENTER:</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Cy_PdAltMode_HpiAM_Status(ptrAltModeContext)-&gt;state<sp/>=<sp/>CY_PDALTMODE_HPI_AM_STATE_IDLE;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CY_PDALTMODE_HPI_AM_STATE_EXIT:</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Cy_PdAltMode_HpiAM_Exit(ptrAltModeContext);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Do<sp/>nothing<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggae2e313c6b3f82ed911cb6abd429b65a0ad3dbf861525bec4d91091c652cab26e0" kindref="member">CY_PDALTMODE_STATE_FAIL</ref>:</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(Cy_PdAltMode_HpiAM_Status(ptrAltModeContext)-&gt;state)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CY_PDALTMODE_HPI_AM_STATE_ENTER:</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CY_PDALTMODE_HPI_AM_STATE_EXIT:</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Cy_PdAltMode_HpiAM_Exit(ptrAltModeContext);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Do<sp/>nothing<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggae2e313c6b3f82ed911cb6abd429b65a0ac54dc858491c2f855d802d97d02df0ff" kindref="member">CY_PDALTMODE_STATE_EXIT</ref>:</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Cy_PdAltMode_HpiAM_Status(ptrAltModeContext)-&gt;state<sp/>=<sp/>CY_PDALTMODE_HPI_AM_STATE_EXIT;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Cy_PdAltMode_HpiAM_SendCmd(ptrAltModeContext);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Do<sp/>nothing<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cy_PdAltMode_HpiAM_Init(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref><sp/>*info<sp/>=<sp/>Cy_PdAltMode_HpiAM_Info(ptrAltModeContext);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>info-&gt;<ref refid="structcy__stc__pdaltmode__mngr__info__t_1a53c88038aacb67472c535fda475d6645" kindref="member">sopState</ref>[CY_PD_SOP]<sp/><sp/>=<sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggae2e313c6b3f82ed911cb6abd429b65a0aca260007e2b0407be9d067a96b429c46" kindref="member">CY_PDALTMODE_STATE_SEND</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>info-&gt;<ref refid="structcy__stc__pdaltmode__mngr__info__t_1a27bb41076b075814e7a4cbf9a7ebed5f" kindref="member">vdo</ref>[CY_PD_SOP]<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>Cy_PdAltMode_HpiAM_Status(ptrAltModeContext)-&gt;vdo;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>info-&gt;<ref refid="structcy__stc__pdaltmode__mngr__info__t_1aa576a789c55d631f6d516b6f623a7da3" kindref="member">cbk</ref><sp/>=<sp/>Cy_PdAltMode_HpiAM_DfpRun;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>info-&gt;<ref refid="structcy__stc__pdaltmode__mngr__info__t_1ae49720bf3bb21557531bf34d1d9651eb" kindref="member">setMuxIsolate</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>info-&gt;<ref refid="structcy__stc__pdaltmode__mngr__info__t_1a37a95f9810299d71a265504bcd93988a" kindref="member">evalAppCmd</ref><sp/>=<sp/>Cy_PdAltMode_HpiAM_EvalAppCmd;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>HPI<sp/>Alt<sp/>Mode<sp/>state<sp/>as<sp/>enter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>Cy_PdAltMode_HpiAM_Status(ptrAltModeContext)-&gt;state<sp/>=<sp/>CY_PDALTMODE_HPI_AM_STATE_ENTER;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref>*<sp/>Cy_PdAltMode_HpiAM_Info(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext)</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;(hpiAmStatus[ptrAltModeContext-&gt;<ref refid="structcy__stc__pdaltmode__context__t_1a34f18ac1a604068a73e013c483d55104" kindref="member">pdStackContext</ref>-&gt;port].info);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>cy_stc_pdaltmode_hpi_am_status_t*<sp/>Cy_PdAltMode_HpiAM_Status(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;(hpiAmStatus[ptrAltModeContext-&gt;<ref refid="structcy__stc__pdaltmode__context__t_1a34f18ac1a604068a73e013c483d55104" kindref="member">pdStackContext</ref>-&gt;port]);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cy_PdAltMode_HpiAM_Exit(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>Cy_PdAltMode_HpiAM_Status(ptrAltModeContext)-&gt;state<sp/>=<sp/>CY_PDALTMODE_HPI_AM_STATE_EXIT;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cy_PdAltMode_HpiAM_SendCmd(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref><sp/>*info<sp/>=<sp/>Cy_PdAltMode_HpiAM_Info(ptrAltModeContext);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Cy_PdAltMode_HpiAM_Status(ptrAltModeContext)-&gt;state<sp/>!=<sp/>CY_PDALTMODE_HPI_AM_STATE_IDLE)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>info-&gt;<ref refid="structcy__stc__pdaltmode__mngr__info__t_1a04a950f17ed35dfcd29fc6f58137a6e4" kindref="member">vdmHeader</ref>.val<sp/>=<sp/><ref refid="group__group__pdaltmode__common__macros_1ga2cb7840adbf420357dfbb997f0f2b3a3" kindref="member">CY_PDALTMODE_MNGR_NO_DATA</ref>;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>info-&gt;<ref refid="structcy__stc__pdaltmode__mngr__info__t_1a04a950f17ed35dfcd29fc6f58137a6e4" kindref="member">vdmHeader</ref>.std_vdm_hdr.cmd<sp/><sp/><sp/><sp/>=<sp/>(uint32_t)Cy_PdAltMode_HpiAM_Status(ptrAltModeContext)-&gt;state;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>info-&gt;<ref refid="structcy__stc__pdaltmode__mngr__info__t_1a04a950f17ed35dfcd29fc6f58137a6e4" kindref="member">vdmHeader</ref>.std_vdm_hdr.svid<sp/><sp/><sp/>=<sp/>Cy_PdAltMode_HpiAM_Status(ptrAltModeContext)-&gt;customHpiSvid;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>info-&gt;<ref refid="structcy__stc__pdaltmode__mngr__info__t_1a53c88038aacb67472c535fda475d6645" kindref="member">sopState</ref>[CY_PD_SOP]<sp/>=<sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggae2e313c6b3f82ed911cb6abd429b65a0aca260007e2b0407be9d067a96b429c46" kindref="member">CY_PDALTMODE_STATE_SEND</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>info-&gt;<ref refid="structcy__stc__pdaltmode__mngr__info__t_1af6f4124dc3a22407c6a62da3c449c57a" kindref="member">modeState</ref><sp/>=<sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ggae2e313c6b3f82ed911cb6abd429b65a0aca260007e2b0407be9d067a96b429c46" kindref="member">CY_PDALTMODE_STATE_SEND</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="comment">/*******************<sp/>HPI<sp/>Alt<sp/>Mode<sp/>application<sp/>related<sp/>functions<sp/>************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Activates<sp/>only<sp/>when<sp/>application<sp/>HPI<sp/>Alt<sp/>Mode<sp/>command<sp/>is<sp/>received<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Cy_PdAltMode_HpiAM_EvalAppCmd(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context,<sp/><ref refid="unioncy__stc__pdaltmode__alt__mode__evt__t" kindref="compound">cy_stc_pdaltmode_alt_mode_evt_t</ref><sp/>cmdData)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>CY_UNUSED_PARAMETER(cmdData);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext<sp/>=<sp/>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*)context;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Save<sp/>custom<sp/>HPI<sp/>SVID<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>Cy_PdAltMode_HpiAM_Status(ptrAltModeContext)-&gt;customHpiSvid<sp/>=<sp/>ptrAltModeContext-&gt;<ref refid="structcy__stc__pdaltmode__context__t_1a0032d80be91c77ede3050a07d3867390" kindref="member">altModeAppStatus</ref>-&gt;<ref refid="structcy__stc__pdaltmode__status__t_1a64aeaf18ac201c395d24fd9be3ed8df7" kindref="member">customHpiSvid</ref>;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>(HPI_AM_SUPP)<sp/>&amp;&amp;<sp/>(DFP_ALT_MODE_SUPP)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>[]<sp/>END<sp/>OF<sp/>FILE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="cy_pdaltmode_custom_hpi_vid.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__display__port" kind="group">
+    <compoundname>group_pdaltmode_display_port</compoundname>
+    <title>Display Port</title>
+    <innergroup refid="group__group__pdaltmode__display__port__macros">Macros</innergroup>
+    <innergroup refid="group__group__pdaltmode__display__port__enums">Enumerated Types</innergroup>
+    <innergroup refid="group__group__pdaltmode__display__port__data__structures">Data Structures</innergroup>
+    <innergroup refid="group__group__pdaltmode__display__port__functions">Functions</innergroup>
+    <briefdescription>
+<para>Provides APIs and data structures to support DisplayPort (Source and/or Sink) Alternate Mode. </para>    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

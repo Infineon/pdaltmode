@@ -1,0 +1,698 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="cy__pdaltmode__hw_8h" kind="file" language="C++">
+    <compoundname>cy_pdaltmode_hw.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes refid="cy__pdaltmode__defines_8h" local="yes">cy_pdaltmode_defines.h</includes>
+    <includedby refid="cy__pdaltmode__dp__sid_8c" local="yes">cy_pdaltmode_dp_sid.c</includedby>
+    <includedby refid="cy__pdaltmode__hw_8c" local="yes">cy_pdaltmode_hw.c</includedby>
+    <includedby refid="cy__pdaltmode__mngr_8c" local="yes">cy_pdaltmode_mngr.c</includedby>
+    <includedby refid="cy__pdaltmode__vdm__task_8c" local="yes">cy_pdaltmode_vdm_task.c</includedby>
+    <incdepgraph>
+      <node id="36">
+        <label>stdbool.h</label>
+      </node>
+      <node id="35">
+        <label>stdint.h</label>
+      </node>
+      <node id="34">
+        <label>cy_pdaltmode_hw.h</label>
+        <link refid="cy__pdaltmode__hw_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__group__pdaltmode__alt__mode__hw__functions_1ga7a6ecd09088ea0c1c52c28c02e05fe23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HW_SetCbk</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_pdaltmode_hw_cmd_cbk_t cbk)</argsstring>
+        <name>Cy_PdAltMode_HW_SetCbk</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__data__structures_1gaf0f78ba2b33773b1ebd9801120c02d78" kindref="member">cy_pdaltmode_hw_cmd_cbk_t</ref></type>
+          <declname>cbk</declname>
+        </param>
+        <briefdescription>
+<para>Registers an ALT. </para>        </briefdescription>
+        <detaileddescription>
+<para>MODE hardware callback function.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cbk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function for ALT. MODE hardware events</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_hw.h" line="67" column="1" bodyfile="cy_pdaltmode_hw.c" bodystart="134" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__alt__mode__hw__functions_1ga663c36b739760f4682755262bb98d18e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HW_DeInit</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HW_DeInit</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>De-init all HW related to Alt Modes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_hw.h" line="83" column="1" bodyfile="cy_pdaltmode_hw.c" bodystart="390" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__alt__mode__hw__functions_1ga30a78dedcd65bea9e2a88f627cde8a94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_HW_EvalAppAltHwCmd</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint8_t *cmdParam)</argsstring>
+        <name>Cy_PdAltMode_HW_EvalAppAltHwCmd</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>cmdParam</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates received HPD application command. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cmdParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to received application HW command data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if APP command passed is successful, false if APP command is invalid or contains unacceptable fields. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_hw.h" line="103" column="1" bodyfile="cy_pdaltmode_hw.c" bodystart="81" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__alt__mode__hw__functions_1ga15b7aab673225200d6a7971187be489d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_HW_EvalHpdCmd</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint32_t cmd)</argsstring>
+        <name>Cy_PdAltMode_HW_EvalHpdCmd</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates received HPD application command. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Received HPD application command data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if HPD APP command passed is successful, false if HPD APP command is invalid or contains unacceptable fields. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_hw.h" line="123" column="1" bodyfile="cy_pdaltmode_hw.c" bodystart="143" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__alt__mode__hw__functions_1ga6f2e57687b011f4861956264a579295a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_HW_EvalMuxCmd</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint32_t cmd)</argsstring>
+        <name>Cy_PdAltMode_HW_EvalMuxCmd</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates received MUX application command. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Received MUX application command data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if MUX APP command passed is successful, false if MUX APP command is invalid or contains unacceptable fields. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_hw.h" line="143" column="1" bodyfile="cy_pdaltmode_hw.c" bodystart="122" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__alt__mode__hw__functions_1ga9c8a69158389bc9aa1b7825bed6bf693" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_HW_SetMux</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_pdaltmode_mux_select_t muxCfg, uint32_t modeVdo, uint32_t customData)</argsstring>
+        <name>Cy_PdAltMode_HW_SetMux</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__alt__mode__hw__enums_1ga6e2d96963afcf43ec5dfe3d5a18d6bc6" kindref="member">cy_en_pdaltmode_mux_select_t</ref></type>
+          <declname>muxCfg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>modeVdo</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>customData</declname>
+        </param>
+        <briefdescription>
+<para>Sets appropriate MUX configuration based on the function parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>muxCfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Required MUX configuration</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>modeVdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Additional VDO data related to DP/TBT/USB4 configuration</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>customData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Additional data in case of custom MUX configuration</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if MUX set passed is successful, false if MUX setting is invalid or contains unacceptable fields. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_hw.h" line="169" column="1" bodyfile="cy_pdaltmode_hw.c" bodystart="526" bodyend="665"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__alt__mode__hw__functions_1ga8735270afda6c05c5694fda89ffa16d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__alt__mode__hw__enums_1ga6e2d96963afcf43ec5dfe3d5a18d6bc6" kindref="member">cy_en_pdaltmode_mux_select_t</ref></type>
+        <definition>cy_en_pdaltmode_mux_select_t Cy_PdAltMode_HW_GetMuxState</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HW_GetMuxState</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Gets the current state of the MUX. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Active MUX setting </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_hw.h" line="206" column="1" bodyfile="cy_pdaltmode_hw.c" bodystart="440" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__alt__mode__hw__functions_1ga2df58f7520c458afe8e79e3d2d93cffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_HW_IsIdle</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HW_IsIdle</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the ALT. </para>        </briefdescription>
+        <detaileddescription>
+<para>MODE hardware block is idle. This function is part of the deep sleep entry checks for the CCG device, and checks whether there are any pending ALT. MODE hardware commands that require the device to be active.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the block is idle, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_hw.h" line="224" column="1" bodyfile="cy_pdaltmode_hw.c" bodystart="667" bodyend="670"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__alt__mode__hw__functions_1ga793133b85af482bc9a3e9d5385e300e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HW_Sleep</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HW_Sleep</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Prepare the Alt Mode hardware state for device deep sleep. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_hw.h" line="240" column="1" bodyfile="cy_pdaltmode_hw.c" bodystart="672" bodyend="711"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__alt__mode__hw__functions_1ga09761d6234985bc5a783e91522f6b468" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_HW_Wakeup</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HW_Wakeup</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Restores ALT. </para>        </briefdescription>
+        <detaileddescription>
+<para>MODE hardware state after device resumes from deep sleep.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PDAltMode Library context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_hw.h" line="256" column="1" bodyfile="cy_pdaltmode_hw.c" bodystart="713" bodyend="740"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__alt__mode__hw__functions_1ga239f8abedb3eb591e01a5ba59251ccc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_HW_DpSnkGetHpdState</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HW_DpSnkGetHpdState</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Returns HPD state based on HPD Queue events. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PDAltMode Library context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if HPD is connected, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_hw.h" line="272" column="1" bodyfile="cy_pdaltmode_hw.c" bodystart="316" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__alt__mode__hw__functions_1ga0b862c9d1a56452a4bbc158b340d8354" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_HW_MuxCtrlInit</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HW_MuxCtrlInit</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the Type-C Data MUX for a specific PD port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the MUX is initialized successfully, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_hw.h" line="288" column="1" bodyfile="cy_pdaltmode_hw.c" bodystart="742" bodyend="746"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__alt__mode__hw__functions_1ga97c0022e506a44754f9b9a43c79332fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_HW_MuxCtrlSetCfg</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_pdaltmode_mux_select_t cfg)</argsstring>
+        <name>Cy_PdAltMode_HW_MuxCtrlSetCfg</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__alt__mode__hw__enums_1ga6e2d96963afcf43ec5dfe3d5a18d6bc6" kindref="member">cy_en_pdaltmode_mux_select_t</ref></type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Sets the Type-C MUX to the desired configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired MUX configuration</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if the operation is successful, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_hw.h" line="307" column="1" bodyfile="cy_pdaltmode_hw.c" bodystart="749" bodyend="856"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__alt__mode__hw__functions_1ga1080d126d69cd3efe31e17ce2e7945a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_HW_IsHostHpdVirtual</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_HW_IsHostHpdVirtual</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the solution is configured to support virtual HPD. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PDAltMode Library context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if virtual HPD is enabled, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_hw.h" line="323" column="1" bodyfile="cy_pdaltmode_hw.c" bodystart="868" bodyend="882"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__alt__mode__hw__functions_1gac1b0be463e79459561ca52ab1e2ceb53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>weak bool</type>
+        <definition>weak bool Cy_PdAltMode_HW_CustomMuxSet</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_pdaltmode_mux_select_t muxCfg, uint32_t modeVdo, uint32_t customData)</argsstring>
+        <name>Cy_PdAltMode_HW_CustomMuxSet</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__alt__mode__hw__enums_1ga6e2d96963afcf43ec5dfe3d5a18d6bc6" kindref="member">cy_en_pdaltmode_mux_select_t</ref></type>
+          <declname>muxCfg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>modeVdo</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>customData</declname>
+        </param>
+        <briefdescription>
+<para>Custom MUX setting function which can be used to call custom MUX setting from solution layer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>muxCfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Required MUX configuration</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>modeVdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Additional VDO data related to DP/TBT/USB4 configuration</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>customData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Additional data in case of custom MUX configuration</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if MUX set passed is successful, false if MUX setting is invalid or contains unacceptable fields. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_hw.h" line="348" column="1" bodyfile="cy_pdaltmode_hw.c" bodystart="858" bodyend="866"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__alt__mode__hw__functions_1gae85a95014094eb8548fd5c251fc62347" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcy__stc__pdaltmode__hw__details__t" kindref="compound">cy_stc_pdaltmode_hw_details_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_hw_details_t* Cy_PdAltMode_HW_GetStatus</definition>
+        <argsstring>(uint8_t port)</argsstring>
+        <name>Cy_PdAltMode_HW_GetStatus</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Returns Alt Mode hardware status pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selected port</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns pointer to Alt Mode hardware status structure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_hw.h" line="363" column="1" bodyfile="cy_pdaltmode_hw.c" bodystart="75" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file defines the data structures and function prototypes associated with the Alternate Mode Hardware Control implementation. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="copyright"><para>Copyright 2024, Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation. All rights reserved. You may use this file only in accordance with the license, terms, conditions, disclaimers, and limitations in the end user license agreement accompanying the software package with which this file was provided. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor">#ifndef<sp/>_CY_PDALTMODE_HW_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CY_PDALTMODE_HW_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>Header<sp/>file<sp/>addition</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cy_pdaltmode_defines.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/>Global<sp/>function<sp/>declaration</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HW_SetCbk</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="67"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__alt__mode__hw__functions_1ga7a6ecd09088ea0c1c52c28c02e05fe23" kindref="member">Cy_PdAltMode_HW_SetCbk</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__data__structures_1gaf0f78ba2b33773b1ebd9801120c02d78" kindref="member">cy_pdaltmode_hw_cmd_cbk_t</ref><sp/>cbk);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="71"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HW_DeInit</highlight></codeline>
+<codeline lineno="72"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="83"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__alt__mode__hw__functions_1ga663c36b739760f4682755262bb98d18e" kindref="member">Cy_PdAltMode_HW_DeInit</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="87"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HW_EvalAppAltHwCmd</highlight></codeline>
+<codeline lineno="88"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="103"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__alt__mode__hw__functions_1ga30a78dedcd65bea9e2a88f627cde8a94" kindref="member">Cy_PdAltMode_HW_EvalAppAltHwCmd</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/>uint8_t<sp/>*cmdParam);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="107"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HW_EvalHpdCmd</highlight></codeline>
+<codeline lineno="108"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="123"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__alt__mode__hw__functions_1ga15b7aab673225200d6a7971187be489d" kindref="member">Cy_PdAltMode_HW_EvalHpdCmd</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/>uint32_t<sp/>cmd);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="127"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HW_EvalMuxCmd</highlight></codeline>
+<codeline lineno="128"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="143"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__alt__mode__hw__functions_1ga6f2e57687b011f4861956264a579295a" kindref="member">Cy_PdAltMode_HW_EvalMuxCmd</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/>uint32_t<sp/>cmd);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="147"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HW_SetMux</highlight></codeline>
+<codeline lineno="148"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="169"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__alt__mode__hw__functions_1ga9c8a69158389bc9aa1b7825bed6bf693" kindref="member">Cy_PdAltMode_HW_SetMux</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/><ref refid="group__group__pdaltmode__alt__mode__hw__enums_1ga6e2d96963afcf43ec5dfe3d5a18d6bc6" kindref="member">cy_en_pdaltmode_mux_select_t</ref><sp/>muxCfg,<sp/>uint32_t<sp/>modeVdo,<sp/>uint32_t<sp/>customData);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ICL_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="174"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HW_IgnoreMuxChanges</highlight></codeline>
+<codeline lineno="175"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="189"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cy_PdAltMode_HW_IgnoreMuxChanges(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ignore);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ICL_ENABLE<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="194"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HW_GetMuxState</highlight></codeline>
+<codeline lineno="195"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><ref refid="group__group__pdaltmode__alt__mode__hw__enums_1ga6e2d96963afcf43ec5dfe3d5a18d6bc6" kindref="member">cy_en_pdaltmode_mux_select_t</ref><sp/><ref refid="group__group__pdaltmode__alt__mode__hw__functions_1ga8735270afda6c05c5694fda89ffa16d2" kindref="member">Cy_PdAltMode_HW_GetMuxState</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="210"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HW_IsIdle</highlight></codeline>
+<codeline lineno="211"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="224"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__alt__mode__hw__functions_1ga2df58f7520c458afe8e79e3d2d93cffb" kindref="member">Cy_PdAltMode_HW_IsIdle</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="228"><highlight class="comment">*<sp/>Function<sp/>Name:<sp/>Cy_PdAltMode_HW_Sleep</highlight></codeline>
+<codeline lineno="229"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="240"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__alt__mode__hw__functions_1ga793133b85af482bc9a3e9d5385e300e5" kindref="member">Cy_PdAltMode_HW_Sleep</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="244"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HW_Wakeup</highlight></codeline>
+<codeline lineno="245"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="256"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__alt__mode__hw__functions_1ga09761d6234985bc5a783e91522f6b468" kindref="member">Cy_PdAltMode_HW_Wakeup</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="260"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HW_DpSnkGetHpdState</highlight></codeline>
+<codeline lineno="261"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="272"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__alt__mode__hw__functions_1ga239f8abedb3eb591e01a5ba59251ccc1" kindref="member">Cy_PdAltMode_HW_DpSnkGetHpdState</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="276"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HW_MuxCtrlInit</highlight></codeline>
+<codeline lineno="277"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="288"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__alt__mode__hw__functions_1ga0b862c9d1a56452a4bbc158b340d8354" kindref="member">Cy_PdAltMode_HW_MuxCtrlInit</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="292"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HW_MuxCtrlSetCfg</highlight></codeline>
+<codeline lineno="293"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="307"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__alt__mode__hw__functions_1ga97c0022e506a44754f9b9a43c79332fc" kindref="member">Cy_PdAltMode_HW_MuxCtrlSetCfg</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/><ref refid="group__group__pdaltmode__alt__mode__hw__enums_1ga6e2d96963afcf43ec5dfe3d5a18d6bc6" kindref="member">cy_en_pdaltmode_mux_select_t</ref><sp/>cfg);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="311"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HW_IsHostHpdVirtual</highlight></codeline>
+<codeline lineno="312"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="323"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__alt__mode__hw__functions_1ga1080d126d69cd3efe31e17ce2e7945a9" kindref="member">Cy_PdAltMode_HW_IsHostHpdVirtual</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*<sp/>ptrAltModeContext);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="326"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HW_CustomMuxSet</highlight></codeline>
+<codeline lineno="327"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="348"><highlight class="normal">__attribute__<sp/>((weak))<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__alt__mode__hw__functions_1gac1b0be463e79459561ca52ab1e2ceb53" kindref="member">Cy_PdAltMode_HW_CustomMuxSet</ref><sp/>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/><ref refid="group__group__pdaltmode__alt__mode__hw__enums_1ga6e2d96963afcf43ec5dfe3d5a18d6bc6" kindref="member">cy_en_pdaltmode_mux_select_t</ref><sp/>muxCfg,<sp/>uint32_t<sp/>modeVdo,<sp/>uint32_t<sp/>customData);</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="351"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_HW_GetStatus</highlight></codeline>
+<codeline lineno="352"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><ref refid="structcy__stc__pdaltmode__hw__details__t" kindref="compound">cy_stc_pdaltmode_hw_details_t</ref>*<sp/><ref refid="group__group__pdaltmode__alt__mode__hw__functions_1gae85a95014094eb8548fd5c251fc62347" kindref="member">Cy_PdAltMode_HW_GetStatus</ref>(uint8_t<sp/>port);</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_CY_PDALTMODE_HW_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>[]<sp/>END<sp/>OF<sp/>FILE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="cy_pdaltmode_hw.h"/>
+  </compounddef>
+</doxygen>

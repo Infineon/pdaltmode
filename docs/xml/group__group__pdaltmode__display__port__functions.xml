@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__display__port__functions" kind="group">
+    <compoundname>group_pdaltmode_display_port_functions</compoundname>
+    <title>Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__group__pdaltmode__display__port__functions_1gaeba07b7dee629cbad9c6d4c6cfdb12a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcy__stc__pdaltmode__mngr__info__t" kindref="compound">cy_stc_pdaltmode_mngr_info_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_mngr_info_t* Cy_PdAltMode_DP_RegModes</definition>
+        <argsstring>(void *context, cy_stc_pdaltmode_alt_mode_reg_info_t *regInfo)</argsstring>
+        <name>Cy_PdAltMode_DP_RegModes</name>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__alt__mode__reg__info__t" kindref="compound">cy_stc_pdaltmode_alt_mode_reg_info_t</ref> *</type>
+          <declname>regInfo</declname>
+        </param>
+        <briefdescription>
+<para>Analyze Discovery information to find out if further DP Alternate Mode processing is allowed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to structure which holds Alt Mode register info</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to DP Alternate Mode command structure if analysis passed is successful. In case of failure, function returns NULL pointer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="261" column="1" bodyfile="cy_pdaltmode_dp_sid.c" bodystart="165" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__display__port__functions_1gabf5c7997064a0ae1516e542ee90ced7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_DP_DfpDequeueHpd</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_DP_DfpDequeueHpd</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Dequeue next HPD status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the Alt Mode context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="308" column="1" bodyfile="cy_pdaltmode_dp_sid.c" bodystart="1325" bodyend="1366"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__display__port__functions_1ga8660302a2d70c94169d7ded455621301" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcy__stc__pdaltmode__dp__status__t" kindref="compound">cy_stc_pdaltmode_dp_status_t</ref> *</type>
+        <definition>cy_stc_pdaltmode_dp_status_t* Cy_PdAltMode_DP_GetStatus</definition>
+        <argsstring>(uint8_t port)</argsstring>
+        <name>Cy_PdAltMode_DP_GetStatus</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Return DP status pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selected port</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns pointer to DP status structure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="323" column="1" bodyfile="cy_pdaltmode_dp_sid.c" bodystart="158" bodyend="161"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__vdm__alt__mode__manager" kind="group">
+    <compoundname>group_pdaltmode_vdm_alt_mode_manager</compoundname>
+    <title>Alternate Modes Manager</title>
+    <innergroup refid="group__group__pdaltmode__vdm__alt__mode__manager__macros">Macros</innergroup>
+    <innergroup refid="group__group__pdaltmode__vdm__alt__mode__manager__enums">Enumerated Types</innergroup>
+    <innergroup refid="group__group__pdaltmode__vdm__alt__mode__manager__functions">Functions</innergroup>
+    <innergroup refid="group__group__pdaltmode__vdm__alt__mode__manager__data__structures">Data Structures</innergroup>
+    <briefdescription>
+<para>Provides APIs and data structures to run/handle/evaluate alternate modes and after configuration alternate mode manager automatically will handle Discovery/Entry/Configuration of selected alternate modes (DP/TBT/USB4/Custom). </para>    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,416 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="cy__pdaltmode__timer__id_8h" kind="file" language="C++">
+    <compoundname>cy_pdaltmode_timer_id.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="yes">cy_pdutils_sw_timer.h</includes>
+    <includes refid="cy__pdaltmode__defines_8h" local="yes">cy_pdaltmode_defines.h</includes>
+    <includedby refid="cy__pdaltmode__dp__sid_8c" local="yes">cy_pdaltmode_dp_sid.c</includedby>
+    <includedby refid="cy__pdaltmode__hw_8c" local="yes">cy_pdaltmode_hw.c</includedby>
+    <includedby refid="cy__pdaltmode__mngr_8c" local="yes">cy_pdaltmode_mngr.c</includedby>
+    <includedby refid="cy__pdaltmode__retimer__wrapper_8c" local="yes">cy_pdaltmode_retimer_wrapper.c</includedby>
+    <includedby refid="cy__pdaltmode__vdm__task_8c" local="yes">cy_pdaltmode_vdm_task.c</includedby>
+    <incdepgraph>
+      <node id="63">
+        <label>stdint.h</label>
+      </node>
+      <node id="62">
+        <label>cy_pdaltmode_timer_id.h</label>
+        <link refid="cy__pdaltmode__timer__id_8h"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>cy_pdutils_sw_timer.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="cy__pdaltmode__timer__id_8h_1a671ced0c8b126736970f70b23dd01d2f" prot="public" static="no">
+        <name>CY_PDALTMODE_GET_TIMER_ID</name>
+        <param><defname>context</defname></param>
+        <param><defname>id</defname></param>
+        <initializer>(uint16_t)(((context)-&gt;port != 0U) ? ((((uint16_t)id) &amp; 0x00FFU) + (uint16_t)CY_PDUTILS_TIMER_ALT_MODE_PORT1_START_ID) : (uint16_t)(id))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_timer_id.h" line="24" column="9" bodyfile="cy_pdaltmode_timer_id.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga8ce268202ee29df67f500d14a1273881" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_timer_id_t</name>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881ab74dc787f73391a7e33cc491d267440b" prot="public">
+          <name>CY_PDALTMODE_PORT0_TIMERS_START_ID</name>
+          <initializer>= CY_PDUTILS_TIMER_ALT_MODE_PORT0_START_ID</initializer>
+          <briefdescription>
+<para>0x500: Starts the index for USB PD Alt Mode timers </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881acd21826a5df3e521f158ce4b8d818c5d" prot="public">
+          <name>CY_PDALTMODE_RIDGE_INIT_HPD_DEQUEUE_TIMER_ID</name>
+          <briefdescription>
+<para>0x501: Timer for initiating virtual HPD dequeue </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881acfd5bbda9072ccd9b9d860d5348de91e" prot="public">
+          <name>CY_PDALTMODE_INITIATE_SEND_IRQ_CLEAR_ACK</name>
+          <briefdescription>
+<para>0x502: Timer used to initiate Virtual HPD IRQ CLEAR ACK to the Thunderbolt controller </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a6c06cb3e1192e00517e4d22733e57d41" prot="public">
+          <name>CY_PDALTMODE_SEND_HARD_RESET_UPON_USB3_HOST_CONNECTION_TIMER</name>
+          <briefdescription>
+<para>0x503: Timer used to send Hard Reset upon USB3 Host connected </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881acd3605ac4829a9cec6ddc062d96ee81e" prot="public">
+          <name>CY_PDALTMODE_RESTART_DS_PORT_USB3_HOST_CONNECTION_TIMER</name>
+          <briefdescription>
+<para>0x504: Timer used to restart DS port </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a8c491f39b49b0969e5bd1735e153e526" prot="public">
+          <name>CY_PDALTMODE_DELAY_US_PORT_USB_CONNECTION_BYAMETIMOUT_TIMER</name>
+          <briefdescription>
+<para>0x505: Timer used to delay US port SUB connection by AME timer </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881af2e9c446b60d97dfcd759cbbe98c82c5" prot="public">
+          <name>CY_PDALTMODE_TIMER_UPDATE_RIDGE_STATUS_AFTER_HARD_RESET</name>
+          <briefdescription>
+<para>0x506: Timer used to update Ridge status after Hard Reset </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a3217b9fd0535e8f695223030b6f5ef9f" prot="public">
+          <name>CY_PDALTMODE_GR_MUX_DELAY_TIMER</name>
+          <briefdescription>
+<para>0x507: Goshen Ridge MUX delay timer </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881aa679f992930fb796fc9fb4ea4a198ef6" prot="public">
+          <name>CY_PDALTMODE_SEND_DATA_RESET_FROM_RIDGE_TIMER</name>
+          <briefdescription>
+<para>0x508: Send Data Reset from Ridge controller timer </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a8ad98a5cea80de0090943cb765f098cf" prot="public">
+          <name>CY_PDALTMODE_ALT_MODE_CBK_TIMER</name>
+          <briefdescription>
+<para>0x509: Alt Mode callback timer </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a325b864e6d06d7a6088f14d52f325608" prot="public">
+          <name>CY_PDALTMODE_ALT_MODE_ATT_CBK_TIMER</name>
+          <briefdescription>
+<para>0x50A: Alt Mode Attention callback timer </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a2dd03a68a937c2d853502ab0b8dee6c2" prot="public">
+          <name>CY_PDALTMODE_TBT_MODE_EXIT_CHECK_TIMER</name>
+          <briefdescription>
+<para>0x50B: Timer to exit TBT Alt Mode after receiving exit Attention </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a7b8c94a1a704958397eace05c9325b0c" prot="public">
+          <name>CY_PDALTMODE_ICL_SOC_TIMEOUT_TIMER</name>
+          <briefdescription>
+<para>0x50C: SoC communication ACK timeout timer </para>          </briefdescription>
+          <detaileddescription>
+<para>0x50D: Timer used to delay retry of VDMs due to BUSY responses or errors </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a49535375901fa7e1420cd491a8cf4b3e" prot="public">
+          <name>CY_PDALTMODE_VDM_BUSY_TIMER</name>
+          <briefdescription>
+<para>0x50E: Timer used to implement AME timeout </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881af1f0c557389360e6b940a29ba6b69a9a" prot="public">
+          <name>CY_PDALTMODE_AME_TIMEOUT_TIMER</name>
+          <briefdescription>
+<para>0x50F: Timer used to delay HPD events </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a4355bc9b2fd99f14d5cde8e06c277aad" prot="public">
+          <name>CY_PDALTMODE_HPD_DELAY_TIMER</name>
+          <briefdescription>
+<para>0x510: Timer used to delay VDM response </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881ae4011f04142b5a9b9cfcec80dcf0a93c" prot="public">
+          <name>CY_PDALTMODE_MUX_DELAY_TIMER</name>
+          <briefdescription>
+<para>0x511: Timer used for MUX status </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881ae4f50104a124c127d3903f7973685b00" prot="public">
+          <name>CY_PDALTMODE_MUX_POLL_TIMER</name>
+          <briefdescription>
+<para>0x512: Timer to postpone Hard Reset in case MUX update is in progress </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a62c555b171401cd7ab3e26eae1054368" prot="public">
+          <name>CY_PDALTMODE_ICL_HARD_RST_TIMER</name>
+          <briefdescription>
+<para>0x513: Timer used for HPD DP2.1 handling </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a04f431326ab93f32f3dd6556a3f1b2e3" prot="public">
+          <name>CY_PDALTMODE_HPD_WAIT_TIMER</name>
+          <briefdescription>
+<para>0x514: Timer used to implement USB4 timeout </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881ac2076f721b53b390f8a9d366da821476" prot="public">
+          <name>CY_PDALTMODE_USB4_TIMEOUT_TIMER</name>
+          <briefdescription>
+<para>0x515: Timer is used for periodic read of AMD APU status </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a2a295d24ec72291afdf85a91020d65fb" prot="public">
+          <name>CY_PDALTMODE_AMD_BUSY_TIMER</name>
+          <briefdescription>
+<para>0x516: Timer is used for periodic read of AMD Retimer status </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a3ac9acd7b1bfc162d321fe00625df002" prot="public">
+          <name>CY_PDALTMODE_AMD_RETIMER_BUSY_TIMER</name>
+          <briefdescription>
+<para>0x517: Timer is used to unblock Type-C state machine in case APU did not respond for some time </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a02ba9f19bab6970b2a9ec37469843d58" prot="public">
+          <name>CY_PDALTMODE_AMD_INT_BUSY_TIMER</name>
+          <briefdescription>
+<para>0x518: Timer is used during AMD Retimer Hard Reset </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a5af729442a185be8992384bbadf17c9d" prot="public">
+          <name>CY_PDALTMODE_AMD_RETIMER_WAIT_TIMER</name>
+          <briefdescription>
+<para>0x519: Timer is used to retry reading the Debug register from the Retimer </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881aa9eafbf8e12b1a9009d48ce0f56c249a" prot="public">
+          <name>CY_PDALTMODE_BB_DBR_DEBUG_POLL_TIMER</name>
+          <briefdescription>
+<para>0x51A: Timer is used to delay the Retimer to start accepting the state change requests </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a1a5fc77ac7c201067a4e22124d65f6d5" prot="public">
+          <name>CY_PDALTMODE_BB_DBR_WAIT_TIMER</name>
+          <briefdescription>
+<para>0x51B: Timer is used to delay Retimer debug mode register write </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a9ba4fe3079877033ccfff86716bc7044" prot="public">
+          <name>CY_PDALTMODE_BB_DBR_DEBUG_WRITE_TIMER</name>
+          <briefdescription>
+<para>0x51C: Timer used for Retimer handling </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881ad6b5c74a1b667dce3b2f533e51cfc22c" prot="public">
+          <name>CY_PDALTMODE_RETIMER_BUSY_TIMER</name>
+          <briefdescription>
+<para>0x51D: Timer is used during Retimer Hard reset </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881add77737d5b51e096869a5f45441c2360" prot="public">
+          <name>CY_PDALTMODE_RETIMER_WAIT_TIMER</name>
+          <briefdescription>
+<para>0x51E: Timer to let VSYS turn on change to stabilize </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a4fd25fb5ba48739bde4db79556372d26" prot="public">
+          <name>CY_PDALTMODE_ICL_VSYS_STABLE_TIMER</name>
+          <briefdescription>
+<para>0x51F: Timer is used to check ICL mux state changes </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a7d7fa17795fc8418f2479aee31d5d22a" prot="public">
+          <name>CY_PDALTMODE_ICL_MUX_STATE_CHANGE_TIMER</name>
+          <briefdescription>
+<para>0x520: Timer is used to check Retimer FW Exit state changes </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881ae5206439261453bc3a07c9d4686d0162" prot="public">
+          <name>CY_PDALTMODE_ICL_RFU_EXIT_TIMER</name>
+          <briefdescription>
+<para>0x521: Timer is used for comm delay in the RFU entry sequence </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a7d64912cd7042f654c187c2d69d81304" prot="public">
+          <name>CY_PDALTMODE_ICL_ALT_MODE_EXIT_TIMER</name>
+          <briefdescription>
+<para>0x522: Timer is used debounce barrel state change </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881aebbc1696503532d945618a8c4ede5f66" prot="public">
+          <name>CY_PDALTMODE_ICL_ADP_DETECT_DEB_TIMER</name>
+          <briefdescription>
+<para>0x600: Starts the index for USB PD Alt Mode timers </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a1467a96d82f52da35c0ebb7c1a209653" prot="public">
+          <name>CY_PDALTMODE_PORT1_TIMERS_START_ID</name>
+          <initializer>= CY_PDUTILS_TIMER_ALT_MODE_PORT1_START_ID</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List of soft timer IDs defined for PD Alt Mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_timer_id.h" line="52" column="1" bodyfile="cy_pdaltmode_timer_id.h" bodystart="52" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Provides soft timer identifier definitions for PdAltmode. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="copyright"><para>Copyright 2024, Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation. All rights reserved. You may use this file only in accordance with the license, terms, conditions, disclaimers, and limitations in the end user license agreement accompanying the software package with which this file was provided. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor">#ifndef<sp/>_CY_PDALTMODE_TIMER_ID_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CY_PDALTMODE_TIMER_ID_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cy_pdutils_sw_timer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cy_pdaltmode_defines.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_GET_TIMER_ID(context,<sp/>id)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(uint16_t)(((context)-&gt;port<sp/>!=<sp/>0U)<sp/>?<sp/>((((uint16_t)id)<sp/>&amp;<sp/>0x00FFU)<sp/>+<sp/>(uint16_t)CY_PDUTILS_TIMER_ALT_MODE_PORT1_START_ID)<sp/>:<sp/>(uint16_t)(id))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>Enumerated<sp/>data<sp/>definition</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881ab74dc787f73391a7e33cc491d267440b" kindref="member">CY_PDALTMODE_PORT0_TIMERS_START_ID</ref><sp/>=<sp/>CY_PDUTILS_TIMER_ALT_MODE_PORT0_START_ID,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881acd21826a5df3e521f158ce4b8d818c5d" kindref="member">CY_PDALTMODE_RIDGE_INIT_HPD_DEQUEUE_TIMER_ID</ref>,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881acfd5bbda9072ccd9b9d860d5348de91e" kindref="member">CY_PDALTMODE_INITIATE_SEND_IRQ_CLEAR_ACK</ref>,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a6c06cb3e1192e00517e4d22733e57d41" kindref="member">CY_PDALTMODE_SEND_HARD_RESET_UPON_USB3_HOST_CONNECTION_TIMER</ref>,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881acd3605ac4829a9cec6ddc062d96ee81e" kindref="member">CY_PDALTMODE_RESTART_DS_PORT_USB3_HOST_CONNECTION_TIMER</ref>,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a8c491f39b49b0969e5bd1735e153e526" kindref="member">CY_PDALTMODE_DELAY_US_PORT_USB_CONNECTION_BYAMETIMOUT_TIMER</ref>,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881af2e9c446b60d97dfcd759cbbe98c82c5" kindref="member">CY_PDALTMODE_TIMER_UPDATE_RIDGE_STATUS_AFTER_HARD_RESET</ref>,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a3217b9fd0535e8f695223030b6f5ef9f" kindref="member">CY_PDALTMODE_GR_MUX_DELAY_TIMER</ref>,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881aa679f992930fb796fc9fb4ea4a198ef6" kindref="member">CY_PDALTMODE_SEND_DATA_RESET_FROM_RIDGE_TIMER</ref>,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a8ad98a5cea80de0090943cb765f098cf" kindref="member">CY_PDALTMODE_ALT_MODE_CBK_TIMER</ref>,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a325b864e6d06d7a6088f14d52f325608" kindref="member">CY_PDALTMODE_ALT_MODE_ATT_CBK_TIMER</ref>,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a2dd03a68a937c2d853502ab0b8dee6c2" kindref="member">CY_PDALTMODE_TBT_MODE_EXIT_CHECK_TIMER</ref>,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a7b8c94a1a704958397eace05c9325b0c" kindref="member">CY_PDALTMODE_ICL_SOC_TIMEOUT_TIMER</ref>,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a49535375901fa7e1420cd491a8cf4b3e" kindref="member">CY_PDALTMODE_VDM_BUSY_TIMER</ref>,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881af1f0c557389360e6b940a29ba6b69a9a" kindref="member">CY_PDALTMODE_AME_TIMEOUT_TIMER</ref>,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a4355bc9b2fd99f14d5cde8e06c277aad" kindref="member">CY_PDALTMODE_HPD_DELAY_TIMER</ref>,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881ae4011f04142b5a9b9cfcec80dcf0a93c" kindref="member">CY_PDALTMODE_MUX_DELAY_TIMER</ref>,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881ae4f50104a124c127d3903f7973685b00" kindref="member">CY_PDALTMODE_MUX_POLL_TIMER</ref>,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a62c555b171401cd7ab3e26eae1054368" kindref="member">CY_PDALTMODE_ICL_HARD_RST_TIMER</ref>,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a04f431326ab93f32f3dd6556a3f1b2e3" kindref="member">CY_PDALTMODE_HPD_WAIT_TIMER</ref>,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881ac2076f721b53b390f8a9d366da821476" kindref="member">CY_PDALTMODE_USB4_TIMEOUT_TIMER</ref>,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a2a295d24ec72291afdf85a91020d65fb" kindref="member">CY_PDALTMODE_AMD_BUSY_TIMER</ref>,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a3ac9acd7b1bfc162d321fe00625df002" kindref="member">CY_PDALTMODE_AMD_RETIMER_BUSY_TIMER</ref>,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a02ba9f19bab6970b2a9ec37469843d58" kindref="member">CY_PDALTMODE_AMD_INT_BUSY_TIMER</ref>,</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a5af729442a185be8992384bbadf17c9d" kindref="member">CY_PDALTMODE_AMD_RETIMER_WAIT_TIMER</ref>,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881aa9eafbf8e12b1a9009d48ce0f56c249a" kindref="member">CY_PDALTMODE_BB_DBR_DEBUG_POLL_TIMER</ref>,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a1a5fc77ac7c201067a4e22124d65f6d5" kindref="member">CY_PDALTMODE_BB_DBR_WAIT_TIMER</ref>,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a9ba4fe3079877033ccfff86716bc7044" kindref="member">CY_PDALTMODE_BB_DBR_DEBUG_WRITE_TIMER</ref>,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881ad6b5c74a1b667dce3b2f533e51cfc22c" kindref="member">CY_PDALTMODE_RETIMER_BUSY_TIMER</ref>,</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881add77737d5b51e096869a5f45441c2360" kindref="member">CY_PDALTMODE_RETIMER_WAIT_TIMER</ref>,</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a4fd25fb5ba48739bde4db79556372d26" kindref="member">CY_PDALTMODE_ICL_VSYS_STABLE_TIMER</ref>,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a7d7fa17795fc8418f2479aee31d5d22a" kindref="member">CY_PDALTMODE_ICL_MUX_STATE_CHANGE_TIMER</ref>,</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881ae5206439261453bc3a07c9d4686d0162" kindref="member">CY_PDALTMODE_ICL_RFU_EXIT_TIMER</ref>,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881a7d64912cd7042f654c187c2d69d81304" kindref="member">CY_PDALTMODE_ICL_ALT_MODE_EXIT_TIMER</ref>,</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1gga8ce268202ee29df67f500d14a1273881aebbc1696503532d945618a8c4ede5f66" kindref="member">CY_PDALTMODE_ICL_ADP_DETECT_DEB_TIMER</ref>,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>CY_PDALTMODE_PORT1_TIMERS_START_ID<sp/>=<sp/>CY_PDUTILS_TIMER_ALT_MODE_PORT1_START_ID,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}<sp/><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga8ce268202ee29df67f500d14a1273881" kindref="member">cy_en_pdaltmode_timer_id_t</ref>;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_CY_PDALTMODE_TIMER_ID_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>[]<sp/>END<sp/>OF<sp/>FILE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="cy_pdaltmode_timer_id.h"/>
+  </compounddef>
+</doxygen>

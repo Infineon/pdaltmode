@@ -1,0 +1,557 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="cy__pdaltmode__ridge__slave_8h" kind="file" language="C++">
+    <compoundname>cy_pdaltmode_ridge_slave.h</compoundname>
+    <includes refid="cy__pdaltmode__defines_8h" local="yes">cy_pdaltmode_defines.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes local="no">stdint.h</includes>
+    <incdepgraph>
+      <node id="55">
+        <label>stdbool.h</label>
+      </node>
+      <node id="56">
+        <label>stdint.h</label>
+      </node>
+      <node id="54">
+        <label>cy_pdaltmode_ridge_slave.h</label>
+        <link refid="cy__pdaltmode__ridge__slave_8h"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga769fdee9379d0d7b7c7ce826af3c5032" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_SCB_INDEX</name>
+        <initializer>(0x01u)</initializer>
+        <briefdescription>
+<para>Default SCB index used for the Ridge/SoC Slave interface. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="50" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga38d841457e11474b6e0486e5eadcc3a8" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_SCB_CLOCK_FREQ</name>
+        <initializer>(I2C_SCB_CLOCK_FREQ_1_MHZ)</initializer>
+        <briefdescription>
+<para>Maximum I2C clock frequency used on the Ridge/SoC slave interface. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="53" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gaaff144f81dce2d94cc89ee31d940562c" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_MIN_WRITE_SIZE</name>
+        <initializer>(2u)</initializer>
+        <briefdescription>
+<para>Minimum slave write size: Corresponds to slave address + register address. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="56" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga28e97166c89391ac670cc7e42fe0ef51" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_MAX_WRITE_SIZE</name>
+        <initializer>(16u)</initializer>
+        <briefdescription>
+<para>Maximum slave write size: We should never get writes longer than 16 bytes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="59" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gaa293f52b6b5ef9a5b7d25c4a0f485af2" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_MAX_READ_SIZE</name>
+        <initializer>(20u)</initializer>
+        <briefdescription>
+<para>Maximum slave read size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="62" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gacbf0bd5f774b6e6284220f65a9b35227" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_READ_BUFFER_SIZE</name>
+        <initializer>(4u)</initializer>
+        <briefdescription>
+<para>Ridge slave buffer read size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="65" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga83c4a14260b64d2eef4c1fd4abbf2e62" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_ADDR_P0</name>
+        <initializer>(0x38u)</initializer>
+        <briefdescription>
+<para>Slave address associated with USB PD port number 0. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is defined by Intel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="84" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga261b3ef6134adb24dd0fa4a19d66f9b9" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_ADDR_P1</name>
+        <initializer>(0x3Fu)</initializer>
+        <briefdescription>
+<para>Slave address associated with USB PD port number 1. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is defined by Intel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="87" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gaa87ba8bf4314b379242be1cbe558329e" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_ADDR_MASK</name>
+        <initializer>(0xF0u)</initializer>
+        <briefdescription>
+<para>I2C slave address mask to be applied on the incoming slave address. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="90" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gaeb2cef6d7790332c186ba272de7a5af5" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_RIDGE_CMD_CCG_RESET</name>
+        <initializer>(0x02u)</initializer>
+        <briefdescription>
+<para>Alpine/Titan Ridge command value that requests a CCG device reset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="95" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gad6dfadefd0086e4de5ea93853222b276" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_RIDGE_CMD_INT_CLEAR</name>
+        <initializer>(0x04u)</initializer>
+        <briefdescription>
+<para>Alpine/Titan Ridge command value to clear the interrupt from CCG. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="98" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga579db95d54ca8067c140b1f11b16b331" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGESLAVE_RIDGE_IRQ_ACK</name>
+        <initializer>(0x2000u)</initializer>
+        <briefdescription>
+<para>Alpine/Titan Ridge command IRQ ACK PD Controller to Titan Ridge. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="101" column="9" bodyfile="cy_pdaltmode_ridge_slave.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gab43f28b57d639d16242a004700f33e23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_RidgeSlave_I2cCmdCbk</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint32_t count, uint8_t *writeBuf, uint8_t *readBuf)</argsstring>
+        <name>Cy_PdAltMode_RidgeSlave_I2cCmdCbk</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>writeBuf</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>readBuf</declname>
+        </param>
+        <briefdescription>
+<para>I2C command callback function that implements the actual Alpine/Titan Ridge interface logic. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is called from SCB interrupt handler. Since the work to be done is limited, it is completely handled from the callback.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Count of bytes written to I2C buffer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>writeBuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to I2C Write buffer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>readBuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to I2C Read buffer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gafdfa393ed4a115a22d39bfa12bfe2551" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_RidgeSlave_StatusUpdate</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint32_t status, bool rewrite)</argsstring>
+        <name>Cy_PdAltMode_RidgeSlave_StatusUpdate</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>rewrite</declname>
+        </param>
+        <briefdescription>
+<para>Update the AR/TR status register and send an event to the Alpine/Titan Ridge. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used by the application layer to update the content of the Alpine/Titan Ridge status register. If the content of the register is changing, CCG asserts the corresponding interrupt to notify Alpine/Titan Ridge about the status change.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be written into the status register</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rewrite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flag to enable updating of the status register even if it remains the same</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga85fef8bd30b85f4a052d23c5e1b361a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_RidgeSlave_DataReset</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_RidgeSlave_DataReset</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Clean the AR/TR status register the Alpine/Titan Ridge. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gaff8707b5202ac3bc4db24e4244161b87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_RidgeSlave_Task</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, uint8_t *writeBuf)</argsstring>
+        <name>Cy_PdAltMode_RidgeSlave_Task</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>writeBuf</declname>
+        </param>
+        <briefdescription>
+<para>Handler for pending Ridge Slave interface tasks. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>writeBuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the write buffer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="217" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga6c2c2c2ab6ccef6db71bf73e30e0a2db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_RidgeSlave_IsHostConnected</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_RidgeSlave_IsHostConnected</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Check whether a host is connected to the specified PD port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if a host is connected, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="247" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gaf8be940b88560fbcaf99249e0ef8ccb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_RidgeSlave_SetOcpStatus</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_RidgeSlave_SetOcpStatus</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Update the data status register to indicate over current fault condition. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="262" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga33deb4f208eba8c556451a715630f97f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_RidgeSlave_ResetVirtualHpd</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_RidgeSlave_ResetVirtualHpd</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Resets virtual HPD related variables. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_ridge_slave.h" line="296" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file defines the data structures and function prototypes associated with the Intel Alpine/Titan Ridge control interface. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="copyright"><para>Copyright 2024, Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation. All rights reserved. You may use this file only in accordance with the license, terms, conditions, disclaimers, and limitations in the end user license agreement accompanying the software package with which this file was provided. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor">#ifndef<sp/>_CY_PDALTMODE_RIDGE_SLAVE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CY_PDALTMODE_RIDGE_SLAVE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>Header<sp/>file<sp/>addition</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cy_pdaltmode_defines.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>MACRO<sp/>definition</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGESLAVE_SCB_INDEX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGESLAVE_SCB_CLOCK_FREQ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(I2C_SCB_CLOCK_FREQ_1_MHZ)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGESLAVE_MIN_WRITE_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(2u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGESLAVE_MAX_WRITE_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(16u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGESLAVE_MAX_READ_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(20u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGESLAVE_READ_BUFFER_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(4u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor">#if<sp/>ICL_SLAVE_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGESLAVE_PMC_SLAVE_ADDR_PORT0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x50u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGESLAVE_PMC_SLAVE_ADDR_PORT1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x51u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGESLAVE_ICL_SOC_ACK_TIMEOUT_PERIOD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(500u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGESLAVE_ADDR_MASK_GENERAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x80u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor">#else<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGESLAVE_ADDR_P0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x38u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGESLAVE_ADDR_P1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x3Fu)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGESLAVE_ADDR_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xF0u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ICL_SLAVE_ENABLE<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGESLAVE_RIDGE_CMD_CCG_RESET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x02u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGESLAVE_RIDGE_CMD_INT_CLEAR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x04u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGESLAVE_RIDGE_IRQ_ACK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x2000u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor">#if<sp/>BB_RETIMER_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGESLAVE_RIDGE_CMD_WRITE_TO_RETIMER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x10u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGESLAVE_RIDGE_STS_RETIMER_DATA_VALID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x400000u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>BB_RETIMER_ENABLE<sp/>*/</highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/>*<sp/>Global<sp/>function<sp/>declaration</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="134"><highlight class="comment">*<sp/>Function<sp/>mame:<sp/>Cy_PdAltMode_RidgeSlave_I2cCmdCbk</highlight></codeline>
+<codeline lineno="135"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="157"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1gab43f28b57d639d16242a004700f33e23" kindref="member">Cy_PdAltMode_RidgeSlave_I2cCmdCbk</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref>*<sp/>ptrAltModeContext,<sp/>uint32_t<sp/>count,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*writeBuf,<sp/>uint8_t<sp/>*readBuf);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="162"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_RidgeSlave_StatusUpdate</highlight></codeline>
+<codeline lineno="163"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="184"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1gafdfa393ed4a115a22d39bfa12bfe2551" kindref="member">Cy_PdAltMode_RidgeSlave_StatusUpdate</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/>uint32_t<sp/>status,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>rewrite);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="187"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_RidgeSlave_DataReset</highlight></codeline>
+<codeline lineno="188"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="199"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1ga85fef8bd30b85f4a052d23c5e1b361a8" kindref="member">Cy_PdAltMode_RidgeSlave_DataReset</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref>*<sp/>ptrAltModeContext);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="202"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_RidgeSlave_Task</highlight></codeline>
+<codeline lineno="203"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="217"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1gaff8707b5202ac3bc4db24e4244161b87" kindref="member">Cy_PdAltMode_RidgeSlave_Task</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/><sp/>uint8_t<sp/>*writeBuf);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ICL_SLAVE_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="221"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_RidgeSlave_UpdateIsPending</highlight></codeline>
+<codeline lineno="222"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">uint8_t<sp/>Cy_PdAltMode_RidgeSlave_UpdateIsPending(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ICL_SLAVE_ENABLE<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="235"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_RidgeSlave_IsHostConnected</highlight></codeline>
+<codeline lineno="236"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="247"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1ga6c2c2c2ab6ccef6db71bf73e30e0a2db" kindref="member">Cy_PdAltMode_RidgeSlave_IsHostConnected</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="250"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_RidgeSlave_SetOcpStatus</highlight></codeline>
+<codeline lineno="251"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="262"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1gaf8be940b88560fbcaf99249e0ef8ccb8" kindref="member">Cy_PdAltMode_RidgeSlave_SetOcpStatus</ref><sp/>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ICL_SLAVE_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="266"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_RidgeSlave_SocTimeoutEventControl</highlight></codeline>
+<codeline lineno="267"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="279"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cy_PdAltMode_RidgeSlave_SocTimeoutEventControl(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>disable);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ICL_SLAVE_ENABLE<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="284"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_RidgeSlave_ResetVirtualHpd</highlight></codeline>
+<codeline lineno="285"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="296"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1ga33deb4f208eba8c556451a715630f97f" kindref="member">Cy_PdAltMode_RidgeSlave_ResetVirtualHpd</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>BB_RETIMER_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="300"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_RidgeSlave_ClearWriteToRetimerBit</highlight></codeline>
+<codeline lineno="301"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="312"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cy_PdAltMode_RidgeSlave_ClearWriteToRetimerBit(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="315"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_RidgeSlave_DelayedSocAlert</highlight></codeline>
+<codeline lineno="316"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="327"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cy_PdAltMode_RidgeSlave_DelayedSocAlert(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>BB_RETIMER_ENABLE<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>VPRO_WITH_USB4_MODE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cy_PdAltMode_RidgeSlave_VproStatusUpdateEnable(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>vproValue);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_CY_PDALTMODE_RIDGE_SLAVE_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>[]<sp/>END<sp/>OF<sp/>FILE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="cy_pdaltmode_ridge_slave.h"/>
+  </compounddef>
+</doxygen>

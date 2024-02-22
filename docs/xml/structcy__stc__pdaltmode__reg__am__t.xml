@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcy__stc__pdaltmode__reg__am__t" kind="struct" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_reg_am_t</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__reg__am__t_1a7b7fe4e56342485a0f5d928cfe080519" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t cy_stc_pdaltmode_reg_am_t::svid</definition>
+        <argsstring></argsstring>
+        <name>svid</name>
+        <briefdescription>
+<para>Alternate Mode SVID. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1518" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1518" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__reg__am__t_1a6cc5892ac33440c51e669d939d275dd2" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__data__structures_1ga27fb6543aa4d7e4251d62242ac57a906" kindref="member">cy_pdaltmode_reg_alt_modes_cbk_t</ref></type>
+        <definition>cy_pdaltmode_reg_alt_modes_cbk_t cy_stc_pdaltmode_reg_am_t::regAmPtr</definition>
+        <argsstring></argsstring>
+        <name>regAmPtr</name>
+        <briefdescription>
+<para>Alternate Mode SVID handler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1519" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1519" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure to hold the Alternate Modes SVID and handler. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="73">
+        <label>cy_stc_pdaltmode_alt_mode_evt_t</label>
+        <link refid="unioncy__stc__pdaltmode__alt__mode__evt__t"/>
+        <childnode refid="74" relation="usage">
+          <edgelabel>alt_mode_event</edgelabel>
+        </childnode>
+        <childnode refid="75" relation="usage">
+          <edgelabel>alt_mode_event_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="71">
+        <label>cy_stc_pdaltmode_reg_am_t</label>
+        <link refid="structcy__stc__pdaltmode__reg__am__t"/>
+        <childnode refid="72" relation="usage">
+          <edgelabel>regAmPtr</edgelabel>
+        </childnode>
+      </node>
+      <node id="74">
+        <label>cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT</label>
+        <link refid="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t"/>
+      </node>
+      <node id="75">
+        <label>cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT_DATA</label>
+        <link refid="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t___d_a_t_a"/>
+      </node>
+      <node id="72">
+        <label>cy_stc_pdaltmode_mngr_info_t</label>
+        <link refid="structcy__stc__pdaltmode__mngr__info__t"/>
+        <childnode refid="73" relation="usage">
+          <edgelabel>evalAppCmd</edgelabel>
+          <edgelabel>appEvtData</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="cy_pdaltmode_defines.h" line="1517" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1516" bodyend="1520"/>
+    <listofallmembers>
+      <member refid="structcy__stc__pdaltmode__reg__am__t_1a6cc5892ac33440c51e669d939d275dd2" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_reg_am_t</scope><name>regAmPtr</name></member>
+      <member refid="structcy__stc__pdaltmode__reg__am__t_1a7b7fe4e56342485a0f5d928cfe080519" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_reg_am_t</scope><name>svid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

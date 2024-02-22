@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__billboard__macros" kind="group">
+    <compoundname>group_pdaltmode_billboard_macros</compoundname>
+    <title>Macros</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga88ac900d28256aa2d223b0503c448bbe" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_MAX_ALT_MODES</name>
+        <initializer>(8u)</initializer>
+        <briefdescription>
+<para>Maximum number of alternate modes supported by the Billboard module. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="54" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga77ed23fe4ec7fb1e29d71d5607828241" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_ALT_MODE_STATUS_INIT_VAL</name>
+        <initializer>(0x5555u)</initializer>
+        <briefdescription>
+<para>Initialization value for mode status register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="59" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga75c1b4fd5b6e4420af8bde93fd38d227" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_ALT_MODE_STATUS_MASK</name>
+        <initializer>(0x03u)</initializer>
+        <briefdescription>
+<para>Alternate Mode status mask for each mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="64" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga5ce8e5578ee6f7f717b44a857b7e4096" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_OFF_TIMER_MAX_INTERVAL</name>
+        <initializer>(1000u)</initializer>
+        <briefdescription>
+<para>Billboard OFF timer&apos;s maximum interval. </para>        </briefdescription>
+        <detaileddescription>
+<para>One second is used to ensure that, timer module goes through only one interrupt per request. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="70" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga9309d17eeb5fe77d88230cb633f1c7be" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_OFF_TIMER_NO_DISABLE</name>
+        <initializer>(0xFFFFu)</initializer>
+        <briefdescription>
+<para>Timeout special value for not disabling the Billboard interface. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="75" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga91b701d3c13967435640af94e752ef58" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_OFF_TIMER_MIN_VALUE</name>
+        <initializer>(60u)</initializer>
+        <briefdescription>
+<para>Minimum timeout value in allowed in seconds = 60 s. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="80" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga2f680a9e3bc8383eb7a8a2505ea0e605" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_MAX_EP0_XFER_SIZE</name>
+        <initializer>(256u)</initializer>
+        <briefdescription>
+<para>Maximum buffering for EP0 transactions inside the Billboard module. </para>        </briefdescription>
+        <detaileddescription>
+<para>This definition is valid only for internal Billboard implementation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="87" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga5f4951f0da3b165831a11cc3e89a3fe8" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_CAP_ADD_FAILURE_INFO_PWR</name>
+        <initializer>(0x01u)</initializer>
+        <briefdescription>
+<para>Additional failure information due to lack of power as per the Billboard capability descriptor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="93" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1gac497a282d9953ac6aa9b131c4c2ba73d" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_CAP_ADD_FAILURE_INFO_PD</name>
+        <initializer>(0x02u)</initializer>
+        <briefdescription>
+<para>Additional failure information due to USBPD communication failure as per billboard capability descriptor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="99" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga02eba0a3f01a41d8aeb3dd7884df1030" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_DISCONNECT_STAT</name>
+        <initializer>(0xFFu)</initializer>
+        <briefdescription>
+<para>Disconnect BB Status for BB connect event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="104" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1gaee7e08a90b18260d9c26343cb076eeff" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_CONNECT_STAT</name>
+        <initializer>(0x01u)</initializer>
+        <briefdescription>
+<para>Connect BB Status for BB connect event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="109" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga5b35a3dbc4a587b36147e5211ceff679" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_MAX_SVID</name>
+        <initializer>(2u)</initializer>
+        <briefdescription>
+<para>Maximum number of Alternate Modes supported. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="114" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga3bed4345a71d7888fb3abbc63678866f" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_OPTION_VENDOR_ENABLE</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+<para>Bit field in bb_option from configuration table which indicates that the device needs to enable Vendor interface along with Billboard. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="119" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga08d065743dde3a4be793bfdf2ac8a07a" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_OPTION_BILLBOARD_ENABLE</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+<para>Bit field in bb_option from configuration table which indicates that the device needs to enable Vendor interface along with Billboard. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="124" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1gaa8342f477c56fcfc88b67ac6895f692e" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_OPTION_HID_ENABLE</name>
+        <initializer>(0x01)</initializer>
+        <briefdescription>
+<para>Bit field in bb_option from configuration table which indicates that the device needs to enable HID interface along with Billboard. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="129" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga8985e1e21e8c9b4081fcc9c90e7fdd18" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_USB_BOS_DSCR_NUM_ALT_MODE_OFFSET</name>
+        <initializer>(36)</initializer>
+        <briefdescription>
+<para>Number of Alternate Mode field offset in the BOS descriptor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="132" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1gad7c8bc66477061c56c5ea3131736a9e4" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_USB_BOS_DSCR_ALT_STATUS_OFFSET</name>
+        <initializer>(40)</initializer>
+        <briefdescription>
+<para>Offset for Alternate Mode status field offset in the BOS descriptor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="135" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga57116e2350f9e6844b5ba2dc4e81d137" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_USB_BOS_DSCR_ADD_INFO_OFFSET</name>
+        <initializer>(74)</initializer>
+        <briefdescription>
+<para>Offset for Alternate Mode bAdditionalFailureInfo field in the BOS descriptor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="138" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga87f7c3ce76db5854ad0132ff1df70f1c" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_USB_BOS_DSCR_MODE0_INFO_OFFSET</name>
+        <initializer>(76)</initializer>
+        <briefdescription>
+<para>Offset for Alternate Mode 0 information offset in the BOS descriptor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="141" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1gae57054ab3d4ff5aa3a3d7b1e39fb11ef" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_USB_BOS_DSCR_MODE_INFO_SIZE</name>
+        <initializer>(4)</initializer>
+        <briefdescription>
+<para>Size of each Alternate Mode information in bytes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="144" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__billboard__macros_1ga3488d5c671462fdfb512caec12c5658b" prot="public" static="no">
+        <name>CY_PDALTMODE_BILLBOARD_USB_AUM_CAP_DSCR_ALT_MODE_VDO_OFFSET</name>
+        <initializer>(4)</initializer>
+        <briefdescription>
+<para>Offset of dwAlternateModeVdo in AUM Capability descriptor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_billboard.h" line="147" column="9" bodyfile="cy_pdaltmode_billboard.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

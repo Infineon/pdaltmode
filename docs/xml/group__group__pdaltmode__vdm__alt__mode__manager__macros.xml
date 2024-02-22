@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__vdm__alt__mode__manager__macros" kind="group">
+    <compoundname>group_pdaltmode_vdm_alt_mode_manager_macros</compoundname>
+    <title>Macros</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1ga6e690e4726624215292ba6ac01d8bb4b" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_ATCH_TGT</name>
+        <initializer>(1u)</initializer>
+        <briefdescription>
+<para>Internal Alt Modes manager denotation of attached UFP target. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="49" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1gaf9e238559658449787146f037960e867" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_CABLE</name>
+        <initializer>(2u)</initializer>
+        <briefdescription>
+<para>Internal Alt Modes manager denotation of the attached cable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="52" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1gab902473a58fc39742864730a1845d172" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_MODE_NOT_SUPPORTED</name>
+        <initializer>(0xFFu)</initializer>
+        <briefdescription>
+<para>Internal Alt Modes manager denotation of non supported Alternate Mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="55" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1ga841562ab8c8a6a994edc871dd36eb1c9" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_EMPTY_VDO</name>
+        <initializer>(0x00000000u)</initializer>
+        <briefdescription>
+<para>Internal Alt Modes manager denotation in case if VDO sending not needed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="58" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1ga43f668351b413a09e9a45ba9481a591f" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_NONE_VDO</name>
+        <initializer>(0xFFFFFFFFu)</initializer>
+        <briefdescription>
+<para>Internal Alt Modes manager denotation of zero VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="61" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1gae4e2aa15a2cf04e0d55157a9d86b51bd" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_VDO_START_IDX</name>
+        <initializer>(1u)</initializer>
+        <briefdescription>
+<para>Start index of VDO data in VDM message. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="64" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1ga32f02446252080652468730904046d39" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_NONE_MODE_MASK</name>
+        <initializer>(0x00000000u)</initializer>
+        <briefdescription>
+<para>Empty mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="67" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1ga2030916ac854ea9e9cb31507fa6a9643" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_FULL_MASK</name>
+        <initializer>(0xFFFFFFFFu)</initializer>
+        <briefdescription>
+<para>All bit set full mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="70" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1ga0056ad2fc48f744b625895b13dadb01f" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_EN_FLAG_MASK</name>
+        <initializer>(0x00000001u)</initializer>
+        <briefdescription>
+<para>This mask is used by CY_PDALTMODE_MNGR_IS_FLAG_CHECKED macro to check if bit is set in some mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="73" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1ga327abc7734f01d684e4a1a8f732a5bfe" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_EXIT_ALL_MODES</name>
+        <initializer>(0x7u)</initializer>
+        <briefdescription>
+<para>Object position corresponding to an Exit All Modes VDM command. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="76" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1gacb97e1a3f70d001c04a61721a2d9d32b" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_CBL_DIR_SUPP_MASK</name>
+        <initializer>(0x780u)</initializer>
+        <briefdescription>
+<para>Mask to find out cable directionality support for cable discovery ID response. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="79" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1ga5f54d5bbc962097184b7a757a038e0f4" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_ALT_MODE_EVT_IDX</name>
+        <initializer>(0u)</initializer>
+        <briefdescription>
+<para>Index of Alt Mode APP event code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="82" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1gabddbbcb4e73966fef68faeff0bb886b8" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_ALT_MODE_EVT_DATA_IDX</name>
+        <initializer>(1u)</initializer>
+        <briefdescription>
+<para>Index of data for Alt Mode APP event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="85" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1ga2cb7840adbf420357dfbb997f0f2b3a3" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_NO_DATA</name>
+        <initializer>(0u)</initializer>
+        <briefdescription>
+<para>Internal Alt Modes manager denotation of object without useful data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="88" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1gace9facd57c1e45b998eab65879e7b0bf" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_MAX_RETRY_CNT</name>
+        <initializer>(9u)</initializer>
+        <briefdescription>
+<para>Maximum number of VDM send retries in case of no CRC response, timeout, or busy response. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="91" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1ga6b142b13b412470026624fc44ddeba25" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_AM_SVID_CONFIG_SIZE_IDX</name>
+        <initializer>(0u)</initializer>
+        <briefdescription>
+<para>Index of size of Alternate Mode configuration packet. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="94" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1gae511cfb23203436fb76ac4b19731fdb9" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_AM_SVID_CONFIG_OFFSET_IDX</name>
+        <initializer>(1u)</initializer>
+        <briefdescription>
+<para>Offset of SVID in Alternate Mode configuration packet. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="97" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1ga69f5ef9c4bd4ce116b8a0d69810c40ca" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_AM_SVID_CONFIG_OFFSET_START_IDX</name>
+        <initializer>(16u &gt;&gt; 1u)</initializer>
+        <briefdescription>
+<para>Offset of SVID start index in the config table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="100" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1gab0fe74033bfbfd6386678440a44fd97b" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_DFP_ALT_MODE_HPI_OFFSET</name>
+        <initializer>(8u)</initializer>
+        <briefdescription>
+<para>Offset to get DFP Alt Modes to be enabled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="103" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1gaa54ea041cda0a61f155a7a3e4f0664d4" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_UFP_ALT_MODE_HPI_MASK</name>
+        <initializer>(0xFFu)</initializer>
+        <briefdescription>
+<para>Mask to get UFP Alt Modes to be enabled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="106" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1ga937798655f914d851f29b6c6b43b79b2" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_SET_FLAG</name>
+        <param><defname>status</defname></param>
+        <param><defname>bit_idx</defname></param>
+        <initializer>((status) |= ((uint32_t)1u &lt;&lt; ((uint32_t)(bit_idx))))</initializer>
+        <briefdescription>
+<para>Set appropriate bit_idx to 1 in the status variable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="109" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1gaa0bc4f0b8a46e72932f19269accf18c9" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_REMOVE_FLAG</name>
+        <param><defname>status</defname></param>
+        <param><defname>bit_idx</defname></param>
+        <initializer>((status) &amp;= (~((uint32_t)1u &lt;&lt; ((uint32_t)(bit_idx)))))</initializer>
+        <briefdescription>
+<para>Set appropriate bit_idx to 0 in the status variable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="112" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1gaf48612bc008ae9a0e574565e9d26a259" prot="public" static="no">
+        <name>CY_PDALTMODE_MNGR_IS_FLAG_CHECKED</name>
+        <param><defname>status</defname></param>
+        <param><defname>bit_idx</defname></param>
+        <initializer>(((status) &gt;&gt; (uint32_t)(bit_idx)) &amp; <ref refid="group__group__pdaltmode__vdm__alt__mode__manager__macros_1ga0056ad2fc48f744b625895b13dadb01f" kindref="member">CY_PDALTMODE_MNGR_EN_FLAG_MASK</ref>)</initializer>
+        <briefdescription>
+<para>Return true if bit_idx of the status variable is set to &apos;1&apos;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_mngr.h" line="115" column="9" bodyfile="cy_pdaltmode_mngr.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1gab76154db7a8719febfae5116f98206f1" prot="public" static="no">
+        <name>CY_PDALTMODE_VDMTASK_PD_SVID_ID_HDR_VDO_START_IDX</name>
+        <initializer>(4u)</initializer>
+        <briefdescription>
+<para>Start index of received VDM packet in case of response to DISC SVID command. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="50" column="9" bodyfile="cy_pdaltmode_vdm_task.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1ga347f8f4671f4e8db875d7f7845720b28" prot="public" static="no">
+        <name>CY_PDALTMODE_VDMTASK_PD_DISC_ID_AMA_VDO_IDX</name>
+        <initializer>(3u)</initializer>
+        <briefdescription>
+<para>Index of AMA VDO in DISCOVER_ID response from port partner (after skipping the VDM header) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="53" column="9" bodyfile="cy_pdaltmode_vdm_task.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1gab98fd4a76d700ebeff9c2fe2c51cd8e7" prot="public" static="no">
+        <name>CY_PDALTMODE_VDMTASK_MAX_CABLE_SVID_SUPP</name>
+        <initializer>(4u)</initializer>
+        <briefdescription>
+<para>Maximum number of cable SVIDs VDM task manager can hold in the memory. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="56" column="9" bodyfile="cy_pdaltmode_vdm_task.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1ga6962bd557f65f4f50d8611247d3818a5" prot="public" static="no">
+        <name>CY_PDALTMODE_VDMTASK_APPLE_SVID</name>
+        <initializer>(0x05ACu)</initializer>
+        <briefdescription>
+<para>Apple SVID defined by Apple specification. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="59" column="9" bodyfile="cy_pdaltmode_vdm_task.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1ga350aa0cbccffca41fd8fc2679b33e67b" prot="public" static="no">
+        <name>CY_PDALTMODE_VDMTASK_MAX_DISC_SVID_COUNT</name>
+        <initializer>(10u)</initializer>
+        <briefdescription>
+<para>Maximum number of DISCOVER_SVID attempts that will be performed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="62" column="9" bodyfile="cy_pdaltmode_vdm_task.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1ga9fe292536474dc0fdb305220a98cda6d" prot="public" static="no">
+        <name>CY_PDALTMODE_VDMTASK_DATA_RST_RETRY_NUMB</name>
+        <initializer>(5u)</initializer>
+        <briefdescription>
+<para>Maximum number of Data Reset command retries. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="65" column="9" bodyfile="cy_pdaltmode_vdm_task.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1gacae66bfedf5561562261048fc4e7914d" prot="public" static="no">
+        <name>CY_PDALTMODE_VDMTASK_USB4_EUDO_HOST_PARAM_SHIFT</name>
+        <initializer>(13u)</initializer>
+        <briefdescription>
+<para>Bit shift to match host_supp configuration parameter with USB4 EUDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="68" column="9" bodyfile="cy_pdaltmode_vdm_task.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__vdm__alt__mode__manager__macros_1ga03715cb83c82cccfcb22d7b97ca4ccb4" prot="public" static="no">
+        <name>CY_PDALTMODE_VDMTASK_MAX_EMCA_DP_RESET_COUNT</name>
+        <initializer>(3u)</initializer>
+        <briefdescription>
+<para>Maximum number of EMCA SOFT_RESET attempts to be made. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_vdm_task.h" line="71" column="9" bodyfile="cy_pdaltmode_vdm_task.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

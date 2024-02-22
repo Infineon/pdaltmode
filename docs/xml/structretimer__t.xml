@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structretimer__t" kind="struct" language="C++" prot="public">
+    <compoundname>retimer_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structretimer__t_1a10c2edc072f00c525619220d1f04b54f" prot="public" static="no" mutable="no">
+        <type>cy_en_pdaltmode_retimerwrapper_state_t</type>
+        <definition>cy_en_pdaltmode_retimerwrapper_state_t retimer_t::currState</definition>
+        <argsstring></argsstring>
+        <name>currState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_retimer_wrapper.c" line="31" column="1" bodyfile="cy_pdaltmode_retimer_wrapper.c" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structretimer__t_1a8991aaa799c1e19e5fac15f59006a4d6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool retimer_t::reqEn</definition>
+        <argsstring></argsstring>
+        <name>reqEn</name>
+        <briefdescription>
+<para>Flag to indicate Retimer enable request. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_retimer_wrapper.c" line="32" column="1" bodyfile="cy_pdaltmode_retimer_wrapper.c" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structretimer__t_1a759c218b20ed1f6935a513de105a1c44" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool retimer_t::reqDis</definition>
+        <argsstring></argsstring>
+        <name>reqDis</name>
+        <briefdescription>
+<para>Flag to indicate Retimer disable request. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_retimer_wrapper.c" line="33" column="1" bodyfile="cy_pdaltmode_retimer_wrapper.c" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structretimer__t_1a4597b62d622c8a3c28e195c7d0ea27c9" prot="public" static="no" mutable="no">
+        <type>cy_en_pdaltmode_retimerwrapper_vsys_state_t</type>
+        <definition>cy_en_pdaltmode_retimerwrapper_vsys_state_t retimer_t::vsys</definition>
+        <argsstring></argsstring>
+        <name>vsys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_retimer_wrapper.c" line="34" column="1" bodyfile="cy_pdaltmode_retimer_wrapper.c" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structretimer__t_1a5db4c5094a243ce205ff736e59c6f2cf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t retimer_t::retimerIsBusy</definition>
+        <argsstring></argsstring>
+        <name>retimerIsBusy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_retimer_wrapper.c" line="35" column="1" bodyfile="cy_pdaltmode_retimer_wrapper.c" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cy_pdaltmode_retimer_wrapper.c" line="30" column="1" bodyfile="cy_pdaltmode_retimer_wrapper.c" bodystart="30" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structretimer__t_1a10c2edc072f00c525619220d1f04b54f" prot="public" virt="non-virtual"><scope>retimer_t</scope><name>currState</name></member>
+      <member refid="structretimer__t_1a759c218b20ed1f6935a513de105a1c44" prot="public" virt="non-virtual"><scope>retimer_t</scope><name>reqDis</name></member>
+      <member refid="structretimer__t_1a8991aaa799c1e19e5fac15f59006a4d6" prot="public" virt="non-virtual"><scope>retimer_t</scope><name>reqEn</name></member>
+      <member refid="structretimer__t_1a5db4c5094a243ce205ff736e59c6f2cf" prot="public" virt="non-virtual"><scope>retimer_t</scope><name>retimerIsBusy</name></member>
+      <member refid="structretimer__t_1a4597b62d622c8a3c28e195c7d0ea27c9" prot="public" virt="non-virtual"><scope>retimer_t</scope><name>vsys</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

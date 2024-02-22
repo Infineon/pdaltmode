@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__billboard" kind="group">
+    <compoundname>Group_pdaltmode_billboard</compoundname>
+    <title>Billboard</title>
+    <innergroup refid="group__group__pdaltmode__billboard__macros">Macros</innergroup>
+    <innergroup refid="group__group__pdaltmode__billboard__enums">Enumerated Types</innergroup>
+    <innergroup refid="group__group__pdaltmode__billboard__data__structures">Data Structures</innergroup>
+    <innergroup refid="group__group__pdaltmode__billboard__functions">Functions</innergroup>
+    <briefdescription>
+<para>Billboard provides APIs and data structures to support Billboard functionality. </para>    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t___d_a_t_a" kind="struct" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT_DATA</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t___d_a_t_a_1a012c9670d501690399b7847ac2567882" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT_DATA::evtData</definition>
+        <argsstring></argsstring>
+        <name>evtData</name>
+        <bitfield> 24</bitfield>
+        <briefdescription>
+<para>Alt Mode event&apos;s data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1174" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t___d_a_t_a_1a15415e75dd998146b5e1ac1c5f4e3e55" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT_DATA::evtType</definition>
+        <argsstring></argsstring>
+        <name>evtType</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+<para>Alt Mode event&apos;s type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1175" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1175" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct containing Alternate Modes manager event/command data. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cy_pdaltmode_defines.h" line="1173" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1172" bodyend="1176"/>
+    <listofallmembers>
+      <member refid="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t___d_a_t_a_1a012c9670d501690399b7847ac2567882" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT_DATA</scope><name>evtData</name></member>
+      <member refid="structcy__stc__pdaltmode__alt__mode__evt__t_1_1_a_l_t___m_o_d_e___e_v_t___d_a_t_a_1a15415e75dd998146b5e1ac1c5f4e3e55" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_alt_mode_evt_t::ALT_MODE_EVT_DATA</scope><name>evtType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

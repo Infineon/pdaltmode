@@ -1,0 +1,531 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__display__port__macros" kind="group">
+    <compoundname>group_pdaltmode_display_port_macros</compoundname>
+    <title>Macros</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1gaf33d8c03f64a191110fddd9f98657092" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_SVID</name>
+        <initializer>(0xFF01u)</initializer>
+        <briefdescription>
+<para>DisplayPort SVID. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="51" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1gac2942f71344bd23b0e04fa79e350019b" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_ALT_MODE_ID</name>
+        <initializer>(0u)</initializer>
+        <briefdescription>
+<para>Unique ID assigned to DP Alternate Mode in the CCGx SDK. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="54" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1gaecff6aac73f9be6e6eef579cb33f2e38" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_VDO_IDX</name>
+        <initializer>(0u)</initializer>
+        <briefdescription>
+<para>Index of VDO buffer element which is used to handle DP VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="57" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1gadb59f5562cbe11a5b7ea6cf6fd0f7447" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_STATUS_UPDATE_VDO</name>
+        <initializer>(0x01u)</initializer>
+        <briefdescription>
+<para>DP Status Update command VDO used by DFP_U. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="59" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1gace0eb4d29cee51c818d7f2c14bf2c535" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_DFP_D_CONN</name>
+        <initializer>(0x01u)</initializer>
+        <briefdescription>
+<para>DP Status Update command VDO when DP is DFP (DFP_D DP data role) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="62" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga79765fa6571a9ece5da5eddd71f6ceb6" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_UFP_D_CONN</name>
+        <initializer>(0x02u)</initializer>
+        <briefdescription>
+<para>UFP_D DP data role configuration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="65" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga83da94c4990b824f377082f82916ba2a" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_1_3_SIGNALING</name>
+        <initializer>(0x0001u)</initializer>
+        <briefdescription>
+<para>Standard DP signaling type value in the signaling field for Config VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="69" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga6e620ab4581f02bf90732a6c0a9843a8" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_CONFIG_SELECT</name>
+        <initializer>(2u)</initializer>
+        <briefdescription>
+<para>Value when DFP set configuration for UFP_U as UFP_D in the configuration select field for Config VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="73" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1gad7a67f8db874b365dbe78a5a54699ca1" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_CONFIG_SELECT_DPSRC</name>
+        <initializer>(1u)</initializer>
+        <briefdescription>
+<para>Value when DFP set configuration for UFP_U as DFP_D in the configuration select field of Config VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="77" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga682ca781b65daf912262ba4adbbcd359" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_USB_CONFIG_SELECT</name>
+        <initializer>(0u)</initializer>
+        <briefdescription>
+<para>Value when DFP set configuration as USB in the configuration select field for Config VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="80" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga31ede17b81a3b179b2e858d0594c23d6" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_USB_SS_CONFIG</name>
+        <initializer>(0u)</initializer>
+        <briefdescription>
+<para>Pin assignment mask for USB pin assignment in the Configure Pin Assignment field for Config VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="84" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga24dc1d72991c0515865e61c948f2888c" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_USB_SS_CONFIG_MASK</name>
+        <initializer>(0x3FFFFFFFu)</initializer>
+        <briefdescription>
+<para>Pin assignment mask for USB pin assignment in the Configure Pin Assignment field for Config VDO for DP2.1 spec revision. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="88" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga4b7009e3a0080d69cf4eebd8fc4d0260" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_DFP_D_CONFIG_C</name>
+        <initializer>(4u)</initializer>
+        <briefdescription>
+<para>Pin assignment mask for C pin assignment in the Configure Pin Assignment field for Config VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="91" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga0031e33f27d8edfa24b93511763e66a6" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_DFP_D_CONFIG_D</name>
+        <initializer>(8u)</initializer>
+        <briefdescription>
+<para>Pin assignment mask for D pin assignment in the Configure Pin Assignment field for Config VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="94" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga31e7c3821f9c13cf548ed3cc575bc4e6" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_DFP_D_CONFIG_E</name>
+        <initializer>(0x10u)</initializer>
+        <briefdescription>
+<para>Pin assignment mask for E pin assignment in the Configure Pin Assignment field for Config VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="97" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1gae94d317fd458337a229c134a46e2624c" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_DFP_D_CONFIG_F</name>
+        <initializer>(0x20u)</initializer>
+        <briefdescription>
+<para>Pin assignment mask for F pin assignment in the Configure Pin Assignment field for Config VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="100" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1gaac9cb5404f06c3b14be0bd5191a03b42" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_INVALID_CFG</name>
+        <initializer>(0xFFu)</initializer>
+        <briefdescription>
+<para>Internal DP denotation for invalid pin assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="103" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga2682a472503df0c92472e17b1ef07938" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_HPD_LOW_IRQ_LOW</name>
+        <initializer>(0x0u)</initializer>
+        <briefdescription>
+<para>HPD low and IRQ low value obtained from UFP Attention/Status Update VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="105" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga08cdfe4ddfb0099ee0d245b86d8102a6" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_HPD_HIGH_IRQ_LOW</name>
+        <initializer>(0x1u)</initializer>
+        <briefdescription>
+<para>HPD high and IRQ low value obtained from UFP Attention/Status Update VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="108" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1gaa5caf10c3b2f62ce624676426af14fce" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_HPD_LOW_IRQ_HIGH</name>
+        <initializer>(0x2u)</initializer>
+        <briefdescription>
+<para>HPD low and IRQ high value obtained from UFP Attention/Status Update VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="111" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga0d7914b15302fa4319dff32cc183df26" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_HPD_HIGH_IRQ_HIGH</name>
+        <initializer>(0x3u)</initializer>
+        <briefdescription>
+<para>HPD high and IRQ high value obtained from UFP Attention/Status Update VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="114" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1gaff3e0be554d5b483d1816bcc3a043f97" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_HPD_STATE_BIT_POS</name>
+        <initializer>(0x80u)</initializer>
+        <briefdescription>
+<para>HPD LVL bit position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="117" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1gaef57164e9ddc358771d307d677a33f2f" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_HPD_IRQ_BIT_POS</name>
+        <initializer>(0x100u)</initializer>
+        <briefdescription>
+<para>HPD LVL bit position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="120" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga53c1ef042111ecc2348e2b84734a9c67" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_QUEUE_STATE_SIZE</name>
+        <initializer>(2u)</initializer>
+        <briefdescription>
+<para>Size of one HPD queue element in bits. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="124" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga209f58409756a736c2d22c16619fbf91" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_HPD_STATE_MASK</name>
+        <initializer>(0x0003u)</initializer>
+        <briefdescription>
+<para>Mask to extract the first element from the HPD queue. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="127" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga350dcb70ff3a0a3c0dba2065f54553da" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_QUEUE_EMPTY_INDEX</name>
+        <initializer>(0x0u)</initializer>
+        <briefdescription>
+<para>Flag to indicate an empty HPD queue. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="130" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga8f88c5660ea3c21c5a1319fe39d303a5" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_QUEUE_FULL_INDEX</name>
+        <initializer>(7u)</initializer>
+        <briefdescription>
+<para>Flag to indicate a full HPD queue. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="133" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga20e668f4b30f0386163bde0efc3d08ad" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_UFP_MAX_QUEUE_SIZE</name>
+        <initializer>(4u)</initializer>
+        <briefdescription>
+<para>Maximum number of entries in the HPD queue. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="136" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1gacfedb40b28db6449db34d1be612e82f5" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_MAX_IRQ_SIZE</name>
+        <initializer>(2u)</initializer>
+        <briefdescription>
+<para>Maximum number of IRQ entries in the HPD queue. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="139" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga97251935978f5c68ae91d40df1333f03" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_GET_HPD_IRQ_STAT</name>
+        <param><defname>status</defname></param>
+        <initializer>(((status) &gt;&gt; 7UL)&amp; 0x3UL )</initializer>
+        <briefdescription>
+<para>Macros to get HPD state from Attention/Status Update VDO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="141" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga8b9cdc1d2fd24746b45641d0e5dff42a" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_SINK_CTRL_CMD</name>
+        <initializer>(3u)</initializer>
+        <briefdescription>
+<para>DP Sink Control APP command value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="145" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1gae224e1bb22c3636c4646a631db7d212c" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_MUX_CTRL_CMD</name>
+        <initializer>(1u)</initializer>
+        <briefdescription>
+<para>DP MUX Control APP command value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="148" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga2308412064adcbfae1c0bfbf38a0dfea" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_APP_CFG_CMD</name>
+        <initializer>(2u)</initializer>
+        <briefdescription>
+<para>DP MUX Configure APP command value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="151" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1gae144c0d2961909949ffa34d6a63a560e" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_APP_VCONN_SWAP_CFG_CMD</name>
+        <initializer>(4u)</initializer>
+        <briefdescription>
+<para>DP UFP Vconn Swap command value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="154" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga1372ca8fcc44b18e77b1280b77873856" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_APP_CFG_USB_IDX</name>
+        <initializer>(6u)</initializer>
+        <briefdescription>
+<para>Bit index of USB configuration in APP DP MUX Configure command data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="157" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1gafefb0bac812e86b89aabcbde60107303" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_APP_CFG_CMD_MAX_NUMB</name>
+        <initializer>(6u)</initializer>
+        <briefdescription>
+<para>Maximum value of USB configuration in APP DP MUX Configure command data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="160" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga5b0dfd5370c8f9ed22eb203dcb2c9961" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_ALLOWED_MUX_CONFIG_EVT</name>
+        <initializer>(1u)</initializer>
+        <briefdescription>
+<para>DP allowed MUX Configuration APP event value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="163" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga7e73de32dcc04963bea527de7be750e8" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_STATUS_UPDATE_EVT</name>
+        <initializer>(2u)</initializer>
+        <briefdescription>
+<para>DP Status Update APP event value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="166" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga35e0635f3be9cc517099afa083b02583" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_CFG_CMD_ACK_MASK</name>
+        <initializer>(0x200)</initializer>
+        <briefdescription>
+<para>Acked field mask for EC DP MUX Configure command data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="169" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga5b1c360ec8bc8ed1e74a9dad0cf1c5dc" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_ACT_CBL_PARAM_MASK</name>
+        <initializer>(0xFC00003Cu)</initializer>
+        <briefdescription>
+<para>Active cable parameter mask for the cable version is 1 and higher. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="172" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga5b1c360ec8bc8ed1e74a9dad0cf1c5dc" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_ACT_CBL_PARAM_MASK</name>
+        <initializer>(0xFC00003Cu)</initializer>
+        <briefdescription>
+<para>Active cable parameter mask for the cable version is 1 and higher. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="184" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga0f6b44644183b9b0acc92202c63ff840" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_HBR3_SUPP_MASK</name>
+        <initializer>(0x1u)</initializer>
+        <briefdescription>
+<para>HBR3 bit rate support mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="175" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1gab9c3d7ad96058c8f70d04fa241bb9dd9" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_HBR10_SUPP_MASK</name>
+        <initializer>(0x2u)</initializer>
+        <briefdescription>
+<para>HBR10 bit rate support mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="178" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1gae9ca1ceb96f26844effb9a39036fd813" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_HBR20_SUPP_MASK</name>
+        <initializer>(0x4u)</initializer>
+        <briefdescription>
+<para>HBR20 bit rate support mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="181" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1gacc1eee1245a094ddaf6e172eca1591d8" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_2_1_VERSION</name>
+        <initializer>(1u)</initializer>
+        <briefdescription>
+<para>DP 2.1 Version index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="187" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga0728075e1933dc9af0cbbf876c1d179e" prot="public" static="no">
+        <name>CY_PDALTMODE_DP_2_1_CBL_CFG_MASK</name>
+        <initializer>(0xFF07u)</initializer>
+        <briefdescription>
+<para>DP 2.1 Cable configuration mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="190" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__display__port__macros_1ga7423ed91a1dff1e1c1aa4b3c20816eb6" prot="public" static="no">
+        <name>CY_PDALTMODE_DP2_1_CFG_MASK</name>
+        <initializer>(0x80u)</initializer>
+        <briefdescription>
+<para>DP 2.1 enable configuration bit mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_dp_sid.h" line="193" column="9" bodyfile="cy_pdaltmode_dp_sid.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

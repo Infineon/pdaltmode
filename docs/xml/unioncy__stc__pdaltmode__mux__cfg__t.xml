@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="unioncy__stc__pdaltmode__mux__cfg__t" kind="union" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_mux_cfg_t</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+    <innerclass refid="structcy__stc__pdaltmode__mux__cfg__t_1_1_m_u_x___c_o_n_f_i_g" prot="public">cy_stc_pdaltmode_mux_cfg_t::MUX_CONFIG</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unioncy__stc__pdaltmode__mux__cfg__t_1a4189dd4be42004749edd6aed5f6a35cc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cy_stc_pdaltmode_mux_cfg_t::val</definition>
+        <argsstring></argsstring>
+        <name>val</name>
+        <briefdescription>
+<para>Integer field used for direct manipulation of reason code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1241" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncy__stc__pdaltmode__mux__cfg__t_1af96153822f3795e31fc7eaa1da38c60b" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcy__stc__pdaltmode__mux__cfg__t_1_1_m_u_x___c_o_n_f_i_g" kindref="compound">cy_stc_pdaltmode_mux_cfg_t::MUX_CONFIG</ref></type>
+        <definition>struct cy_stc_pdaltmode_mux_cfg_t::MUX_CONFIG cy_stc_pdaltmode_mux_cfg_t::mux</definition>
+        <argsstring></argsstring>
+        <name>mux</name>
+        <briefdescription>
+<para>Union containing the MUX configuration to configure AMD APU. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1248" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Holds AMD APU MUX related configurations. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="68">
+        <label>cy_stc_pdaltmode_mux_cfg_t</label>
+        <link refid="unioncy__stc__pdaltmode__mux__cfg__t"/>
+        <childnode refid="69" relation="usage">
+          <edgelabel>mux</edgelabel>
+        </childnode>
+      </node>
+      <node id="69">
+        <label>cy_stc_pdaltmode_mux_cfg_t::MUX_CONFIG</label>
+        <link refid="structcy__stc__pdaltmode__mux__cfg__t_1_1_m_u_x___c_o_n_f_i_g"/>
+      </node>
+    </collaborationgraph>
+    <location file="cy_pdaltmode_defines.h" line="1240" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1239" bodyend="1250"/>
+    <listofallmembers>
+      <member refid="unioncy__stc__pdaltmode__mux__cfg__t_1af96153822f3795e31fc7eaa1da38c60b" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_mux_cfg_t</scope><name>mux</name></member>
+      <member refid="unioncy__stc__pdaltmode__mux__cfg__t_1a4189dd4be42004749edd6aed5f6a35cc" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_mux_cfg_t</scope><name>val</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

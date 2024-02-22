@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="cy__pdaltmode__intel__ridge__common_8h" kind="file" language="C++">
+    <compoundname>cy_pdaltmode_intel_ridge_common.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1ga0cf2835d3f5e931a8b9afbb1b693ef76" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGE_STATUS_OCP_MASK</name>
+        <initializer>(0x08u)</initializer>
+        <briefdescription>
+<para>Over-Current status bit in the status register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="47" column="9" bodyfile="cy_pdaltmode_intel_ridge_common.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__group__pdaltmode__intel__macros_1gaa5e19bc7b7e6c1f795c54bf6b0bb93a1" prot="public" static="no">
+        <name>CY_PDALTMODE_RIDGE_GR_MUX_VDM_DELAY_TIMER_PERIOD</name>
+        <initializer>(10u)</initializer>
+        <briefdescription>
+<para>Goshen Ridge MUX Delay Timer Period. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="50" column="9" bodyfile="cy_pdaltmode_intel_ridge_common.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__group__pdaltmode__intel__enums_1gab67fb53094f5aaf31835f37f421c72d3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_ridge_control_bits</name>
+        <enumvalue id="group__group__pdaltmode__intel__enums_1ggab67fb53094f5aaf31835f37f421c72d3a54f1d622924fd8a449d45511dd5b821b" prot="public">
+          <name>CY_PDALTMODE_RIDGE_NONE_MODE</name>
+          <initializer>= (0u)</initializer>
+          <briefdescription>
+<para>None Mode. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__intel__enums_1ggab67fb53094f5aaf31835f37f421c72d3a103ab8e06c9ec4a0f7c90a195b7f2148" prot="public">
+          <name>CY_PDALTMODE_RIDGE_TBT_MODE_DFP</name>
+          <initializer>= (1u&lt;&lt;0u)</initializer>
+          <briefdescription>
+<para>TBT DFP. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__intel__enums_1ggab67fb53094f5aaf31835f37f421c72d3a1f7b1cca5a43f23387a546380b3f8d05" prot="public">
+          <name>CY_PDALTMODE_RIDGE_TBT_MODE_UFP</name>
+          <initializer>= (1u&lt;&lt;1u)</initializer>
+          <briefdescription>
+<para>TBT UFP. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__intel__enums_1ggab67fb53094f5aaf31835f37f421c72d3a2f3577b19295a213b01fc111903a5b33" prot="public">
+          <name>CY_PDALTMODE_RIDGE_DP_MODE_DFP</name>
+          <initializer>= (1u&lt;&lt;2u)</initializer>
+          <briefdescription>
+<para>DP DFP. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__intel__enums_1ggab67fb53094f5aaf31835f37f421c72d3ab43a3703e39e146850cf0dd5acd6ff04" prot="public">
+          <name>CY_PDALTMODE_RIDGE_DP_MODE_UFP</name>
+          <initializer>= (1u&lt;&lt;3u)</initializer>
+          <briefdescription>
+<para>DP UFP. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__intel__enums_1ggab67fb53094f5aaf31835f37f421c72d3a338fd3d8736ad01fdb89a8e7ca0f8261" prot="public">
+          <name>CY_PDALTMODE_RIDGE_USB4_MODE_DFP</name>
+          <initializer>= (1u&lt;&lt;4u)</initializer>
+          <briefdescription>
+<para>USB4 DFP. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__intel__enums_1ggab67fb53094f5aaf31835f37f421c72d3ae8eb9f8f528871ef89590a414c544652" prot="public">
+          <name>CY_PDALTMODE_RIDGE_USB4_MODE_UFP</name>
+          <initializer>= (1u&lt;&lt;5u)</initializer>
+          <briefdescription>
+<para>USB4 UFP. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Holds all possible Alt Modes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="67" column="1" bodyfile="cy_pdaltmode_intel_ridge_common.h" bodystart="66" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gac392648cb03dc92742d844550fdc2013" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Ridge_SetDisconnect</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Ridge_SetDisconnect</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Set disconnect. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga7d3fb6813b92e16c658d05dfa2cd183e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_Ridge_SetMux</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_pdaltmode_mux_select_t muxCfg, uint32_t modeVdo, uint32_t customData)</argsstring>
+        <name>Cy_PdAltMode_Ridge_SetMux</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__alt__mode__hw__enums_1ga6e2d96963afcf43ec5dfe3d5a18d6bc6" kindref="member">cy_en_pdaltmode_mux_select_t</ref></type>
+          <declname>muxCfg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>modeVdo</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>customData</declname>
+        </param>
+        <briefdescription>
+<para>Set AR/TR registers in accordance to input parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>muxCfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MUX configuration</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>modeVdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MUX configuration related DP/TBT/USB4 VDO</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>customData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Additional custom data related to MUX configuration</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if AR/TR was set successful, otherwise false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gac038aa9ccf2f7c37101ebcfcc1b3cfcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Ridge_Task</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Ridge_Task</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Handles pending Ridge tasks. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga386c4053897bae0aa6856fdbcd56bd86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>cy_en_pdstack_status_t</type>
+        <definition>cy_en_pdstack_status_t Cy_PdAltMode_Ridge_HpdInit</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_cb_usbpd_hpd_events_t cbk)</argsstring>
+        <name>Cy_PdAltMode_Ridge_HpdInit</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>cy_cb_usbpd_hpd_events_t</type>
+          <declname>cbk</declname>
+        </param>
+        <briefdescription>
+<para>Enables Titan Ridge the HPD functionality for the specified PD port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cbk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback to be used for command completion event</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns CY_PDSTACK_STAT_SUCCESS in case of success, error code otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1gaeff7c8076b6c8fda68bddd3248775461" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Ridge_HpdDeInit</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Ridge_HpdDeInit</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Disables Titan Ridge the HPD functionality for the specified PD port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="194" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga726af0fb2c58fc1dfbd0f0c36af579dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>cy_en_pdstack_status_t</type>
+        <definition>cy_en_pdstack_status_t Cy_PdAltMode_Ridge_HpdSendEvt</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_usbpd_hpd_events_t evtype)</argsstring>
+        <name>Cy_PdAltMode_Ridge_HpdSendEvt</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>cy_en_usbpd_hpd_events_t</type>
+          <declname>evtype</declname>
+        </param>
+        <briefdescription>
+<para>Send the desired HPD event out through the Titan Ridge HPD GPIO. </para>        </briefdescription>
+        <detaileddescription>
+<para>Only the HPD_EVENT_UNPLUG, HPD_EVENT_UNPLUG and HPD_EVENT_IRQ events should be requested.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evtype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of HPD event to be sent</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns CY_PDSTACK_STAT_SUCCESS in case of success, error code otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="214" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__intel__functions_1ga49e0eb76dc29592efe083aabfad53196" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cy_PdAltMode_Ridge_GetHpdState</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Ridge_GetHpdState</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Returns TR HPD state. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TR HPD state </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_intel_ridge_common.h" line="229" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This header file defines the data structures and function prototypes associated with the Intel Alpine/Titan Ridge control interface. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="copyright"><para>Copyright 2024, Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation. All rights reserved. You may use this file only in accordance with the license, terms, conditions, disclaimers, and limitations in the end user license agreement accompanying the software package with which this file was provided. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor">#ifndef<sp/>_CY_PDALTMODE_INTEL_RIDGE_COMMON_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CY_PDALTMODE_INTEL_RIDGE_COMMON_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>Header<sp/>file<sp/>addition</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*****************************************************************************/</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>MACRO<sp/>definition</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGE_STATUS_OCP_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x08u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor">#define<sp/>CY_PDALTMODE_RIDGE_GR_MUX_VDM_DELAY_TIMER_PERIOD<sp/><sp/><sp/><sp/><sp/><sp/>(10u)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/>Enumerated<sp/>data<sp/>definition</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>******************************************************************************/</highlight></codeline>
+<codeline lineno="66"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__intel__enums_1ggab67fb53094f5aaf31835f37f421c72d3a54f1d622924fd8a449d45511dd5b821b" kindref="member">CY_PDALTMODE_RIDGE_NONE_MODE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(0u),<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__intel__enums_1ggab67fb53094f5aaf31835f37f421c72d3a103ab8e06c9ec4a0f7c90a195b7f2148" kindref="member">CY_PDALTMODE_RIDGE_TBT_MODE_DFP</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1u&lt;&lt;0u),<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__intel__enums_1ggab67fb53094f5aaf31835f37f421c72d3a1f7b1cca5a43f23387a546380b3f8d05" kindref="member">CY_PDALTMODE_RIDGE_TBT_MODE_UFP</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1u&lt;&lt;1u),<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__intel__enums_1ggab67fb53094f5aaf31835f37f421c72d3a2f3577b19295a213b01fc111903a5b33" kindref="member">CY_PDALTMODE_RIDGE_DP_MODE_DFP</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1u&lt;&lt;2u),<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__intel__enums_1ggab67fb53094f5aaf31835f37f421c72d3ab43a3703e39e146850cf0dd5acd6ff04" kindref="member">CY_PDALTMODE_RIDGE_DP_MODE_UFP</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1u&lt;&lt;3u),<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__intel__enums_1ggab67fb53094f5aaf31835f37f421c72d3a338fd3d8736ad01fdb89a8e7ca0f8261" kindref="member">CY_PDALTMODE_RIDGE_USB4_MODE_DFP</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1u&lt;&lt;4u),<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__group__pdaltmode__intel__enums_1ggab67fb53094f5aaf31835f37f421c72d3ae8eb9f8f528871ef89590a414c544652" kindref="member">CY_PDALTMODE_RIDGE_USB4_MODE_UFP</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1u&lt;&lt;5u)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}<ref refid="group__group__pdaltmode__intel__enums_1gab67fb53094f5aaf31835f37f421c72d3" kindref="member">cy_en_pdaltmode_ridge_control_bits</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/>Global<sp/>function<sp/>declaration</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="89"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_Ridge_SetDisconnect</highlight></codeline>
+<codeline lineno="90"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="101"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1gac392648cb03dc92742d844550fdc2013" kindref="member">Cy_PdAltMode_Ridge_SetDisconnect</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>BB_RETIMER_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="105"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_Ridge_SlaveSetDebug</highlight></codeline>
+<codeline lineno="106"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="120"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cy_PdAltMode_Ridge_SlaveSetDebug(uint8_t<sp/>port,<sp/>uint32_t<sp/>debug);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>BB_RETIMER_ENABLE<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="125"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_Ridge_SetMux</highlight></codeline>
+<codeline lineno="126"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="146"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1ga7d3fb6813b92e16c658d05dfa2cd183e" kindref="member">Cy_PdAltMode_Ridge_SetMux</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/><ref refid="group__group__pdaltmode__alt__mode__hw__enums_1ga6e2d96963afcf43ec5dfe3d5a18d6bc6" kindref="member">cy_en_pdaltmode_mux_select_t</ref><sp/>muxCfg,<sp/>uint32_t<sp/>modeVdo,<sp/>uint32_t<sp/>customData);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="149"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_Ridge_Task</highlight></codeline>
+<codeline lineno="150"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="161"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1gac038aa9ccf2f7c37101ebcfcc1b3cfcb" kindref="member">Cy_PdAltMode_Ridge_Task</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="164"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_Ridge_HpdInit</highlight></codeline>
+<codeline lineno="165"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">cy_en_pdstack_status_t<sp/><ref refid="group__group__pdaltmode__intel__functions_1ga386c4053897bae0aa6856fdbcd56bd86" kindref="member">Cy_PdAltMode_Ridge_HpdInit</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/>cy_cb_usbpd_hpd_events_t<sp/>cbk);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="182"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_Ridge_HpdDeInit</highlight></codeline>
+<codeline lineno="183"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="194"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1gaeff7c8076b6c8fda68bddd3248775461" kindref="member">Cy_PdAltMode_Ridge_HpdDeInit</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="197"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_Ridge_HpdSendEvt</highlight></codeline>
+<codeline lineno="198"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">cy_en_pdstack_status_t<sp/><ref refid="group__group__pdaltmode__intel__functions_1ga726af0fb2c58fc1dfbd0f0c36af579dc" kindref="member">Cy_PdAltMode_Ridge_HpdSendEvt</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext,<sp/>cy_en_usbpd_hpd_events_t<sp/>evtype);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="217"><highlight class="comment">*<sp/>Function<sp/>name:<sp/>Cy_PdAltMode_Ridge_GetHpdState</highlight></codeline>
+<codeline lineno="218"><highlight class="comment">****************************************************************************/</highlight></codeline>
+<codeline lineno="229"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__group__pdaltmode__intel__functions_1ga49e0eb76dc29592efe083aabfad53196" kindref="member">Cy_PdAltMode_Ridge_GetHpdState</ref>(<ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref><sp/>*ptrAltModeContext);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_CY_PDALTMODE_INTEL_RIDGE_COMMON_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>[]<sp/>END<sp/>OF<sp/>FILE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="cy_pdaltmode_intel_ridge_common.h"/>
+  </compounddef>
+</doxygen>

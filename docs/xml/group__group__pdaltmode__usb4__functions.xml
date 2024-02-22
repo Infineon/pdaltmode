@@ -1,0 +1,446 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__usb4__functions" kind="group">
+    <compoundname>group_pdaltmode_usb4_functions</compoundname>
+    <title>Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__group__pdaltmode__usb4__functions_1gaca0998c989866cffc03ab22c4e3c5939" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_Usb4_Enter</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_pd_sop_t sopType, bool retry)</argsstring>
+        <name>Cy_PdAltMode_Usb4_Enter</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>cy_en_pd_sop_t</type>
+          <declname>sopType</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>retry</declname>
+        </param>
+        <briefdescription>
+<para>Initiate USB4 enter mode command to port partner or cable. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sopType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SOP packet type</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>retry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates that the request is being retried</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>New VDM manager task </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_usb4.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__usb4__functions_1ga221562ee4970b23811e3ba9055a08b67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t Cy_PdAltMode_Usb4_UpdateDataStatus</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_pd_pd_do_t eudo, uint32_t val)</argsstring>
+        <name>Cy_PdAltMode_Usb4_UpdateDataStatus</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type>cy_pd_pd_do_t</type>
+          <declname>eudo</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Get USB4 enter mode command parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PdAltMode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eudo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enter USB Data Object used to enter USB4</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Original value of the MUX data status register</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Updated value of the MUX data status register </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_usb4.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__usb4__functions_1gada5e275bcd5deddd82da5be802a2356b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Usb4_DataRstRetryCbk</definition>
+        <argsstring>(cy_timer_id_t id, void *context)</argsstring>
+        <name>Cy_PdAltMode_Usb4_DataRstRetryCbk</name>
+        <param>
+          <type>cy_timer_id_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Data Reset Retry callback. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer index</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_usb4.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__usb4__functions_1ga637509703647f7d6175ad89fd71d3f49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_Usb4_TbtHandler</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext, cy_en_pdaltmode_vdm_evt_t vdmEvt)</argsstring>
+        <name>Cy_PdAltMode_Usb4_TbtHandler</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <param>
+          <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga53976be265d41463919b3ea93da4cf30" kindref="member">cy_en_pdaltmode_vdm_evt_t</ref></type>
+          <declname>vdmEvt</declname>
+        </param>
+        <briefdescription>
+<para>USB4 TBT handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vdmEvt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VDM Task Manager event</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return VDM Task </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_usb4.h" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__usb4__functions_1gab913f967042a187bd02f9b22a1fe8223" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>cy_pd_pd_do_t *</type>
+        <definition>cy_pd_pd_do_t* Cy_PdAltMode_Usb4_GetEudo</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Usb4_GetEudo</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Returns EUDO buffer pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>EUDO buffer pointer </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_usb4.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__usb4__functions_1ga8e46a82179892d07edeabc9f7445c1df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_Usb4_EvalCblResp</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Usb4_EvalCblResp</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates accepted cable Enter USB command response. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Next VDM manager task to perform. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_usb4.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__usb4__functions_1gaa2f2d52d61f0bf59a177c999c11fa402" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_Usb4_FailCblResp</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Usb4_FailCblResp</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates failed cable Enter USB command response. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Next VDM manager task to perform </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_usb4.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__usb4__functions_1gaa150b382f5d576d792d535542adb9303" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Usb4_DataRstRecCbk</definition>
+        <argsstring>(cy_stc_pdstack_context_t *ptrPdStackContext, cy_en_pdstack_resp_status_t status, const cy_stc_pdstack_pd_packet_t *recVdm)</argsstring>
+        <name>Cy_PdAltMode_Usb4_DataRstRecCbk</name>
+        <param>
+          <type>cy_stc_pdstack_context_t *</type>
+          <declname>ptrPdStackContext</declname>
+        </param>
+        <param>
+          <type>cy_en_pdstack_resp_status_t</type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>const cy_stc_pdstack_pd_packet_t *</type>
+          <declname>recVdm</declname>
+        </param>
+        <briefdescription>
+<para>Callback to handle Data Reset command response. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrPdStackContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Stack Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data Reset response status</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>recVdm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data Reset response pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_usb4.h" line="192" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__usb4__functions_1ga7f23fdc6a1750ae95cb311cfe99c0042" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_Usb4_EvalAcceptResp</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Usb4_EvalAcceptResp</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates accepted UFP Enter USB command response. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Next VDM manager task to perform </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_usb4.h" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__usb4__functions_1ga0b269ae5eeba2b0f19ea65ecd461d2fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__enums_1ga399c1777f494368601cad31a40afca9c" kindref="member">cy_en_pdaltmode_vdm_task_t</ref></type>
+        <definition>cy_en_pdaltmode_vdm_task_t Cy_PdAltMode_Usb4_EvalFailResp</definition>
+        <argsstring>(cy_stc_pdaltmode_context_t *ptrAltModeContext)</argsstring>
+        <name>Cy_PdAltMode_Usb4_EvalFailResp</name>
+        <param>
+          <type><ref refid="structcy__stc__pdaltmode__context__t" kindref="compound">cy_stc_pdaltmode_context_t</ref> *</type>
+          <declname>ptrAltModeContext</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates failed UFP Enter USB command response. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrAltModeContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Alt Mode Library Context pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Next VDM manager task to perform </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_usb4.h" line="222" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__usb4__functions_1ga882a4d544ef448e9d0a40e5cfe4a189f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Usb4_EnterUsb4RetryCbk</definition>
+        <argsstring>(cy_timer_id_t id, void *context)</argsstring>
+        <name>Cy_PdAltMode_Usb4_EnterUsb4RetryCbk</name>
+        <param>
+          <type>cy_timer_id_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Callback to process Enter USB command retry attempt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer ID used to postpone received Attention VDM </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer callback context</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_usb4.h" line="236" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__group__pdaltmode__usb4__functions_1gaac5e4e28031a3572808f3e083c523ce2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cy_PdAltMode_Usb4_EnterRecCbk</definition>
+        <argsstring>(cy_stc_pdstack_context_t *ptrPdStackContext, cy_en_pdstack_resp_status_t status, const cy_stc_pdstack_pd_packet_t *recVdm)</argsstring>
+        <name>Cy_PdAltMode_Usb4_EnterRecCbk</name>
+        <param>
+          <type>cy_stc_pdstack_context_t *</type>
+          <declname>ptrPdStackContext</declname>
+        </param>
+        <param>
+          <type>cy_en_pdstack_resp_status_t</type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>const cy_stc_pdstack_pd_packet_t *</type>
+          <declname>recVdm</declname>
+        </param>
+        <briefdescription>
+<para>Callback to evaluate Enter_USB command response. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrPdStackContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PD Stack Library Context pointer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data Reset response status</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>recVdm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data Reset response pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_usb4.h" line="257" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

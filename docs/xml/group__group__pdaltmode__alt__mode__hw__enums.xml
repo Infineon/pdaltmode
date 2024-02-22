@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__alt__mode__hw__enums" kind="group">
+    <compoundname>group_pdaltmode_alt_mode_hw_enums</compoundname>
+    <title>Enumerated types</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__group__pdaltmode__alt__mode__hw__enums_1ga6e2d96963afcf43ec5dfe3d5a18d6bc6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_mux_select_t</name>
+        <enumvalue id="group__group__pdaltmode__alt__mode__hw__enums_1gga6e2d96963afcf43ec5dfe3d5a18d6bc6a534d4e763bd10e41f9fb90271aae956d" prot="public">
+          <name>CY_PDALTMODE_MUX_CONFIG_ISOLATE</name>
+          <briefdescription>
+<para>Isolate configuration. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__alt__mode__hw__enums_1gga6e2d96963afcf43ec5dfe3d5a18d6bc6a9821c57d38fa26bbb56d05fa8de673eb" prot="public">
+          <name>CY_PDALTMODE_MUX_CONFIG_SAFE</name>
+          <briefdescription>
+<para>USB Safe State (USB 2.0 lines remain active) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__alt__mode__hw__enums_1gga6e2d96963afcf43ec5dfe3d5a18d6bc6a1bcda475ec873920e65bb3dc7f397656" prot="public">
+          <name>CY_PDALTMODE_MUX_CONFIG_SS_ONLY</name>
+          <briefdescription>
+<para>USB SS configuration. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__alt__mode__hw__enums_1gga6e2d96963afcf43ec5dfe3d5a18d6bc6ad9dd6af58d168841fdf31666a58f6934" prot="public">
+          <name>CY_PDALTMODE_MUX_CONFIG_DP_2_LANE</name>
+          <briefdescription>
+<para>Two lane DP configuration. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__alt__mode__hw__enums_1gga6e2d96963afcf43ec5dfe3d5a18d6bc6afc353200bd55a4cba2100773ec6169f7" prot="public">
+          <name>CY_PDALTMODE_MUX_CONFIG_DP_4_LANE</name>
+          <briefdescription>
+<para>Four lane DP configuration. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__alt__mode__hw__enums_1gga6e2d96963afcf43ec5dfe3d5a18d6bc6a1755068e7f3502ce194ec92dc6b2b67e" prot="public">
+          <name>CY_PDALTMODE_MUX_CONFIG_TBT_CUSTOM</name>
+          <briefdescription>
+<para>TBT custom configuration. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__alt__mode__hw__enums_1gga6e2d96963afcf43ec5dfe3d5a18d6bc6ab4076832d3a534a424e3bb448bbb04ff" prot="public">
+          <name>CY_PDALTMODE_MUX_CONFIG_USB4_CUSTOM</name>
+          <briefdescription>
+<para>USB4 custom configuration. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__alt__mode__hw__enums_1gga6e2d96963afcf43ec5dfe3d5a18d6bc6a743a2a853de00f7e298790af8dbd35d9" prot="public">
+          <name>CY_PDALTMODE_MUX_CONFIG_RIDGE_CUSTOM</name>
+          <briefdescription>
+<para>Alpine/Titan Ridge custom configuration. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__alt__mode__hw__enums_1gga6e2d96963afcf43ec5dfe3d5a18d6bc6a02057d200ec3ebaaf71f7f4f05467305" prot="public">
+          <name>CY_PDALTMODE_MUX_CONFIG_INIT</name>
+          <briefdescription>
+<para>Enables MUX functionality. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__alt__mode__hw__enums_1gga6e2d96963afcf43ec5dfe3d5a18d6bc6a00c27609412e634611b145f99ab64778" prot="public">
+          <name>CY_PDALTMODE_MUX_CONFIG_DEINIT</name>
+          <briefdescription>
+<para>Disables MUX functionality. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Possible settings for the Type-C Data MUX. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This type should be extended to cover all possible modes for the MUX. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="912" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="911" bodyend="923"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__alt__mode__hw__enums_1ga76fe692191168bfcd3be6cee0c268493" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_app_mux_status_t</name>
+        <enumvalue id="group__group__pdaltmode__alt__mode__hw__enums_1gga76fe692191168bfcd3be6cee0c268493ad0cee6478b2bd51e54d6de58b49f32a1" prot="public">
+          <name>CY_PDALTMODE_APP_MUX_STATE_IDLE</name>
+          <briefdescription>
+<para>MUX idle state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__alt__mode__hw__enums_1gga76fe692191168bfcd3be6cee0c268493a38684b69b4b495335b5997f2a3d0059f" prot="public">
+          <name>CY_PDALTMODE_APP_MUX_STATE_FAIL</name>
+          <briefdescription>
+<para>MUX switch failed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__alt__mode__hw__enums_1gga76fe692191168bfcd3be6cee0c268493a3c152118c65f37a723cee8e4dbf42dab" prot="public">
+          <name>CY_PDALTMODE_APP_MUX_STATE_BUSY</name>
+          <briefdescription>
+<para>MUX is busy. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__alt__mode__hw__enums_1gga76fe692191168bfcd3be6cee0c268493a68d7bc39b6ff0208989b55a618209ae1" prot="public">
+          <name>CY_PDALTMODE_APP_MUX_STATE_SUCCESS</name>
+          <briefdescription>
+<para>MUX switched successfully. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Possible states for the MUX handler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="930" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="929" bodyend="935"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__group__pdaltmode__alt__mode__hw__enums_1gad489a8fd1dc8526f0a1c1cd277355495" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cy_en_pdaltmode_hw_type_t</name>
+        <enumvalue id="group__group__pdaltmode__alt__mode__hw__enums_1ggad489a8fd1dc8526f0a1c1cd277355495a4dd24b5fc952ca34cd90d8c180b248b1" prot="public">
+          <name>CY_PDALTMODE_MUX</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>HW type - MUX. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__group__pdaltmode__alt__mode__hw__enums_1ggad489a8fd1dc8526f0a1c1cd277355495aae63017bf66dcf602bcf5c585342e11c" prot="public">
+          <name>CY_PDALTMODE_HPD</name>
+          <briefdescription>
+<para>HW type - HPD transceiver/receiver. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Application HW type values which are used in alt_mode_hw_evt_t structure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="942" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="941" bodyend="946"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

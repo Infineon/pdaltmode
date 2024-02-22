@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group__pdaltmode__display__port__data__structures" kind="group">
+    <compoundname>group_pdaltmode_display_port_data_structures</compoundname>
+    <title>Data Structures</title>
+    <innerclass refid="structcy__stc__pdaltmode__dp__status__t" prot="public">cy_stc_pdaltmode_dp_status_t</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcy__stc__pdaltmode__hw__details__t" kind="struct" language="C++" prot="public">
+    <compoundname>cy_stc_pdaltmode_hw_details_t</compoundname>
+    <includes local="no">cy_pdaltmode_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__hw__details__t_1a22c9ff301a8608bcfea5b9811a1b8add" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__vdm__alt__mode__manager__data__structures_1gaf0f78ba2b33773b1ebd9801120c02d78" kindref="member">cy_pdaltmode_hw_cmd_cbk_t</ref></type>
+        <definition>cy_pdaltmode_hw_cmd_cbk_t cy_stc_pdaltmode_hw_details_t::hwCmdCbk</definition>
+        <argsstring></argsstring>
+        <name>hwCmdCbk</name>
+        <briefdescription>
+<para>Holds command callback information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1648" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1648" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__hw__details__t_1a8c08cfb1a182b6befb91682f41c3fadd" prot="public" static="no" mutable="no">
+        <type>cy_en_usbpd_hpd_events_t</type>
+        <definition>volatile cy_en_usbpd_hpd_events_t cy_stc_pdaltmode_hw_details_t::altModeHpdState</definition>
+        <argsstring></argsstring>
+        <name>altModeHpdState</name>
+        <briefdescription>
+<para>Holds current HPD pin status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1649" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1649" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__hw__details__t_1a895ba5492e974d13046b4d00de1bc076" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__alt__mode__hw__enums_1ga6e2d96963afcf43ec5dfe3d5a18d6bc6" kindref="member">cy_en_pdaltmode_mux_select_t</ref></type>
+        <definition>cy_en_pdaltmode_mux_select_t cy_stc_pdaltmode_hw_details_t::appMuxState</definition>
+        <argsstring></argsstring>
+        <name>appMuxState</name>
+        <briefdescription>
+<para>App MUX state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1650" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1650" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__hw__details__t_1a384677ff7f8ed420f61f851a82c973cd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_hw_details_t::hwSlnData</definition>
+        <argsstring></argsstring>
+        <name>hwSlnData</name>
+        <briefdescription>
+<para>Holds HW solution event/command data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1651" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1651" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__hw__details__t_1a68858b2d238f111502fe2adf3b971e6b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_hw_details_t::appMuxSavedCustomData</definition>
+        <argsstring></argsstring>
+        <name>appMuxSavedCustomData</name>
+        <briefdescription>
+<para>Custom data parameter saved for future MUX update. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1652" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1652" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__hw__details__t_1a992d894354f88077a692d7382f34c8dd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cy_stc_pdaltmode_hw_details_t::appMuxSavedModeVdo</definition>
+        <argsstring></argsstring>
+        <name>appMuxSavedModeVdo</name>
+        <briefdescription>
+<para>Alt Mode VDO saved for future MUX update. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1653" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1653" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__hw__details__t_1a811dab7b6ffbf1a5c61a59e9fbdcabb2" prot="public" static="no" mutable="no">
+        <type><ref refid="group__group__pdaltmode__alt__mode__hw__enums_1ga6e2d96963afcf43ec5dfe3d5a18d6bc6" kindref="member">cy_en_pdaltmode_mux_select_t</ref></type>
+        <definition>cy_en_pdaltmode_mux_select_t cy_stc_pdaltmode_hw_details_t::appMuxSavedState</definition>
+        <argsstring></argsstring>
+        <name>appMuxSavedState</name>
+        <briefdescription>
+<para>MUX state saved for future MUX update. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1654" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1654" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__hw__details__t_1a5227b28b41b25c100d7b8a1da74128eb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cy_stc_pdaltmode_hw_details_t::appMuxUpdateReq</definition>
+        <argsstring></argsstring>
+        <name>appMuxUpdateReq</name>
+        <briefdescription>
+<para>Flag to indicate that MUX update is required. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1655" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1655" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__hw__details__t_1a204760ad38feca9dccea78dca31fe854" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>volatile uint8_t cy_stc_pdaltmode_hw_details_t::muxCurState</definition>
+        <argsstring></argsstring>
+        <name>muxCurState</name>
+        <briefdescription>
+<para>Store the current MUX config. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1656" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1656" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcy__stc__pdaltmode__hw__details__t_1a312669392658f94717ac4d8a252070f3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>volatile bool cy_stc_pdaltmode_hw_details_t::altModeCmdPending</definition>
+        <argsstring></argsstring>
+        <name>altModeCmdPending</name>
+        <briefdescription>
+<para>Holds current HPD command status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cy_pdaltmode_defines.h" line="1657" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1657" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Alt Mode HW details. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cy_pdaltmode_defines.h" line="1647" column="1" bodyfile="cy_pdaltmode_defines.h" bodystart="1646" bodyend="1658"/>
+    <listofallmembers>
+      <member refid="structcy__stc__pdaltmode__hw__details__t_1a312669392658f94717ac4d8a252070f3" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_hw_details_t</scope><name>altModeCmdPending</name></member>
+      <member refid="structcy__stc__pdaltmode__hw__details__t_1a8c08cfb1a182b6befb91682f41c3fadd" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_hw_details_t</scope><name>altModeHpdState</name></member>
+      <member refid="structcy__stc__pdaltmode__hw__details__t_1a68858b2d238f111502fe2adf3b971e6b" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_hw_details_t</scope><name>appMuxSavedCustomData</name></member>
+      <member refid="structcy__stc__pdaltmode__hw__details__t_1a992d894354f88077a692d7382f34c8dd" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_hw_details_t</scope><name>appMuxSavedModeVdo</name></member>
+      <member refid="structcy__stc__pdaltmode__hw__details__t_1a811dab7b6ffbf1a5c61a59e9fbdcabb2" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_hw_details_t</scope><name>appMuxSavedState</name></member>
+      <member refid="structcy__stc__pdaltmode__hw__details__t_1a895ba5492e974d13046b4d00de1bc076" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_hw_details_t</scope><name>appMuxState</name></member>
+      <member refid="structcy__stc__pdaltmode__hw__details__t_1a5227b28b41b25c100d7b8a1da74128eb" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_hw_details_t</scope><name>appMuxUpdateReq</name></member>
+      <member refid="structcy__stc__pdaltmode__hw__details__t_1a22c9ff301a8608bcfea5b9811a1b8add" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_hw_details_t</scope><name>hwCmdCbk</name></member>
+      <member refid="structcy__stc__pdaltmode__hw__details__t_1a384677ff7f8ed420f61f851a82c973cd" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_hw_details_t</scope><name>hwSlnData</name></member>
+      <member refid="structcy__stc__pdaltmode__hw__details__t_1a204760ad38feca9dccea78dca31fe854" prot="public" virt="non-virtual"><scope>cy_stc_pdaltmode_hw_details_t</scope><name>muxCurState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
